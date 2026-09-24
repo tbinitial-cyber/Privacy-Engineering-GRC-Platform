@@ -24,11 +24,16 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-BASE_DIR = r"C:\Users\acer\Privacy_Engineering_Master_Portfolio"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def get_path(rel_path):
+    # Cross-platform path resolver (replaces Windows backslashes with forward slashes)
+    clean_rel = rel_path.replace("\\", "/")
+    return os.path.normpath(os.path.join(BASE_DIR, clean_rel))
 
 # Helper to load JSON (no stale cache)
 def load_json_file(rel_path):
-    full_path = os.path.join(BASE_DIR, rel_path)
+    full_path = get_path(rel_path)
     if os.path.exists(full_path):
         with open(full_path, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -36,7 +41,7 @@ def load_json_file(rel_path):
 
 # Helper to load Markdown (no stale cache)
 def load_md_file(rel_path):
-    full_path = os.path.join(BASE_DIR, rel_path)
+    full_path = get_path(rel_path)
     if os.path.exists(full_path):
         with open(full_path, "r", encoding="utf-8") as f:
             return f.read()
@@ -135,8 +140,8 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
         st.write("Notice how Google DoubleClick (`IDE`) was withheld in the Pre-Consent state, but Microsoft Clarity and Hotjar fired immediately before clicking the banner.")
         col_pre, col_post = st.columns(2)
         
-        pre_img_path = os.path.join(BASE_DIR, r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY\pre_consent.png")
-        post_img_path = os.path.join(BASE_DIR, r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY\post_consent.png")
+        pre_img_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/pre_consent.png")
+        post_img_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/post_consent.png")
         
         with col_pre:
             st.markdown("#### 1. Pre-Consent Baseline (Banner Active)")
@@ -154,8 +159,8 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
 
     with tab2:
         st.subheader("The Consent Math: 55 Baseline + 10 Post-Consent = 65 Total Cookies")
-        base_data = load_json_file(r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY\baseline.json")
-        post_data = load_json_file(r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY\post_consent.json")
+        base_data = load_json_file(r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/baseline.json")
+        post_data = load_json_file(r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/post_consent.json")
         
         if base_data and post_data:
             b_cookies = base_data.get("cookies", [])
@@ -184,7 +189,7 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
     with tab3:
         st.subheader("Discovered External Host Inventory (74 Servers)")
         st.caption("All distinct third-party and external endpoints communicating with user browser during page lifecycle.")
-        hosts = load_json_file(r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY\host_inventory.json")
+        hosts = load_json_file(r"02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/host_inventory.json")
         if hosts:
             df_hosts = pd.DataFrame(hosts)
             
@@ -244,7 +249,7 @@ elif nav_choice == "🧩 02. Algorithmic Processing Activities":
     > * **The Human-in-the-Loop Cap (<0.80):** In automated privacy engineering, machine algorithms are strictly capped below 0.80. Under GDPR Article 30 and Indian DPDPA Section 8, software cannot declare statutory purpose or legal lawful basis. Full **1.0 (100% Audit-Grade Certainty)** is achieved only upon completing the 8 statutory validation questions during human DPO/Legal review.
     """)
     
-    candidates = load_json_file(r"03_STEP3_CANDIDATE_ACTIVITIES\candidate_processing_activities.json")
+    candidates = load_json_file(r"03_STEP3_CANDIDATE_ACTIVITIES/candidate_processing_activities.json")
     if candidates:
         for idx, act in enumerate(candidates, 1):
             conf = act.get('confidence', 0.0)
@@ -298,14 +303,14 @@ elif nav_choice == "🔍 03. Transparency Reconciliation & Cookies":
         
         st.divider()
         st.subheader("📋 Candidate Processing Activities Transparency Reconciliation")
-        recon_md = load_md_file(r"04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER\TRANSPARENCY_RECONCILIATION_REPORT.md")
+        recon_md = load_md_file(r"04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/TRANSPARENCY_RECONCILIATION_REPORT.md")
         st.markdown(recon_md)
         
     with tab_inv:
         st.subheader("Interactive 65-Cookie Register")
         st.caption("Complete mapping of 65 captured cookies across baseline pre-consent and gated post-consent states.")
         
-        cookie_inv = load_json_file(r"04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER\cookie_vendor_inventory.json")
+        cookie_inv = load_json_file(r"04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/cookie_vendor_inventory.json")
         if cookie_inv:
             df_cookies = pd.DataFrame(cookie_inv)
             
@@ -388,7 +393,7 @@ elif nav_choice == "🏛️ 04. Statutory Article 30 RoPA Register":
     st.header("🏛️ Module 04: Statutory Records of Processing Activities (RoPA)")
     st.caption("Certified Enterprise Compliance Register under GDPR Article 30(1) & Indian DPDPA 2023 Section 8")
     
-    excel_path = os.path.join(BASE_DIR, r"05_STEP5_ARTICLE_30_ROPA_REGISTER\ROPA_ARTICLE_30_REGISTER.xlsx")
+    excel_path = get_path("05_STEP5_ARTICLE_30_ROPA_REGISTER/ROPA_ARTICLE_30_REGISTER.xlsx")
     if os.path.exists(excel_path):
         with open(excel_path, "rb") as f:
             st.download_button(
@@ -411,7 +416,7 @@ elif nav_choice == "🏛️ 04. Statutory Article 30 RoPA Register":
     st.table(pd.DataFrame(ropa_summary))
     
     st.markdown("### Master Processing Activity Details")
-    ropa_md = load_md_file(r"05_STEP5_ARTICLE_30_ROPA_REGISTER\ROPA_ARTICLE_30_REGISTER.md")
+    ropa_md = load_md_file(r"05_STEP5_ARTICLE_30_ROPA_REGISTER/ROPA_ARTICLE_30_REGISTER.md")
     with st.expander("📄 View Full Publication-Grade Markdown RoPA Register"):
         st.markdown(ropa_md)
 
@@ -445,7 +450,7 @@ elif nav_choice == "🛡️ 05. High-Risk DPIA Threshold Assessment":
         ]
         st.table(pd.DataFrame(criteria_data))
 
-    dpia_md = load_md_file(r"06_STEP6_DPIA_SCREENING_NOTE\DPIA_SCREENING_NOTE.md")
+    dpia_md = load_md_file(r"06_STEP6_DPIA_SCREENING_NOTE/DPIA_SCREENING_NOTE.md")
     with st.expander("📄 View Full Statutory DPIA Screening Note"):
         st.markdown(dpia_md)
 
@@ -458,7 +463,7 @@ elif nav_choice == "📑 06. Vendor DPA Contract Redline Playbook":
     
     st.info("💼 **The TPRM Shield:** Technical telemetry found the leak; this contract playbook stops commercial exploitation.")
     
-    dpa_playbook_md = load_md_file(r"07_STEP7_VENDOR_DPA_REDLINE_PLAYBOOK\VENDOR_DPA_REDLINE_PLAYBOOK.md")
+    dpa_playbook_md = load_md_file(r"07_STEP7_VENDOR_DPA_REDLINE_PLAYBOOK/VENDOR_DPA_REDLINE_PLAYBOOK.md")
     st.markdown(dpa_playbook_md)
 
 # ----------------------------------------------------
@@ -468,7 +473,7 @@ elif nav_choice == "🏢 07. Industry DPA Benchmark Scorecard":
     st.header("🏢 Module 07: Real-World Enterprise DPA Benchmark Scorecard")
     st.caption("10-Point Technical & Commercial Battleground Analysis across 10 Industry Giants")
     
-    scorecard_path = os.path.join(BASE_DIR, r"08_REAL_WORLD_DPA_BENCHMARK_SAMPLES\MASTER_10_DPA_COMPARATIVE_SCORECARD.xlsx")
+    scorecard_path = get_path("08_REAL_WORLD_DPA_BENCHMARK_SAMPLES/MASTER_10_DPA_COMPARATIVE_SCORECARD.xlsx")
     if os.path.exists(scorecard_path):
         with open(scorecard_path, "rb") as f:
             st.download_button(
@@ -498,12 +503,12 @@ elif nav_choice == "🏢 07. Industry DPA Benchmark Scorecard":
     c_s1, c_s2 = st.columns(2)
     with c_s1:
         st.markdown("#### 📜 Full 20-Page Enterprise DPA Specimen")
-        dpa_spec = load_md_file(r"08_REAL_WORLD_DPA_BENCHMARK_SAMPLES\FULL_UNABRIDGED_ENTERPRISE_DPA_SPECIMEN.md")
+        dpa_spec = load_md_file(r"08_REAL_WORLD_DPA_BENCHMARK_SAMPLES/FULL_UNABRIDGED_ENTERPRISE_DPA_SPECIMEN.md")
         with st.expander("Read Verbatim Master Contract"):
             st.markdown(dpa_spec)
     with c_s2:
         st.markdown("#### 🇪🇺 Official EU SCCs (Module 2)")
-        scc_spec = load_md_file(r"08_REAL_WORLD_DPA_BENCHMARK_SAMPLES\EU_COMMISSION_SCCS_2021_914_MODULE_2_FULL.md")
+        scc_spec = load_md_file(r"08_REAL_WORLD_DPA_BENCHMARK_SAMPLES/EU_COMMISSION_SCCS_2021_914_MODULE_2_FULL.md")
         with st.expander("Read Verbatim European Commission Clauses"):
             st.markdown(scc_spec)
 
@@ -517,13 +522,13 @@ elif nav_choice == "📜 08. Enterprise Privacy Policy Governance":
     tab_pol, tab_check, tab_how = st.tabs(["🌐 Full Public Privacy Policy Specimen", "📋 25-Point Audit Checklist", "🛠️ How to Draft Policy from RoPA"])
     
     with tab_pol:
-        policy_md = load_md_file(r"09_PRIVACY_POLICIES_AND_TRANSPARENCY_GOVERNANCE\FULL_GLOBAL_PRIVACY_POLICY_MASTER_SPECIMEN.md")
+        policy_md = load_md_file(r"09_PRIVACY_POLICIES_AND_TRANSPARENCY_GOVERNANCE/FULL_GLOBAL_PRIVACY_POLICY_MASTER_SPECIMEN.md")
         st.markdown(policy_md)
         
     with tab_check:
-        check_md = load_md_file(r"09_PRIVACY_POLICIES_AND_TRANSPARENCY_GOVERNANCE\PRIVACY_POLICY_AUDIT_CHECKLIST.md")
+        check_md = load_md_file(r"09_PRIVACY_POLICIES_AND_TRANSPARENCY_GOVERNANCE/PRIVACY_POLICY_AUDIT_CHECKLIST.md")
         st.markdown(check_md)
         
     with tab_how:
-        how_md = load_md_file(r"09_PRIVACY_POLICIES_AND_TRANSPARENCY_GOVERNANCE\HOW_TO_DRAFT_A_PRIVACY_POLICY_FROM_ROPA.md")
+        how_md = load_md_file(r"09_PRIVACY_POLICIES_AND_TRANSPARENCY_GOVERNANCE/HOW_TO_DRAFT_A_PRIVACY_POLICY_FROM_ROPA.md")
         st.markdown(how_md)
