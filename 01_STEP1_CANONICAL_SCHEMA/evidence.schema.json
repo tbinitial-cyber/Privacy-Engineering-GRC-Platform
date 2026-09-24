@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/privacy-engineering/evidence.schema.json",
+  "title": "Privacy Engineering Evidence Record",
+  "description": "Canonical provenance schema for technical privacy-assessment evidence. Technical observations must be distinguished from inference and legal/business validation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "source",
+    "evidence_type",
+    "observed_at",
+    "target",
+    "consent_state",
+    "observation",
+    "confidence",
+    "validation_status"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^EVD-[A-Z]+-[0-9]{3,}$"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "OWASP_ZAP",
+        "MobSF",
+        "COOKIE_SCAN",
+        "BROWSER_NETWORK",
+        "CLOUD_READ_ONLY",
+        "DOCUMENT_REVIEW",
+        "MANUAL_REVIEW"
+      ]
+    },
+    "source_artifact": {
+      "type": "string",
+      "description": "Filename, report ID, HAR name, screenshot ID, or other traceable artifact reference."
+    },
+    "evidence_type": {
+      "type": "string",
+      "enum": [
+        "COOKIE",
+        "STORAGE",
+        "HTTP_REQUEST",
+        "HTTP_RESPONSE",
+        "API_ENDPOINT",
+        "HOST",
+        "SDK",
+        "TRACKER",
+        "MOBILE_PERMISSION",
+        "MOBILE_STORAGE",
+        "SECRET_INDICATOR",
+        "CLOUD_CONFIGURATION",
+        "DOCUMENT_CLAIM",
+        "OTHER"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "identifier"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "DOMAIN",
+            "URL",
+            "APP",
+            "API",
+            "COOKIE",
+            "STORAGE",
+            "CLOUD_RESOURCE",
+            "VENDOR",
+            "DOCUMENT"
+          ]
+        },
+        "identifier": {
+          "type": "string"
+        }
+      }
+    },
+    "consent_state": {
+      "type": "string",
+      "enum": [
+        "PRE_CONSENT",
+        "POST_CONSENT",
+        "CONSENT_NOT_APPLICABLE",
+        "CONSENT_STATE_UNKNOWN"
+      ]
+    },
+    "observation": {
+      "type": "object",
+      "description": "What was directly observed. Do not put legal conclusions here.",
+      "additionalProperties": true
+    },
+    "data_elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "classification_status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value_redacted": {
+            "type": "string"
+          },
+          "classification_status": {
+            "type": "string",
+            "enum": [
+              "OBSERVED",
+              "INFERRED",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    },
+    "candidate_activity_id": {
+      "type": "string",
+      "pattern": "^CAND-ACT-[0-9]{3,}$"
+    },
+    "candidate_activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "possible_purpose": {
+          "type": "string"
+        },
+        "possible_data_subjects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "possible_recipients": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inference_basis": {
+          "type": "string"
+        }
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "NOT_REVIEWED",
+            "DISCLOSED",
+            "PARTIALLY_DISCLOSED",
+            "UNDISCLOSED",
+            "UNVERIFIED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "document_reference": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "validation_status": {
+      "type": "string",
+      "enum": [
+        "UNVALIDATED",
+        "TECHNICALLY_VALIDATED",
+        "BUSINESS_VALIDATED",
+        "LEGAL_VALIDATED",
+        "FULLY_VALIDATED"
+      ]
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reviewer_role": {
+          "type": "string"
+        },
+        "validated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "validated_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "references": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ropa_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dpia_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vendor_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "remediation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "type": "string"
+        },
+        "immutable": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

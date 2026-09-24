@@ -1,0 +1,652 @@
+[
+  {
+    "evidence_id": "EVD-WEB-001-CDEB879188",
+    "cookie_name": "geo_data",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": -1,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-002-C50B16F14B",
+    "cookie_name": "ajs_anonymous_id",
+    "domain": "miro.com",
+    "vendor_owner": "Segment / Twilio",
+    "category_group": "Performance & Telemetry",
+    "purpose_description": "Anonymous user telemetry pipeline",
+    "expiry": 1821781889.922494,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-003-5FF2B47A26",
+    "cookie_name": "__ff_cookie_styles",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1790246009.922704,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-005-A2B3476D33",
+    "cookie_name": "__ff",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1790246011.533657,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-006-A4C4258815",
+    "cookie_name": "server_experiment_viewed",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": -1,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-007-819850F379",
+    "cookie_name": "fbp_tracked",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1792837891,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-008-B71FDDE3C7",
+    "cookie_name": "rdt_uuid_tracked",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1792837891,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-009-A36E1ABB8D",
+    "cookie_name": "pageviewCount",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1792837892,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-010-A9AB61A56D",
+    "cookie_name": "sessionTimer",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": -1,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-011-FA171931E3",
+    "cookie_name": "OptanonConsent",
+    "domain": "miro.com",
+    "vendor_owner": "OneTrust LLC",
+    "category_group": "Strictly Necessary (Consent Management)",
+    "purpose_description": "Stores user cookie consent preferences",
+    "expiry": 1821781892,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-012-7F782573A0",
+    "cookie_name": "__cf_bm",
+    "domain": "g2crowd.com",
+    "vendor_owner": "Cloudflare, Inc.",
+    "category_group": "Strictly Necessary (Security & Bot Mitigation)",
+    "purpose_description": "Cloudflare security and rate-limiting",
+    "expiry": 1790247692.683155,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-013-98F68D114C",
+    "cookie_name": "_rdt_uuid",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1798021892,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-014-C6EF99E79D",
+    "cookie_name": "__pdst",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1821781892,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-015-B092BA8E7A",
+    "cookie_name": "__cf_bm",
+    "domain": "bzrcdn.openai.com",
+    "vendor_owner": "Cloudflare, Inc.",
+    "category_group": "Strictly Necessary (Security & Bot Mitigation)",
+    "purpose_description": "Cloudflare security and rate-limiting",
+    "expiry": 1790247692.830835,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-016-54B8F8268A",
+    "cookie_name": "_cfuvid",
+    "domain": "bzrcdn.openai.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": -1,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-017-D94CC7451C",
+    "cookie_name": "CLID",
+    "domain": "www.clarity.ms",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1821781892.959575,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-018-2C2E04B523",
+    "cookie_name": "_fbp",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1798021892,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-019-A7A70BE983",
+    "cookie_name": "fr",
+    "domain": "facebook.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1798021893.117062,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-020-81A5781159",
+    "cookie_name": "__cf_bm",
+    "domain": "g2.com",
+    "vendor_owner": "Cloudflare, Inc.",
+    "category_group": "Strictly Necessary (Security & Bot Mitigation)",
+    "purpose_description": "Cloudflare security and rate-limiting",
+    "expiry": 1790247693.254651,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-021-C92964EB8A",
+    "cookie_name": "signals-sdk-user-id",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1821781893,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-022-DDE0E2CB2B",
+    "cookie_name": "signals-sdk-session-id",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1790247693,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-023-F974DBCB76",
+    "cookie_name": "_uetsid",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1790332293,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-024-520F66E7BA",
+    "cookie_name": "_uetvid",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1823941893,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-025-EBDA9FB941",
+    "cookie_name": "_clck",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1821781893,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-026-D88C3B157B",
+    "cookie_name": "MR",
+    "domain": "bat.bing.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1790850693.5835,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-027-562EE0EB49",
+    "cookie_name": "bcookie",
+    "domain": "linkedin.com",
+    "vendor_owner": "LinkedIn Corporation",
+    "category_group": "Targeting & Advertising / Analytics",
+    "purpose_description": "Stores LinkedIn ad conversion tracking and member IDs",
+    "expiry": 1821781894.592228,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-028-016D015684",
+    "cookie_name": "lidc",
+    "domain": "linkedin.com",
+    "vendor_owner": "LinkedIn Corporation",
+    "category_group": "Targeting & Advertising / Analytics",
+    "purpose_description": "Stores LinkedIn ad conversion tracking and member IDs",
+    "expiry": 1790332293.509433,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-029-A2AE2C4F95",
+    "cookie_name": "__cf_bm",
+    "domain": "linkedin.com",
+    "vendor_owner": "Cloudflare, Inc.",
+    "category_group": "Strictly Necessary (Security & Bot Mitigation)",
+    "purpose_description": "Cloudflare security and rate-limiting",
+    "expiry": 1790247693.509475,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-030-DDD2C6CB6A",
+    "cookie_name": "AWSALBCORS",
+    "domain": "nld1rtp1-cdn.marketo.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1790850693.584176,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-031-16B5747651",
+    "cookie_name": "TapAd_TS",
+    "domain": "tapad.com",
+    "vendor_owner": "Tapad, Inc.",
+    "category_group": "Targeting & Cross-Device Sync",
+    "purpose_description": "Cross-device consumer identity synchronization",
+    "expiry": 1795429893.915763,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-032-1C8A06F2E3",
+    "cookie_name": "TapAd_DID",
+    "domain": "tapad.com",
+    "vendor_owner": "Tapad, Inc.",
+    "category_group": "Targeting & Cross-Device Sync",
+    "purpose_description": "Cross-device consumer identity synchronization",
+    "expiry": 1795429893.915849,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-033-25DC8AA2A1",
+    "cookie_name": "MUID",
+    "domain": "bing.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1823941894.863682,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-034-71BC15F988",
+    "cookie_name": "MR",
+    "domain": "c.bing.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1790850694.863818,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-035-6E77190BC3",
+    "cookie_name": "SRM_B",
+    "domain": "c.bing.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1823941894.863858,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-036-10E876B57A",
+    "cookie_name": "TapAd_3WAY_SYNCS",
+    "domain": "tapad.com",
+    "vendor_owner": "Tapad, Inc.",
+    "category_group": "Targeting & Cross-Device Sync",
+    "purpose_description": "Cross-device consumer identity synchronization",
+    "expiry": 1795429893.915882,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-037-1DC61352CC",
+    "cookie_name": "__obref",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1821781893.981613,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-038-0F3ABE804A",
+    "cookie_name": "_mkto_trk",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1824805893.984313,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-039-9F98B6C691",
+    "cookie_name": "_hjSessionUser_763128",
+    "domain": "miro.com",
+    "vendor_owner": "Hotjar Ltd",
+    "category_group": "Performance & Session Replay",
+    "purpose_description": "Stores hotjar user ID and session recording persistence",
+    "expiry": 1821781894,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-040-3A9D2AB495",
+    "cookie_name": "_hjSession_763128",
+    "domain": "miro.com",
+    "vendor_owner": "Hotjar Ltd",
+    "category_group": "Performance & Session Replay",
+    "purpose_description": "Stores hotjar user ID and session recording persistence",
+    "expiry": 1790247694,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-041-389D98C946",
+    "cookie_name": "SM",
+    "domain": "c.clarity.ms",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": -1,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-042-91D3059AF5",
+    "cookie_name": "MUID",
+    "domain": "clarity.ms",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1823941894.022686,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-043-61804508D5",
+    "cookie_name": "MR",
+    "domain": "c.clarity.ms",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1790850694.02275,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-044-A4D35050D6",
+    "cookie_name": "ANONCHK",
+    "domain": "c.clarity.ms",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1790246494.022781,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-045-CFC82DC67E",
+    "cookie_name": "trwv.uid",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1824805894.100957,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-046-269C4244AB",
+    "cookie_name": "trwsa.sid",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1790247694,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-047-B947B1C926",
+    "cookie_name": "li_sugr",
+    "domain": "linkedin.com",
+    "vendor_owner": "LinkedIn Corporation",
+    "category_group": "Targeting & Advertising / Analytics",
+    "purpose_description": "Stores LinkedIn ad conversion tracking and member IDs",
+    "expiry": 1798021894.592059,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-048-A73DAC25C6",
+    "cookie_name": "intercom-id-fsupkyat",
+    "domain": "miro.com",
+    "vendor_owner": "Intercom, Inc.",
+    "category_group": "Functional & Customer Support",
+    "purpose_description": "Maintains live chat identity and session state",
+    "expiry": 1813575894,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-049-1BBF093E51",
+    "cookie_name": "intercom-session-fsupkyat",
+    "domain": "miro.com",
+    "vendor_owner": "Intercom, Inc.",
+    "category_group": "Functional & Customer Support",
+    "purpose_description": "Maintains live chat identity and session state",
+    "expiry": 1790850694,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-050-D43AC9B9E3",
+    "cookie_name": "intercom-device-id-fsupkyat",
+    "domain": "miro.com",
+    "vendor_owner": "Intercom, Inc.",
+    "category_group": "Functional & Customer Support",
+    "purpose_description": "Maintains live chat identity and session state",
+    "expiry": 1813575894,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-051-2E6C3D0FE6",
+    "cookie_name": "_clsk",
+    "domain": "miro.com",
+    "vendor_owner": "Miro (First-Party)",
+    "category_group": "Functional & Session Management",
+    "purpose_description": "First-party application session, UI feature flags, and timers",
+    "expiry": 1790332294,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-052-C47CB1F2F3",
+    "cookie_name": "_gcl_au",
+    "domain": "miro.com",
+    "vendor_owner": "Google LLC (Analytics)",
+    "category_group": "Performance & Analytics",
+    "purpose_description": "Distinguishes unique users and tracks page sessions",
+    "expiry": 1798021894,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-053-5C7FBFABA1",
+    "cookie_name": "UserMatchHistory",
+    "domain": "linkedin.com",
+    "vendor_owner": "LinkedIn Corporation",
+    "category_group": "Targeting & Advertising / Analytics",
+    "purpose_description": "Stores LinkedIn ad conversion tracking and member IDs",
+    "expiry": 1792837894.592153,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-054-0FA27994D4",
+    "cookie_name": "AnalyticsSyncHistory",
+    "domain": "linkedin.com",
+    "vendor_owner": "LinkedIn Corporation",
+    "category_group": "Targeting & Advertising / Analytics",
+    "purpose_description": "Stores LinkedIn ad conversion tracking and member IDs",
+    "expiry": 1792837894.592187,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-055-4EA077D761",
+    "cookie_name": "_ga_FK1CGSZNDB",
+    "domain": "miro.com",
+    "vendor_owner": "Google LLC (Analytics)",
+    "category_group": "Performance & Analytics",
+    "purpose_description": "Distinguishes unique users and tracks page sessions",
+    "expiry": 1824805894.61458,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-056-D2832FE2EA",
+    "cookie_name": "_ga",
+    "domain": "miro.com",
+    "vendor_owner": "Google LLC (Analytics)",
+    "category_group": "Performance & Analytics",
+    "purpose_description": "Distinguishes unique users and tracks page sessions",
+    "expiry": 1824805894.615164,
+    "consent_state": "PRE_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-111-28C661A7CC",
+    "cookie_name": "AWSALBCORS",
+    "domain": "nld1rtp1.marketo.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": 1790850697.719107,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-112-528146B09C",
+    "cookie_name": "bscookie",
+    "domain": "www.linkedin.com",
+    "vendor_owner": "LinkedIn Corporation",
+    "category_group": "Targeting & Advertising / Analytics",
+    "purpose_description": "Stores LinkedIn ad conversion tracking and member IDs",
+    "expiry": 1821781897.99513,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-113-EFD6DA7DD7",
+    "cookie_name": "IDE",
+    "domain": "doubleclick.net",
+    "vendor_owner": "Google LLC (DoubleClick)",
+    "category_group": "Targeting & Advertising",
+    "purpose_description": "Cross-site ad retargeting and conversion attribution",
+    "expiry": 1824805898.224023,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-114-57315521EE",
+    "cookie_name": "__cf_bm",
+    "domain": "bzr.openai.com",
+    "vendor_owner": "Cloudflare, Inc.",
+    "category_group": "Strictly Necessary (Security & Bot Mitigation)",
+    "purpose_description": "Cloudflare security and rate-limiting",
+    "expiry": 1790247699.006751,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-115-5B99DE1EBB",
+    "cookie_name": "_cfuvid",
+    "domain": "bzr.openai.com",
+    "vendor_owner": "Third-Party / Unclassified",
+    "category_group": "Unclassified (Requires Legal Review)",
+    "purpose_description": "Unknown third-party identifier",
+    "expiry": -1,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-116-F1673A07B7",
+    "cookie_name": "__Secure-YNID",
+    "domain": "youtube.com",
+    "vendor_owner": "Google / YouTube",
+    "category_group": "Targeting & Functional Media",
+    "purpose_description": "Stores user video player preferences and tracks views",
+    "expiry": 1805797900.870248,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-117-CBAA4CDBBC",
+    "cookie_name": "YSC",
+    "domain": "youtube.com",
+    "vendor_owner": "Google / YouTube",
+    "category_group": "Targeting & Functional Media",
+    "purpose_description": "Stores user video player preferences and tracks views",
+    "expiry": -1,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-118-E2A1E0CD27",
+    "cookie_name": "VISITOR_INFO1_LIVE",
+    "domain": "youtube.com",
+    "vendor_owner": "Google / YouTube",
+    "category_group": "Targeting & Functional Media",
+    "purpose_description": "Stores user video player preferences and tracks views",
+    "expiry": 1805797900.87046,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-119-ECE370728A",
+    "cookie_name": "VISITOR_PRIVACY_METADATA",
+    "domain": "youtube.com",
+    "vendor_owner": "Google / YouTube",
+    "category_group": "Targeting & Functional Media",
+    "purpose_description": "Stores user video player preferences and tracks views",
+    "expiry": 1805797900.870502,
+    "consent_state": "POST_CONSENT"
+  },
+  {
+    "evidence_id": "EVD-WEB-120-F856B71750",
+    "cookie_name": "__Secure-ROLLOUT_TOKEN",
+    "domain": "youtube.com",
+    "vendor_owner": "Google / YouTube",
+    "category_group": "Targeting & Functional Media",
+    "purpose_description": "Stores user video player preferences and tracks views",
+    "expiry": 1805797900.87055,
+    "consent_state": "POST_CONSENT"
+  }
+]

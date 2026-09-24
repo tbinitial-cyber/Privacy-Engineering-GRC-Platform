@@ -1,0 +1,10 @@
+# 📋 STEP 4: TRANSPARENCY RECONCILIATION REPORT (MIRO LIVE AUDIT)
+### *Comparing Observed Technical Telemetry vs. Documented Reality (Privacy Notice & Subprocessor Register)*
+
+| Candidate Activity ID | Purpose Category | Reconciliation Status | Observed Third Parties | Legal Finding & Provenance |
+| :--- | :--- | :--- | :--- | :--- |
+| `CAND-ACT-E9A99D0D` | **advertising / marketing** | `UNDISCLOSED_VENDORS_PRESENT` | • <b>External Host / Third-Party</b>: <code>UNVERIFIED</code><br>• <b>Reddit Inc.</b>: <code>UNDISCLOSED</code><br>• <b>Spotify Advertising</b>: <code>UNDISCLOSED</code><br>• <b>Reddit Inc.</b>: <code>UNDISCLOSED</code> | <b>UNDISCLOSED_VENDORS_PRESENT</b><br>Evidence Count: 41 |
+| `CAND-ACT-975E87D5` | **analytics / product measurement** | `UNDISCLOSED_VENDORS_PRESENT` | • <b>LinkedIn Corporation</b>: <code>UNDISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code> | <b>UNDISCLOSED_VENDORS_PRESENT</b><br>Evidence Count: 50 |
+| `CAND-ACT-625DEF79` | **authentication / session management** | `UNDISCLOSED_VENDORS_PRESENT` | • <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code> | <b>UNDISCLOSED_VENDORS_PRESENT</b><br>Evidence Count: 141 |
+| `CAND-ACT-E01DEC6E` | **customer support** | `DISCLOSED_OR_INTERNAL` | • <b>Intercom, Inc.</b>: <code>DISCLOSED</code><br>• <b>Intercom, Inc.</b>: <code>DISCLOSED</code> | <b>DISCLOSED_OR_INTERNAL</b><br>Evidence Count: 2 |
+| `CAND-ACT-6BF44E43` | **purpose requires validation** | `UNDISCLOSED_VENDORS_PRESENT` | • <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code><br>• <b>Miro (First-Party)</b>: <code>DISCLOSED</code> | <b>UNDISCLOSED_VENDORS_PRESENT</b><br>Evidence Count: 67 |

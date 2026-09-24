@@ -1,0 +1,1690 @@
+[
+  {
+    "candidate_activity_id": "CAND-ACT-E9A99D0D",
+    "status": "CANDIDATE",
+    "candidate_purpose": "advertising / marketing",
+    "candidate_data_subjects": [
+      "website/app users or visitors (candidate; validate)"
+    ],
+    "candidate_data_elements": [],
+    "candidate_recipients": [
+      {
+        "kind": "URL",
+        "identifier": "https://fonts.gstatic.com/s/nanumpenscript/v25/daaDSSYiLGqEal3MvdA_FOL_3FkN6zn0aQ.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.redditstatic.com/ads/pixel.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://pixel.byspotify.com/ping.min.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://pixel-config.reddit.com/pixels/t2_mxmmhsm8/config"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://q.quora.com/_/ad/53e856fcda1c47449e8b93b2ca3b335e/pixel?tag=ViewContent&i=gtm&u=https%3A%2F%2Fmiro.com%2F"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://pixels.spotify.com/v1/config/6c9c6f82ff6e4e30b5e7a387360586c7"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://pixels.spotify.com/v1/ingest"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://miro-1-adswizz.attribution.adswizz.com/fire?pixelId=f58e2a61-d112-4059-b93d-eb13fa649ce2&type=sitevisit&subtype=PageVisit1&aw_0_req.gdpr=true&redirectURL=aHR0cHM6Ly9waXhlbC50YXBhZC5jb20vaWRzeW5jL2V4L3JlY2VpdmU_cGFydG5lcl9pZD0yOTk0JjwjaWYgcmVxdWVzdC5saXN0ZW5lcklkP21hdGNoZXMoJ1swLTlhLWZdezh9LVswLTlhLWZdezR9LVswLTlhLWZdezR9LVswLTlhLWZdezR9LVswLTlhLWZdezEyfScpPnBhcnRuZXJfdHlwZWRfZGlkPSU3QiUyMkhBUkRXQVJFX0FORFJPSURfQURfSUQlMjIlM0ElMjIke3JlcXVlc3QubGlzdGVuZXJJZH0lMjIlN0Q8I2Vsc2VpZiByZXF1ZXN0Lmxpc3RlbmVySWQ_bWF0Y2hlcygnWzAtOUEtRl17OH0tWzAtOUEtRl17NH0tWzAtOUEtRl17NH0tWzAtOUEtRl17NH0tWzAtOUEtRl17MTJ9Jyk-cGFydG5lcl90eXBlZF9kaWQ9JTdCJTIySEFSRFdBUkVfSURGQSUyMiUzQSUyMiR7cmVxdWVzdC5saXN0ZW5lcklkfSUyMiU3RDwjZWxzZT5wYXJ0bmVyX2RldmljZV9pZD0ke3JlcXVlc3QubGlzdGVuZXJJZCF9PC8jaWY-"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://pixel.tapad.com/idsync/ex/receive?partner_id=2994&partner_device_id=af1718a3f79e2ee48baca6c39cab8600"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://listen.audiohook.com/59a25d5b-ccd8-44fa-b919-d83e90068330/pixel.png?type=pageview"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://pixel.tapad.com/idsync/ex/receive/check?partner_id=2994&partner_device_id=af1718a3f79e2ee48baca6c39cab8600"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2C6165844&time=1790245893919&li_adsId=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageLoadId=596d5147-5739-4352-a28c-6e47b072de76&url=https%3A%2F%2Fmiro.com%2F&tm=gtmv2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2C6165844&time=1790245893918&li_adsId=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageLoadId=596d5147-5739-4352-a28c-6e47b072de76&url=https%3A%2F%2Fmiro.com%2F&tm=gtmv2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://bzrcdn.openai.com/pixel-config/v1/XKQra2M7vA8GMVNhwNE4vq.json"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2C6165844&time=1790245893919&li_adsId=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageLoadId=596d5147-5739-4352-a28c-6e47b072de76&url=https%3A%2F%2Fmiro.com%2F&tm=gtmv2&cookiesTest=true"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2C6165844&time=1790245893918&li_adsId=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageLoadId=596d5147-5739-4352-a28c-6e47b072de76&url=https%3A%2F%2Fmiro.com%2F&tm=gtmv2&cookiesTest=true"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&auid=791566007.1790245894&dt=AI%20Innovation%20Workspace%20%7C%20Miro&tid=AW-382441813&dl=https%3A%2F%2Fmiro.com%2F&scrsrc=www.googletagmanager.com&rnd=1506497902.1790245895&navt=n&npa=0&ep.ads_data_redaction=1&uid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&_tu=CA&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&tft=1790245894585&tfd=5117&tids=AW-382441813&fmt=8"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&auid=791566007.1790245894&dt=AI%20Innovation%20Workspace%20%7C%20Miro&tid=AW-726271593&dl=https%3A%2F%2Fmiro.com%2F&scrsrc=www.googletagmanager.com&rnd=1506497902.1790245895&navt=n&npa=0&ep.ads_data_redaction=1&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&_tu=CA&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&tft=1790245894583&tfd=5115&tids=AW-726271593&fmt=8"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&auid=791566007.1790245894&dt=AI%20Innovation%20Workspace%20%7C%20Miro&tid=AW-726271593&dl=https%3A%2F%2Fmiro.com%2F&scrsrc=www.googletagmanager.com&rnd=1506497902.1790245895&navt=n&npa=0&ep.ads_data_redaction=1&uid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&_tu=CA&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&tft=1790245894584&tfd=5116&tids=AW-726271593&fmt=8"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/rmkt/collect/726271593/?random=1790245893913&cv=11&fst=1790245893913&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=68&gcp=5"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/726271593/?random=1790245893913&cv=11&fst=1790245893913&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/382441813/?random=1790245893970&cv=11&fst=1790245893970&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=4"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/rmkt/collect/726271593/?random=1790245893913&cv=11&fst=1790245893913&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=68&gcp=5"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/rmkt/collect/382441813/?random=1790245893970&cv=11&fst=1790245893970&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=68&gcp=5"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/726271593/?random=1790245893913&cv=11&fst=1790245893913&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=4"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&is_vtc=1&cid=CAQS1AEAQM4h3Jr8aHKFf62d4RjiXRFvJebsEz1-5ULnRW4tM1JfHo1zlls-cSMuo_7WSFERYeHzqklNxv2OdS-JXo4mMHpNOBxmAtiv4LzoCDNdYc0B8kaTYZ3QLSCEqeTXIWF8fNU1vr1k3ArIoyrZQ5yjnBLBa0gIBMdq1ZZEtq442w9fOSUpFCdBx3W9YL2Jx5PehpWsgLfkPnQ4hgNsmMOFYA1XYVGxB_So4tOX1ZloMVX4DLQAmiGyP3QktuGTOFhMwmG_Bor0Qkg3rmGqMfESp9SSew&random=1875819084"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/pagead/1p-user-list/382441813/?random=1790245893970&cv=11&fst=1790244000000&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3BfcEosqA3TK9BwdlcG1gmV6egdTUo7tttW9GNHLvK6EU5ANL3E7LlTYrkbLUHdVOkmqlVI8gFNfkS0uPHSJ6mL05uJPJZljkl6uwaNZa06df8ZEccmws-47DCgYOAsVjWr-OVPi7_-AJJgg4xRYZwolWjHYnHaTSoOcHtNr8Bj_QBhrIgbKI7M0HhfXcfShrmLnYflVeKekSor11ddFtbg3jxElUMOtYgBffYgQ0mhLTaAPuNru-4tocb0d72AcqEAy4N5uuD_LIgIq6GJALg&random=53928640&rmt_tld=0&ipr=y"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.co.in/pagead/1p-user-list/382441813/?random=1790245893970&cv=11&fst=1790244000000&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3BfcEosqA3TK9BwdlcG1gmV6egdTUo7tttW9GNHLvK6EU5ANL3E7LlTYrkbLUHdVOkmqlVI8gFNfkS0uPHSJ6mL05uJPJZljkl6uwaNZa06df8ZEccmws-47DCgYOAsVjWr-OVPi7_-AJJgg4xRYZwolWjHYnHaTSoOcHtNr8Bj_QBhrIgbKI7M0HhfXcfShrmLnYflVeKekSor11ddFtbg3jxElUMOtYgBffYgQ0mhLTaAPuNru-4tocb0d72AcqEAy4N5uuD_LIgIq6GJALg&random=53928640&rmt_tld=1&ipr=y"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3NImXN3IVIW3Z3qZDbpRgc8G-IsUJSnh-tsFiJuuOIhytMYeM35dCc7MNSsUJthrANP0JTJK1uo3KVbtdi4-uEeSH6FbhnubSY6qMg8C83vPkW2ETuTU2zzkyJUXRr7ODOpyDyh3jRAMm4R6H4JUjRtmVmujOx_Fx0pROLc9J64ioj2HJ4o11PnM5ldSg_uueeesYsEQXPrKEjdMBzmrf7zaK52-FWcTDymN3BlgB8xIs4XL2_ggtafji_y06ehe2c-6jG5wvCDMHohxWTeR1A&random=4034572300&rmt_tld=0&ipr=y"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.co.in/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAQM4h3NImXN3IVIW3Z3qZDbpRgc8G-IsUJSnh-tsFiJuuOIhytMYeM35dCc7MNSsUJthrANP0JTJK1uo3KVbtdi4-uEeSH6FbhnubSY6qMg8C83vPkW2ETuTU2zzkyJUXRr7ODOpyDyh3jRAMm4R6H4JUjRtmVmujOx_Fx0pROLc9J64ioj2HJ4o11PnM5ldSg_uueeesYsEQXPrKEjdMBzmrf7zaK52-FWcTDymN3BlgB8xIs4XL2_ggtafji_y06ehe2c-6jG5wvCDMHohxWTeR1A&random=4034572300&rmt_tld=1&ipr=y"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.co.in/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&is_vtc=1&cid=CAQS1AEAQM4h3Jr8aHKFf62d4RjiXRFvJebsEz1-5ULnRW4tM1JfHo1zlls-cSMuo_7WSFERYeHzqklNxv2OdS-JXo4mMHpNOBxmAtiv4LzoCDNdYc0B8kaTYZ3QLSCEqeTXIWF8fNU1vr1k3ArIoyrZQ5yjnBLBa0gIBMdq1ZZEtq442w9fOSUpFCdBx3W9YL2Jx5PehpWsgLfkPnQ4hgNsmMOFYA1XYVGxB_So4tOX1ZloMVX4DLQAmiGyP3QktuGTOFhMwmG_Bor0Qkg3rmGqMfESp9SSew&random=1875819084&ipr=y"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googleadservices.com/pagead/conversion/382441813/?random=1790245908525&cv=11&fst=1790245908525&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&label=aLiRCNWxw44YENWyrrYB&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=GG_717069068.1790245909&oidsrc=3&ecsid2=950034205.1790245909&_tu=CBA&gcl_ctr=3~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googleadservices.com/ccm/conversion/726271593/?random=1790245908509&cv=11&fst=1790245908509&fmt=3&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&label=WiUtCPTe1qMYEOmMqNoC&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=GG_1543219183.1790245909&oidsrc=3&ecsid2=1341531747.1790245909&_tu=CBA&gcl_ctr=2~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googleadservices.com/ccm/conversion/382441813/?random=1790245908525&cv=11&fst=1790245908525&fmt=3&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&label=aLiRCNWxw44YENWyrrYB&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=GG_717069068.1790245909&oidsrc=3&ecsid2=950034205.1790245909&_tu=CBA&gcl_ctr=3~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://adservice.google.com/ddm/fls/z/dc_pre=CPmPgteBh5cDFQDHGwAdw_k1Lw;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=*;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0Dchm9om4QBjjydz8c9cG3S0fX9I8UjA;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://adservice.google.com/ddm/fls/z/dc_pre=CLSxh9eBh5cDFeeQrAIdLKoKcA;src=11345867;type=Web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=*;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CJA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_FdxTq-vwjUO1pbzAwGmjVtQ6TAR3fULLtQ;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://adservice.google.com/ddm/fls/z/dc_pre=CLTVg9eBh5cDFZqkrAIdekARrA;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=*;u1=https%3A%2F%2Fmiro.com%2F;u2=undefined;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_Oz1SacyibFkyWXrdAR8IZXjyjAhod6S6vg;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://adservice.google.com/ddm/fls/z/dc_pre=CI7rg9eBh5cDFbKUOAgdkE46Tg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=*;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90YuCLHKOn890pCXhj85ApGD_0hUVIbGFQ;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://googleads.g.doubleclick.net/pagead/id"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framer.com/bootstrap.2be9594b82a332855d9214dedf88f9315869af96.js"
+      }
+    ],
+    "candidate_systems": [
+      "miro_live_audit_run_001"
+    ],
+    "evidence_ids": [
+      "EVD-WEB-132-189F001166",
+      "EVD-WEB-196-10ACD72504",
+      "EVD-WEB-208-346CDA290E",
+      "EVD-WEB-214-3BF6F099B5",
+      "EVD-WEB-219-DA1B5378C4",
+      "EVD-WEB-221-843318A9F5",
+      "EVD-WEB-228-34CB1DBB54",
+      "EVD-WEB-236-4C6EC8E2FD",
+      "EVD-WEB-237-29D9071E95",
+      "EVD-WEB-243-42C85F2BF1",
+      "EVD-WEB-246-B78647D4EF",
+      "EVD-WEB-248-20B20677C1",
+      "EVD-WEB-253-0A0F74CA8E",
+      "EVD-WEB-254-6253988B21",
+      "EVD-WEB-255-5013D98C82",
+      "EVD-WEB-257-8DC3577B62",
+      "EVD-WEB-258-81C188C149",
+      "EVD-WEB-269-B2C0AE5DC2",
+      "EVD-WEB-270-069EE9A692",
+      "EVD-WEB-271-A6153B42B0",
+      "EVD-WEB-272-C29F1A3B02",
+      "EVD-WEB-274-9A708D0A35",
+      "EVD-WEB-275-5B0CBF9E00",
+      "EVD-WEB-276-63F4B2D6A3",
+      "EVD-WEB-277-A114C00303",
+      "EVD-WEB-278-6BB483E340",
+      "EVD-WEB-295-AF9622B13E",
+      "EVD-WEB-296-57165E239A",
+      "EVD-WEB-297-427B65685A",
+      "EVD-WEB-298-7885FD2030",
+      "EVD-WEB-299-22CE9A317D",
+      "EVD-WEB-301-A44660C443",
+      "EVD-WEB-326-E1E48A375B",
+      "EVD-WEB-327-0A2851117B",
+      "EVD-WEB-328-B5384DFD6B",
+      "EVD-WEB-337-977A9878BE",
+      "EVD-WEB-338-0DBE00498D",
+      "EVD-WEB-349-0728FE149C",
+      "EVD-WEB-350-5DB3888E5A",
+      "EVD-WEB-352-3ACEC6DC40",
+      "EVD-WEB-354-CB751A6201"
+    ],
+    "evidence_sources": [
+      "OWASP_ZAP"
+    ],
+    "confidence": 0.7,
+    "requires_validation": true,
+    "validation_questions": [
+      "What is the business purpose for this processing?",
+      "Who are the actual data subjects and relevant population?",
+      "Which data elements are actually processed, beyond what technical evidence reveals?",
+      "Who are the recipients/processors and under what contractual arrangement?",
+      "What is the applicable lawful basis or other legal justification?",
+      "What retention period applies?",
+      "Is this processing documented in the privacy notice, cookie policy, RoPA, contracts, or other governance records?",
+      "Does the processing require DPIA or other enhanced assessment under the applicable framework?"
+    ],
+    "legal_conclusion": null,
+    "notes": [
+      "Candidate activity generated from technical/documentary evidence.",
+      "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
+    ]
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-975E87D5",
+    "status": "CANDIDATE",
+    "candidate_purpose": "analytics / product measurement",
+    "candidate_data_subjects": [
+      "website/app users or visitors (candidate; validate)"
+    ],
+    "candidate_data_elements": [],
+    "candidate_recipients": [
+      {
+        "kind": "COOKIE",
+        "identifier": "AnalyticsSyncHistory@linkedin.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_ga_FK1CGSZNDB@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_ga@miro.com"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.miro.com/"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://miro.com/"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4gaVI.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/3aN9meKGAp4IQCF4QoQfjFiK0c.png?scale-down-to=512&width=1024&height=1024"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/aWqMa3w2fGAiOiCaAifW1vI5iZ0.png?scale-down-to=512&width=540&height=420"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/54fgARxfE1yaO0U194V6yowtGTQ.png?scale-down-to=512&width=540&height=420"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/13YODLlKdzJHwQgA6gj1Oy/f82b0a280d8b719a3398aee0bf2bf3aa/reddit-icon.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://snap.licdn.com/li.lms-analytics/insight.min.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.facebook.com/tr/"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://rtp-static.marketo.com/rtp/libs/ga-integration-2.0.5.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://12017650.fls.doubleclick.net/activityi;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0Dchm9om4QBjjydz8c9cG3S0fX9I8UjA;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googleadservices.com/pagead/conversion/972905154/?random=1790245893783&cv=11&fst=1790245893783&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=13&label=2XTACM_9p90BEMK19c8D&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&bttype=purchase&oid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&gcl_ctr=1~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&ept=5"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://11345867.fls.doubleclick.net/activityi;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3A%2F%2Fmiro.com%2F;u2=undefined;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_Oz1SacyibFkyWXrdAR8IZXjyjAhod6S6vg;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://11345867.fls.doubleclick.net/activityi;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90YuCLHKOn890pCXhj85ApGD_0hUVIbGFQ;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://11345867.fls.doubleclick.net/activityi;src=11345867;type=Web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CJA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_FdxTq-vwjUO1pbzAwGmjVtQ6TAR3fULLtQ;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://analytics.google.com/g/collect?v=2&tid=G-FK1CGSZNDB&gtm=45je69n0h2v892694657z8830648269za20gzb830648269zd830648269xf1&_p=1790245890291&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dNzMyY2.dYWJhMj&_eu=AAAAAGAC&_geo=1&_rdi=1&are=1&cid=1983538274.1790245895&frm=0&pscdl=noapi&rcb=19&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1790245893&sct=1&seg=0&dl=https%3A%2F%2Fmiro.com%2F&dt=AI%20Innovation%20Workspace%20%7C%20Miro&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&up.Experiment=%7B%22treatment%22%3A%22off%22%2C%22experiment_name%22%3A%22WEBSITE-2000-exp-29-google-one-tap-home-page-2%22%2C%22config%22%3Anull%7D&tfd=5148"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.co.in/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-FK1CGSZNDB&cid=1983538274.1790245895&gtm=45je69n0h2v892694657z8830648269za20gzb830648269zd830648269xf1&rcb=19&aip=1&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&z=72875735"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D1370905%252C6165844%26time%3D1790245893919%26li_adsId%3Daf5436a0-44de-4dd9-b787-b7ed44a3785a%26pageLoadId%3D596d5147-5739-4352-a28c-6e47b072de76%26url%3Dhttps%253A%252F%252Fmiro.com%252F%26tm%3Dgtmv2%26cookiesTest%3Dtrue%26liSync%3Dtrue"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D1370905%252C6165844%26time%3D1790245893918%26li_adsId%3Daf5436a0-44de-4dd9-b787-b7ed44a3785a%26pageLoadId%3D596d5147-5739-4352-a28c-6e47b072de76%26url%3Dhttps%253A%252F%252Fmiro.com%252F%26tm%3Dgtmv2%26cookiesTest%3Dtrue%26liSync%3Dtrue"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://12017650.fls.doubleclick.net/activityi;dc_pre=CPmPgteBh5cDFQDHGwAdw_k1Lw;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0Dchm9om4QBjjydz8c9cG3S0fX9I8UjA;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/972905154/?random=233208276&cv=11&fst=1790245893783&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=13&label=2XTACM_9p90BEMK19c8D&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&gcl_ctr=1~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&ept=5&ct_cookie_present=false&eoid=CloKEQjwlNPVBhCV-9XZlOW6jN0BEkUAS4gdAA7xZWB1EUpjSO2fuvAJsK1II-bLVCexKzwnDmxgw7oQc7TZcGPA3KQg2mBM_RkVbramfHAKxTgyFo6K7p_1kEnw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQIIy-GxAkoebm90LW5hdmlnYXRpb24tc291cmNlLCB0cmlnZ2VyWgMKAQFiAwoBAw&cerd=CgyDsL4tueu-LZ3ptzg&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGliOxyLQx40W82iJ8Ti-AzRNE8qnXZayrdo&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWiSjEYWEyY9aZW8jy--lEdBmU3htHlkTlJ8qJFQerjq_TjTS1UtYERoCVok&pscrd=IhMIjaCC14GHlwMVBiWDAx2VtxxuOhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOZGh5dDgtalI0LUNOaF9XWVhrZHZ0U2pwLWR4c0ZnbzBjM0g4SUV4ZUVBSV9ncXliUDNkS0hjegwICWIICAAQABgAIAA"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://11345867.fls.doubleclick.net/activityi;dc_pre=CLTVg9eBh5cDFZqkrAIdekARrA;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3A%2F%2Fmiro.com%2F;u2=undefined;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_Oz1SacyibFkyWXrdAR8IZXjyjAhod6S6vg;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://nld1rtp1.marketo.com/gw1/ga/sgm?sid=realtimeboard-1790245894101-3cae35b1&1790245897394"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://11345867.fls.doubleclick.net/activityi;dc_pre=CI7rg9eBh5cDFbKUOAgdkE46Tg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90YuCLHKOn890pCXhj85ApGD_0hUVIbGFQ;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://11345867.fls.doubleclick.net/activityi;dc_pre=CLSxh9eBh5cDFeeQrAIdLKoKcA;src=11345867;type=Web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CJA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_FdxTq-vwjUO1pbzAwGmjVtQ6TAR3fULLtQ;_dc_test=1;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2C6165844&time=1790245893919&li_adsId=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageLoadId=596d5147-5739-4352-a28c-6e47b072de76&url=https%3A%2F%2Fmiro.com%2F&tm=gtmv2&cookiesTest=true&liSync=true"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2C6165844&time=1790245893918&li_adsId=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageLoadId=596d5147-5739-4352-a28c-6e47b072de76&url=https%3A%2F%2Fmiro.com%2F&tm=gtmv2&cookiesTest=true&liSync=true"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/pagead/1p-conversion/972905154/?random=233208276&cv=11&fst=1790245893783&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=13&label=2XTACM_9p90BEMK19c8D&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&gcl_ctr=1~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&ept=5&ct_cookie_present=false&eoid=CloKEQjwlNPVBhCV-9XZlOW6jN0BEkUAS4gdAA7xZWB1EUpjSO2fuvAJsK1II-bLVCexKzwnDmxgw7oQc7TZcGPA3KQg2mBM_RkVbramfHAKxTgyFo6K7p_1kEnw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQIIy-GxAkoebm90LW5hdmlnYXRpb24tc291cmNlLCB0cmlnZ2VyWgMKAQFiAwoBAw&cerd=CgyDsL4tueu-LZ3ptzg&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWiSjEYWEyY9aZW8jy--lEdBmU3htHlkTlJ8qJFQerjq_TjTS1UtYERoCVok&pscrd=IhMIjaCC14GHlwMVBiWDAx2VtxxuOhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOZGh5dDgtalI0LUNOaF9XWVhrZHZ0U2pwLWR4c0ZnbzBjM0g4SUV4ZUVBSV9ncXliUDNkS0hjegwICWIICAAQABgAIAA&is_vtc=1&cid=CAQS1AEAQM4h3LL9ZM528BcIfmj_Q9XFipHbMLuWGjRce5i4MglCh07dtFr4i4aEB4iRkobtUchZw7pP21xpkpcFKALjsEIGVY4R_5ETagMdY38ov-UVs-mo-aaYEDB0bC_a2X7isWqAgNm_QWKZdHq2yCcnKlAC6aw25Ww-itkH9lPhJULnQuzdK2uXj3MH6DdRyPpPxzn2eCdLIjpmNKKegFex4-PJARS9RLHIJgWfhDGIc52hnOeOAdcPH5HX-Zl6XbYLldvzduO3-t64QrLbkHeVS4dZ0w&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGlhEq9TSHdp9OKOG-JIIvZ4QcTjB45jOLW8&random=3002253057"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/embed/3ODE5xkD7Uo?v=3ODE5xkD7Uo&t=1s&start=1s&iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&enablejsapi=1"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.co.in/pagead/1p-conversion/972905154/?random=233208276&cv=11&fst=1790245893783&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=13&label=2XTACM_9p90BEMK19c8D&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&gcl_ctr=1~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&ept=5&ct_cookie_present=false&eoid=CloKEQjwlNPVBhCV-9XZlOW6jN0BEkUAS4gdAA7xZWB1EUpjSO2fuvAJsK1II-bLVCexKzwnDmxgw7oQc7TZcGPA3KQg2mBM_RkVbramfHAKxTgyFo6K7p_1kEnw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQIIy-GxAkoebm90LW5hdmlnYXRpb24tc291cmNlLCB0cmlnZ2VyWgMKAQFiAwoBAw&cerd=CgyDsL4tueu-LZ3ptzg&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWiSjEYWEyY9aZW8jy--lEdBmU3htHlkTlJ8qJFQerjq_TjTS1UtYERoCVok&is_vtc=1&cid=CAQS1AEAQM4h3LL9ZM528BcIfmj_Q9XFipHbMLuWGjRce5i4MglCh07dtFr4i4aEB4iRkobtUchZw7pP21xpkpcFKALjsEIGVY4R_5ETagMdY38ov-UVs-mo-aaYEDB0bC_a2X7isWqAgNm_QWKZdHq2yCcnKlAC6aw25Ww-itkH9lPhJULnQuzdK2uXj3MH6DdRyPpPxzn2eCdLIjpmNKKegFex4-PJARS9RLHIJgWfhDGIc52hnOeOAdcPH5HX-Zl6XbYLldvzduO3-t64QrLbkHeVS4dZ0w&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGlhEq9TSHdp9OKOG-JIIvZ4QcTjB45jOLW8&random=3002253057&ipr=y&pscrd=IhMIjaCC14GHlwMVBiWDAx2VtxxuOhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOZGh5dDgtalI0LUNOaF9XWVhrZHZ0U2pwLWR4c0ZnbzBjM0g4SUV4ZUVBSV9ncXliUDNkS0hjegwICWIICAAQABgAIACCAQ9wAYgBAfEBhjdld_FE3D8"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googleadservices.com/pagead/conversion/726271593/?random=1790245908509&cv=11&fst=1790245908509&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&label=WiUtCPTe1qMYEOmMqNoC&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=GG_1543219183.1790245909&oidsrc=3&ecsid2=1341531747.1790245909&_tu=CBA&gcl_ctr=2~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/382441813/?random=643810167&cv=11&fst=1790245908525&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&label=aLiRCNWxw44YENWyrrYB&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=950034205.1790245909&_tu=CBA&gcl_ctr=3~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkcKEQjwlNPVBhCV-9XZlOW6jN0BEjIAS4gdAH0JK9EinbjlOgDjKd7nChbCxsYe6AKAJojgRxOIGWAJzSKcOdKxHY0qcCmfvvD_BwE&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQJKFHRyaWdnZXI9ZXZlbnQtc291cmNlWgMKAQFiAwoBAw&cerd=Cgi5674tnem3OA&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGlgRh6zydLm2_OWE0esn8cXGKw0X9r7_VBY&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWix3i7VDNKiFBEGrHoBrSTIk_UlI5t5HwKjCSw401T3liSaLjZxxhhoCANk&pscrd=IhMIreqb3IGHlwMVyRCDAx1KPQy-OhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOUkQxRGVtamVvVkpIVjIwVGF3VXR2QTU2ck9aR1VTV19oU0pQMjRJMl93TWI2SVdHemNKWVJRegwICWIICAAQABgAIAA"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/726271593/?random=484120432&cv=11&fst=1790245908509&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&label=WiUtCPTe1qMYEOmMqNoC&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=1341531747.1790245909&_tu=CBA&gcl_ctr=2~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkgKEQjwlNPVBhCV-9XZlOW6jN0BEjMAS4gdAJd49p_9ObljDzx_NeaGoHNtXXsdMJHkFJs-kyxsMO2kNaCdKhH_0GwOJlUoDOnw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQJKJnRyaWdnZXI9bmF2aWdhdGlvbi1zb3VyY2U7ZXZlbnQtc291cmNlWgMKAQFiAwoBAw&cerd=ChCCsL4tueu-Ldftvi2d6bc4&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGljQ4hkdv1c3XY2YLeq6kP3rkmPOG6RAq6I&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWvH-QyXAJJK_7E-VG4-QzBorXmWxG4klcwt5eZyxtETj4rsJkI78tBoCokE&pscrd=IhMI_Pue3IGHlwMVAJ9mAh1OxBItOhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOZUFTd2RsejFlc1BRTE9HaXFIYW93ZklsWEU1UGFfZVR1Z0dsLWFDU1RhWEtDTDdlc1M5S19JegwICWIICAAQABgAIAA"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/pagead/1p-conversion/382441813/?random=643810167&cv=11&fst=1790245908525&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&label=aLiRCNWxw44YENWyrrYB&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=950034205.1790245909&_tu=CBA&gcl_ctr=3~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkcKEQjwlNPVBhCV-9XZlOW6jN0BEjIAS4gdAH0JK9EinbjlOgDjKd7nChbCxsYe6AKAJojgRxOIGWAJzSKcOdKxHY0qcCmfvvD_BwE&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQJKFHRyaWdnZXI9ZXZlbnQtc291cmNlWgMKAQFiAwoBAw&cerd=Cgi5674tnem3OA&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWix3i7VDNKiFBEGrHoBrSTIk_UlI5t5HwKjCSw401T3liSaLjZxxhhoCANk&pscrd=IhMIreqb3IGHlwMVyRCDAx1KPQy-OhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOUkQxRGVtamVvVkpIVjIwVGF3VXR2QTU2ck9aR1VTV19oU0pQMjRJMl93TWI2SVdHemNKWVJRegwICWIICAAQABgAIAA&is_vtc=1&cid=CAQS4gEAQM4h3G65ttGVjdUJeJaY5fX23oMdCuV0QeIhUZN2ZbGENevmbDqYtPpFY4esohL-mcvbQqouT7zfzV8RL5LkrkbuXTUDsyGqAGy_DtucnzIrkiJLT_i8xQcPU5md0Yi1zrrmmkVKEBEQgWByAuFnRwHCYh8gHIODPCjObIfEwuj6PSkFEFVltvqI3JCIVbgbwzSV2syS8gsEqei1NhyMjpeOKrsT5a6fJpvalXNh8TnopQu0Dy0a1vQxluqhH2UhhxuTOqNkbad3h78NDY1WiHKy4jMHVEPd4QI-cO5HTDxe&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGlgwShG79q4ZHTEQKD50rv4CQmKmmGAXze8&random=942532309"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/pagead/1p-conversion/726271593/?random=484120432&cv=11&fst=1790245908509&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&label=WiUtCPTe1qMYEOmMqNoC&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=1341531747.1790245909&_tu=CBA&gcl_ctr=2~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkgKEQjwlNPVBhCV-9XZlOW6jN0BEjMAS4gdAJd49p_9ObljDzx_NeaGoHNtXXsdMJHkFJs-kyxsMO2kNaCdKhH_0GwOJlUoDOnw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQJKJnRyaWdnZXI9bmF2aWdhdGlvbi1zb3VyY2U7ZXZlbnQtc291cmNlWgMKAQFiAwoBAw&cerd=ChCCsL4tueu-Ldftvi2d6bc4&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWvH-QyXAJJK_7E-VG4-QzBorXmWxG4klcwt5eZyxtETj4rsJkI78tBoCokE&pscrd=IhMI_Pue3IGHlwMVAJ9mAh1OxBItOhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOZUFTd2RsejFlc1BRTE9HaXFIYW93ZklsWEU1UGFfZVR1Z0dsLWFDU1RhWEtDTDdlc1M5S19JegwICWIICAAQABgAIAA&is_vtc=1&cid=CAQS4gEAQM4h3AbqbS4JValOr0QKwzggu7N6LobEnzIRSAiyQZg2uHDueth87L1C_ZZCsIB21OAiC5Cu-TeNjEIJcCBLAwixqOc-Aajr61u_1BCTKhXX9d-eXncahwxCx0Vq03H2vkpbNfwzDOMenmWCAyhiQ2FT1WLG5FzKzlQTgAuw2RxOgHfdbBE7GlsWXO07IRtHqeV5dpLi1ObD8aTrXzp1EJv5rF-RL5N8eCON4t27Zndf-JBkqyBNkKxZ8lbcsAsdeeKQqX6TN9PSKCNuCLPTpni0ZK5OCCQfKgGekYhcFNqG&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGljS4i6SYh_viJvnk2WIGxUHW95MQpimC6w&random=3309448944"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.co.in/pagead/1p-conversion/382441813/?random=643810167&cv=11&fst=1790245908525&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&label=aLiRCNWxw44YENWyrrYB&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=950034205.1790245909&_tu=CBA&gcl_ctr=3~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkcKEQjwlNPVBhCV-9XZlOW6jN0BEjIAS4gdAH0JK9EinbjlOgDjKd7nChbCxsYe6AKAJojgRxOIGWAJzSKcOdKxHY0qcCmfvvD_BwE&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQJKFHRyaWdnZXI9ZXZlbnQtc291cmNlWgMKAQFiAwoBAw&cerd=Cgi5674tnem3OA&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWix3i7VDNKiFBEGrHoBrSTIk_UlI5t5HwKjCSw401T3liSaLjZxxhhoCANk&is_vtc=1&cid=CAQS4gEAQM4h3G65ttGVjdUJeJaY5fX23oMdCuV0QeIhUZN2ZbGENevmbDqYtPpFY4esohL-mcvbQqouT7zfzV8RL5LkrkbuXTUDsyGqAGy_DtucnzIrkiJLT_i8xQcPU5md0Yi1zrrmmkVKEBEQgWByAuFnRwHCYh8gHIODPCjObIfEwuj6PSkFEFVltvqI3JCIVbgbwzSV2syS8gsEqei1NhyMjpeOKrsT5a6fJpvalXNh8TnopQu0Dy0a1vQxluqhH2UhhxuTOqNkbad3h78NDY1WiHKy4jMHVEPd4QI-cO5HTDxe&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGlgwShG79q4ZHTEQKD50rv4CQmKmmGAXze8&random=942532309&ipr=y&pscrd=IhMIreqb3IGHlwMVyRCDAx1KPQy-OhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOUkQxRGVtamVvVkpIVjIwVGF3VXR2QTU2ck9aR1VTV19oU0pQMjRJMl93TWI2SVdHemNKWVJRegwICWIICAAQABgAIACCAQ9wAYgBAfEBhjdld_FE3D8"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.co.in/pagead/1p-conversion/726271593/?random=484120432&cv=11&fst=1790245908509&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&label=WiUtCPTe1qMYEOmMqNoC&capi=1&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=1341531747.1790245909&_tu=CBA&gcl_ctr=2~0~0~0&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=CkgKEQjwlNPVBhCV-9XZlOW6jN0BEjMAS4gdAJd49p_9ObljDzx_NeaGoHNtXXsdMJHkFJs-kyxsMO2kNaCdKhH_0GwOJlUoDOnw_wcB&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCNvcsQIIh9uxAgjTxbECCOvMsQII7c6xAgjVz7ECCPTasQII4uqxAgjo7rECCJLrsQIIyeOxAgiX1LECCMnbsQIIzeaxAgiO57ECCKbdsQIIsN6xAgiA27ECCM3hsQJKJnRyaWdnZXI9bmF2aWdhdGlvbi1zb3VyY2U7ZXZlbnQtc291cmNlWgMKAQFiAwoBAw&cerd=ChCCsL4tueu-Ldftvi2d6bc4&fsk=ChAI8JTT1QYQ366klvnnoeUNEiwASmeOWvH-QyXAJJK_7E-VG4-QzBorXmWxG4klcwt5eZyxtETj4rsJkI78tBoCokE&is_vtc=1&cid=CAQS4gEAQM4h3AbqbS4JValOr0QKwzggu7N6LobEnzIRSAiyQZg2uHDueth87L1C_ZZCsIB21OAiC5Cu-TeNjEIJcCBLAwixqOc-Aajr61u_1BCTKhXX9d-eXncahwxCx0Vq03H2vkpbNfwzDOMenmWCAyhiQ2FT1WLG5FzKzlQTgAuw2RxOgHfdbBE7GlsWXO07IRtHqeV5dpLi1ObD8aTrXzp1EJv5rF-RL5N8eCON4t27Zndf-JBkqyBNkKxZ8lbcsAsdeeKQqX6TN9PSKCNuCLPTpni0ZK5OCCQfKgGekYhcFNqG&eitems=ChEI8JTT1QYQm6aJgI-75MqeARIdAOcLGljS4i6SYh_viJvnk2WIGxUHW95MQpimC6w&random=3309448944&ipr=y&pscrd=IhMI_Pue3IGHlwMVAJ9mAh1OxBItOhFodHRwczovL21pcm8uY29tL0JXQ2hBSThKVFQxUVlRb1lLWm1ZSDcyLTE1RWkwQW9qR1FOZUFTd2RsejFlc1BRTE9HaXFIYW93ZklsWEU1UGFfZVR1Z0dsLWFDU1RhWEtDTDdlc1M5S19JegwICWIICAAQABgAIACCARNwAYgBAeIBAQLxAYY3ZXfxRNw_"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framer.com/edit/beta?framerSiteId=e581c7ce765b3408a75d0214f5780cf058394ce4a71192ea92c1fd723a9b858f&source=miro.com&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%2C%22onPageRichTextBlockSelection%22%3Atrue%7D&loadStart=1790245891606"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/s/player/7460dd14/www-player.css"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/s/_/ytembeds/_/ss/k=ytembeds.base.fT0ZinoGScs.L.W.O/am=AAAAQA/d=1/br=1/rs=AGKMywFYOIptQ4_KhxKBBg_Y6NdRJzDg7A/m=root,base"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.t41Mjidspfg.2021.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywFL7cGmORvk8UiYKVD3Vfe_EsMkZw/m=root,base"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/s/player/7460dd14/player_embed_es6.vflset/en_US/base.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.t41Mjidspfg.2021.O/ck=ytembeds.base.fT0ZinoGScs.L.W.O/am=AAAAQA/d=1/exm=base,root/excm=base,root/ed=1/br=1/rs=AGKMywEU_RTCxaHeL2dLsQJGkTMaBQ3WBg/m=r78Drb"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.t41Mjidspfg.2021.O/ck=ytembeds.base.fT0ZinoGScs.L.W.O/am=AAAAQA/d=1/exm=base,r78Drb,root/excm=base,root/ed=1/br=1/rs=AGKMywEU_RTCxaHeL2dLsQJGkTMaBQ3WBg/m=cwx9N"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/generate_204?SPPwMg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.youtube.com/youtubei/v1/log_event?alt=json"
+      }
+    ],
+    "candidate_systems": [
+      "miro_live_audit_run_001"
+    ],
+    "evidence_ids": [
+      "EVD-WEB-054-0FA27994D4",
+      "EVD-WEB-055-4EA077D761",
+      "EVD-WEB-056-D2832FE2EA",
+      "EVD-WEB-123-A03CDD22ED",
+      "EVD-WEB-124-F704458C75",
+      "EVD-WEB-131-3BEF95A7D9",
+      "EVD-WEB-136-5107B9678E",
+      "EVD-WEB-143-E4B06501AB",
+      "EVD-WEB-144-6D1B187930",
+      "EVD-WEB-156-B09A9B66D3",
+      "EVD-WEB-197-AF640EF7D5",
+      "EVD-WEB-223-26F43F99CC",
+      "EVD-WEB-227-A6966FDF31",
+      "EVD-WEB-260-8B64324BA4",
+      "EVD-WEB-265-7052EACC36",
+      "EVD-WEB-266-FEFBDC2B55",
+      "EVD-WEB-268-792A892433",
+      "EVD-WEB-273-E5E7012BE1",
+      "EVD-WEB-279-EA92991DCB",
+      "EVD-WEB-280-963916BBEF",
+      "EVD-WEB-281-ACD4CFEB09",
+      "EVD-WEB-285-400933B68C",
+      "EVD-WEB-286-038FB8CB6F",
+      "EVD-WEB-289-4ACBDB8BDF",
+      "EVD-WEB-290-306B7BA97C",
+      "EVD-WEB-291-4B2F577267",
+      "EVD-WEB-292-768AEEBED8",
+      "EVD-WEB-294-250F520AD0",
+      "EVD-WEB-300-B00ABF10FD",
+      "EVD-WEB-303-752EAECF17",
+      "EVD-WEB-304-CEC93C8720",
+      "EVD-WEB-306-232EE2E6E1",
+      "EVD-WEB-310-47AAF303D2",
+      "EVD-WEB-311-C945FD4C8C",
+      "EVD-WEB-325-8F562435B2",
+      "EVD-WEB-329-75468B3A3D",
+      "EVD-WEB-330-CED75F64C1",
+      "EVD-WEB-331-17C09A3338",
+      "EVD-WEB-332-80C1C23A02",
+      "EVD-WEB-333-1551E94FCA",
+      "EVD-WEB-334-3CB336736D",
+      "EVD-WEB-336-32FC15E3A3",
+      "EVD-WEB-339-F451256F01",
+      "EVD-WEB-340-72A95E2F7F",
+      "EVD-WEB-342-0612BAD2EB",
+      "EVD-WEB-348-DD3C006BBD",
+      "EVD-WEB-353-42091BCD84",
+      "EVD-WEB-355-BFAB95D1D1",
+      "EVD-WEB-357-52DDF9B048",
+      "EVD-WEB-361-106AC6CF71"
+    ],
+    "evidence_sources": [
+      "COOKIE_SCAN",
+      "OWASP_ZAP"
+    ],
+    "confidence": 0.75,
+    "requires_validation": true,
+    "validation_questions": [
+      "What is the business purpose for this processing?",
+      "Who are the actual data subjects and relevant population?",
+      "Which data elements are actually processed, beyond what technical evidence reveals?",
+      "Who are the recipients/processors and under what contractual arrangement?",
+      "What is the applicable lawful basis or other legal justification?",
+      "What retention period applies?",
+      "Is this processing documented in the privacy notice, cookie policy, RoPA, contracts, or other governance records?",
+      "Does the processing require DPIA or other enhanced assessment under the applicable framework?"
+    ],
+    "legal_conclusion": null,
+    "notes": [
+      "Candidate activity generated from technical/documentary evidence.",
+      "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
+    ]
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-625DEF79",
+    "status": "CANDIDATE",
+    "candidate_purpose": "authentication / session management",
+    "candidate_data_subjects": [
+      "website/app users or visitors (candidate; validate)"
+    ],
+    "candidate_data_elements": [],
+    "candidate_recipients": [
+      {
+        "kind": "COOKIE",
+        "identifier": "sessionTimer@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "signals-sdk-session-id@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_hjSessionUser_763128@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_hjSession_763128@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "intercom-session-fsupkyat@miro.com"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:ital,wght@0,400&display=swap"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/assets/IWIJ9TEwVer0sH7Pi9PuwiGLfPI.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A99Y41P6zHtY.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://events.framer.com/script?v=2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAjBO9a6VI.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/assets/BEFj6qqjMwjP8zopZ1v70Ptegeg.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/TUnQ4cxR4MCJxGldUuwR6dA.png?scale-down-to=1024&width=5750&height=3234"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/Q4muRV2qZnqhXV9FRszqe6yVh0.png?scale-down-to=1024&width=1081&height=1441"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/i7DJrlQt76AYLhaXr2qZ4A29hN8.jpg?scale-down-to=512&width=2048&height=2048"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/assets/ynxJLpJmNmhxBFJOqRq8uP2oWE.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/assets/EpLn9agwfi64Kvr9InHDUx8Ufw.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googletagmanager.com/gtm.js?id=GTM-N5MCLT8"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/nDl7hMgk3lz5P8pMtAuj1ud7Hy8.png?scale-down-to=512&width=540&height=420"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/sKiwlC23bqmQuePnZcGOiejWtHU.png?scale-down-to=512&width=540&height=420"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/9UpWE0ntDpz31gYdqHX0PnWoZo.png?scale-down-to=512&width=540&height=420"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/jE9EEchZdIvXR2nxDldppRlf4UQ.png?scale-down-to=512&width=540&height=420"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/69nUaLt9qbx2mYs7V5xU3u/5226904f0421943d938edfc2c6d61303/ISO_Badge__1_.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/1WIOsC8qZrgMQ8MrD8bcrS/cea1792e288c5092864710e706116a10/ISO_Badge.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/2jrk9yUWDGCZgFi8XpBqCo/0f5e372412c0bc49afce1e09f74a547e/ISO_Badge__2_.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/3TuENhmSygpLnIFoErQBRy/7b37607d0d6768a519e79affe97d4083/GDPR.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/5Ki053lYq38fYIHu5AOcpr/0992cf7cf88feac09b632f0e676dc346/G2__1_.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/2GnazBVVWJ8guM2zvYNMCY/3347d25a4f0c602eac02187e542b746b/G2.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/4uhvW0Mixrt27kr2DdJeur/018f560db325613d3c14316c957aa74c/icon-social-x.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/5gJmvJDndMVOJ3FKTdaVkO/e6d727001c80b9f60a568196d88adf7b/icon-social-facebook.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/lBk1HpkxVPRgmlIHinigL/9bb251edbca75b02e7d223da8e3f34c1/icon-social-youtube.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/4otvnm6zLR7ji9eVZY69Zf/c2c9e910c14e8fcdeee302ccfa45c341/icon-social-linkedin.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/32kQ9JkxEseUIjSm18OLKy/3263ebe3fe9c1ab1c992827edebc83a9/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917_3.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/7Lryw2nfTo2luGgMD2TnoY/4b56104f1efaa82f79886cf1d94408f2/google-play-badge.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/3O5MzR09mczhdTlOaVuH3W/017858b4cade63f7af52746d77249edc/TR.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://images.ctfassets.net/x3tur5ylnyf2/1oClmO2hBbCTR7T0ArtHoP/0d4dfe4eab808821bb4e7376ebea2634/icon-social-instagram.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/react.DoA55duw.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/rolldown-runtime.Dh6celcD.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/Interactive_animated_gradient.BchoQ0J_.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/script_main.BMANVIVx.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/FLgq0w7ZOK-Hka8VjUHuTXbl2yhxoRVLGCvHD52oZ50.F5Caf4Is.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/motion.00bxZqWM.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/T-PdX224_Kp9O52vyjM8dGW3WXEM085y5SsF9XoZfZs.DK6N-l7v.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/framer.CXS9Z_P9.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/otSDKStub.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://mirostatic.com/website/static/production-eu/framer-code-components/web-tracker.esm.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/shared-lib.BK9Q3u9e.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://i.ytimg.com/vi_webp/3ODE5xkD7Uo/maxresdefault.webp"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://mirostatic.com/website/static/production-eu/framer-code-components/shared/package-BP3D_YLp.esm.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://mirostatic.com/website/services-provider-scripts/optanonWrapper.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framer.com/edit/beta/init.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.65.0/dist/dotlottie-player.wasm"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/4133a0ef-6999-461d-909d-24f2b05bbc15.json"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://static-website.miro.com/miro-site-lp-build-assets/assets/styles/one-trust-cookie-banner.css"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://miro.com/api/ff/?apiKey=QoFZgKza2g7SsIrwVd7wP0ikoeFLzAhw&flag=WEBSITE-2000-exp-29-google-one-tap-home-page-2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://app.framerstatic.com/chunk-BAHUFDKX.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/assets/gfDxRRdfaj3vg5hbEAd2nnwbLE.lottie"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/otBannerSdk.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://miro.com/api/ff/?apiKey=QoFZgKza2g7SsIrwVd7wP0ikoeFLzAhw&holdout=1"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://eventhub.eu01.miro.com/api/stream/v1/t"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://eventhub.eu01.miro.com/api/stream/v1/p"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/0198743b-bcb3-7a9f-8e16-2bfa133a246c/en.json"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/otFlat.json"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/v2/otPcCenter.json"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/otCommonStyles.css"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://static.hotjar.com/c/hotjar-763128.js?sv=7"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://a.quora.com/qevents.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.pdst.fm/ping.min.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/logos/static/ot_company_logo.png"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://widget.intercom.io/widget/fsupkyat"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://tracking.g2crowd.com/attribution_tracking/conversions/3946.js?p=https://miro.com/&e="
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://trk.techtarget.com/tracking.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://script.getreditus.com/v2.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://events.framer.com/anonymous"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://bzrcdn.openai.com/sdk/oaiq.min.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://script.hotjar.com/modules.e762be2b6b709245aabb.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://connect.facebook.net/signals/config/1788119838315928?v=2.9.408&r=stable&domain=miro.com&hme=f9ad993bedcdbb3fffd47532e189463ba18afe816a0bd364070ce559e4a6ac26&ex_m=117%2C239%2C169%2C27%2C81%2C82%2C160%2C77%2C76%2C11%2C179%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C174%2C181%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C161%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C162%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C164%2C163%2C165%2C156%2C154%2C30%2C42%2C66%2C122%2C176%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C175%2C178%2C41%2C56%2C126%2C54%2C183%2C109%2C182%2C208%2C253%2C83%2C267%2C266%2C265%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C170%2C85%2C173%2C171%2C172%2C57%2C67%2C136%2C19%2C177%2C52%2C316%2C317%2C318%2C315%2C331%2C356%2C246%2C235%2C69%2C236%2C234%2C359%2C350%2C59%2C247%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C71%2C166%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C180%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C185%2C186%2C105%2C106%2C9%2C115%2C184%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C167%2C50%2C158%2C0%2C93%2C151%2C155%2C168%2C45%2C121%2C13%2C187"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://tag.clearbitscripts.com/v1/pk_ffc0d0810226847786b05e7193234567/tags.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://bat.bing.com/bat.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://alb.reddit.com/rp"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://js.intercomcdn.com/vendor-modern.ec66fae1.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://js.intercomcdn.com/frame-modern.b2eb5b57.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.cr-relay.com/v1/site/4a3f2aa6-fd84-4177-aea4-c2fe259a8256/signals.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://bat.bing.com/p/action/5798164.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://scripts.clarity.ms/0.8.70/clarity.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://c.clarity.ms/c.gif"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googletagmanager.com/gtag/js?id=G-FK1CGSZNDB&cx=c&gtm=4e69n0h2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://bat.bing.com/actionp/0?ti=5798164&tm=gtm002&Ver=2&mid=cbd5a884-ceff-4b94-8930-5f0a9ad605d8&bo=1&evt=consent&src=update&cdb=AQET&asc=G"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://bat.bing.com/action/0?ti=5798164&tm=gtm002&Ver=2&mid=cbd5a884-ceff-4b94-8930-5f0a9ad605d8&bo=2&sid=1cd60780b80311f1a547814dcf6dcad2&vid=1cd643d0b80311f1a162650438fff424&vids=1&msclkid=N&tpp=1&uach=pv%3D19.0.0&pi=918639831&lg=en-US&sw=1280&sh=720&sc=24&nwd=1&tl=AI%20Innovation%20Workspace%20%7C%20Miro&p=https%3A%2F%2Fmiro.com%2F&r=&lt=2101&evt=pageLoad&sv=2&asc=G&cdb=AQET&rn=682421"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googletagmanager.com/gtag/destination?id=AW-972905154&cx=c&gtm=4e69n0h2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googletagmanager.com/gtag/destination?id=DC-12017650&cx=c&gtm=4e69n0h2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googletagmanager.com/gtag/destination?id=DC-11345867&cx=c&gtm=4e69n0h2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googletagmanager.com/gtag/destination?id=AW-726271593&cx=c&gtm=4e69n0h2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=ECB536024D9E4EBA954FC87474543764&RedC=c.clarity.ms&MXFR=22A52AAC7EC96B4C3EC83D727AC96567"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.googletagmanager.com/gtag/destination?id=AW-382441813&cx=c&gtm=4e69n0h2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://c.clarity.ms/c.gif?ctsa=mr&CtsSyncId=ECB536024D9E4EBA954FC87474543764&MUID=08A683D595446F612334940B94376EB7"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://nld1rtp1-cdn.marketo.com/rtp-api/v1/rtp.js?aid=realtimeboard"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://api-iam.intercom.io/messenger/web/launcher_settings"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://api.cr-relay.com/v1/site/4a3f2aa6-fd84-4177-aea4-c2fe259a8256/batch"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://api-iam.intercom.io/messenger/web/ping"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://nld1rtp1.marketo.com/gw1/trw?aid=realtimeboard&trwv.uid=realtimeboard-1790245894100-d6064adb&trwv.vc=1&trwsa.sid=realtimeboard-1790245894101-3cae35b1&trwsb.cpv=1&ctzo=+05:30&uri=https%3A%2F%2Fmiro.com%2F&ma=id%3A228-GPV-835%26token%3A_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&pm=&viewedTypes=&rts=1790245894102"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://nld1rtp1.marketo.com/gw1/msg?a=2&sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&ma=id%3A228-GPV-835%26token%3A_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&viewedTypes=&0.6921921090987054&rts=1790245894166"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://228-gpv-835.mktoresp.com/webevents/visitWebPage?_mchNc=1790245893985&_mchCn=&_mchId=228-GPV-835&_mchTk=_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&_mchHo=miro.com&_mchPo=&_mchRu=%2F&_mchPc=https%3A&_mchVr=165&_mchEcid=&_mchHa=&_mchRe=&_mchQp="
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-FK1CGSZNDB&cid=1983538274.1790245895&gtm=45je69n0h2v892694657z8830648269za20gzb830648269zd830648269xf1&rcb=19&aip=1&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://nld1rtp1.marketo.com/gw1/msg?a=2&sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&ma=id%3A228-GPV-835%26token%3A_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&viewedTypes=&0.4388986541723384&rts=1790245897116"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;src=11345867;type=Web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CJA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_FdxTq-vwjUO1pbzAwGmjVtQ6TAR3fULLtQ;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://nld1rtp1.marketo.com/gw1/msg?a=2&sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&ma=id%3A228-GPV-835%26token%3A_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&viewedTypes=&0.18010515027158525&rts=1790245897441"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://nld1rtp1.marketo.com/gw1/rtp/api/v1_1/visitor?sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&1790245897394"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0Dchm9om4QBjjydz8c9cG3S0fX9I8UjA;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;dc_pre=COuGh9eBh5cDFW4xtwAdMC4QRw;src=11345867;type=Web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CJA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_FdxTq-vwjUO1pbzAwGmjVtQ6TAR3fULLtQ;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3A%2F%2Fmiro.com%2F;u2=undefined;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_Oz1SacyibFkyWXrdAR8IZXjyjAhod6S6vg;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90YuCLHKOn890pCXhj85ApGD_0hUVIbGFQ;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;dc_pre=CPDdhteBh5cDFeQytwAdMGYP6A;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0Dchm9om4QBjjydz8c9cG3S0fX9I8UjA;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/gmp/conversion/_dc_unique_id=3272493376088953245;_dc_ptd=ChAI8JTT1QYQneWU0r6L4MAKEh8AlQZ2nf5sZQh5kgRgJWnYjXnIFypWX1V-c2dZFvhG;_dc_time=1790245899;cid=CAQS4gEAQM4h3MfBUspmzGiChKyBqypGW7Q1cJW7pOrH6_uli8qg-YxqX_UK6NWxcPqaCbwGt_h1uB3yxSgFrhFNbKCR_SLUpjPkRw_yZ-BSUPiC7Q3mIMMCaOH80l5pm13hxf7lzs8ikr0l31tCwNKR_EE0jd6PpL2jke5OGzbubh_ZdicwBeiOsMOM3qeQUJ8Jc0GNsR6U6aBvPlpcm8n1F7J1tzamGTcm__9iZgpyicsvdDcNU3AuIzVyw_OZxPKDrEmkJ9OaVDOuGNqF2rnlOQ5yOjq6CYRFO4PnrRlw9aqULhxM;eps=AHas8cBewhENW6rsjSiYGXeyKucV49SeWUuTYAHMbKIyrt-vUR9hMrERFluWQOV0YjIM3Km2J6mWKrZC_FbVAtHskxnbn5UjM9QqFWImirEjd4qLxg;dc_pre=CPDdhteBh5cDFeQytwAdMGYP6A;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0Dchm9om4QBjjydz8c9cG3S0fX9I8UjA;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;dc_pre=CIXwhteBh5cDFS6z2AUduhgJmQ;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3A%2F%2Fmiro.com%2F;u2=undefined;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_Oz1SacyibFkyWXrdAR8IZXjyjAhod6S6vg;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/gmp/conversion/_dc_unique_id=16164922407947531072;_dc_ptd=ChAI8JTT1QYQneWU0r6L4MAKEh8AlQZ2nQUimYMIgf7REp8ypPNzI5k3b8A2-3RHzwW8;_dc_time=1790245899;cid=CAQS4gEAQM4h3H6cipjvWBc5ASvflzr7jaK_Z9kPsfR4tB6eJOlh40ZGhn_6L7h7ozksHAXoERuH-zbSbVBhai-WF6sCe8-ucYbXW0RR543aBPhNKfJawDUsIo6x7rz6eqikxDoCt2HlKwySvfcmIYh-khK3_ZD93n6At9UyAvE8iIOSV7rsMToIRAR2jpioh1NI4FRWrIw8XP4mTqemkSzP_Q0Qru7ZkJvH6fvqpJrzY_cIkNj40FSJKxMsOJ29B2xQlCpZg1u6FnxkQqYvxsdF1P-mWz94XmVtGovamCbhjwJN2IuC;eps=AHas8cAKAuS7m-i64kFUXjioBGu6Y6Gkbd73mGCA5_OSMJCBFI6AlXzHV-bq9NzZnEfcFeOrgdohMwEPZWcPNB0zndgYOOtm_rIEHEcY2Y5cbQxNaQ;dc_pre=CIXwhteBh5cDFS6z2AUduhgJmQ;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3A%2F%2Fmiro.com%2F;u2=undefined;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_Oz1SacyibFkyWXrdAR8IZXjyjAhod6S6vg;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/activity;dc_pre=CNm-kdeBh5cDFUXHcwEdWPEXcg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90YuCLHKOn890pCXhj85ApGD_0hUVIbGFQ;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/gmp/conversion/_dc_unique_id=11936396774446334782;_dc_ptd=ChAI8JTT1QYQneWU0r6L4MAKEh8AlQZ2nVbzkrmyylypm3OLazHR0E-g6c0P4regpsD9;_dc_time=1790245899;cid=CAQS4gEAQM4h3GPqo10-fPXibikbBNbLpA0zKxnJXrO9T_X8HeTSYUqE_MEyPKGPUgPqolelqAOeOYCaZ19hMa5kOpBNBYby_3h0rVc8bFqCog50DXgfTGwTjAclZc4x4jj79p_0wPFmW1ww0LnQ83JI5mSxiXHf_6bknEWl9BGWWBTToZYbs5bNX45rHqusPugJGMb0rIxdD9aHiAE5TyJc_fCrYhw5VgmrooG0nqXcbDFanpWu2-q8N4NydZ9j05-JC7P1_vRF8aXyBelf_jhz3TDbNkAz8CnY7g6yFGq-RMKMF2yF;eps=AHas8cDQBn6Wl1lyYvt6Af1AFZqyMIqYJsmm58cNLkxF0oyUEolOXpAiUcTNCr8ZNT31Va5jZQujHKGtf5765agw_h4k9AJ-MOaHgSQQUUMNMYJzlQ;dc_pre=CNm-kdeBh5cDFUXHcwEdWPEXcg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dNzMyY2.dYWJhMj;uaa=x86;uab=64;uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=CFA;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=G111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90YuCLHKOn890pCXhj85ApGD_0hUVIbGFQ;~oref=https%3A%2F%2Fmiro.com%2F?"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://js.intercomcdn.com/vendors~app~tooltips-modern.e1cc484f.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://js.intercomcdn.com/vendors~sentry~app-modern.af8af26a.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://js.intercomcdn.com/vendors~app-modern.cefb8c1f.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://js.intercomcdn.com/app~tooltips-modern.7daf0c9c.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://js.intercomcdn.com/app-modern.9ba7ca74.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://eventhub.eu01.miro.com/api/stream/v1/import"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://api-iam.intercom.io/messenger/web/metrics"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://app.framerstatic.com/chunk-6W2K2MOG.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://app.framerstatic.com/chunk-YRQ7G4QH.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://app.framerstatic.com/chunk-WOEOGJ2W.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://app.framerstatic.com/chunk-WLHSDIGQ.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://app.framerstatic.com/editorbar.2IFJCATX.mjs"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://static.doubleclick.net/instream/ad_status.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.google.com/js/th/Db8wBDeOdIrDOEeuxOtAwORnzWwa3v40sGW3oCoczyU.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://i.ytimg.com/vi_webp/3ODE5xkD7Uo/default.webp"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://api.framer.com/auth/web/access-token?source=editorbar"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT"
+      }
+    ],
+    "candidate_systems": [
+      "miro_live_audit_run_001"
+    ],
+    "evidence_ids": [
+      "EVD-WEB-010-A9AB61A56D",
+      "EVD-WEB-022-DDE0E2CB2B",
+      "EVD-WEB-039-9F98B6C691",
+      "EVD-WEB-040-3A9D2AB495",
+      "EVD-WEB-049-1BBF093E51",
+      "EVD-WEB-125-5B5ADA5189",
+      "EVD-WEB-126-784BFA95A5",
+      "EVD-WEB-127-333D638A03",
+      "EVD-WEB-128-E33FBB46C6",
+      "EVD-WEB-129-C6EA934F1B",
+      "EVD-WEB-130-37771C51F0",
+      "EVD-WEB-133-6D7BA0FA41",
+      "EVD-WEB-134-5C8C8DA406",
+      "EVD-WEB-135-9C3F25A0B4",
+      "EVD-WEB-137-8C8375EFC4",
+      "EVD-WEB-138-E328B73AA4",
+      "EVD-WEB-139-B1D76F8ACB",
+      "EVD-WEB-140-1BB6C1354F",
+      "EVD-WEB-141-1B5563C1F1",
+      "EVD-WEB-142-074332D931",
+      "EVD-WEB-145-E36BB80948",
+      "EVD-WEB-146-5EC716E3BE",
+      "EVD-WEB-147-772C40CE99",
+      "EVD-WEB-148-B9F39BCD93",
+      "EVD-WEB-149-8C6744EE7D",
+      "EVD-WEB-150-678AEBB5D5",
+      "EVD-WEB-151-C554196C9F",
+      "EVD-WEB-152-18237E73A0",
+      "EVD-WEB-153-6276C42078",
+      "EVD-WEB-154-59AF2483E6",
+      "EVD-WEB-155-8687B7778E",
+      "EVD-WEB-157-CC52A4CAF2",
+      "EVD-WEB-158-F095799BE0",
+      "EVD-WEB-159-14EBDAF4EB",
+      "EVD-WEB-160-1D5A2B64C1",
+      "EVD-WEB-161-B2A583B873",
+      "EVD-WEB-162-85EE5CFF1E",
+      "EVD-WEB-163-5D877AC3A4",
+      "EVD-WEB-164-713A87B1E5",
+      "EVD-WEB-165-FBED89FB6A",
+      "EVD-WEB-166-D20CC928EF",
+      "EVD-WEB-167-C8F7D4D770",
+      "EVD-WEB-168-4517134459",
+      "EVD-WEB-169-AB20A822C3",
+      "EVD-WEB-170-3D1CF9F0CA",
+      "EVD-WEB-171-29E1130228",
+      "EVD-WEB-172-0D44E48FC5",
+      "EVD-WEB-173-B09835C039",
+      "EVD-WEB-174-A72588E077",
+      "EVD-WEB-176-AB8FA7DD20",
+      "EVD-WEB-177-1BC04CF880",
+      "EVD-WEB-178-B202D088C6",
+      "EVD-WEB-179-A221FD21B8",
+      "EVD-WEB-180-7B1A7BE18B",
+      "EVD-WEB-181-3308A4E801",
+      "EVD-WEB-182-EC7711A345",
+      "EVD-WEB-183-6653F0A0C8",
+      "EVD-WEB-184-2F49BCC823",
+      "EVD-WEB-185-12317D48A6",
+      "EVD-WEB-186-5A89AC2CBA",
+      "EVD-WEB-187-5C162F2C08",
+      "EVD-WEB-188-91AB2DB66A",
+      "EVD-WEB-190-3B17A6040A",
+      "EVD-WEB-192-58F156A70C",
+      "EVD-WEB-193-A8215E13C9",
+      "EVD-WEB-194-CB7F8D3F23",
+      "EVD-WEB-195-4A0CC1B913",
+      "EVD-WEB-198-C930CDD025",
+      "EVD-WEB-199-E206B3CA32",
+      "EVD-WEB-200-B99E243AB6",
+      "EVD-WEB-202-99291A225C",
+      "EVD-WEB-203-CB336F6857",
+      "EVD-WEB-204-026E7F2F7B",
+      "EVD-WEB-205-4A6EA4C8F7",
+      "EVD-WEB-206-3E2FE6026F",
+      "EVD-WEB-209-4B5DA875DC",
+      "EVD-WEB-210-948E5D87CA",
+      "EVD-WEB-211-7B653F4A96",
+      "EVD-WEB-212-86D2313DA0",
+      "EVD-WEB-213-F71DBA36EF",
+      "EVD-WEB-216-7B9B871659",
+      "EVD-WEB-217-D72DFB2719",
+      "EVD-WEB-218-F5F94012A0",
+      "EVD-WEB-222-7641A9D3B7",
+      "EVD-WEB-224-4BAFFFC547",
+      "EVD-WEB-225-B0549FFE4F",
+      "EVD-WEB-226-047123DB79",
+      "EVD-WEB-229-94A1EC9489",
+      "EVD-WEB-231-301D465CFF",
+      "EVD-WEB-232-3FFCF4B475",
+      "EVD-WEB-233-0C45F22864",
+      "EVD-WEB-234-1BB74C833F",
+      "EVD-WEB-235-FB1BF52538",
+      "EVD-WEB-238-7BFF757CBD",
+      "EVD-WEB-240-8E3DA15C2C",
+      "EVD-WEB-241-DE8A41B060",
+      "EVD-WEB-242-10191EA79C",
+      "EVD-WEB-244-C5510D72E7",
+      "EVD-WEB-245-68B532E770",
+      "EVD-WEB-247-0A033AAFAF",
+      "EVD-WEB-249-B84AFA5B7F",
+      "EVD-WEB-250-8921B8DBE3",
+      "EVD-WEB-251-E164A90643",
+      "EVD-WEB-252-97C63FE73F",
+      "EVD-WEB-256-8A4C5D705D",
+      "EVD-WEB-262-FD03FAE592",
+      "EVD-WEB-263-CA7226A15A",
+      "EVD-WEB-264-1CFBB585C5",
+      "EVD-WEB-282-466898AA7E",
+      "EVD-WEB-283-5B6F6F7639",
+      "EVD-WEB-287-0BEA389D97",
+      "EVD-WEB-288-FE69D3151A",
+      "EVD-WEB-293-FCF9FA04A4",
+      "EVD-WEB-302-9DDFD9141E",
+      "EVD-WEB-305-DAF6E73571",
+      "EVD-WEB-307-F257BB0620",
+      "EVD-WEB-308-842A90E4AA",
+      "EVD-WEB-312-0F7BEE7EF1",
+      "EVD-WEB-313-F9B3334DF9",
+      "EVD-WEB-314-770E1CC7E7",
+      "EVD-WEB-315-B3372AAC70",
+      "EVD-WEB-316-3DA39170E2",
+      "EVD-WEB-317-BD09A8762A",
+      "EVD-WEB-318-B8A9FB261E",
+      "EVD-WEB-319-119DD5034B",
+      "EVD-WEB-320-E49F7B3D9C",
+      "EVD-WEB-321-0B5B01E3DD",
+      "EVD-WEB-322-69F8C4AFD6",
+      "EVD-WEB-323-6209B1D88F",
+      "EVD-WEB-335-2273899DB3",
+      "EVD-WEB-341-4132B84F41",
+      "EVD-WEB-343-ADE2D7776D",
+      "EVD-WEB-344-8821DAA775",
+      "EVD-WEB-345-BC257CF2B2",
+      "EVD-WEB-346-2E745CE17A",
+      "EVD-WEB-347-42ED92E096",
+      "EVD-WEB-351-6BF97B70EC",
+      "EVD-WEB-356-DDC5DF54DB",
+      "EVD-WEB-358-0A333BCB4E",
+      "EVD-WEB-359-0953180884",
+      "EVD-WEB-360-BCE6AEFBF4"
+    ],
+    "evidence_sources": [
+      "COOKIE_SCAN",
+      "OWASP_ZAP"
+    ],
+    "confidence": 0.75,
+    "requires_validation": true,
+    "validation_questions": [
+      "What is the business purpose for this processing?",
+      "Who are the actual data subjects and relevant population?",
+      "Which data elements are actually processed, beyond what technical evidence reveals?",
+      "Who are the recipients/processors and under what contractual arrangement?",
+      "What is the applicable lawful basis or other legal justification?",
+      "What retention period applies?",
+      "Is this processing documented in the privacy notice, cookie policy, RoPA, contracts, or other governance records?",
+      "Does the processing require DPIA or other enhanced assessment under the applicable framework?"
+    ],
+    "legal_conclusion": null,
+    "notes": [
+      "Candidate activity generated from technical/documentary evidence.",
+      "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
+    ]
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-E01DEC6E",
+    "status": "CANDIDATE",
+    "candidate_purpose": "customer support",
+    "candidate_data_subjects": [
+      "data subjects not established from technical evidence"
+    ],
+    "candidate_data_elements": [],
+    "candidate_recipients": [
+      {
+        "kind": "COOKIE",
+        "identifier": "intercom-id-fsupkyat@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "intercom-device-id-fsupkyat@miro.com"
+      }
+    ],
+    "candidate_systems": [
+      "miro_live_audit_run_001"
+    ],
+    "evidence_ids": [
+      "EVD-WEB-048-A73DAC25C6",
+      "EVD-WEB-050-D43AC9B9E3"
+    ],
+    "evidence_sources": [
+      "COOKIE_SCAN"
+    ],
+    "confidence": 0.7,
+    "requires_validation": true,
+    "validation_questions": [
+      "What is the business purpose for this processing?",
+      "Who are the actual data subjects and relevant population?",
+      "Which data elements are actually processed, beyond what technical evidence reveals?",
+      "Who are the recipients/processors and under what contractual arrangement?",
+      "What is the applicable lawful basis or other legal justification?",
+      "What retention period applies?",
+      "Is this processing documented in the privacy notice, cookie policy, RoPA, contracts, or other governance records?",
+      "Does the processing require DPIA or other enhanced assessment under the applicable framework?"
+    ],
+    "legal_conclusion": null,
+    "notes": [
+      "Candidate activity generated from technical/documentary evidence.",
+      "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
+    ]
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-6BF44E43",
+    "status": "CANDIDATE",
+    "candidate_purpose": "purpose requires validation",
+    "candidate_data_subjects": [
+      "website/app users or visitors (candidate; validate)"
+    ],
+    "candidate_data_elements": [],
+    "candidate_recipients": [
+      {
+        "kind": "COOKIE",
+        "identifier": "geo_data@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "ajs_anonymous_id@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__ff_cookie_styles@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__ff@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "server_experiment_viewed@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "fbp_tracked@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "rdt_uuid_tracked@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "pageviewCount@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "OptanonConsent@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__cf_bm@g2crowd.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_rdt_uuid@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__pdst@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__cf_bm@bzrcdn.openai.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_cfuvid@bzrcdn.openai.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "CLID@www.clarity.ms"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_fbp@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "fr@facebook.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__cf_bm@g2.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "signals-sdk-user-id@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_uetsid@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_uetvid@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_clck@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "MR@bat.bing.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "bcookie@linkedin.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "lidc@linkedin.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__cf_bm@linkedin.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "AWSALBCORS@nld1rtp1-cdn.marketo.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "TapAd_TS@tapad.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "TapAd_DID@tapad.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "MUID@bing.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "MR@c.bing.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "SRM_B@c.bing.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "TapAd_3WAY_SYNCS@tapad.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__obref@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_mkto_trk@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "SM@c.clarity.ms"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "MUID@clarity.ms"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "MR@c.clarity.ms"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "ANONCHK@c.clarity.ms"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "trwv.uid@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "trwsa.sid@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "li_sugr@linkedin.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_clsk@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_gcl_au@miro.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "UserMatchHistory@linkedin.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "AWSALBCORS@nld1rtp1.marketo.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "bscookie@www.linkedin.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "IDE@doubleclick.net"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__cf_bm@bzr.openai.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "_cfuvid@bzr.openai.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__Secure-YNID@youtube.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "YSC@youtube.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "VISITOR_INFO1_LIVE@youtube.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "VISITOR_PRIVACY_METADATA@youtube.com"
+      },
+      {
+        "kind": "COOKIE",
+        "identifier": "__Secure-ROLLOUT_TOKEN@youtube.com"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://cdn.getsmartcontent.com/DQM58VVM.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://munchkin.marketo.net/munchkin.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://scripts.appbind.com/v0/skyhook.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://munchkin.marketo.net/165/munchkin.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://www.clarity.ms/tag/hn9ca7nm9h"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://tracking-api.g2.com/attribution_tracking/conversions/assign"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ibc-flow.techtarget.com/a/gif.gif?actTypeId=31&cid=16655799&r=1790245892819&ref=https%3A%2F%2Fmiro.com%2F&version=2.4"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://rtp-static.marketo.com/rtp/libs/jquery-ui-insightera-custom-1.9.6.css"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://rtp-static.marketo.com/rtp/libs/jquery/3.7.0/jquery.min.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://ad.doubleclick.net/ccm/s/collect?auid=791566007.1790245894&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&fmt=8"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://rtp-static.marketo.com/rtp/libs/jqueryui/1.13.2/jquery-custom-ui.min.js"
+      },
+      {
+        "kind": "URL",
+        "identifier": "https://bzr.openai.com/v1/sdk/events?pid=XKQra2M7vA8GMVNhwNE4vq&st=oaiq-web&sv=0.1.41&t=1790245895499&ec=2"
+      }
+    ],
+    "candidate_systems": [
+      "miro_live_audit_run_001"
+    ],
+    "evidence_ids": [
+      "EVD-WEB-001-CDEB879188",
+      "EVD-WEB-002-C50B16F14B",
+      "EVD-WEB-003-5FF2B47A26",
+      "EVD-WEB-005-A2B3476D33",
+      "EVD-WEB-006-A4C4258815",
+      "EVD-WEB-007-819850F379",
+      "EVD-WEB-008-B71FDDE3C7",
+      "EVD-WEB-009-A36E1ABB8D",
+      "EVD-WEB-011-FA171931E3",
+      "EVD-WEB-012-7F782573A0",
+      "EVD-WEB-013-98F68D114C",
+      "EVD-WEB-014-C6EF99E79D",
+      "EVD-WEB-015-B092BA8E7A",
+      "EVD-WEB-016-54B8F8268A",
+      "EVD-WEB-017-D94CC7451C",
+      "EVD-WEB-018-2C2E04B523",
+      "EVD-WEB-019-A7A70BE983",
+      "EVD-WEB-020-81A5781159",
+      "EVD-WEB-021-C92964EB8A",
+      "EVD-WEB-023-F974DBCB76",
+      "EVD-WEB-024-520F66E7BA",
+      "EVD-WEB-025-EBDA9FB941",
+      "EVD-WEB-026-D88C3B157B",
+      "EVD-WEB-027-562EE0EB49",
+      "EVD-WEB-028-016D015684",
+      "EVD-WEB-029-A2AE2C4F95",
+      "EVD-WEB-030-DDD2C6CB6A",
+      "EVD-WEB-031-16B5747651",
+      "EVD-WEB-032-1C8A06F2E3",
+      "EVD-WEB-033-25DC8AA2A1",
+      "EVD-WEB-034-71BC15F988",
+      "EVD-WEB-035-6E77190BC3",
+      "EVD-WEB-036-10E876B57A",
+      "EVD-WEB-037-1DC61352CC",
+      "EVD-WEB-038-0F3ABE804A",
+      "EVD-WEB-041-389D98C946",
+      "EVD-WEB-042-91D3059AF5",
+      "EVD-WEB-043-61804508D5",
+      "EVD-WEB-044-A4D35050D6",
+      "EVD-WEB-045-CFC82DC67E",
+      "EVD-WEB-046-269C4244AB",
+      "EVD-WEB-047-B947B1C926",
+      "EVD-WEB-051-2E6C3D0FE6",
+      "EVD-WEB-052-C47CB1F2F3",
+      "EVD-WEB-053-5C7FBFABA1",
+      "EVD-WEB-111-28C661A7CC",
+      "EVD-WEB-112-528146B09C",
+      "EVD-WEB-113-EFD6DA7DD7",
+      "EVD-WEB-114-57315521EE",
+      "EVD-WEB-115-5B99DE1EBB",
+      "EVD-WEB-116-F1673A07B7",
+      "EVD-WEB-117-CBAA4CDBBC",
+      "EVD-WEB-118-E2A1E0CD27",
+      "EVD-WEB-119-ECE370728A",
+      "EVD-WEB-120-F856B71750",
+      "EVD-WEB-175-79ED7D42EE",
+      "EVD-WEB-201-C8F87BEEF7",
+      "EVD-WEB-207-771F069C5A",
+      "EVD-WEB-215-1C71286C80",
+      "EVD-WEB-220-9FF1240F3D",
+      "EVD-WEB-230-2243860151",
+      "EVD-WEB-239-11511738FD",
+      "EVD-WEB-259-D1C0AE6754",
+      "EVD-WEB-261-04B293C68A",
+      "EVD-WEB-267-6ECE61FA4C",
+      "EVD-WEB-284-948837FACE",
+      "EVD-WEB-309-BA6668349F"
+    ],
+    "evidence_sources": [
+      "COOKIE_SCAN",
+      "OWASP_ZAP"
+    ],
+    "confidence": 0.75,
+    "requires_validation": true,
+    "validation_questions": [
+      "What is the business purpose for this processing?",
+      "Who are the actual data subjects and relevant population?",
+      "Which data elements are actually processed, beyond what technical evidence reveals?",
+      "Who are the recipients/processors and under what contractual arrangement?",
+      "What is the applicable lawful basis or other legal justification?",
+      "What retention period applies?",
+      "Is this processing documented in the privacy notice, cookie policy, RoPA, contracts, or other governance records?",
+      "Does the processing require DPIA or other enhanced assessment under the applicable framework?"
+    ],
+    "legal_conclusion": null,
+    "notes": [
+      "Candidate activity generated from technical/documentary evidence.",
+      "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
+    ]
+  }
+]

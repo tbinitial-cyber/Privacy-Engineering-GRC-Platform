@@ -1,0 +1,2155 @@
+[
+  {
+    "candidate_activity_id": "CAND-ACT-E9A99D0D",
+    "candidate_purpose": "advertising / marketing",
+    "activity_reconciliation_status": "UNDISCLOSED_VENDORS_PRESENT",
+    "confidence": 0.7,
+    "evidence_count": 41,
+    "evidence_ids": [
+      "EVD-WEB-132-189F001166",
+      "EVD-WEB-196-10ACD72504",
+      "EVD-WEB-208-346CDA290E",
+      "EVD-WEB-214-3BF6F099B5",
+      "EVD-WEB-219-DA1B5378C4",
+      "EVD-WEB-221-843318A9F5",
+      "EVD-WEB-228-34CB1DBB54",
+      "EVD-WEB-236-4C6EC8E2FD",
+      "EVD-WEB-237-29D9071E95",
+      "EVD-WEB-243-42C85F2BF1"
+    ],
+    "vendor_reconciliation_details": [
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://fonts.gstatic.com/s/nanumpenscript/v25/daadssyilgqeal3mvda_fol_3fkn6zn0aq.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.redditstatic.com/ads/pixel.js'}",
+        "matched_entity": "Reddit Inc.",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Reddit Inc.' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://pixel.byspotify.com/ping.min.js'}",
+        "matched_entity": "Spotify Advertising",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Spotify Advertising' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://pixel-config.reddit.com/pixels/t2_mxmmhsm8/config'}",
+        "matched_entity": "Reddit Inc.",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Reddit Inc.' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://q.quora.com/_/ad/53e856fcda1c47449e8b93b2ca3b335e/pixel?tag=viewcontent&i=gtm&u=https%3a%2f%2fmiro.com%2f'}",
+        "matched_entity": "Quora Inc.",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Quora Inc.' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://pixels.spotify.com/v1/config/6c9c6f82ff6e4e30b5e7a387360586c7'}",
+        "matched_entity": "Spotify Advertising",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Spotify Advertising' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://pixels.spotify.com/v1/ingest'}",
+        "matched_entity": "Spotify Advertising",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Spotify Advertising' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://miro-1-adswizz.attribution.adswizz.com/fire?pixelid=f58e2a61-d112-4059-b93d-eb13fa649ce2&type=sitevisit&subtype=pagevisit1&aw_0_req.gdpr=true&redirecturl=ahr0chm6ly9waxhlbc50yxbhzc5jb20vawrzew5jl2v4l3jly2vpdmu_cgfydg5lcl9pzd0yotk0jjwjawygcmvxdwvzdc5saxn0zw5lcklkp21hdgnozxmoj1swltlhlwzdezh9lvswltlhlwzdezr9lvswltlhlwzdezr9lvswltlhlwzdezr9lvswltlhlwzdezeyfscppnbhcnruzxjfdhlwzwrfzglkpsu3qiuymkhbukrxqvjfx0forfjpsurfqurfsuqlmjilm0elmjike3jlcxvlc3qubglzdgvuzxjjzh0lmjiln0q8i2vsc2vpzibyzxf1zxn0lmxpc3rlbmvyswq_bwf0y2hlcygnwzatouetrl17oh0twzatouetrl17nh0twzatouetrl17nh0twzatouetrl17nh0twzatouetrl17mtj9jyk-cgfydg5lcl90exblzf9kawq9jtdcjtiysefsrfdbukvfsurgqsuymiuzqsuymir7cmvxdwvzdc5saxn0zw5lcklkfsuymiu3rdwjzwxzzt5wyxj0bmvyx2rldmljzv9pzd0ke3jlcxvlc3qubglzdgvuzxjjzcf9pc8jawy-'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://pixel.tapad.com/idsync/ex/receive?partner_id=2994&partner_device_id=af1718a3f79e2ee48baca6c39cab8600'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://listen.audiohook.com/59a25d5b-ccd8-44fa-b919-d83e90068330/pixel.png?type=pageview'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://pixel.tapad.com/idsync/ex/receive/check?partner_id=2994&partner_device_id=af1718a3f79e2ee48baca6c39cab8600'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2c6165844&time=1790245893919&li_adsid=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageloadid=596d5147-5739-4352-a28c-6e47b072de76&url=https%3a%2f%2fmiro.com%2f&tm=gtmv2'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2c6165844&time=1790245893918&li_adsid=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageloadid=596d5147-5739-4352-a28c-6e47b072de76&url=https%3a%2f%2fmiro.com%2f&tm=gtmv2'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://bzrcdn.openai.com/pixel-config/v1/xkqra2m7va8gmvnhwne4vq.json'}",
+        "matched_entity": "OpenAI LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2c6165844&time=1790245893919&li_adsid=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageloadid=596d5147-5739-4352-a28c-6e47b072de76&url=https%3a%2f%2fmiro.com%2f&tm=gtmv2&cookiestest=true'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2c6165844&time=1790245893918&li_adsid=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageloadid=596d5147-5739-4352-a28c-6e47b072de76&url=https%3a%2f%2fmiro.com%2f&tm=gtmv2&cookiestest=true'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&auid=791566007.1790245894&dt=ai%20innovation%20workspace%20%7c%20miro&tid=aw-382441813&dl=https%3a%2f%2fmiro.com%2f&scrsrc=www.googletagmanager.com&rnd=1506497902.1790245895&navt=n&npa=0&ep.ads_data_redaction=1&uid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&_tu=ca&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&tft=1790245894585&tfd=5117&tids=aw-382441813&fmt=8'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&auid=791566007.1790245894&dt=ai%20innovation%20workspace%20%7c%20miro&tid=aw-726271593&dl=https%3a%2f%2fmiro.com%2f&scrsrc=www.googletagmanager.com&rnd=1506497902.1790245895&navt=n&npa=0&ep.ads_data_redaction=1&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&_tu=ca&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&tft=1790245894583&tfd=5115&tids=aw-726271593&fmt=8'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&auid=791566007.1790245894&dt=ai%20innovation%20workspace%20%7c%20miro&tid=aw-726271593&dl=https%3a%2f%2fmiro.com%2f&scrsrc=www.googletagmanager.com&rnd=1506497902.1790245895&navt=n&npa=0&ep.ads_data_redaction=1&uid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&_tu=ca&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&tft=1790245894584&tfd=5116&tids=aw-726271593&fmt=8'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/rmkt/collect/726271593/?random=1790245893913&cv=11&fst=1790245893913&fmt=8&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=68&gcp=5'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/726271593/?random=1790245893913&cv=11&fst=1790245893913&fmt=3&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/382441813/?random=1790245893970&cv=11&fst=1790245893970&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&rfmt=3&fmt=4'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/rmkt/collect/726271593/?random=1790245893913&cv=11&fst=1790245893913&fmt=8&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=68&gcp=5'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/rmkt/collect/382441813/?random=1790245893970&cv=11&fst=1790245893970&fmt=8&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=68&gcp=5'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/726271593/?random=1790245893913&cv=11&fst=1790245893913&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&rfmt=3&fmt=4'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&fmt=3&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&is_vtc=1&cid=caqs1aeaqm4h3jr8ahkff62d4rjixrfvjebsez1-5ulnrw4tm1jfho1zlls-csmuo_7wsferyehzqklnxv2ods-jxo4mmhpnobxmativ4lzocdndyc0b8katyz3qlsceqetxiwf8fnu1vr1k3arioyrzq5yjnblba0gibmdq1zzetq442w9fosupfcdbx3w9yl2jx5pehpwsglfkpnq4hgnsmmofya1xyvgxb_so4tox1zlomvx4dlqamigyp3qktugtofhmwmg_bor0qkg3rmgqmfesp9ssew&random=1875819084'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/pagead/1p-user-list/382441813/?random=1790245893970&cv=11&fst=1790244000000&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=caqs1aeaqm4h3bfceosqa3tk9bwdlcg1gmv6egdtuo7tttw9gnhlvk6eu5anl3e7lltyrkbluhdvokmqlvi8gfnfks0uphsj6ml05ujpjzljkl6uwanza06df8zeccmws-47dcgyoasvjwr-ovpi7_-ajjgg4xryzwolwjhynhatsoochtnr8bj_qbhrigbki7m0hhfxcfshrmlnyflvekeksor11ddftbg3jxelumotygbffygq0mhltaapunru-4tocb0d72acqeay4n5uud_ligiq6gjalg&random=53928640&rmt_tld=0&ipr=y'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.co.in/pagead/1p-user-list/382441813/?random=1790245893970&cv=11&fst=1790244000000&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=caqs1aeaqm4h3bfceosqa3tk9bwdlcg1gmv6egdtuo7tttw9gnhlvk6eu5anl3e7lltyrkbluhdvokmqlvi8gfnfks0uphsj6ml05ujpjzljkl6uwanza06df8zeccmws-47dcgyoasvjwr-ovpi7_-ajjgg4xryzwolwjhynhatsoochtnr8bj_qbhrigbki7m0hhfxcfshrmlnyflvekeksor11ddftbg3jxelumotygbffygq0mhltaapunru-4tocb0d72acqeay4n5uud_ligiq6gjalg&random=53928640&rmt_tld=1&ipr=y'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=caqs1aeaqm4h3nimxn3iviw3z3qzdbprgc8g-isujsnh-tsfijuuoihytmyem35dcc7mnssujthranp0jtjk1uo3kvbtdi4-ueesh6fbhnubsy6qmg8c83vpkw2etutu2zzkyjuxrr7odopydyh3jramm4r6h4jujrtmvmujox_fx0prolc9j64ioj2hj4o11pnm5ldsg_uueeesyseqxprkejdmbzmrf7zak52-fwctdymn3blgb8xis4xl2_ggtafji_y06ehe2c-6jg5wvcdmhohxwter1a&random=4034572300&rmt_tld=0&ipr=y'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.co.in/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=caqs1aeaqm4h3nimxn3iviw3z3qzdbprgc8g-isujsnh-tsfijuuoihytmyem35dcc7mnssujthranp0jtjk1uo3kvbtdi4-ueesh6fbhnubsy6qmg8c83vpkw2etutu2zzkyjuxrr7odopydyh3jramm4r6h4jujrtmvmujox_fx0prolc9j64ioj2hj4o11pnm5ldsg_uueeesyseqxprkejdmbzmrf7zak52-fwctdymn3blgb8xis4xl2_ggtafji_y06ehe2c-6jg5wvcdmhohxwter1a&random=4034572300&rmt_tld=1&ipr=y'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.co.in/pagead/1p-user-list/726271593/?random=1790245893913&cv=11&fst=1790244000000&fmt=3&bg=ffffff&guid=on&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&userid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&data=ads_data_redaction%3dtrue&ept=9&is_vtc=1&cid=caqs1aeaqm4h3jr8ahkff62d4rjixrfvjebsez1-5ulnrw4tm1jfho1zlls-csmuo_7wsferyehzqklnxv2ods-jxo4mmhpnobxmativ4lzocdndyc0b8katyz3qlsceqetxiwf8fnu1vr1k3arioyrzq5yjnblba0gibmdq1zzetq442w9fosupfcdbx3w9yl2jx5pehpwsglfkpnq4hgnsmmofya1xyvgxb_so4tox1zlomvx4dlqamigyp3qktugtofhmwmg_bor0qkg3rmgqmfesp9ssew&random=1875819084&ipr=y'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googleadservices.com/pagead/conversion/382441813/?random=1790245908525&cv=11&fst=1790245908525&fmt=7&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&label=alircnwxw44yenwyrryb&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=gg_717069068.1790245909&oidsrc=3&ecsid2=950034205.1790245909&_tu=cba&gcl_ctr=3~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googleadservices.com/ccm/conversion/726271593/?random=1790245908509&cv=11&fst=1790245908509&fmt=3&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&label=wiutcpte1qmyeommqnoc&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=gg_1543219183.1790245909&oidsrc=3&ecsid2=1341531747.1790245909&_tu=cba&gcl_ctr=2~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googleadservices.com/ccm/conversion/382441813/?random=1790245908525&cv=11&fst=1790245908525&fmt=3&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&label=alircnwxw44yenwyrryb&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=gg_717069068.1790245909&oidsrc=3&ecsid2=950034205.1790245909&_tu=cba&gcl_ctr=3~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://adservice.google.com/ddm/fls/z/dc_pre=cpmpgtebh5cdfqdhgwadw_k1lw;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=*;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0dchm9om4qbjjydz8c9cg3s0fx9i8uja;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://adservice.google.com/ddm/fls/z/dc_pre=clsxh9ebh5cdfeeqraidlkokca;src=11345867;type=web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=*;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cja;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_fdxtq-vwjuo1pbzawgmjvtq6tar3fulltq;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://adservice.google.com/ddm/fls/z/dc_pre=cltvg9ebh5cdfzqkraidekarra;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=*;u1=https%3a%2f%2fmiro.com%2f;u2=undefined;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_oz1sacyibfkywxrdar8izxjyjahod6s6vg;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://adservice.google.com/ddm/fls/z/dc_pre=ci7rg9ebh5cdfbkuoagdke46tg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=*;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90yuclhkon890pcxhj85apgd_0huvibgfq;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://googleads.g.doubleclick.net/pagead/id'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framer.com/bootstrap.2be9594b82a332855d9214dedf88f9315869af96.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      }
+    ],
+    "statutory_implications": {
+      "gdpr_art_13_14": "Requirement to specify categories of recipients and commercial identity of controllers/processors.",
+      "dpdpa_sec_5": "Notice to Data Principal specifying the purpose and details of data fiduciaries/processors.",
+      "cross_border_transfer": "Transfers to US entities (Google, Reddit, Spotify, Intercom) rely on EU-US DPF or Standard Contractual Clauses (SCCs)."
+    }
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-975E87D5",
+    "candidate_purpose": "analytics / product measurement",
+    "activity_reconciliation_status": "UNDISCLOSED_VENDORS_PRESENT",
+    "confidence": 0.75,
+    "evidence_count": 50,
+    "evidence_ids": [
+      "EVD-WEB-054-0FA27994D4",
+      "EVD-WEB-055-4EA077D761",
+      "EVD-WEB-056-D2832FE2EA",
+      "EVD-WEB-123-A03CDD22ED",
+      "EVD-WEB-124-F704458C75",
+      "EVD-WEB-131-3BEF95A7D9",
+      "EVD-WEB-136-5107B9678E",
+      "EVD-WEB-143-E4B06501AB",
+      "EVD-WEB-144-6D1B187930",
+      "EVD-WEB-156-B09A9B66D3"
+    ],
+    "vendor_reconciliation_details": [
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'analyticssynchistory@linkedin.com'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_ga_fk1cgszndb@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_ga@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.miro.com/'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://miro.com/'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://fonts.gstatic.com/s/opensans/v44/memsyags126mizpba-uvwbx2vvnxbbobj2ovzyoosr4dvjwugsjr0b4gavi.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/3an9mekgap4iqcf4qoqfjfik0c.png?scale-down-to=512&width=1024&height=1024'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/awqma3w2fgaioicaaifw1vi5iz0.png?scale-down-to=512&width=540&height=420'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/54fgarxfe1yao0u194v6yowtgtq.png?scale-down-to=512&width=540&height=420'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/13yodllkdzjhwqga6gj1oy/f82b0a280d8b719a3398aee0bf2bf3aa/reddit-icon.svg'}",
+        "matched_entity": "Reddit Inc.",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Reddit Inc.' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://snap.licdn.com/li.lms-analytics/insight.min.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://snap.licdn.com/li.lms-analytics/insight.old.min.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.facebook.com/tr/'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://rtp-static.marketo.com/rtp/libs/ga-integration-2.0.5.js'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://12017650.fls.doubleclick.net/activityi;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0dchm9om4qbjjydz8c9cg3s0fx9i8uja;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googleadservices.com/pagead/conversion/972905154/?random=1790245893783&cv=11&fst=1790245893783&fmt=7&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=13&label=2xtacm_9p90bemk19c8d&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&bttype=purchase&oid=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&gcl_ctr=1~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&ept=5'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://11345867.fls.doubleclick.net/activityi;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3a%2f%2fmiro.com%2f;u2=undefined;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_oz1sacyibfkywxrdar8izxjyjahod6s6vg;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://11345867.fls.doubleclick.net/activityi;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90yuclhkon890pcxhj85apgd_0huvibgfq;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://11345867.fls.doubleclick.net/activityi;src=11345867;type=web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cja;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_fdxtq-vwjuo1pbzawgmjvtq6tar3fulltq;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://analytics.google.com/g/collect?v=2&tid=g-fk1cgszndb&gtm=45je69n0h2v892694657z8830648269za20gzb830648269zd830648269xf1&_p=1790245890291&_gaz=1&gcs=g111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dnzmyy2.dywjhmj&_eu=aaaaagac&_geo=1&_rdi=1&are=1&cid=1983538274.1790245895&frm=0&pscdl=noapi&rcb=19&ul=en-us&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&sid=1790245893&sct=1&seg=0&dl=https%3a%2f%2fmiro.com%2f&dt=ai%20innovation%20workspace%20%7c%20miro&_tu=ca&en=page_view&_fv=1&_nsi=1&_ss=1&up.experiment=%7b%22treatment%22%3a%22off%22%2c%22experiment_name%22%3a%22website-2000-exp-29-google-one-tap-home-page-2%22%2c%22config%22%3anull%7d&tfd=5148'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.co.in/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=g-fk1cgszndb&cid=1983538274.1790245895&gtm=45je69n0h2v892694657z8830648269za20gzb830648269zd830648269xf1&rcb=19&aip=1&dma=0&gcs=g111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&z=72875735'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.linkedin.com/px/li_sync?redirect=https%3a%2f%2fpx.ads.linkedin.com%2fcollect%3fv%3d2%26fmt%3djs%26pid%3d1370905%252c6165844%26time%3d1790245893919%26li_adsid%3daf5436a0-44de-4dd9-b787-b7ed44a3785a%26pageloadid%3d596d5147-5739-4352-a28c-6e47b072de76%26url%3dhttps%253a%252f%252fmiro.com%252f%26tm%3dgtmv2%26cookiestest%3dtrue%26lisync%3dtrue'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.linkedin.com/px/li_sync?redirect=https%3a%2f%2fpx.ads.linkedin.com%2fcollect%3fv%3d2%26fmt%3djs%26pid%3d1370905%252c6165844%26time%3d1790245893918%26li_adsid%3daf5436a0-44de-4dd9-b787-b7ed44a3785a%26pageloadid%3d596d5147-5739-4352-a28c-6e47b072de76%26url%3dhttps%253a%252f%252fmiro.com%252f%26tm%3dgtmv2%26cookiestest%3dtrue%26lisync%3dtrue'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://12017650.fls.doubleclick.net/activityi;dc_pre=cpmpgtebh5cdfqdhgwadw_k1lw;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0dchm9om4qbjjydz8c9cg3s0fx9i8uja;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/972905154/?random=233208276&cv=11&fst=1790245893783&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=13&label=2xtacm_9p90bemk19c8d&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&gcl_ctr=1~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&ept=5&ct_cookie_present=false&eoid=clokeqjwlnpvbhcv-9xzlow6jn0bekuas4gdaa7xzwb1eupjso2fuvajsk1ii-blvcexkzwndmxgw7oqc7tzcgpa3kqg2mbm_rkvbramfhakxtgyfo6k7p_1kenw_wcb&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqiiy-gxakoebm90lw5hdmlnyxrpb24tc291cmnllcb0cmlnz2vywgmkaqfiawobaw&cerd=cgydsl4tueu-lz3ptzg&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclglioxylqx40w82ij8ti-azrne8qnxzayrdo&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowisjeyweyy9azw8jy--ledbmu3hthlktlj8qjfqerjq_tjts1utyerocvok&pscrd=ihmijacc14ghlwmvbiwdax2vtxxuohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1fozgh5ddgtali0lunoaf9xwvhrzhz0u2pwlwr4c0znbzbjm0g4suv4zuvbsv9ncxliudnks0hjegwicwiicaaqabgaiaa'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://11345867.fls.doubleclick.net/activityi;dc_pre=cltvg9ebh5cdfzqkraidekarra;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3a%2f%2fmiro.com%2f;u2=undefined;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_oz1sacyibfkywxrdar8izxjyjahod6s6vg;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://nld1rtp1.marketo.com/gw1/ga/sgm?sid=realtimeboard-1790245894101-3cae35b1&1790245897394'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://11345867.fls.doubleclick.net/activityi;dc_pre=ci7rg9ebh5cdfbkuoagdke46tg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90yuclhkon890pcxhj85apgd_0huvibgfq;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://11345867.fls.doubleclick.net/activityi;dc_pre=clsxh9ebh5cdfeeqraidlkokca;src=11345867;type=web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cja;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_fdxtq-vwjuo1pbzawgmjvtq6tar3fulltq;_dc_test=1;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2c6165844&time=1790245893919&li_adsid=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageloadid=596d5147-5739-4352-a28c-6e47b072de76&url=https%3a%2f%2fmiro.com%2f&tm=gtmv2&cookiestest=true&lisync=true'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1370905%2c6165844&time=1790245893918&li_adsid=af5436a0-44de-4dd9-b787-b7ed44a3785a&pageloadid=596d5147-5739-4352-a28c-6e47b072de76&url=https%3a%2f%2fmiro.com%2f&tm=gtmv2&cookiestest=true&lisync=true'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/pagead/1p-conversion/972905154/?random=233208276&cv=11&fst=1790245893783&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=13&label=2xtacm_9p90bemk19c8d&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&gcl_ctr=1~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&ept=5&ct_cookie_present=false&eoid=clokeqjwlnpvbhcv-9xzlow6jn0bekuas4gdaa7xzwb1eupjso2fuvajsk1ii-blvcexkzwndmxgw7oqc7tzcgpa3kqg2mbm_rkvbramfhakxtgyfo6k7p_1kenw_wcb&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqiiy-gxakoebm90lw5hdmlnyxrpb24tc291cmnllcb0cmlnz2vywgmkaqfiawobaw&cerd=cgydsl4tueu-lz3ptzg&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowisjeyweyy9azw8jy--ledbmu3hthlktlj8qjfqerjq_tjts1utyerocvok&pscrd=ihmijacc14ghlwmvbiwdax2vtxxuohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1fozgh5ddgtali0lunoaf9xwvhrzhz0u2pwlwr4c0znbzbjm0g4suv4zuvbsv9ncxliudnks0hjegwicwiicaaqabgaiaa&is_vtc=1&cid=caqs1aeaqm4h3ll9zm528bcifmj_q9xfiphbmluwgjrce5i4mglch07dtfr4i4aeb4irkobtuchzw7pp21xpkpcfkaljseigvy4r_5etagmdy38ov-uvs-mo-aayedb0bc_a2x7iswqagnm_qwkzdhq2yccnklac6aw25ww-itkh9lphjulnquzdk2uxj3mh6ddrypppxzn2ecdlijpmnkkegfex4-pjars9rlhijgwfhdgic52hnoeoadcph5hx-zl6xbylldvzduo3-t64qrlbkhevs4dz0w&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclglheq9tshdp9okog-jiivz4qctjb45jolw8&random=3002253057'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/embed/3ode5xkd7uo?v=3ode5xkd7uo&t=1s&start=1s&iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&enablejsapi=1'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.co.in/pagead/1p-conversion/972905154/?random=233208276&cv=11&fst=1790245893783&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v9196547805z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=13&label=2xtacm_9p90bemk19c8d&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&_tu=ca&gcl_ctr=1~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&ept=5&ct_cookie_present=false&eoid=clokeqjwlnpvbhcv-9xzlow6jn0bekuas4gdaa7xzwb1eupjso2fuvajsk1ii-blvcexkzwndmxgw7oqc7tzcgpa3kqg2mbm_rkvbramfhakxtgyfo6k7p_1kenw_wcb&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqiiy-gxakoebm90lw5hdmlnyxrpb24tc291cmnllcb0cmlnz2vywgmkaqfiawobaw&cerd=cgydsl4tueu-lz3ptzg&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowisjeyweyy9azw8jy--ledbmu3hthlktlj8qjfqerjq_tjts1utyerocvok&is_vtc=1&cid=caqs1aeaqm4h3ll9zm528bcifmj_q9xfiphbmluwgjrce5i4mglch07dtfr4i4aeb4irkobtuchzw7pp21xpkpcfkaljseigvy4r_5etagmdy38ov-uvs-mo-aayedb0bc_a2x7iswqagnm_qwkzdhq2yccnklac6aw25ww-itkh9lphjulnquzdk2uxj3mh6ddrypppxzn2ecdlijpmnkkegfex4-pjars9rlhijgwfhdgic52hnoeoadcph5hx-zl6xbylldvzduo3-t64qrlbkhevs4dz0w&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclglheq9tshdp9okog-jiivz4qctjb45jolw8&random=3002253057&ipr=y&pscrd=ihmijacc14ghlwmvbiwdax2vtxxuohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1fozgh5ddgtali0lunoaf9xwvhrzhz0u2pwlwr4c0znbzbjm0g4suv4zuvbsv9ncxliudnks0hjegwicwiicaaqabgaiaccaq9waygbafebhjdld_fe3d8'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googleadservices.com/pagead/conversion/726271593/?random=1790245908509&cv=11&fst=1790245908509&fmt=7&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&label=wiutcpte1qmyeommqnoc&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&bttype=purchase&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oid=gg_1543219183.1790245909&oidsrc=3&ecsid2=1341531747.1790245909&_tu=cba&gcl_ctr=2~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/382441813/?random=643810167&cv=11&fst=1790245908525&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&label=alircnwxw44yenwyrryb&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=950034205.1790245909&_tu=cba&gcl_ctr=3~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=ckckeqjwlnpvbhcv-9xzlow6jn0bejias4gdah0jk9einbjlogdjkd7nchbcxsye6akajojgrxoigwajzskcodkxhy0qccmfvvd_bwe&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqjkfhryawdnzxi9zxzlbnqtc291cmnlwgmkaqfiawobaw&cerd=cgi5674tnem3oa&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclglgrh6zydlm2_owe0esn8cxgkw0x9r7_vby&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowix3i7vdnkifbegrhobrstik_uli5t5hwkjcsw401t3lisaljzxxhhocank&pscrd=ihmireqb3ighlwmvyrcdax1kpqy-ohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1foukqxrgvtamvvvkpivjiwvgf3vxr2qtu2ck9ar1vtv19ou0pqmjrjml93twi2svdhemnkwvjregwicwiicaaqabgaiaa'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://googleads.g.doubleclick.net/pagead/viewthroughconversion/726271593/?random=484120432&cv=11&fst=1790245908509&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&label=wiutcpte1qmyeommqnoc&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=1341531747.1790245909&_tu=cba&gcl_ctr=2~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=ckgkeqjwlnpvbhcv-9xzlow6jn0bejmas4gdajd49p_9obljdzx_neagohntxxsdmjhkfjs-kyxsmo2knacdkhh_0gwojluodonw_wcb&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqjkjnryawdnzxi9bmf2awdhdglvbi1zb3vyy2u7zxzlbnqtc291cmnlwgmkaqfiawobaw&cerd=chccsl4tueu-ldftvi2d6bc4&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclgljq4hkdv1c3xy2yleq6kp3rkmpog6raq6i&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowvh-qyxajjk_7e-vg4-qzborxmwxg4klcwt5ezyxtetj4rsjki78tbocoke&pscrd=ihmi_pue3ighlwmvaj9mah1oxbitohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1fozuftd2rsejflc1brte9haxfiyw93zklsweu1ugffzvr1z0dslwfdu1rhwetdtddlc1m5s19jegwicwiicaaqabgaiaa'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/pagead/1p-conversion/382441813/?random=643810167&cv=11&fst=1790245908525&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&label=alircnwxw44yenwyrryb&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=950034205.1790245909&_tu=cba&gcl_ctr=3~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=ckckeqjwlnpvbhcv-9xzlow6jn0bejias4gdah0jk9einbjlogdjkd7nchbcxsye6akajojgrxoigwajzskcodkxhy0qccmfvvd_bwe&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqjkfhryawdnzxi9zxzlbnqtc291cmnlwgmkaqfiawobaw&cerd=cgi5674tnem3oa&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowix3i7vdnkifbegrhobrstik_uli5t5hwkjcsw401t3lisaljzxxhhocank&pscrd=ihmireqb3ighlwmvyrcdax1kpqy-ohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1foukqxrgvtamvvvkpivjiwvgf3vxr2qtu2ck9ar1vtv19ou0pqmjrjml93twi2svdhemnkwvjregwicwiicaaqabgaiaa&is_vtc=1&cid=caqs4geaqm4h3g65ttgvjdujejay5fx23omdcuv0qeihuzn2zbgenevmbdqytppfy4esohl-mcvbqqout7zfzv8rl5lkrkbuxtudsygqagy_dtucnzirkijlt_i8xqcpu5md0yi1zrrmmkvkebeqgwbyaufnrwhcyh8ghiodpcjobifewuj6pskfefvltvqi3jcivbgbwzsv2sys8gseqei1nhymjpeokrst5a6fjpvalxnh8tnopqu0dy0a1vqxluqhh2uhhxutoqnkbad3h78ndy1wihky4jmhvepd4qi-co5htdxe&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclglgwshg79q4zhteqkd50rv4cqmkmmgaxze8&random=942532309'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/pagead/1p-conversion/726271593/?random=484120432&cv=11&fst=1790245908509&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&label=wiutcpte1qmyeommqnoc&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=1341531747.1790245909&_tu=cba&gcl_ctr=2~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=ckgkeqjwlnpvbhcv-9xzlow6jn0bejmas4gdajd49p_9obljdzx_neagohntxxsdmjhkfjs-kyxsmo2knacdkhh_0gwojluodonw_wcb&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqjkjnryawdnzxi9bmf2awdhdglvbi1zb3vyy2u7zxzlbnqtc291cmnlwgmkaqfiawobaw&cerd=chccsl4tueu-ldftvi2d6bc4&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowvh-qyxajjk_7e-vg4-qzborxmwxg4klcwt5ezyxtetj4rsjki78tbocoke&pscrd=ihmi_pue3ighlwmvaj9mah1oxbitohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1fozuftd2rsejflc1brte9haxfiyw93zklsweu1ugffzvr1z0dslwfdu1rhwetdtddlc1m5s19jegwicwiicaaqabgaiaa&is_vtc=1&cid=caqs4geaqm4h3abqbs4jvalor0qkwzggu7n6lobenzirsaiyqzg2uhdueth87l1c_zzcsib21oaic5cu-tenjeijccblawixqoc-aajr61u_1bctkhxx9d-exncahwxcx0vq03h2vkpbnfwzdomenmwcayhiq2ft1wlg5fzkzlqtgauw2rxoghfdbbe7glswxo07irthqev5dpli1obd8atrxzp1ejv5rf-rl5n8econ4t27zndf-jbkqybnkkxz8lbcsasdeekqqx6tn9pskcnuclptpni0zk5occqfkggekyhcfnqg&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclgljs4i6syh_vijvnk2wigxuhw95mqpimc6w&random=3309448944'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.co.in/pagead/1p-conversion/382441813/?random=643810167&cv=11&fst=1790245908525&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=16&label=alircnwxw44yenwyrryb&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=950034205.1790245909&_tu=cba&gcl_ctr=3~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=ckckeqjwlnpvbhcv-9xzlow6jn0bejias4gdah0jk9einbjlogdjkd7nchbcxsye6akajojgrxoigwajzskcodkxhy0qccmfvvd_bwe&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqjkfhryawdnzxi9zxzlbnqtc291cmnlwgmkaqfiawobaw&cerd=cgi5674tnem3oa&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowix3i7vdnkifbegrhobrstik_uli5t5hwkjcsw401t3lisaljzxxhhocank&is_vtc=1&cid=caqs4geaqm4h3g65ttgvjdujejay5fx23omdcuv0qeihuzn2zbgenevmbdqytppfy4esohl-mcvbqqout7zfzv8rl5lkrkbuxtudsygqagy_dtucnzirkijlt_i8xqcpu5md0yi1zrrmmkvkebeqgwbyaufnrwhcyh8ghiodpcjobifewuj6pskfefvltvqi3jcivbgbwzsv2sys8gseqei1nhymjpeokrst5a6fjpvalxnh8tnopqu0dy0a1vqxluqhh2uhhxutoqnkbad3h78ndy1wihky4jmhvepd4qi-co5htdxe&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclglgwshg79q4zhteqkd50rv4cqmkmmgaxze8&random=942532309&ipr=y&pscrd=ihmireqb3ighlwmvyrcdax1kpqy-ohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1foukqxrgvtamvvvkpivjiwvgf3vxr2qtu2ck9ar1vtv19ou0pqmjrjml93twi2svdhemnkwvjregwicwiicaaqabgaiaccaq9waygbafebhjdld_fe3d8'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.co.in/pagead/1p-conversion/726271593/?random=484120432&cv=11&fst=1790245908509&fmt=8&bg=ffffff&guid=on&async=1&en=conversion&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcs=g111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3a%2f%2fmiro.com%2f&rcb=5&label=wiutcpte1qmyeommqnoc&capi=1&frm=0&tiba=ai%20innovation%20workspace%20%7c%20miro&did=dnzmyy2%2cdywjhmj&gdid=dnzmyy2.dywjhmj&value=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96&uamb=0&uam=&uap=windows&uapv=19.0.0&uaw=0&ec_mode=a&oidsrc=3&ecsid2=1341531747.1790245909&_tu=cba&gcl_ctr=2~0~0~0&data=ads_data_redaction%3dtrue&category=acrcp_v1_512&em=tv.1&emd=tvd.1&ept=5&ct_cookie_present=false&eoid=ckgkeqjwlnpvbhcv-9xzlow6jn0bejmas4gdajd49p_9obljdzx_neagohntxxsdmjhkfjs-kyxsmo2knacdkhh_0gwojluodonw_wcb&crd=cltesqii8t-xagit4becck_hsqiiobixagixwbeccldbsqiiscoxagikxbeccmljsqii1-ixagi0xreccnvcsqiih9uxagjtxbeccovmsqii7c6xagjvz7eccptasqii4uqxagjo7reccjlrsqiiyeoxagix1leccmnbsqiizeaxagio57ecckbdsqiisn6xagia27eccm3hsqjkjnryawdnzxi9bmf2awdhdglvbi1zb3vyy2u7zxzlbnqtc291cmnlwgmkaqfiawobaw&cerd=chccsl4tueu-ldftvi2d6bc4&fsk=chai8jtt1qyq366klvnnoeuneiwasmeowvh-qyxajjk_7e-vg4-qzborxmwxg4klcwt5ezyxtetj4rsjki78tbocoke&is_vtc=1&cid=caqs4geaqm4h3abqbs4jvalor0qkwzggu7n6lobenzirsaiyqzg2uhdueth87l1c_zzcsib21oaic5cu-tenjeijccblawixqoc-aajr61u_1bctkhxx9d-exncahwxcx0vq03h2vkpbnfwzdomenmwcayhiq2ft1wlg5fzkzlqtgauw2rxoghfdbbe7glswxo07irthqev5dpli1obd8atrxzp1ejv5rf-rl5n8econ4t27zndf-jbkqybnkkxz8lbcsasdeekqqx6tn9pskcnuclptpni0zk5occqfkggekyhcfnqg&eitems=chei8jtt1qyqm6ajgi-75mqearidaoclgljs4i6syh_vijvnk2wigxuhw95mqpimc6w&random=3309448944&ipr=y&pscrd=ihmi_pue3ighlwmvaj9mah1oxbitohfodhrwczovl21pcm8uy29tl0jxq2hbsthkvfqxuvlrb1llwm1zsdcylte1rwkwqw9qr1fozuftd2rsejflc1brte9haxfiyw93zklsweu1ugffzvr1z0dslwfdu1rhwetdtddlc1m5s19jegwicwiicaaqabgaiaccarnwaygbaeibaqlxayy3zxfxrnw_'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framer.com/edit/beta?framersiteid=e581c7ce765b3408a75d0214f5780cf058394ce4a71192ea92c1fd723a9b858f&source=miro.com&features=%7b%22editorbardisableframeancestorssecurity%22%3afalse%2c%22onpagelocalizationsupport%22%3atrue%2c%22onpagemovetool%22%3atrue%2c%22onpagerichtextblockselection%22%3atrue%7d&loadstart=1790245891606'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/s/player/7460dd14/www-player.css'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/s/_/ytembeds/_/ss/k=ytembeds.base.ft0zinogscs.l.w.o/am=aaaaqa/d=1/br=1/rs=agkmywfyoiptq4_khxkbbg_y6ndrjzdg7a/m=root,base'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_us.t41mjidspfg.2021.o/am=aaaaqa/d=1/excm=base,root/br=1/rs=agkmywfl7cgmorvk8uiykvd3vfe_esmkzw/m=root,base'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/s/player/7460dd14/player_embed_es6.vflset/en_us/base.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_us.t41mjidspfg.2021.o/ck=ytembeds.base.ft0zinogscs.l.w.o/am=aaaaqa/d=1/exm=base,root/excm=base,root/ed=1/br=1/rs=agkmyweu_rtcxahel2dlsqjgktmabq3wbg/m=r78drb'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_us.t41mjidspfg.2021.o/ck=ytembeds.base.ft0zinogscs.l.w.o/am=aaaaqa/d=1/exm=base,r78drb,root/excm=base,root/ed=1/br=1/rs=agkmyweu_rtcxahel2dlsqjgktmabq3wbg/m=cwx9n'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/generate_204?sppwmg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.youtube.com/youtubei/v1/log_event?alt=json'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      }
+    ],
+    "statutory_implications": {
+      "gdpr_art_13_14": "Requirement to specify categories of recipients and commercial identity of controllers/processors.",
+      "dpdpa_sec_5": "Notice to Data Principal specifying the purpose and details of data fiduciaries/processors.",
+      "cross_border_transfer": "Transfers to US entities (Google, Reddit, Spotify, Intercom) rely on EU-US DPF or Standard Contractual Clauses (SCCs)."
+    }
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-625DEF79",
+    "candidate_purpose": "authentication / session management",
+    "activity_reconciliation_status": "UNDISCLOSED_VENDORS_PRESENT",
+    "confidence": 0.75,
+    "evidence_count": 141,
+    "evidence_ids": [
+      "EVD-WEB-010-A9AB61A56D",
+      "EVD-WEB-022-DDE0E2CB2B",
+      "EVD-WEB-039-9F98B6C691",
+      "EVD-WEB-040-3A9D2AB495",
+      "EVD-WEB-049-1BBF093E51",
+      "EVD-WEB-125-5B5ADA5189",
+      "EVD-WEB-126-784BFA95A5",
+      "EVD-WEB-127-333D638A03",
+      "EVD-WEB-128-E33FBB46C6",
+      "EVD-WEB-129-C6EA934F1B"
+    ],
+    "vendor_reconciliation_details": [
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'sessiontimer@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'signals-sdk-session-id@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_hjsessionuser_763128@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_hjsession_763128@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'intercom-session-fsupkyat@miro.com'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://fonts.googleapis.com/css2?family=nanum+pen+script:ital,wght@0,400&display=swap'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/assets/grgckwrn6d3uz8ewclhzxwefc4.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/assets/iwij9tewver0sh7pi9puwiglfpi.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://fonts.gstatic.com/s/notosans/v42/o-0mipqlx3qulc5a4pnb6ryti20_6n1iphjcz6l1som-jcpoiyd9a99y41p6zhty.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://events.framer.com/script?v=2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://fonts.gstatic.com/s/notosans/v42/o-0mipqlx3qulc5a4pnb6ryti20_6n1iphjcz6l1som-jcpoiyajbo9a6vi.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/assets/befj6qqjmwjp8zopz1v70ptegeg.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/tunq4cxr4mcjxglduuwr6da.png?scale-down-to=1024&width=5750&height=3234'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/q4murv2qznqhxv9frszqe6yvh0.png?scale-down-to=1024&width=1081&height=1441'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/i7djrlqt76aylhaxr2qz4a29hn8.jpg?scale-down-to=512&width=2048&height=2048'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/assets/ynxjlpjmnmhxbfjoqrq8up2owe.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/assets/epln9agwfi64kvr9inhdux8ufw.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googletagmanager.com/gtm.js?id=gtm-n5mclt8'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/ndl7hmgk3lz5p8pmtauj1ud7hy8.png?scale-down-to=512&width=540&height=420'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/skiwlc23bqmquepnzcgoiejwthu.png?scale-down-to=512&width=540&height=420'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/9upwe0ntdpz31gydqhx0pnwozo.png?scale-down-to=512&width=540&height=420'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/je9eechzdivxr2nxdldpprlf4uq.png?scale-down-to=512&width=540&height=420'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/69nualt9qbx2mys7v5xu3u/5226904f0421943d938edfc2c6d61303/iso_badge__1_.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/1wiosc8qzrgmq8mrd8bcrs/cea1792e288c5092864710e706116a10/iso_badge.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/2jrk9yuwdgczgfi8xpbqco/0f5e372412c0bc49afce1e09f74a547e/iso_badge__2_.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/3tuenhmsygplnifoerqbry/7b37607d0d6768a519e79affe97d4083/gdpr.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/5ki053lyq38fyihu5aocpr/0992cf7cf88feac09b632f0e676dc346/g2__1_.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/2gnazbvvwj8gum2zvynmcy/3347d25a4f0c602eac02187e542b746b/g2.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/4uhvw0mixrt27kr2ddjeur/018f560db325613d3c14316c957aa74c/icon-social-x.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/5gjmvjdndmvoj3fktdavko/e6d727001c80b9f60a568196d88adf7b/icon-social-facebook.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/lbk1hpkxvprgmlihinigl/9bb251edbca75b02e7d223da8e3f34c1/icon-social-youtube.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/4otvnm6zlr7ji9evzy69zf/c2c9e910c14e8fcdeee302ccfa45c341/icon-social-linkedin.svg'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/32kq9jkxeseuijsm18olky/3263ebe3fe9c1ab1c992827edebc83a9/download_on_the_app_store_badge_us-uk_rgb_blk_092917_3.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/7lryw2nfto2luggmd2tnoy/4b56104f1efaa82f79886cf1d94408f2/google-play-badge.svg'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/3o5mzr09mczhdtloavuh3w/017858b4cade63f7af52746d77249edc/tr.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://images.ctfassets.net/x3tur5ylnyf2/1oclmo2hbbctr7t0arthop/0d4dfe4eab808821bb4e7376ebea2634/icon-social-instagram.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/react.doa55duw.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/rolldown-runtime.dh6celcd.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/interactive_animated_gradient.bchoq0j_.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/script_main.bmanvivx.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/flgq0w7zok-hka8vjuhutxbl2yhxorvlgcvhd52oz50.f5caf4is.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/motion.00bxzqwm.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/t-pdx224_kp9o52vyjm8dgw3wxem085y5ssf9xozfzs.dk6n-l7v.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/framer.cxs9z_p9.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/otsdkstub.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://mirostatic.com/website/static/production-eu/framer-code-components/web-tracker.esm.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/sites/4olt6jmsyz1z4emn7xvy4x/shared-lib.bk9q3u9e.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://i.ytimg.com/vi_webp/3ode5xkd7uo/maxresdefault.webp'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://mirostatic.com/website/static/production-eu/framer-code-components/shared/package-bp3d_ylp.esm.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://mirostatic.com/website/services-provider-scripts/optanonwrapper.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framer.com/edit/beta/init.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.65.0/dist/dotlottie-player.wasm'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/4133a0ef-6999-461d-909d-24f2b05bbc15.json'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://static-website.miro.com/miro-site-lp-build-assets/assets/styles/one-trust-cookie-banner.css'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://miro.com/api/ff/?apikey=qofzgkza2g7ssirwvd7wp0ikoeflzahw&flag=website-2000-exp-29-google-one-tap-home-page-2'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://app.framerstatic.com/chunk-bahufdkx.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/assets/gfdxrrdfaj3vg5hbead2nnwble.lottie'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://framerusercontent.com/images/6fbg66pbxjv2qfadfidui5mi9a.png'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/scripttemplates/202408.1.0/otbannersdk.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://miro.com/api/ff/?apikey=qofzgkza2g7ssirwvd7wp0ikoeflzahw&holdout=1'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://eventhub.eu01.miro.com/api/stream/v1/t'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://eventhub.eu01.miro.com/api/stream/v1/p'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/0198743b-bcb3-7a9f-8e16-2bfa133a246c/en.json'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/otflat.json'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/v2/otpccenter.json'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/otcommonstyles.css'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://static.hotjar.com/c/hotjar-763128.js?sv=7'}",
+        "matched_entity": "Hotjar Ltd",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Session Telemetry",
+        "notes": "Vendor 'Hotjar Ltd' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://a.quora.com/qevents.js'}",
+        "matched_entity": "Quora Inc.",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Quora Inc.' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.pdst.fm/ping.min.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/logos/static/ot_company_logo.png'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://widget.intercom.io/widget/fsupkyat'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://tracking.g2crowd.com/attribution_tracking/conversions/3946.js?p=https://miro.com/&e='}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cookielaw.org/logos/static/powered_by_logo.svg'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://trk.techtarget.com/tracking.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://script.getreditus.com/v2.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://connect.facebook.net/en_us/fbevents.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://events.framer.com/anonymous'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://bzrcdn.openai.com/sdk/oaiq.min.js'}",
+        "matched_entity": "OpenAI LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://script.hotjar.com/modules.e762be2b6b709245aabb.js'}",
+        "matched_entity": "Hotjar Ltd",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Session Telemetry",
+        "notes": "Vendor 'Hotjar Ltd' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://connect.facebook.net/signals/config/1788119838315928?v=2.9.408&r=stable&domain=miro.com&hme=f9ad993bedcdbb3fffd47532e189463ba18afe816a0bd364070ce559e4a6ac26&ex_m=117%2c239%2c169%2c27%2c81%2c82%2c160%2c77%2c76%2c11%2c179%2c101%2c20%2c152%2c140%2c46%2c84%2c89%2c148%2c174%2c181%2c8%2c4%2c5%2c7%2c6%2c3%2c102%2c114%2c32%2c17%2c31%2c18%2c33%2c34%2c35%2c37%2c55%2c161%2c86%2c125%2c22%2c24%2c51%2c47%2c49%2c48%2c94%2c103%2c107%2c123%2c159%2c162%2c53%2c124%2c29%2c26%2c132%2c78%2c43%2c164%2c163%2c165%2c156%2c154%2c30%2c42%2c66%2c122%2c176%2c79%2c21%2c127%2c92%2c75%2c23%2c96%2c97%2c129%2c95%2c150%2c149%2c153%2c108%2c175%2c178%2c41%2c56%2c126%2c54%2c183%2c109%2c182%2c208%2c253%2c83%2c267%2c266%2c265%2c14%2c25%2c28%2c40%2c62%2c116%2c68%2c10%2c72%2c110%2c111%2c112%2c118%2c143%2c38%2c36%2c145%2c146%2c147%2c142%2c141%2c170%2c85%2c173%2c171%2c172%2c57%2c67%2c136%2c19%2c177%2c52%2c316%2c317%2c318%2c315%2c331%2c356%2c246%2c235%2c69%2c236%2c234%2c359%2c350%2c59%2c247%2c120%2c144%2c91%2c134%2c61%2c133%2c139%2c138%2c65%2c73%2c71%2c166%2c87%2c88%2c128%2c44%2c39%2c60%2c63%2c113%2c180%2c1%2c137%2c16%2c135%2c12%2c2%2c64%2c104%2c15%2c74%2c70%2c131%2c100%2c99%2c185%2c186%2c105%2c106%2c9%2c115%2c184%2c58%2c157%2c98%2c90%2c80%2c130%2c119%2c167%2c50%2c158%2c0%2c93%2c151%2c155%2c168%2c45%2c121%2c13%2c187'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://tag.clearbitscripts.com/v1/pk_ffc0d0810226847786b05e7193234567/tags.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://bat.bing.com/bat.js'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://alb.reddit.com/rp'}",
+        "matched_entity": "Reddit Inc.",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Reddit Inc.' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://js.intercomcdn.com/vendor-modern.ec66fae1.js'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://js.intercomcdn.com/frame-modern.b2eb5b57.js'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.cr-relay.com/v1/site/4a3f2aa6-fd84-4177-aea4-c2fe259a8256/signals.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://bat.bing.com/p/action/5798164.js'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://scripts.clarity.ms/0.8.70/clarity.js'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://c.clarity.ms/c.gif'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googletagmanager.com/gtag/js?id=g-fk1cgszndb&cx=c&gtm=4e69n0h2'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://bat.bing.com/actionp/0?ti=5798164&tm=gtm002&ver=2&mid=cbd5a884-ceff-4b94-8930-5f0a9ad605d8&bo=1&evt=consent&src=update&cdb=aqet&asc=g'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://bat.bing.com/action/0?ti=5798164&tm=gtm002&ver=2&mid=cbd5a884-ceff-4b94-8930-5f0a9ad605d8&bo=2&sid=1cd60780b80311f1a547814dcf6dcad2&vid=1cd643d0b80311f1a162650438fff424&vids=1&msclkid=n&tpp=1&uach=pv%3d19.0.0&pi=918639831&lg=en-us&sw=1280&sh=720&sc=24&nwd=1&tl=ai%20innovation%20workspace%20%7c%20miro&p=https%3a%2f%2fmiro.com%2f&r=&lt=2101&evt=pageload&sv=2&asc=g&cdb=aqet&rn=682421'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googletagmanager.com/gtag/destination?id=aw-972905154&cx=c&gtm=4e69n0h2'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googletagmanager.com/gtag/destination?id=dc-12017650&cx=c&gtm=4e69n0h2'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googletagmanager.com/gtag/destination?id=dc-11345867&cx=c&gtm=4e69n0h2'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googletagmanager.com/gtag/destination?id=aw-726271593&cx=c&gtm=4e69n0h2'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://c.bing.com/c.gif?ctsa=mr&ctssyncid=ecb536024d9e4eba954fc87474543764&redc=c.clarity.ms&mxfr=22a52aac7ec96b4c3ec83d727ac96567'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.googletagmanager.com/gtag/destination?id=aw-382441813&cx=c&gtm=4e69n0h2'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://c.clarity.ms/c.gif?ctsa=mr&ctssyncid=ecb536024d9e4eba954fc87474543764&muid=08a683d595446f612334940b94376eb7'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://nld1rtp1-cdn.marketo.com/rtp-api/v1/rtp.js?aid=realtimeboard'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://api-iam.intercom.io/messenger/web/launcher_settings'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://api.cr-relay.com/v1/site/4a3f2aa6-fd84-4177-aea4-c2fe259a8256/batch'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://api-iam.intercom.io/messenger/web/ping'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://nld1rtp1.marketo.com/gw1/trw?aid=realtimeboard&trwv.uid=realtimeboard-1790245894100-d6064adb&trwv.vc=1&trwsa.sid=realtimeboard-1790245894101-3cae35b1&trwsb.cpv=1&ctzo=+05:30&uri=https%3a%2f%2fmiro.com%2f&ma=id%3a228-gpv-835%26token%3a_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&pm=&viewedtypes=&rts=1790245894102'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://nld1rtp1.marketo.com/gw1/msg?a=2&sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&ma=id%3a228-gpv-835%26token%3a_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&viewedtypes=&0.6921921090987054&rts=1790245894166'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://228-gpv-835.mktoresp.com/webevents/visitwebpage?_mchnc=1790245893985&_mchcn=&_mchid=228-gpv-835&_mchtk=_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&_mchho=miro.com&_mchpo=&_mchru=%2f&_mchpc=https%3a&_mchvr=165&_mchecid=&_mchha=&_mchre=&_mchqp='}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://stats.g.doubleclick.net/g/collect?v=2&tid=g-fk1cgszndb&cid=1983538274.1790245895&gtm=45je69n0h2v892694657z8830648269za20gzb830648269zd830648269xf1&rcb=19&aip=1&dma=0&gcs=g111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://nld1rtp1.marketo.com/gw1/msg?a=2&sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&ma=id%3a228-gpv-835%26token%3a_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&viewedtypes=&0.4388986541723384&rts=1790245897116'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;src=11345867;type=web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cja;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_fdxtq-vwjuo1pbzawgmjvtq6tar3fulltq;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://nld1rtp1.marketo.com/gw1/msg?a=2&sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&ma=id%3a228-gpv-835%26token%3a_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&viewedtypes=&0.18010515027158525&rts=1790245897441'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://nld1rtp1.marketo.com/gw1/rtp/api/v1_1/visitor?sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&1790245897394'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0dchm9om4qbjjydz8c9cg3s0fx9i8uja;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;dc_pre=cough9ebh5cdfw4xtwadmc4qrw;src=11345867;type=web;cat=homep0;rcb=19;ord=1;num=2844404330159;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cja;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_fdxtq-vwjuo1pbzawgmjvtq6tar3fulltq;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3a%2f%2fmiro.com%2f;u2=undefined;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_oz1sacyibfkywxrdar8izxjyjahod6s6vg;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90yuclhkon890pcxhj85apgd_0huvibgfq;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;dc_pre=cpddhtebh5cdfeqytwadmgyp6a;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0dchm9om4qbjjydz8c9cg3s0fx9i8uja;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/gmp/conversion/_dc_unique_id=3272493376088953245;_dc_ptd=chai8jtt1qyqnewu0r6l4makeh8alqz2nf5szqh5kgrgjwnyjxnifypwx1v-c2dzfvhg;_dc_time=1790245899;cid=caqs4geaqm4h3mfbuspmzgichkybqypgw7q1cjw7porh6_uli8qg-yxqx_uk6nwxcpqacbwgt_h1ub3yxsgfrhfnbkcr_slupjpkrw_yz-bsupic7q3mimmcaoh80l5pm13hxf7lzs8ikr0l31tcwnkr_ee0jd6ppl2jke5ogzbubh_zdicwbeiosmom3qequj8jc0gnsr6u6abvplpcm8n1f7j1tzamgtcm__9izgpyicsvddcnu3auizvyw_ozxpkdremkj9oavdougnqf2rnloq5yojq6cyrfo4pnrrlw9aqulhxm;eps=ahas8cbewhenw6rsjsiygxeykucv49sewuutyahmbkiyrt-vur9hmrerfluwqov0yjim3km2j6mwkrzc_fbvathskxnbn5ujm9qqfwimirejd4qlxg;dc_pre=cpddhtebh5cdfeqytwadmgyp6a;src=12017650;type=main_0;cat=miro_00;rcb=9;ord=8088097964700;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181815323z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_-z0dchm9om4qbjjydz8c9cg3s0fx9i8uja;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;dc_pre=cixwhtebh5cdfs6z2auduhgjmq;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3a%2f%2fmiro.com%2f;u2=undefined;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_oz1sacyibfkywxrdar8izxjyjahod6s6vg;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/gmp/conversion/_dc_unique_id=16164922407947531072;_dc_ptd=chai8jtt1qyqnewu0r6l4makeh8alqz2nquimymigf7rep8yppnzi5k3b8a2-3rhzww8;_dc_time=1790245899;cid=caqs4geaqm4h3h6cipjvwbc5asvflzr7jak_z9kpsfr4tb6ejolh40zghn_6l7h7ozkshaxoeruh-zbsbvbhai-wf6sce8-ucybxw0rr543abphnkfjawdusio6x7rz6eqikxdoct2hlkwysvfcmiyh-khk3_zd93n6at9uyave8iiosv7rsmtoirar2jpioh1ni4frwriw8xp4mtqemkszp_q0qru7zkjvh6fvqpjrzy_ciknj40fsjkxmsoj29b2xqlcpzg1u6fnxkqqyvxsdf1p-mwz94xmvtgovamcbhjwjn2iuc;eps=ahas8cakaus7m-i64kfuxjiobgu6y6gkbd73mgca5_osmjcbfi6alxzhv-bq9nzznefcfeorgdohmwepzwcpnb0zndgyootm_riehecy2y5cbqxnaq;dc_pre=cixwhtebh5cdfs6z2auduhgjmq;src=11345867;type=web;cat=web_h0;rcb=19;ord=5722687257294;npa=0;auiddc=791566007.1790245894;u1=https%3a%2f%2fmiro.com%2f;u2=undefined;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=kfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_oz1sacyibfkywxrdar8izxjyjahod6s6vg;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/activity;dc_pre=cnm-kdebh5cdfuxhcwedwpexcg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90yuclhkon890pcxhj85apgd_0huvibgfq;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/gmp/conversion/_dc_unique_id=11936396774446334782;_dc_ptd=chai8jtt1qyqnewu0r6l4makeh8alqz2nvbzkrmyylypm3olazhr0e-g6c0p4regpsd9;_dc_time=1790245899;cid=caqs4geaqm4h3gpqo10-fpxibikbbnblpa0zkxnjxro9t_x8hetsyuqe_meypkgpugpqolelqaoeoycaz19hma5kopbnbyby_3h0rvc8bfqcog50dxgftgwtjaclzc4x4jj79p_0wpfmw1ww0lnq83ji5msxixhf_6bknewl9bgwwbttozybs5bnx45rhquspugjgmb0rixdd9ahiae5tyjc_fcryhw5vgmroog0nqxcbdfanpwu2-q8n4nydz9j05-jc7p1_vrf8axybelf_jhz3tdbnkaz8cny7g6yfgq-rmkmf2yf;eps=ahas8cdqbn6wl1lyyvt6af1afzqymiqyjsmm58cnlkxf0oyueoloxpaiuctncr8znt31va5jzqujhkgtf5765agw_h4k9aj-moahgsqquumnmyjzlq;dc_pre=cnm-kdebh5cdfuxhcwedwpexcg;src=11345867;type=web;cat=websi0;rcb=19;ord=4129813809987;npa=0;auiddc=791566007.1790245894;gdid=dnzmyy2.dywjhmj;uaa=x86;uab=64;uafvl=not%252fa)brand%3b99.0.0.0%7cchromium%3b148.0.7778.96;uamb=0;uam=;uap=windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=cfa;gtm=45fe69n0h2v9181808937z8830648269za20gzb830648269zd830648269xeaxf1;gcs=g111;gcd=13t3t3t3t5l1;dma=0;dc_fmt=3;tag_exp=115616985~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;dc_random=1790245894_90yuclhkon890pcxhj85apgd_0huvibgfq;~oref=https%3a%2f%2fmiro.com%2f?'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://js.intercomcdn.com/vendors~app~tooltips-modern.e1cc484f.js'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://js.intercomcdn.com/vendors~sentry~app-modern.af8af26a.js'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://js.intercomcdn.com/vendors~app-modern.cefb8c1f.js'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://js.intercomcdn.com/app~tooltips-modern.7daf0c9c.js'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://js.intercomcdn.com/app-modern.9ba7ca74.js'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://eventhub.eu01.miro.com/api/stream/v1/import'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://api-iam.intercom.io/messenger/web/metrics'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://fonts.gstatic.com/s/roboto/v48/kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://app.framerstatic.com/chunk-6w2k2mog.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://app.framerstatic.com/chunk-yrq7g4qh.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://app.framerstatic.com/chunk-woeogj2w.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://app.framerstatic.com/chunk-wlhsdigq.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://app.framerstatic.com/editorbar.2ifjcatx.mjs'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://static.doubleclick.net/instream/ad_status.js'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.google.com/js/th/db8wbdeodirdoeeuxotawornzwwa3v40sgw3ococzyu.js'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://i.ytimg.com/vi_webp/3ode5xkd7uo/default.webp'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://api.framer.com/auth/web/access-token?source=editorbar'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.waa/generateit'}",
+        "matched_entity": "Google LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Data Discovery (Guard), AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      }
+    ],
+    "statutory_implications": {
+      "gdpr_art_13_14": "Requirement to specify categories of recipients and commercial identity of controllers/processors.",
+      "dpdpa_sec_5": "Notice to Data Principal specifying the purpose and details of data fiduciaries/processors.",
+      "cross_border_transfer": "Transfers to US entities (Google, Reddit, Spotify, Intercom) rely on EU-US DPF or Standard Contractual Clauses (SCCs)."
+    }
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-E01DEC6E",
+    "candidate_purpose": "customer support",
+    "activity_reconciliation_status": "DISCLOSED_OR_INTERNAL",
+    "confidence": 0.7,
+    "evidence_count": 2,
+    "evidence_ids": [
+      "EVD-WEB-048-A73DAC25C6",
+      "EVD-WEB-050-D43AC9B9E3"
+    ],
+    "vendor_reconciliation_details": [
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'intercom-id-fsupkyat@miro.com'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'intercom-device-id-fsupkyat@miro.com'}",
+        "matched_entity": "Intercom, Inc.",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "Customer Support (Chatbot)",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      }
+    ],
+    "statutory_implications": {
+      "gdpr_art_13_14": "Requirement to specify categories of recipients and commercial identity of controllers/processors.",
+      "dpdpa_sec_5": "Notice to Data Principal specifying the purpose and details of data fiduciaries/processors.",
+      "cross_border_transfer": "Transfers to US entities (Google, Reddit, Spotify, Intercom) rely on EU-US DPF or Standard Contractual Clauses (SCCs)."
+    }
+  },
+  {
+    "candidate_activity_id": "CAND-ACT-6BF44E43",
+    "candidate_purpose": "purpose requires validation",
+    "activity_reconciliation_status": "UNDISCLOSED_VENDORS_PRESENT",
+    "confidence": 0.75,
+    "evidence_count": 67,
+    "evidence_ids": [
+      "EVD-WEB-001-CDEB879188",
+      "EVD-WEB-002-C50B16F14B",
+      "EVD-WEB-003-5FF2B47A26",
+      "EVD-WEB-005-A2B3476D33",
+      "EVD-WEB-006-A4C4258815",
+      "EVD-WEB-007-819850F379",
+      "EVD-WEB-008-B71FDDE3C7",
+      "EVD-WEB-009-A36E1ABB8D",
+      "EVD-WEB-011-FA171931E3",
+      "EVD-WEB-012-7F782573A0"
+    ],
+    "vendor_reconciliation_details": [
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'geo_data@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'ajs_anonymous_id@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__ff_cookie_styles@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__ff@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'server_experiment_viewed@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'fbp_tracked@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'rdt_uuid_tracked@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'pageviewcount@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'optanonconsent@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__cf_bm@g2crowd.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_rdt_uuid@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__pdst@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__cf_bm@bzrcdn.openai.com'}",
+        "matched_entity": "OpenAI LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_cfuvid@bzrcdn.openai.com'}",
+        "matched_entity": "OpenAI LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'clid@www.clarity.ms'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_fbp@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'fr@facebook.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__cf_bm@g2.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'signals-sdk-user-id@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_uetsid@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_uetvid@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_clck@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'mr@bat.bing.com'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'bcookie@linkedin.com'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'lidc@linkedin.com'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__cf_bm@linkedin.com'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'awsalbcors@nld1rtp1-cdn.marketo.com'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'tapad_ts@tapad.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'tapad_did@tapad.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'muid@bing.com'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'mr@c.bing.com'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'srm_b@c.bing.com'}",
+        "matched_entity": "Microsoft Bing Ads",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Search Ad Conversion",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'tapad_3way_syncs@tapad.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__obref@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_mkto_trk@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'sm@c.clarity.ms'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'muid@clarity.ms'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'mr@c.clarity.ms'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'anonchk@c.clarity.ms'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'trwv.uid@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'trwsa.sid@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'li_sugr@linkedin.com'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_clsk@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_gcl_au@miro.com'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'usermatchhistory@linkedin.com'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'awsalbcors@nld1rtp1.marketo.com'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'bscookie@www.linkedin.com'}",
+        "matched_entity": "LinkedIn Corporation",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising / Analytics",
+        "notes": "Vendor 'LinkedIn Corporation' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'ide@doubleclick.net'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__cf_bm@bzr.openai.com'}",
+        "matched_entity": "OpenAI LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '_cfuvid@bzr.openai.com'}",
+        "matched_entity": "OpenAI LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__secure-ynid@youtube.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'ysc@youtube.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'visitor_info1_live@youtube.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': 'visitor_privacy_metadata@youtube.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'cookie', 'identifier': '__secure-rollout_token@youtube.com'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://cdn.getsmartcontent.com/dqm58vvm.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://munchkin.marketo.net/munchkin.js'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://scripts.appbind.com/v0/skyhook.js'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://munchkin.marketo.net/165/munchkin.js'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://www.clarity.ms/tag/hn9ca7nm9h'}",
+        "matched_entity": "Microsoft Clarity",
+        "reconciliation_status": "PARTIALLY_DISCLOSED",
+        "category": "Session Replay & Heatmaps",
+        "notes": "Microsoft Corporation is named in Subprocessors for AI/OCR, but Clarity session replay & Bing conversion are not specified."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://tracking-api.g2.com/attribution_tracking/conversions/assign'}",
+        "matched_entity": "External Host / Third-Party",
+        "reconciliation_status": "UNVERIFIED",
+        "notes": "External third-party endpoint requiring legal verification."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ibc-flow.techtarget.com/a/gif.gif?acttypeid=31&cid=16655799&r=1790245892819&ref=https%3a%2f%2fmiro.com%2f&version=2.4'}",
+        "matched_entity": "Miro (First-Party)",
+        "reconciliation_status": "DISCLOSED",
+        "notes": "First-party essential application traffic."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://rtp-static.marketo.com/rtp/libs/jquery-ui-insightera-custom-1.9.6.css'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://rtp-static.marketo.com/rtp/libs/jquery/3.7.0/jquery.min.js'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://ad.doubleclick.net/ccm/s/collect?auid=791566007.1790245894&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&fmt=8'}",
+        "matched_entity": "Google DoubleClick",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Targeting / Advertising",
+        "notes": "Vendor 'Google DoubleClick' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://rtp-static.marketo.com/rtp/libs/jqueryui/1.13.2/jquery-custom-ui.min.js'}",
+        "matched_entity": "Adobe Marketo",
+        "reconciliation_status": "UNDISCLOSED",
+        "category": "Marketing Automation",
+        "notes": "Vendor 'Adobe Marketo' observed transmitting telemetry but is omitted from both the Privacy Notice and Subprocessor list."
+      },
+      {
+        "target": "{'kind': 'url', 'identifier': 'https://bzr.openai.com/v1/sdk/events?pid=xkqra2m7va8gmvnhwne4vq&st=oaiq-web&sv=0.1.41&t=1790245895499&ec=2'}",
+        "matched_entity": "OpenAI LLC",
+        "reconciliation_status": "DISCLOSED",
+        "documented_role": "AI Functionality",
+        "location": "USA",
+        "notes": "Explicitly named in official Subprocessor Register (July 2026)."
+      }
+    ],
+    "statutory_implications": {
+      "gdpr_art_13_14": "Requirement to specify categories of recipients and commercial identity of controllers/processors.",
+      "dpdpa_sec_5": "Notice to Data Principal specifying the purpose and details of data fiduciaries/processors.",
+      "cross_border_transfer": "Transfers to US entities (Google, Reddit, Spotify, Intercom) rely on EU-US DPF or Standard Contractual Clauses (SCCs)."
+    }
+  }
+]
