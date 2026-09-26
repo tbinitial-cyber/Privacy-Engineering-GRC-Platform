@@ -25,7 +25,7 @@
       "jurisdiction": "EU",
       "applicable_framework": "EU GDPR / ePrivacy Directive",
       "ip_country": "FR",
-      "region": "Europe/Paris (Île-de-France)",
+      "region": "Europe/Paris (\u00cele-de-France)",
       "proxy": "http://127.0.0.1:61809",
       "provenance": "EU France route via residential proxy (Prior opt-in CMP profile)",
       "cmp_metadata": {

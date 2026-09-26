@@ -242,6 +242,63 @@ def revoke_dpo_signoff(activity_id, reason="Revoked by compliance review"):
         json.dump(ledger, f, indent=2)
     return event
 
+def verify_dpo_ledger():
+    """
+    Walk the full DPO ledger chain and verify:
+      1. Each event's signature_hash = SHA-256(raw_material for that event)
+      2. Each event's previous_event_hash == prior event's signature_hash (or genesis_hash)
+    Returns (is_valid: bool, results: list[dict])
+    """
+    ledger = load_dpo_signoff_ledger()
+    events = ledger.get("events", [])
+    genesis = ledger.get("genesis_hash", "0" * 64)
+    results = []
+    is_valid = True
+
+    prev_sig = genesis
+    for i, ev in enumerate(events):
+        ev_id = ev.get("event_id", f"EVT-{i}")
+        stored_sig = ev.get("signature_hash", "")
+        stored_prev = ev.get("previous_event_hash", "")
+
+        # Check linkage
+        link_ok = stored_prev == prev_sig
+        if not link_ok:
+            is_valid = False
+
+        # Recompute signature based on event type
+        ev_type = ev.get("event_type", "")
+        if ev_type == "SIGNOFF_RECORDED":
+            raw = (
+                f"{ev_id}|SIGNOFF_RECORDED|{stored_prev}"
+                f"|{ev.get('activity_id','')}|{ev.get('reviewer_name','')}|{ev.get('reviewer_role','')}|{ev.get('timestamp','')}|{ev.get('audit_run_id','')}|{json.dumps(ev.get('checklist_answers',{}), sort_keys=True)}"
+            )
+        elif ev_type == "SIGNOFF_REVOKED":
+            raw = (
+                f"{ev_id}|SIGNOFF_REVOKED|{stored_prev}"
+                f"|{ev.get('activity_id','')}|{ev.get('timestamp','')}|{ev.get('revocation_reason','')}"
+            )
+        else:
+            raw = f"{ev_id}|{ev_type}|{stored_prev}|{ev.get('timestamp','')}"
+
+        computed_sig = hashlib.sha256(raw.encode("utf-8")).hexdigest()
+        sig_ok = computed_sig.lower() == stored_sig.lower()
+        if not sig_ok:
+            is_valid = False
+
+        results.append({
+            "event_id": ev_id,
+            "event_type": ev_type,
+            "link_check": "PASS" if link_ok else "FAIL (chain broken)",
+            "signature_check": "PASS" if sig_ok else "FAIL (hash mismatch)",
+            "stored_sig": stored_sig[:16] + "...",
+            "computed_sig": computed_sig[:16] + "...",
+        })
+        prev_sig = stored_sig
+
+    return is_valid, results
+
+
 # Sidebar Navigation
 st.sidebar.image("https://img.icons8.com/color/96/shield.png", width=64)
 st.sidebar.title("Privacy GRC Pipeline")
@@ -251,11 +308,11 @@ jurisdiction_mode = st.sidebar.selectbox(
     "🌐 Capture Route & Jurisdiction:",
     [
         "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)",
-        "🇪🇺 European Union Route (France - Strict GDPR Benchmark)",
+        "🇪🇺 European Union Route (France - EU/France-Geolocated Consent Benchmark)",
         "🇮🇳 India Route (Domestic - Pre-DPDPA Baseline)"
     ],
     index=0,
-    help="Toggle between comparative geofencing arbitrage analysis or single-route telemetry."
+    help="Toggle between jurisdictional consent configuration comparison or single-route telemetry."
 )
 
 nav_choice = st.sidebar.radio(
@@ -285,7 +342,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
     if jurisdiction_mode == "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)":
         st.markdown('<div class="sub-title">Cross-Border Telemetry Audit of Miro.com | Comparative Geofencing Arbitrage (EU Strict GDPR vs. India Domestic Baseline)</div>', unsafe_allow_html=True)
     elif "European Union" in jurisdiction_mode:
-        st.markdown('<div class="sub-title">European Telemetry Benchmark of Miro.com | France IP Route under GDPR Arts. 4(11), 6(1)(a), 7(3) (Withdrawal Parity) & ePrivacy Directive</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-title">European Telemetry Benchmark of Miro.com | France IP Route -- Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements & ePrivacy Directive</div>', unsafe_allow_html=True)
     else:
         st.markdown('<div class="sub-title">Domestic Telemetry Baseline of Miro.com | India IP Route under DPDPA 2023 & Consumer Protection Act 2019 (Central Consumer Protection Authority / Dark Patterns Guidelines)</div>', unsafe_allow_html=True)
 
@@ -393,7 +450,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
                 "Forensic Dimension": "Pre-Consent Third-Party Trackers",
                 "🇪🇺 European Union Route (France)": "0 Known Advertising Trackers (Microsoft Clarity, Tapad, and DoubleClick withheld during observation window)",
                 "🇮🇳 India Route (Domestic Baseline)": "Active Trackers Firing (Microsoft Clarity and Tapad beacons transmit immediately)",
-                "Technical & Legal Assessment": "EU ePrivacy Dir. Art. 5(3) prior consent gate bypassed on domestic route prior to affirmative user action."
+                "Technical & Legal Assessment": "Pre-consent cookie deposition observed on domestic route prior to affirmative user action. Assessed under Indian statutory framework (DPDPA 2023 Sec. 6 / Consumer Protection Act 2019); EU ePrivacy Directive does not apply to the Indian route."
             },
             {
                 "Forensic Dimension": "Post-Action Cookie Delta (Reject All)",
@@ -409,9 +466,9 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
             },
             {
                 "Forensic Dimension": "Statutory Governance & Exposure",
-                "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 6(1)(a), 7(3) (Withdrawal Parity) & ePrivacy Directive (Fully enforceable; €20M / 4% global turnover fine risk)",
-                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019 (India CCPA Guidelines)",
-                "Technical & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into statutory force."
+                "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 6(1)(a) & ePrivacy Directive (Fully enforceable; €20M / 4% global turnover fine risk). Consent and rejection controls observed on first layer.",
+                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019 (India CCPA / Dark Patterns Guidelines 2023)",
+                "Technical & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into statutory force. EU frameworks assessed independently on EU route only."
             }
         ]
         st.dataframe(pd.DataFrame(comparative_matrix), width="stretch", hide_index=True)
@@ -429,10 +486,10 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
 
     elif "European Union" in jurisdiction_mode:
         # EU Route Specific KPIs
-        st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Demonstrates textbook GDPR Arts. 4(11), 6(1)(a) prior opt-in and Art. 7(3) withdrawal parity.")
+        st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements. Consent and rejection controls observed on first layer.")
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
-            st.metric(label="Pre-Consent Cookies", value=f"{eu_pre_cookies} Cookies", delta="Essential Only (C0001)")
+            st.metric(label="Pre-Consent Cookies", value=f"{eu_pre_cookies} Cookies", delta="C0001 Active — Classification Pending")
         with col2:
             st.metric(label="CMP Active Groups", value="C0001 Only", delta="Opt-In Enforced")
         with col3:
@@ -506,15 +563,15 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
     st.caption("Empirical browser network recording on Miro (https://miro.com) using Playwright Chromium + Chrome DevTools Protocol (CDP)")
     
     tab_comp, tab_eu, tab_in, tab_delta, tab_hosts = st.tabs([
-        "⚖️ Geofencing Privacy Arbitrage",
-        "🇪🇺 Europe Route (France / Strict GDPR)",
+        "⚖️ Jurisdictional Consent Configuration Comparison",
+        "🇪🇺 Europe Route (France / EU Benchmark)",
         "🇮🇳 India Route (Domestic Baseline)",
         "🍪 Multi-Attribute Cookie Delta",
         "🌐 Network Host Inventory"
     ])
     
     with tab_comp:
-        st.subheader("⚖️ Geofencing Privacy Arbitrage: Empirical Cross-Border Consent Gate Comparison")
+        st.subheader("⚖️ Jurisdictional Consent Configuration Comparison: Empirical Cross-Border Consent Gate Analysis")
         st.markdown("""
         **The Technical Phenomenon:** Multinational tech platforms utilize dynamic GeoIP lookups (via OneTrust CDN endpoints such as `geolocation.onetrust.com/cookieconsentpub/v1/geo/location`) to detect the geographic location of incoming visitors. Depending on the detected country, the Consent Management Platform (CMP) dynamically swaps its UI, legal text, and script execution policies.
         """)
@@ -704,7 +761,7 @@ elif nav_choice == "🧩 02. Algorithmic Processing Activities":
             
             sources = act.get('evidence_sources', [])
             base_score = 75 if len(sources) > 1 else 70
-            badge = f"✅ DPO VALIDATED (Signed by {existing_signoff.get('reviewer_name')})" if is_signed else f"⏳ CANDIDATE (Algorithmic Support Index: {base_score}/100)"
+            badge = f"✅ DPO VALIDATED (Signed by {existing_signoff.get('reviewer_name')})" if is_signed else f"[PENDING] CANDIDATE (Evidence Support Index: {base_score}/100 -- heuristic, not a probability)"
             
             with st.expander(f"📌 Candidate Activity 0{idx}: {act.get('candidate_purpose', 'Unclassified').upper()} | {badge}"):
                 c1, c2 = st.columns(2)
@@ -715,7 +772,7 @@ elif nav_choice == "🧩 02. Algorithmic Processing Activities":
                     st.write(f"**Supporting Evidence Count:** {len(act.get('evidence_ids', []))} Telemetry Records")
                     st.write(f"**Discovery Vectors:** `{', '.join(sources)}`")
                 with c2:
-                    st.write(f"**Algorithmic Support Index:** `{base_score}/100 (Technical Corroboration)`")
+                    st.write(f"**Evidence Support Index (Heuristic):** `{base_score}/100` -- not a probability; indicates technical corroboration strength only")
                     if is_signed:
                         st.markdown(f"**Governance Status:** `SIGNED & VALIDATED`")
                         st.caption(f"Reviewer: **{existing_signoff.get('reviewer_name')}** ({existing_signoff.get('reviewer_role')}, {existing_signoff.get('organization')})")
@@ -763,6 +820,21 @@ elif nav_choice == "🧩 02. Algorithmic Processing Activities":
                             st.rerun()
     else:
         st.error("Failed to load candidate processing activities.")
+
+    st.divider()
+    st.subheader("🔗 DPO Ledger Chain Integrity Verification")
+    st.caption("Independent cryptographic chain-walk: verifies each event's signature and linkage without mutating the ledger.")
+    if st.button("Run Chain Integrity Verification"):
+        chain_ok, chain_results = verify_dpo_ledger()
+        if not chain_results:
+            st.info("Ledger is empty (no events yet). Chain verification: N/A.")
+        elif chain_ok:
+            st.success(f"Chain Integrity: VERIFIED — all {len(chain_results)} event(s) passed signature and linkage checks.")
+        else:
+            st.error(f"Chain Integrity: FAILURE DETECTED — one or more events failed verification. Review table below.")
+        if chain_results:
+            st.dataframe(pd.DataFrame(chain_results), hide_index=True, width="stretch")
+
 
 # ----------------------------------------------------
 # 4. MODULE 03: TRANSPARENCY RECONCILIATION & COOKIES

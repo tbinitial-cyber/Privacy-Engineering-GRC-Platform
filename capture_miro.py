@@ -25,7 +25,7 @@ def compute_sha256(filepath: str) -> str:
             h.update(chunk)
     return h.hexdigest()
 
-async def capture_profile(profile: str, proxy: str = None, headless: bool = True):
+async def capture_profile(profile: str, proxy: str = None, headless: bool = True, action: str = "reject"):
     is_eu = profile.lower() in ["eu", "eu-france", "france"]
     run_id = "MIRO-EU-001" if is_eu else "MIRO-IN-001"
     jurisdiction = "EU" if is_eu else "INDIA"
@@ -131,28 +131,53 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
             json.dump(pre_state, f, indent=2)
         print(f"✅ Baseline saved ({len(pre_cookies)} cookies, active groups: {active_groups})")
 
-        # 2. EXECUTE REJECT ALL (IF VISIBLE)
-        if has_reject:
-            print("Clicking 'Reject All' (Tout refuser)...")
-            await reject_btn.click()
-            await page.wait_for_timeout(3000)
-            reject_cookies = await context.cookies()
-            reject_screenshot_path = os.path.join(output_dir, "post_reject.png")
-            await page.screenshot(path=reject_screenshot_path, full_page=False)
+        # 2. EXECUTE POST-CONSENT ACTION (symmetric: baseline/accept/reject supported for BOTH profiles)
+        if action == "reject":
+            if has_reject:
+                print("Clicking 'Reject All'...")
+                await reject_btn.click()
+                await page.wait_for_timeout(3000)
+                reject_cookies = await context.cookies()
+                reject_screenshot_path = os.path.join(output_dir, "post_reject.png")
+                await page.screenshot(path=reject_screenshot_path, full_page=False)
+                reject_state = {
+                    "audit_run_id": run_id,
+                    "action": "CLICKED_REJECT_ALL",
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                    "cookie_count": len(reject_cookies),
+                    "cookies": reject_cookies
+                }
+                with open(os.path.join(output_dir, "post_reject.json"), "w", encoding="utf-8") as f:
+                    json.dump(reject_state, f, indent=2)
+                print(f"Post-Reject state saved ({len(reject_cookies)} cookies)")
+            else:
+                print(f"WARNING: Reject All button not visible on {profile.upper()} route.")
 
-            reject_state = {
-                "audit_run_id": run_id,
-                "action": "CLICKED_REJECT_ALL",
-                "timestamp": datetime.now(timezone.utc).isoformat(),
-                "cookie_count": len(reject_cookies),
-                "cookies": reject_cookies
-            }
-            with open(os.path.join(output_dir, "post_reject.json"), "w", encoding="utf-8") as f:
-                json.dump(reject_state, f, indent=2)
-            print(f"✅ Post-Reject state saved ({len(reject_cookies)} cookies)")
+        elif action == "accept":
+            if has_accept:
+                print("Clicking 'Accept All'...")
+                await accept_btn.click()
+                await page.wait_for_timeout(3000)
+                accept_cookies = await context.cookies()
+                accept_screenshot_path = os.path.join(output_dir, "post_accept.png")
+                await page.screenshot(path=accept_screenshot_path, full_page=False)
+                accept_groups = await page.evaluate("() => window.OnetrustActiveGroups || null")
+                accept_state = {
+                    "audit_run_id": run_id,
+                    "action": "CLICKED_ACCEPT_ALL",
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                    "active_groups_post_accept": accept_groups,
+                    "cookie_count": len(accept_cookies),
+                    "cookies": accept_cookies
+                }
+                with open(os.path.join(output_dir, "post_accept.json"), "w", encoding="utf-8") as f:
+                    json.dump(accept_state, f, indent=2)
+                print(f"Post-Accept state saved ({len(accept_cookies)} cookies, groups: {accept_groups})")
+            else:
+                print(f"WARNING: Accept All button not visible on {profile.upper()} route.")
 
-        elif is_eu:
-            print("Warning: Reject All button not visible on EU route!")
+        else:  # action == "baseline": PRE_CONSENT observation only, no click
+            print("Baseline-only run: no consent interaction performed.")
 
         # 3. RUN CONTEXT RECORD
         run_context = {
@@ -180,6 +205,8 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
 def main():
     parser = argparse.ArgumentParser(description="Miro.com Standardized Telemetry Capture CLI")
     parser.add_argument("--profile", choices=["india", "eu-france"], default="india", help="Capture profile")
+    parser.add_argument("--action", choices=["baseline", "accept", "reject"], default="reject",
+                        help="Post-page-load action: 'baseline' (no click), 'accept' (Accept All), 'reject' (Reject All)")
     parser.add_argument("--proxy", default=None, help="Proxy URL for European route (e.g. http://127.0.0.1:61809)")
     parser.add_argument("--headless", action="store_true", default=True, help="Run headless")
     args = parser.parse_args()
@@ -187,7 +214,8 @@ def main():
     asyncio.run(capture_profile(
         profile=args.profile,
         proxy=args.proxy,
-        headless=args.headless
+        headless=args.headless,
+        action=args.action
     ))
 
 if __name__ == "__main__":

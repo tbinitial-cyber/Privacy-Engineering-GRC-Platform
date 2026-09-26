@@ -58,10 +58,10 @@ flowchart TD
     B -->|Observed Reality| C["Microsoft Clarity and Hotjar Ingested"]
     B -->|Observed Reality| D["Tapad and LinkedIn Sync Fired"]
     C --> E["Session Replay Captured (Clicks, Scrolls, DOM)"]
-    D --> F["Device Graph Synchronized across Ad Exchanges"]
+    D --> F["Tapad Sync Identifiers Observed (TapAd_TS, TapAd_DID, TapAd_3WAY_SYNCS)"]
     E --> G["Regulatory Scrutiny: High-Risk Presumption under WP 248 Guidelines"]
     F --> G
-    G --> H["Formal DPIA & Technical Tag Gating Recommended"]
+    G --> H["Formal DPIA and Technical Tag Gating Recommended"]
 ```
 
 ---
@@ -99,8 +99,8 @@ flowchart TD
   - `EVD-WEB-054-0FA27994D4` (`AnalyticsSyncHistory` on `.linkedin.com`)
 
 #### B. The Privacy Risk Mechanics
-1. **3-Way Cookie Syncing:** `TapAd_3WAY_SYNCS` executes programmatic redirect chains that link Miro's visitor ID with external Demand-Side Platforms (DSPs) and Data Management Platforms (DMPs).
-2. **Deterministic & Probabilistic Device Graphing:** Tapad analyzes IP subnets, browser canvas fingerprints, and browsing timestamps to associate a user's corporate office workstation with their personal mobile phone.
+1. **Observed Synchronization Activity:** `TapAd_3WAY_SYNCS` and associated cookies were observed firing during the India pre-consent baseline. This indicates synchronization-related activity; downstream identity-graph construction has not been independently verified from this test run alone.
+2. **Probabilistic Tracking Architecture (Architectural Assessment):** Tapad's published architecture describes IP-subnet analysis, browser fingerprinting, and timestamp correlation to associate cross-device identifiers. Whether this architecture was actively applied to the observed session cannot be confirmed from cookie observation alone.
 3. **Severe Disclosure Gap:** Miro's public Subprocessor PDF (July 2026) **completely omits Tapad, Inc.**, meaning data subjects receive zero statutory notice under GDPR Article 13/14 regarding this data sharing.
 
 ---
@@ -111,9 +111,9 @@ We evaluate the inherent risk (without controls) versus the residual risk (with 
 
 | Risk Threat Vector | Vulnerability / Cause | Inherent Likelihood (1-5) | Inherent Severity (1-5) | Inherent Risk (1-25) | Regulatory Non-Compliance Exposure |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| **R1: Unlawful Session Recording** | Clarity & Hotjar recording users without prior consent | **5 (Almost Certain)** | **4 (Major)** | **20 (CRITICAL)** | GDPR Art 6(1)(a), Art 5(1)(a) Lawfulness; CNIL & DPC session replay sanctions. |
+| **R1: Unlawful Session Recording** | Clarity & Hotjar recording users without prior consent | **OBSERVED IN TEST RUN — Production-Wide Prevalence: Requires Repeat-Run Validation** | **4 (Major)** | **Pending Repeat-Run Validation** | GDPR Art 6(1)(a), Art 5(1)(a) Lawfulness; CNIL & DPC session replay sanctions. |
 | **R2: Unintended Data Ingestion** | Form text or canvas metadata captured in Clarity video replays | **3 (Possible)** | **4 (Major)** | **12 (HIGH)** | GDPR Art 9 Sensitive Data / Art 5(1)(c) Data Minimisation. |
-| **R3: Undisclosed Third-Party Sync** | Tapad device graph sharing without DPA or notice | **5 (Almost Certain)** | **4 (Major)** | **20 (CRITICAL)** | GDPR Art 13 Transparency, Art 28 Processor obligations; DPDPA Sec 6. |
+| **R3: Undisclosed Third-Party Sync** | Tapad device graph sharing without DPA or notice | **OBSERVED IN TEST RUN — Production-Wide Prevalence: Requires Repeat-Run Validation** | **4 (Major)** | **Pending Repeat-Run Validation** | GDPR Art 13 Transparency, Art 28 Processor obligations; DPDPA Sec 6. |
 | **R4: Cross-Border Transfer Exposure** | Replay and ad telemetry transmitted to US without verified SCCs | **4 (Likely)** | **3 (Moderate)** | **12 (HIGH)** | GDPR Chapter V (Art 44-46) International Data Transfers. |
 
 ---
