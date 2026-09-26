@@ -7,7 +7,7 @@
 - `baseline.json`: The 55 unique cookies that were dropped on the computer BEFORE consent (Pre-Consent Baseline).
 - `post_consent.json`: The 65 total cookies present AFTER clicking "Accept All" (including 10 brand-new cookies released post-consent).
 - `host_inventory.json`: List of all 74 external companies/servers Miro connected to.
-- `network.har`: The complete 26.1 MB binary network recording file containing raw network packets.
+- `network.har`: The complete 26.1 MB HTTP Archive (HAR) file containing browser-level HTTP request/response network telemetry.
 
 ### Plain English Explanation:
 - **What did we do?** We opened a real web browser (Playwright Chromium) and visited `https://miro.com`.

@@ -1,8 +1,8 @@
 # 🏛️ STATUTORY RECORDS OF PROCESSING ACTIVITIES (RoPA) REGISTER
-### *Enterprise Compliance Documentation under GDPR Article 30 & DPDPA 2023 Section 8*
+### *Enterprise Compliance Documentation under GDPR Article 30 (Statutory) & DPDPA 2023 General Fiduciary Governance Alignment*
 **Organization:** RealtimeBoard Inc. d/b/a Miro (Delaware, USA) & RealtimeBoard B.V. (Amsterdam, Netherlands)  
 **Appointed DPO Contact:** `privacy@miro.com` | Singel 540, 1017 AZ Amsterdam, Netherlands  
-**Audit Reference:** `miro_live_audit_run_001` | **Date Certified:** 24 September 2026  
+**Audit Reference:** `miro_live_audit_run_001` | **Document Status:** Operational Governance Draft (Uncertified Candidate)  
 **Verification Base:** [normalized_evidence.json](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/normalized_evidence.json) (301 Deterministic SHA-256 Telemetry Records)  
 **Associated Excel Workbook:** [ROPA_ARTICLE_30_REGISTER.xlsx](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/ROPA_ARTICLE_30_REGISTER.xlsx)
 
@@ -10,7 +10,7 @@
 
 ## 1. Executive Governance & Legal Scope
 
-Under **GDPR Article 30(1)** and **India's Digital Personal Data Protection Act (DPDPA) 2023 Section 8**, data controllers are legally obligated to maintain an immutable, detailed record of all personal data processing activities under their responsibility.
+Under **GDPR Article 30(1)**, data controllers are legally obligated to maintain an immutable, detailed record of all personal data processing activities under their responsibility. While India's **Digital Personal Data Protection Act (DPDPA) 2023** does not establish an explicit statutory RoPA register, maintaining an operational processing inventory is recognized as an industry-standard mechanism to demonstrate compliance with general Data Fiduciary accountability and security obligations under Section 8.
 
 This register bridges **live frontend network telemetry** captured via automated browser instrumentation with **authoritative legal classifications**, documenting:
 1. Exact operational purposes and corresponding statutory lawful bases.

@@ -17,36 +17,36 @@
 
 Under **GDPR Article 35(1)**, where a type of processing—in particular using new technologies, and taking into account its nature, scope, context, and purposes—is **likely to result in a high risk** to the rights and freedoms of natural persons, the data controller must carry out a Data Protection Impact Assessment (DPIA) prior to processing.
 
-Furthermore, under the **European Data Protection Board (EDPB) Guidelines on DPIA (WP 248 rev.01)**, an operation meeting **two or more high-risk criteria** establishes a statutory presumption that a full DPIA is mandatory.
+Furthermore, under the **Article 29 Working Party / European Data Protection Board (EDPB) Guidelines on DPIA (WP 248 rev.01)**, an operation meeting **two or more criteria** establishes a strong regulatory presumption in supervisory guidance that a processing operation is likely to result in high risk, warranting a formal DPIA.
 
-### Statutory Determination:
-> [!CAUTION]
-> **FORMAL FINDING: MANDATORY FULL DPIA REQUIRED**  
-> Based on empirical technical telemetry captured during `miro_live_audit_run_001`, the Miro web platform deploys two distinct high-risk processing operations:
-> 1. **Session Screen Replay & DOM Telemetry (Microsoft Clarity & Hotjar):** Meets **3 EDPB Criteria** (Systematic Monitoring, Innovative Technology, Large Scale).
-> 2. **Cross-Device Behavioral Identity Synchronization (Tapad, Inc. & LinkedIn):** Meets **3 EDPB Criteria** (Evaluation/Profiling, Data Matching/Combining, Large Scale).
+### Regulatory Assessment Finding:
+> [!WARNING]
+> **REGULATORY PRESUMPTION TRIGGERED: FORMAL DPIA RECOMMENDED UNDER GDPR ART. 35(1)**  
+> Based on empirical technical telemetry captured during `miro_live_audit_run_001`, the Miro web platform deploys two candidate processing operations triggering high-risk supervisory guidance factors:
+> 1. **Session Screen Replay & DOM Telemetry (Microsoft Clarity & Hotjar):** Triggers **3 WP 248 Guidance Factors** (Systematic Monitoring, Innovative Technology, Large Scale).
+> 2. **Cross-Site Ad Synchronization (Tapad, Inc. & LinkedIn):** Triggers **3 WP 248 Guidance Factors** (Evaluation/Profiling, Data Matching/Combining, Large Scale).
 >
-> In addition, these technologies were empirically observed firing **PRE-CONSENT** (prior to affirmative user action on the OneTrust CMP banner), presenting immediate regulatory liability under **GDPR Article 6(1)(a)**, **ePrivacy Directive Article 5(3)**, and **DPDPA 2023 Section 6**.
+> In addition, these technologies were empirically observed firing in the Indian baseline **PRE-CONSENT** (prior to affirmative user interaction with the banner), presenting operational and regulatory scrutiny under **ePrivacy Directive Article 5(3)**, **GDPR Article 6**, and **DPDPA 2023 Section 6 principles**.
 
 ---
 
-## 2. EDPB 9-Criteria High-Risk Threshold Matrix (WP 248 rev.01)
+## 2. Article 29 WP / EDPB 9-Criteria High-Risk Screening Matrix (WP 248 rev.01)
 
-The table below evaluates Miro's live web telemetry against the 9 statutory criteria established by the EDPB:
+The table below evaluates Miro's live web telemetry against the 9 regulatory guidance criteria established under WP 248 rev.01:
 
-| Criterion # | EDPB High-Risk Screening Criterion | Triggered on Miro? | Technical Evidence & Finding |
+| Criterion # | WP 248 High-Risk Screening Criterion | Triggered on Miro? | Technical Evidence & Finding |
 | :---: | :--- | :---: | :--- |
 | **1** | **Evaluation or scoring (profiling)** | **YES** | **Tapad & LinkedIn ad tracking** profile user browsing behavior to assign interest categories and conversion propensity scores. |
 | **2** | **Automated decision-making with legal/similar effect** | **NO** | Telemetry informs ad bidding algorithms, but does not currently make binding legal determinations or deny services. |
 | **3** | **Systematic monitoring of data subjects** | **YES** | **Microsoft Clarity (`c.clarity.ms`) & Hotjar Ltd** perform continuous recording of mouse coordinates, clicks, scroll depth, and page interactions. |
 | **4** | **Sensitive data or data of a highly personal nature** | **POTENTIAL** | Session replay technology captures raw DOM mutations. If client-side masking fails, personal information entered into search/contact forms is ingested. |
 | **5** | **Data processed on a large scale** | **YES** | Miro receives millions of monthly visits across global jurisdictions (EU, US, India, UK). |
-| **6** | **Matching or combining of datasets** | **YES** | **Tapad 3-Way Sync (`TapAd_3WAY_SYNCS`)** and **LinkedIn (`UserMatchHistory`, `AnalyticsSyncHistory`)** correlate device graphs across external advertising networks. |
+| **6** | **Matching or combining of datasets** | **YES** | **Tapad Synchronization Beacons (`TapAd_3WAY_SYNCS`)** and **LinkedIn (`UserMatchHistory`, `AnalyticsSyncHistory`)** correlate identifiers across external ad networks. |
 | **7** | **Data concerning vulnerable subjects** | **NO** | B2B / SaaS workspace platform targeted at professional adult users. |
 | **8** | **Innovative use or applying new technological solutions** | **YES** | Real-time DOM tree virtualization and automated session reconstruction (Microsoft Clarity AI heatmaps). |
 | **9** | **Processing prevents data subjects from exercising a right** | **NO** | Data subjects can theoretically delete cookies, though pre-consent firing impedes the right to prior refusal. |
 
-**Threshold Result:** **4 of 9 Criteria Met** (Threshold for mandatory DPIA is 2).
+**Threshold Result:** **5 of 9 Criteria Triggered (+1 Potential)** (WP 248 guidance establishes a regulatory presumption when 2 or more criteria are satisfied).
 
 ---
 

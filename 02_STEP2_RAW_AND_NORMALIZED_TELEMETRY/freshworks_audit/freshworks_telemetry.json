@@ -1,0 +1,54 @@
+{
+  "EU_France": {
+    "session": "EU_France",
+    "timestamp": "2026-09-26T15:46:48.210221+00:00",
+    "proxy": "http://127.0.0.1:61809",
+    "pre_consent": {
+      "banner_detected": false,
+      "banner_type": null,
+      "banner_text": "",
+      "buttons_found": {},
+      "cookie_count": 1,
+      "cookies": [
+        {
+          "name": "__cf_bm",
+          "value": "bzO4Oft7Rci.dPhviZtwhAy3EqmZkKObf2JQydpnAkw-1790437609.9168646-1.0.1.1-K9Z5lyK3qMXZqbx6D05T1plYk2uk4SEgS5qqGc.pPQpU2COAGVltXTgYd2LCWILq1SibG6E4LdNNr_ErpiEOTa1ILQQ7eUpiUfyZvO7f9J85yThLMaQDSZ9GHdDHJ7uM",
+          "domain": ".www.freshworks.com",
+          "path": "/",
+          "expires": 1790439410.097881,
+          "httpOnly": true,
+          "secure": true,
+          "sameSite": "None"
+        }
+      ],
+      "requests_count": 18,
+      "tracker_requests": []
+    }
+  },
+  "India_Direct": {
+    "session": "India_Direct",
+    "timestamp": "2026-09-26T15:47:40.659419+00:00",
+    "proxy": "Direct (No Proxy)",
+    "pre_consent": {
+      "banner_detected": false,
+      "banner_type": null,
+      "banner_text": "",
+      "buttons_found": {},
+      "cookie_count": 1,
+      "cookies": [
+        {
+          "name": "__cf_bm",
+          "value": "O6eOcLT44hXJnR9aA_RtnTivgijKOucx51ztaiEsU68-1790437662.2818651-1.0.1.1-0gL.J.fZucEVcTxnGrtKFj3wPZt2ZCLLRSqNS1IVax_zzNFtGsUOoOeY478OyjggTaeeIFao88mmLV0NLaRQ_1PGG20y1qb4U1c93nCJTX.zEnlsoVdw8el.uPtYIIPp",
+          "domain": ".www.freshworks.com",
+          "path": "/",
+          "expires": 1790439462.445722,
+          "httpOnly": true,
+          "secure": true,
+          "sameSite": "None"
+        }
+      ],
+      "requests_count": 18,
+      "tracker_requests": []
+    }
+  }
+}

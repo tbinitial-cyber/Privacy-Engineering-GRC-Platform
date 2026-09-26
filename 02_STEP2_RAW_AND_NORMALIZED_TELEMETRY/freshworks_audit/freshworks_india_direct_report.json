@@ -1,0 +1,59 @@
+{
+  "label": "India_Direct",
+  "banner_visible": true,
+  "banner_text": "We use cookies to track visitors, measure ads, ad campaign effectiveness and analyze site traffic. We may also share information about your use of our site with 3rd parties. For more info, see, ourCookie Policy and ourPrivacy Policy. By clicking on \"Cookie Preference Manager\" you can choose to enabl",
+  "reject_button_visible": true,
+  "accept_button_visible": true,
+  "active_groups": ",C0001,",
+  "geoip": {
+    "country": "FR",
+    "state": "IDF",
+    "stateName": "\u00cele-de-France"
+  },
+  "cookie_count": 5,
+  "cookies": [
+    {
+      "name": "__cf_ob",
+      "domain": "www.freshworks.com",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "cf_clearance",
+      "domain": ".www.freshworks.com",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "domain": ".www.freshworks.com",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "OptanonConsent",
+      "domain": ".www.freshworks.com",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "domain": ".go.freshworks.com",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    }
+  ],
+  "tracker_count": 1,
+  "trackers": [
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-WQKBJ88&gtg_health=1",
+      "method": "GET",
+      "resource_type": "script"
+    }
+  ]
+}

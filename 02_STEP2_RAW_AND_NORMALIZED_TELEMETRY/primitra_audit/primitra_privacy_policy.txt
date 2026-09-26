@@ -1,0 +1,55 @@
+Home/Compliance/Privacy Audit ComplianceData Privacy Audit ServicesOur independent privacy audits give boards, regulators and enterprise customers documented assurance that your privacy controls work as designed. We audit against the Digital Personal Data Protection (DPDP) Act, 2023, GDPR and ISO/IEC 27701, with sampling, evidence collection and a clear remediation roadmap.Book a free 30-min consultation  WhatsApp usWhat's includedA scoped engagement with concrete deliverables — not a slide deck.Audit scope & criteriaTailored audit programme covering DPDP Act obligations, applicable GDPR articles and ISO/IEC 27701 controls.Evidence-based testingWalkthroughs, system inspections, sample testing of DSRs, consent logs, breach handling and vendor governance.Findings & risk ratingEach finding rated by likelihood and impact, with root cause and recommended remediation.Audit reportBoard-ready audit report suitable for regulator, customer and investor scrutiny — plus a management response template.Re-audit & assuranceOptional follow-up to verify remediation and maintain a continuous-assurance cycle.Our approachA repeatable four-stage method, calibrated to your business.01PlanAgree scope, criteria, sample sizes and stakeholders. Issue audit notification.02FieldworkInterviews, system walkthroughs and evidence collection across in-scope processes and systems.03AnalyseMap findings to obligations and risks; draft report and review with management.04ReportIssue final audit report with prioritised remediation plan and management responses.Who it's forEngagement profiles where we add the most value.Significant Data Fiduciaries required to undergo independent data auditsCompanies preparing for ISO/IEC 27701 certificationEnterprises whose customers demand annual third-party privacy assuranceBoards seeking independent validation of privacy program effectivenessFrequently asked questionsAre independent privacy audits mandatory under the DPDP Act?+The DPDP Act empowers the Government to require Significant Data Fiduciaries to undergo periodic independent data audits. Many non-SDF organisations also commission privacy audits to satisfy customer due-diligence requirements.How is a privacy audit different from a security audit?+A security audit (e.g. SOC 2, ISO 27001) tests information security controls. A privacy audit tests how personal data is governed across its lifecycle: lawful basis, notice, consent, rights, retention, sharing and breach handling. Both are needed, but they're not interchangeable.How long does a privacy audit take?+A focused audit typically takes 3–6 weeks from kickoff to final report, depending on the number of in-scope systems and entities.Related servicesComplianceDPDP ActGet DPDP Act compliant with India-focused privacy specialists. Notice, consent, RoPA, DPIA, breach response and ongoing assurance under the DPDP Act, 2023.Learn more CompliancePIA / DPIAPrivacy Impact Assessments and Data Protection Impact Assessments for new products, AI systems and high-risk processing under the DPDP Act and GDPR.Learn more Governance & RiskVendor RiskVendor and third-party privacy risk assessments in India. Due diligence questionnaires, DPAs, sub-processor reviews and ongoing oversight under DPDP Act and GDPR.Learn more CompliancePrivacy ConsultingEnd-to-end data privacy consulting in India. DPDP Act, GDPR, audits, DPO services and privacy program implementation by experienced India & EU specialists.Learn more Ready to make privacy audit a competitive advantage?Book a free 30-minute consultation with Primitra. We'll review your current posture and outline the fastest path to a defensible, audit-ready program. Book consultation Message on WhatsApp
+
+	
+		Made with
+		
+  
+  
+  
+  
+    
+      
+      
+      
+      
+    
+  
+
+
+
+	
+	
+	
+	
+	
+		
+			
+		
+	
+
+
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}

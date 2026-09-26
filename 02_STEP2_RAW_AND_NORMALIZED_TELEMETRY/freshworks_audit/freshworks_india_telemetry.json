@@ -1,0 +1,845 @@
+{
+  "jurisdiction": "India",
+  "target": "https://www.freshworks.com",
+  "geoip_detected": {
+    "country": "IN",
+    "state": "DL",
+    "stateName": "Delhi"
+  },
+  "onetrust_active_groups": ",C0001,C0003,C0002,C0004,",
+  "banner": {
+    "visible": true,
+    "text": "We use cookies to track visitors, measure ads, ad campaign effectiveness and analyze site traffic. We may also share information about your use of our site with 3rd parties. For more info, see, ourCookie Policy and ourPrivacy Policy. By clicking on \"Cookie Preference Manager\" you can choose to enable only certain cookie categories. By clicking \"Accept all\" you agree to the storing of all cookies o",
+    "accept_all_visible": true,
+    "accept_all_text": "Accept all",
+    "reject_all_visible": false,
+    "reject_all_text": null,
+    "settings_visible": true
+  },
+  "cookie_count": 73,
+  "cookies": [
+    {
+      "name": "__cf_ob",
+      "value_length": 750,
+      "domain": "www.freshworks.com",
+      "path": "/cdn-cgi/challenge-platform",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value_length": 199,
+      "domain": ".go.freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "cf_clearance",
+      "value_length": 597,
+      "domain": ".www.freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value_length": 199,
+      "domain": ".www.freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value_length": 199,
+      "domain": ".capterra.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "OptanonConsent",
+      "value_length": 327,
+      "domain": ".www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_fr",
+      "value_length": 0,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_flu",
+      "value_length": 27,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_se",
+      "value_length": 4,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_sq",
+      "value_length": 4,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_sflu",
+      "value_length": 27,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_ue_fr",
+      "value_length": 35,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_ue_lp",
+      "value_length": 27,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_ue_ppj",
+      "value_length": 35,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fw_cd_uuid",
+      "value_length": 36,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "fw_vi",
+      "value_length": 3,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value_length": 25,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value_length": 26,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_li_dcdm_c",
+      "value_length": 15,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_lc2_fpi",
+      "value_length": 40,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_lc2_fpi_js",
+      "value_length": 40,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "Optimizely_DCP_FW",
+      "value_length": 20,
+      "domain": "www.freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "optimizelyEndUserId",
+      "value_length": 35,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "optimizelySession",
+      "value_length": 13,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TDID",
+      "value_length": 36,
+      "domain": ".adsrvr.org",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "https://www.freshworks.com_oeu1790438025281r0.8048369417494923$$a20976504213$$session_state",
+      "value_length": 89,
+      "domain": "a20976504213.cdn.optimizely.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_rdt_uuid",
+      "value_length": 50,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "__cf_bm",
+      "value_length": 199,
+      "domain": ".tr.capterra.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__ps_r",
+      "value_length": 1,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "__ps_sr",
+      "value_length": 1,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "__ps_lu",
+      "value_length": 27,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "__ps_slu",
+      "value_length": 27,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "__ps_did",
+      "value_length": 42,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "__ps_fva",
+      "value_length": 13,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_c",
+      "value_length": 1,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_id",
+      "value_length": 100,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_mkto_trk",
+      "value_length": 73,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value_length": 67,
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_s",
+      "value_length": 21,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tuuid",
+      "value_length": 36,
+      "domain": ".company-target.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tuuid_lu",
+      "value_length": 32,
+      "domain": ".company-target.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "XANDR_PANID",
+      "value_length": 108,
+      "domain": ".adnxs.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "uuid2",
+      "value_length": 19,
+      "domain": ".adnxs.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidid",
+      "value_length": 36,
+      "domain": ".liadm.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_fbp",
+      "value_length": 37,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_5S1FBQDGB1",
+      "value_length": 81,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fr",
+      "value_length": 66,
+      "domain": ".facebook.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_zitok",
+      "value_length": 30,
+      "domain": ".www.freshworks.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_fuid",
+      "value_length": 48,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CMID",
+      "value_length": 24,
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "CMPS",
+      "value_length": 4,
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "CMPRO",
+      "value_length": 4,
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "TDCPM",
+      "value_length": 156,
+      "domain": ".adsrvr.org",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "audit_p",
+      "value_length": 194,
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "khaos",
+      "value_length": 16,
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "khaos_p",
+      "value_length": 16,
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "audit",
+      "value_length": 194,
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "receive-cookie-deprecation",
+      "value_length": 1,
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "KRTBCOOKIE_1571",
+      "value_length": 186,
+      "domain": ".pubmatic.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "PugT",
+      "value_length": 10,
+      "domain": ".pubmatic.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "rlas3",
+      "value_length": 44,
+      "domain": ".rlcdn.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "pxrc",
+      "value_length": 28,
+      "domain": ".rlcdn.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "li_sugr",
+      "value_length": 36,
+      "domain": ".linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "bcookie",
+      "value_length": 42,
+      "domain": ".linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidc",
+      "value_length": 108,
+      "domain": ".linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value_length": 199,
+      "domain": ".linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tvid",
+      "value_length": 32,
+      "domain": ".tremorhub.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "tv_UIDM",
+      "value_length": 36,
+      "domain": ".tremorhub.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cfuvid",
+      "value_length": 114,
+      "domain": ".zoominfo.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "UserMatchHistory",
+      "value_length": 78,
+      "domain": ".linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "AnalyticsSyncHistory",
+      "value_length": 86,
+      "domain": ".linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "bscookie",
+      "value_length": 88,
+      "domain": ".www.linkedin.com",
+      "path": "/",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__q_state_V3bzvnGRbEeRoKuU",
+      "value_length": 200,
+      "domain": ".freshworks.com",
+      "path": "/",
+      "secure": false,
+      "httpOnly": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "trackers_count": 27,
+  "trackers_fired": [
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-WQKBJ88&gtg_health=1",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "googletagmanager.com"
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "facebook.net"
+    },
+    {
+      "url": "https://tag.demandbase.com/84395856.min.js",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "demandbase.com"
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "licdn.com"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=DC-14487658",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "googletagmanager.com"
+    },
+    {
+      "url": "https://munchkin.marketo.net/munchkin.js",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "marketo.net"
+    },
+    {
+      "url": "https://ad.doubleclick.net/activity;src=14487658;type=visit0;cat=fresh00;rcb=9;ord=678133533484;npa=0;auiddc=1716172850.1790438025;gdid=dYWJhMj;uaa=x86;uab=64;uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45c92e69n1v9190907002z876997353za20kzb76997353zd76997353xeaxf4;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;gap.gtb=2;dc_random=1790438024_oHZWSGyyKsYNcBaWIFdE9vE9qYinL8WPSQ;~oref=https%3A%2F%2Fwww.freshworks.com%2F?",
+      "method": "POST",
+      "resource_type": "fetch",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://14487658.fls.doubleclick.net/activityi;src=14487658;type=visit0;cat=fresh00;rcb=9;ord=678133533484;npa=0;auiddc=1716172850.1790438025;gdid=dYWJhMj;uaa=x86;uab=64;uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45c92e69n1v9190907002z876997353za20kzb76997353zd76997353xeaxf4;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;gap.gtb=2;dc_random=1790438024_oHZWSGyyKsYNcBaWIFdE9vE9qYinL8WPSQ;_dc_test=1;~oref=https%3A%2F%2Fwww.freshworks.com%2F?",
+      "method": "GET",
+      "resource_type": "document",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1716172850.1790438025&gtm=45c92e69n1v9190907002z876997353za20kzb76997353zd76997353xecxf4&fmt=8",
+      "method": "POST",
+      "resource_type": "fetch",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-5S1FBQDGB1&cid=442004565.1790438025&gtm=45g92e69n1v872147099z876997353za20kzb76997353zd76997353xf4&rcb=2&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938469~118869188~118897920~118897930~120213116~120385422~120469145~120469153",
+      "method": "POST",
+      "resource_type": "ping",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://api.demandbase.com/api/v3/ip.json?key=B82rmU70Anr3TBIeAeRD8RyhvwDCaHcR0qhnEXDg&callback=optimizely_demandbase",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "demandbase.com"
+    },
+    {
+      "url": "https://14487658.fls.doubleclick.net/activityi;dc_pre=COuQ87PNjJcDFSugrAIdez0tlA;src=14487658;type=visit0;cat=fresh00;rcb=9;ord=678133533484;npa=0;auiddc=1716172850.1790438025;gdid=dYWJhMj;uaa=x86;uab=64;uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45c92e69n1v9190907002z876997353za20kzb76997353zd76997353xeaxf4;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;gap.gtb=2;dc_random=1790438024_oHZWSGyyKsYNcBaWIFdE9vE9qYinL8WPSQ;_dc_test=1;~oref=https%3A%2F%2Fwww.freshworks.com%2F?",
+      "method": "GET",
+      "resource_type": "document",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "licdn.com"
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/463211681285603?v=2.9.408&r=stable&domain=www.freshworks.com&hme=f9ad993bedcdbb3fffd47532e189463ba18afe816a0bd364070ce559e4a6ac26&ex_m=117%2C239%2C169%2C27%2C81%2C82%2C160%2C77%2C76%2C11%2C179%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C174%2C181%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C161%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C162%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C164%2C163%2C165%2C156%2C154%2C30%2C42%2C66%2C122%2C176%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C175%2C178%2C41%2C56%2C126%2C54%2C183%2C109%2C182%2C208%2C253%2C83%2C267%2C266%2C265%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C170%2C85%2C173%2C171%2C172%2C57%2C67%2C136%2C19%2C177%2C52%2C316%2C317%2C318%2C315%2C331%2C356%2C246%2C235%2C69%2C236%2C234%2C359%2C350%2C59%2C247%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C71%2C166%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C180%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C185%2C186%2C105%2C106%2C9%2C115%2C184%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C167%2C50%2C158%2C0%2C93%2C151%2C155%2C168%2C45%2C121%2C13%2C187",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "facebook.net"
+    },
+    {
+      "url": "https://cm.g.doubleclick.net/pixel?google_nid=TheTradeDesk&google_cm&google_sc&google_hm=ODBjMzE4ZGUtNDQ2MC00OGFhLWE4MGUtYmUyODRhZDA4NmIx&gdpr=0&gdpr_consent=&ttd_tdid=80c318de-4460-48aa-a80e-be284ad086b1",
+      "method": "GET",
+      "resource_type": "document",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://munchkin.marketo.net/165/munchkin.js",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "marketo.net"
+    },
+    {
+      "url": "https://tag-logger.demandbase.com/bg9s?x-amz-cf-id=ztfXcUVhXm0v6YylAj1xaSljGB3JCkVlJBpcx7PvSkU4BYwyxHnVwQ==&api-version=v3",
+      "method": "GET",
+      "resource_type": "xhr",
+      "tracker": "demandbase.com"
+    },
+    {
+      "url": "https://www.facebook.com/tr/",
+      "method": "POST",
+      "resource_type": "ping",
+      "tracker": "facebook.com"
+    },
+    {
+      "url": "https://ad.doubleclick.net/activity;dc_pre=CKSr3bPNjJcDFTYktwAdBDwFoA;src=14487658;type=visit0;cat=fresh00;rcb=9;ord=678133533484;npa=0;auiddc=1716172850.1790438025;gdid=dYWJhMj;uaa=x86;uab=64;uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45c92e69n1v9190907002z876997353za20kzb76997353zd76997353xeaxf4;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153;epver=2;gap.gtb=2;dc_random=1790438024_oHZWSGyyKsYNcBaWIFdE9vE9qYinL8WPSQ;~oref=https%3A%2F%2Fwww.freshworks.com%2F?",
+      "method": "GET",
+      "resource_type": "fetch",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=508419&time=1790438026521&li_adsId=c2456641-efb7-43f0-8e94-6434425c804f&pageLoadId=ad2e3629-3f20-465b-ad2c-e6516387b712&url=https%3A%2F%2Fwww.freshworks.com%2F",
+      "method": "GET",
+      "resource_type": "image",
+      "tracker": "linkedin.com"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "method": "POST",
+      "resource_type": "fetch",
+      "tracker": "linkedin.com"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/996274243/?random=1790438026701&cv=11&fst=1790438026701&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892e69n1v885223205za204zb76997353zd76997353xecxf4&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1366&u_h=768&url=https%3A%2F%2Fwww.freshworks.com%2F&rcb=12&frm=0&tiba=AI-Powered%20Customer%20%26%20Employee%20Service%20Software%20%7C%20Freshworks&userId=555f8fd6-11cc-40c6-8175-711c02281a8c&did=dYWJhMj&gdid=dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1716172850.1790438025&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&gap.gtb=2&ept=9&rfmt=3&fmt=4",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/996274243/?random=1790438026733&cv=11&fst=1790438026733&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45892e69n1v885223205za204zb76997353zd76997353xecxf4&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1366&u_h=768&url=https%3A%2F%2Fwww.freshworks.com%2F&rcb=12&frm=0&tiba=AI-Powered%20Customer%20%26%20Employee%20Service%20Software%20%7C%20Freshworks&userId=555f8fd6-11cc-40c6-8175-711c02281a8c&did=dYWJhMj&gdid=dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1716172850.1790438025&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dpage_view&gap.gtb=2&ept=9&rfmt=3&fmt=4",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/996274243/?random=1790438026745&cv=11&fst=1790438026745&bg=ffffff&guid=ON&async=1&en=factors_userid_update&gtm=45892e69n1v885223205za204zb76997353zd76997353xecxf4&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1366&u_h=768&url=https%3A%2F%2Fwww.freshworks.com%2F&rcb=12&frm=0&tiba=AI-Powered%20Customer%20%26%20Employee%20Service%20Software%20%7C%20Freshworks&userId=555f8fd6-11cc-40c6-8175-711c02281a8c&did=dYWJhMj&gdid=dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1716172850.1790438025&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dfactors_userid_update&gap.gtb=2&ept=9&rfmt=3&fmt=4",
+      "method": "GET",
+      "resource_type": "script",
+      "tracker": "doubleclick.net"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=508419&time=1790438026521&li_adsId=c2456641-efb7-43f0-8e94-6434425c804f&pageLoadId=ad2e3629-3f20-465b-ad2c-e6516387b712&url=https%3A%2F%2Fwww.freshworks.com%2F&cookiesTest=true",
+      "method": "GET",
+      "resource_type": "image",
+      "tracker": "linkedin.com"
+    },
+    {
+      "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D508419%26time%3D1790438026521%26li_adsId%3Dc2456641-efb7-43f0-8e94-6434425c804f%26pageLoadId%3Dad2e3629-3f20-465b-ad2c-e6516387b712%26url%3Dhttps%253A%252F%252Fwww.freshworks.com%252F%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+      "method": "GET",
+      "resource_type": "image",
+      "tracker": "linkedin.com"
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=508419&time=1790438026521&li_adsId=c2456641-efb7-43f0-8e94-6434425c804f&pageLoadId=ad2e3629-3f20-465b-ad2c-e6516387b712&url=https%3A%2F%2Fwww.freshworks.com%2F&cookiesTest=true&liSync=true",
+      "method": "GET",
+      "resource_type": "image",
+      "tracker": "linkedin.com"
+    }
+  ],
+  "total_requests": 340
+}

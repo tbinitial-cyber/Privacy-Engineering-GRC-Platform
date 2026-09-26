@@ -1,0 +1,7 @@
+# Reproducible Audit Lockfile (Generated: 2026-09-26)
+streamlit==1.64.0
+pandas==3.0.2
+openpyxl==3.1.5
+pillow==12.2.0
+jsonschema==4.26.0
+playwright==1.50.0

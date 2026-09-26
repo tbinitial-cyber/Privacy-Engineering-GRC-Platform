@@ -1,0 +1,199 @@
+{
+  "target": "https://www.primitra.in",
+  "audit_timestamp": "2026-09-26T16:38:00Z",
+  "page_title": "DPDP Act Compliance for Indian SMEs | Primitra",
+  "final_url": "https://www.primitra.in/",
+  "security_headers": {
+    "cache-control": "no-cache, must-revalidate, max-age=0",
+    "cf-ray": "a413b0b93f10f563-DEL",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sat, 26 Sep 2026 16:36:57 GMT",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "cloudflare",
+    "set-cookie": "__dpl=psr2.bd24c31b-220b-4404-9d5e-d2b2a5cb5950.1791045416.7ByVa4J5_5KYfQsEPy1Z1i0QdLw9vkZdxA4mgOahNII; Path=/; Max-Age=86400; SameSite=Lax; Secure\n__cf_bm=wWGlBE8Jlt5sVazz94Dl5yRXs108gRVZnJhwtZrXz3M-1790440615.8793051-1.0.1.1-HvLL3td1_eu79NnIKvtjxIUrGffY7ClOIswSPSm1bJQFOY0zuINgq.0k9HF3pSFY4oM0Y5AlNu1hJJoObxf94kJzKfLYI_Ubqv8p8T9RQPlmpUBpjJzkRbdFwx7X0wD3; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.primitra.in; Expires=Sat, 26 Sep 2026 17:06:57 GMT",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-content-type-options": "nosniff",
+    "x-deployment-id": "psr2.bd24c31b-220b-4404-9d5e-d2b2a5cb5950.1791045416.7ByVa4J5_5KYfQsEPy1Z1i0QdLw9vkZdxA4mgOahNII"
+  },
+  "consent_banner": null,
+  "cookies_count": 3,
+  "cookies": [
+    {
+      "name": "__dpl",
+      "value": "psr2.bd24c31b-220b-4404-9d5e-d2b2a5cb5950.1791045416.7ByVa4J5_5KYfQsEPy1Z1i0QdLw9vkZdxA4mgOahNII",
+      "domain": "www.primitra.in",
+      "path": "/",
+      "expires": 1790527017.804452,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "wWGlBE8Jlt5sVazz94Dl5yRXs108gRVZnJhwtZrXz3M-1790440615.8793051-1.0.1.1-HvLL3td1_eu79NnIKvtjxIUrGffY7ClOIswSPSm1bJQFOY0zuINgq.0k9HF3pSFY4oM0Y5AlNu1hJJoObxf94kJzKfLYI_Ubqv8p8T9RQPlmpUBpjJzkRbdFwx7X0wD3",
+      "domain": ".www.primitra.in",
+      "path": "/",
+      "expires": 1790442417.805085,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "session-id",
+      "value": "87e1d674-0550-4042-80c7-10217e6226f6",
+      "domain": "www.primitra.in",
+      "path": "/",
+      "expires": 1790442418.626878,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "total_requests": 24,
+  "vendor_requests_count": 0,
+  "vendor_requests": [],
+  "key_links": [
+    {
+      "text": "PPrimitra.Where privacy compliance meets conscience",
+      "href": "/"
+    },
+    {
+      "text": "Who We Are",
+      "href": "/about"
+    },
+    {
+      "text": "Careers",
+      "href": "/careers"
+    },
+    {
+      "text": "Book Consultation",
+      "href": "/contact"
+    },
+    {
+      "text": "Book a Free 30-Min Consultation",
+      "href": "/contact"
+    },
+    {
+      "text": "Book a Free 30-Min Consultation",
+      "href": "/contact"
+    },
+    {
+      "text": "Digital Personal Data Protection (DPDP) Act Readiness AssessmentA comprehensive gap analysis of your current data handling against Digital Personal Data Protection (DPDP) Act requirements.DiagnosticDetails",
+      "href": "/services"
+    },
+    {
+      "text": "Data Mapping & GovernanceIdentify where personal data lives, how it flows, and who has access across your stack.ArchitectureDetails",
+      "href": "/services"
+    },
+    {
+      "text": "Vendor & Contract ComplianceReview and draft Data Processing Agreements with all your third-party service providers.Legal OpsDetails",
+      "href": "/services"
+    },
+    {
+      "text": "Employee Data FrameworkInternal HR policies, secure processing, and clear handling of employee personal data.HR ComplianceDetails",
+      "href": "/services"
+    },
+    {
+      "text": "Digital Personal Data Protection (DPDP) Act Training WorkshopsPractical workshops for HR, compliance, and engineering teams \u2014 built around your stack.EnablementDetails",
+      "href": "/services"
+    },
+    {
+      "text": "Fractional Digital Personal Data Protection (DPDP) Act OfficerOngoing expert oversight on a retainer basis \u2014 without the cost of a full-time hire.RetainerDetails",
+      "href": "/services"
+    },
+    {
+      "text": "DPDP Act",
+      "href": "/dpdp-act-compliance"
+    },
+    {
+      "text": "GDPR",
+      "href": "/gdpr-compliance-consulting"
+    },
+    {
+      "text": "Privacy Audit",
+      "href": "/privacy-audit-services"
+    },
+    {
+      "text": "PIA / DPIA",
+      "href": "/privacy-impact-assessment"
+    },
+    {
+      "text": "Program Build",
+      "href": "/privacy-program-implementation"
+    },
+    {
+      "text": "Consent",
+      "href": "/privacy-policy-and-consent-management"
+    },
+    {
+      "text": "AI Governance",
+      "href": "/ai-governance-consulting"
+    },
+    {
+      "text": "Cyber + Privacy",
+      "href": "/cybersecurity-and-privacy"
+    },
+    {
+      "text": "Training",
+      "href": "/privacy-training-and-awareness"
+    },
+    {
+      "text": "Visit the data privacy consulting hub",
+      "href": "/data-privacy-consulting"
+    },
+    {
+      "text": "Book Consultation",
+      "href": "/contact"
+    },
+    {
+      "text": "Vendor Compliance",
+      "href": "/services"
+    },
+    {
+      "text": "About",
+      "href": "/about"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
+    },
+    {
+      "text": "Privacy Policy",
+      "href": "/privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "/terms"
+    },
+    {
+      "text": "Cookies",
+      "href": "/cookies"
+    },
+    {
+      "text": "Cookie Policy",
+      "href": "/cookies"
+    },
+    {
+      "text": "Made with",
+      "href": "https://lovable.dev/projects/lovp_340eewz6858wrv7rxsc7dsd992?utm_source=lovable-badge&utm_campaign=badge-wording-enabled"
+    }
+  ],
+  "headings_sample": [
+    "The Digital Personal Data Protection (DPDP) Act compliance solution for Indian businesses.",
+    "Compliance, made human.",
+    "WHERE PRIVACY COMPLIANCE MEETS CONSCIENCE",
+    "Digital Personal Data Protection (DPDP) Act enforcement is approaching.",
+    "Compliance is more than a privacy policy.",
+    "Policy \u2260 Protection",
+    "Vendor Liability",
+    "Employee Data Gaps",
+    "Implementation-first compliance services.",
+    "Digital Personal Data Protection (DPDP) Act Readiness Assessment",
+    "Data Mapping & Governance",
+    "Vendor & Contract Compliance",
+    "Employee Data Framework",
+    "Digital Personal Data Protection (DPDP) Act Training Workshops",
+    "Fractional Digital Personal Data Protection (DPDP) Act Officer"
+  ]
+}

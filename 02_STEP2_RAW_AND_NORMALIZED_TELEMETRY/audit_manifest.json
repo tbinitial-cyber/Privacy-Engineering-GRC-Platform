@@ -1,0 +1,34 @@
+{
+  "audit_run_id": "AUDIT-RUN-MIRO-2026-09-24-001",
+  "schema_version": "2.1.0",
+  "target_url": "https://miro.com",
+  "capture_timestamp": "2026-09-24T16:03:00Z",
+  "geo_capture_profile": {
+    "country": "IN",
+    "region": "Asia/Kolkata",
+    "provenance": "Indian domestic baseline route (Notice-only CMP profile)"
+  },
+  "browser_environment": {
+    "engine": "Chromium",
+    "headless": true,
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "cmp_metadata": {
+    "vendor": "OneTrust",
+    "script": "otBannerSdk.js",
+    "profile_detected": "Implied Consent / Notice-Only"
+  },
+  "expected_hashes": {
+    "01_STEP1_CANONICAL_SCHEMA/evidence.schema.json": "5c04bd6c8f7d99077877889027b9f2778b95a89a9148d59ae90f7ec49032d162",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/baseline.json": "19e993a7e428d7ddbe1b0bfaa616164d52fc10e2bb1277910a402c23ffa3de2e",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/post_consent.json": "8421c6a63fe4ee6e660d0914a43e457f954d866364ae6994b4b21c9861d02577",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/host_inventory.json": "25a59c2183e6d6e5d7c9f77989751072adaab9f106e59b1cf95918248f8e2bb7",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/normalized_evidence.json": "d5f0ea7fe0eb3b3a61f0c7dae68754bf955ebc893aff8eed55b3d6b393ee8b51",
+    "03_STEP3_CANDIDATE_ACTIVITIES/candidate_processing_activities.json": "c8ebaced4942b86b9855191aa7011b21c253a91d59c637780e6ac9b36665a9c9",
+    "04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/transparency_reconciliation_report.json": "19b7b56cfdd218792891f50fc4505c826f853ddf8045bfeebc12aa7b304ece17",
+    "04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/cookie_vendor_inventory.json": "0be57f38db5507da95c4780279994560d8004ead3dc3281e2b355d72892e01eb"
+  }
+}

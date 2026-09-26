@@ -1,9 +1,9 @@
 # 🛡️ Enterprise Privacy Engineering & Dual-Domain Telemetry GRC Platform
 
-> **An Audit-Grade Compliance, Algorithmic Discovery, and Regulatory Governance Engine Harmonizing Technical Digital Telemetry with Global Privacy Frameworks (EU GDPR, India DPDPA 2023, and US CCPA/CPRA).**
+> **An Empirical Privacy Engineering & Dual-Domain Telemetry GRC Framework Harmonizing Technical Digital Telemetry with Global Privacy Frameworks (EU GDPR, India DPDPA 2023, and US CCPA/CPRA).**
 
 [![Compliance](https://img.shields.io/badge/Statutory%20Framework-EU%20GDPR%20%7C%20India%20DPDPA%202023%20%7C%20US%20CCPA-0A66C2.svg)](#-regulatory--statutory-alignment)
-[![RoPA Status](https://img.shields.io/badge/Article%2030%20RoPA-Audit--Grade%20Validated-2ea44f.svg)](#-step-5-statutory-article-30-ropa-register)
+[![RoPA Status](https://img.shields.io/badge/Article%2030%20RoPA-Governance%20Mapped-2ea44f.svg)](#-step-5-statutory-article-30-ropa-register)
 [![DPIA Status](https://img.shields.io/badge/EDPB%20WP%20248-DPIA%20Screened%20(High--Risk)-critical.svg)](#-step-6-high-risk-dpia-threshold-assessment)
 [![Evidence Integrity](https://img.shields.io/badge/Evidence%20Integrity-SHA--256%20Cryptographic%20Fingerprints-blueviolet.svg)](#-step-2-live-digital-telemetry--consent-gate-audit)
 [![License](https://img.shields.io/badge/License-MIT-informational.svg)](LICENSE)
@@ -20,14 +20,14 @@ The **Enterprise Privacy Engineering & Dual-Domain Telemetry GRC Platform** solv
 
 | Metric | Technical Finding | Governance & Regulatory Implication |
 | :--- | :---: | :--- |
-| **Cryptographic Audit Records** | **301 Records** | Deterministic SHA-256 fingerprints ensuring strict evidentiary chain of custody. |
+| **Cryptographic Audit Records** | **301 Records** | Deterministic SHA-256 fingerprints verified against an immutable audit manifest. |
 | **External Network Telemetry Hosts** | **74 Hosts** | Outbound third-party data flows transmitting user and device telemetry across jurisdictions. |
 | **Persistent Browser Cookies** | **65 Cookies** | 55 baseline cookies captured prior to user interaction; 10 firing post-consent. |
-| **Pre-Consent Tracking Leaks** | **55 Cookies / 74 Hosts** | **Critical Regulatory Finding:** Tracking scripts fired prior to affirmative consent (ePrivacy Art. 5(3) & GDPR Art. 7). |
+| **Pre-Consent Tracking Leaks** | **55 Cookies / 74 Hosts** | **Regulatory Observation:** Tracking scripts fired prior to affirmative consent in Indian baseline (ePrivacy Art. 5(3) & GDPR Art. 7). |
 | **Unclassified Shadow Telemetry** | **14 Cookies** | Undisclosed trackers spanning Microsoft Clarity, Meta, Adobe Marketo, and Cloudflare/OpenAI. |
 | **Candidate Processing Activities** | **5 Activities** | Grouped into Advertising, Analytics, Security, Support, and Unclassified. |
-| **Statutory Article 30 RoPA** | **100% Validated** | Multi-jurisdictional register mapped to GDPR Art. 30 & Indian DPDPA 2023 Sec. 8. |
-| **Mandatory DPIA Triggers** | **2 Critical Triggers** | Systematic session replay monitoring (Clarity) and cross-device targeting (Tapad) under EDPB WP 248. |
+| **Statutory Article 30 RoPA** | **5 Core Activities** | Processing inventory mapped to GDPR Art. 30 (Statutory) & DPDPA 2023 Sec. 8 (Fiduciary Governance). |
+| **High-Risk DPIA Presumption** | **5 of 9 WP 248 Criteria** | Session replay (Clarity) and third-party ad sync (Tapad) triggering regulatory presumption under GDPR Art. 35(1). |
 | **Vendor Contract Benchmark** | **10 Cloud Leaders** | Comparative 10-point DPA risk scorecard across AWS, Azure, Google Cloud, Salesforce, and others. |
 
 ---
@@ -111,15 +111,15 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A["Single-Vector Telemetry<br/>(Network Beacon OR Cookie Alone)<br/><b>Confidence: 0.70 (70%)</b>"] --> B["Multi-Vector Corroboration<br/>(HTTP Beacon AND Local DOM Storage)<br/><b>Confidence: 0.75 (75%)</b>"]
-    B --> C["Statutory Machine Ceiling<br/>(Software cannot legally infer business intent)<br/><b>Ceiling: &lt; 0.80 (&lt;80%)</b>"]
-    C --> D["Certified Human DPO Review<br/>(8 Statutory Regulatory Questions Validated)<br/><b>Confidence: 1.00 (100% Audit-Grade)</b>"]
+    A["Single-Vector Telemetry<br/>(Network Beacon OR Cookie Alone)<br/><b>Support Score: 70/100</b>"] --> B["Multi-Vector Corroboration<br/>(HTTP Beacon AND Local DOM Storage)<br/><b>Support Score: 75/100</b>"]
+    B --> C["Algorithmic Ceiling<br/>(Software cannot legally infer business intent)<br/><b>Machine Ceiling: &lt; 80/100</b>"]
+    C --> D["Cryptographically Signed DPO Review<br/>(8 Statutory Checklist Items Validated)<br/><b>Status: Signed & Logged</b>"]
 ```
 
-  - **0.70 (70% Confidence) — Single-Vector Observation:** Assigned when a tracker is detected via a single technical channel (e.g., an outbound network transmission alone or an orphaned cookie).
-  - **0.75 (75% Confidence) — Multi-Vector Corroboration:** Assigned when a tracker is corroborated across multiple independent channels (e.g., both active HTTP network transmission *and* persistent client-side browser storage).
-  - **The Human-in-the-Loop Statutory Ceiling (<0.80):** Software algorithms cannot legally deduce corporate business intent, contractual relationships, or statutory lawful bases. Under GDPR Article 30 and Indian DPDPA Section 8, the machine intentionally caps its confidence below 80% to enforce human legal oversight.
-  - **1.00 (100% Confidence) — DPO Statutory Sign-Off:** Reached only when a qualified privacy professional completes the 8-question statutory review, confirming lawful basis, retention periods, and transfer safeguards.
+  - **70/100 (Single-Vector Observation):** Assigned when an endpoint is detected via a single technical channel (e.g., an outbound network transmission alone or an orphaned cookie).
+  - **75/100 (Multi-Vector Corroboration):** Assigned when an activity is corroborated across multiple independent channels (e.g., both active HTTP network transmission *and* persistent client-side browser storage).
+  - **The Human-in-the-Loop Ceiling (<80/100):** Software algorithms cannot legally deduce corporate business intent, contractual relationships, or statutory lawful bases. Under GDPR Article 30 and Indian DPDPA Section 8, the algorithm intentionally caps its support index below 80 to mandate human legal oversight.
+  - **DPO Statutory Sign-Off & Cryptographic Seal:** Recorded when an authorized privacy professional completes the 8-question review, affirming lawful basis, purpose limitation, and transfer safeguards, producing a persistent cryptographic signature.
 
 ### 🔍 Step 4: Dual-Domain Discrepancy & Transparency Reconciliation
 - **The Functional Delivery:** Built an automated reconciliation matrix comparing real-world technical discoveries against the organization's published public Privacy Policy, Cookie Policy, and official Third-Party Subprocessor Register.
@@ -135,19 +135,19 @@ flowchart LR
   - **65-Cookie Enterprise Register:** Generated a comprehensive technical inventory detailing cookie name, provider domain, expiration lifespan, category, and direct regulatory risk ratings.
 
 ### 🏛️ Step 5: Multi-Jurisdictional Article 30 RoPA (Record of Processing Activities) Register
-- **The Functional Delivery:** Engineered a corporate, multi-sheet Article 30 RoPA register conforming simultaneously to **EU GDPR Article 30** and **India Digital Personal Data Protection Act (DPDPA) 2023 Section 8**.
+- **The Functional Delivery:** Engineered a corporate, multi-sheet Article 30 RoPA register operationalizing statutory **EU GDPR Article 30** controller obligations and aligning with **India Digital Personal Data Protection Act (DPDPA) 2023 Section 8** general fiduciary accountability duties.
 - **Key Register Architecture (Generated as Corporate `.xlsx` & Markdown Specimen):**
-  - **Sheet 1: Executive Cover & Governance Scope:** Corporate data controller identification, DPO appointments, annual review cadences, and methodology notes.
+  - **Sheet 1: Executive Cover & Governance Scope:** Corporate data controller identification, DPO appointments, review cadences, and methodology notes.
   - **Sheet 2: GDPR Article 30(1) Controller Register:** Maps each processing activity to its exact GDPR Article 6 lawful basis (Consent, Legitimate Interests, Contract Performance), categories of data subjects, categories of personal data, recipients, and technical security measures (TOMs).
   - **Sheet 3: Indian DPDPA 2023 Section 8 Register:** Cross-walks every processing activity to DPDPA Section 6 (Consent Notice Requirements) and Section 7 (Certain Legitimate Uses), identifying Data Fiduciary obligations and Data Processor mandates.
   - **Sheet 4: International Data Transfer Assessment:** Identifies cross-border data transfer destinations (EU to US, EU to India), legal transfer mechanisms (EU Standard Contractual Clauses 2021/914, EU-US Data Privacy Framework), and Transfer Impact Assessment (TIA) status.
 
 ### 🛡️ Step 6: High-Risk Data Protection Impact Assessment (DPIA) Threshold Screening
-- **The Functional Delivery:** Developed an automated DPIA screening engine based on the **European Data Protection Board (EDPB) Guidelines WP 248 9-Criteria Matrix** to determine whether processing activities trigger mandatory Article 35 impact assessments.
-- **Key Findings & Mandatory DPIA Triggers:**
+- **The Functional Delivery:** Developed an automated DPIA screening engine based on the **Article 29 Working Party / European Data Protection Board (EDPB) Guidelines WP 248 rev.01 9-Criteria Matrix** to determine whether processing activities trigger high-risk regulatory presumptions under Article 35.
+- **Key Findings & DPIA Presumption Triggers:**
   - **Trigger 1: Systematic Monitoring of Data Subjects (Criterion 3):** Triggered by **Microsoft Clarity**. The tool captures DOM-level user interactions, mouse movements, scrolling velocity, and input interactions, constituting systematic behavioral surveillance.
-  - **Trigger 2: Cross-Device Profiling & Evaluation (Criterion 1):** Triggered by **Tapad Inc.** Tapad constructs probabilistic and deterministic cross-device identity graphs connecting mobile, desktop, and tablet activities of individual consumers without direct affirmative notice.
-  - **Compliance Verdict:** Because both tools satisfy 2 or more EDPB criteria, conducting a formal Data Protection Impact Assessment is **statutorily mandatory**.
+  - **Trigger 2: Cross-Device Profiling & Evaluation (Criterion 1):** Triggered by **Tapad Inc.** Tapad synchronization beacons (`TapAd_3WAY_SYNCS`) indicate third-party identity synchronization across advertising networks.
+  - **Regulatory Verdict:** Because both operations trigger 2 or more WP 248 criteria, a strong regulatory presumption is established under EDPB guidance warranting a formal Data Protection Impact Assessment under GDPR Article 35(1).
   - **Mitigation Action Plan:** Implemented strict remediation requirements including client-side field masking for sensitive inputs, suppression of tracking scripts prior to explicit consent, and mandatory contractual data processing terms.
 
 ### 📑 Step 7: Vendor Third-Party Risk Management (TPRM) & DPA Redline Playbook
