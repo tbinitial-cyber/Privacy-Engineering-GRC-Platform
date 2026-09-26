@@ -185,7 +185,9 @@ def save_dpo_signoff(activity_id, reviewer_name, reviewer_role, organization, an
     ledger = load_dpo_signoff_ledger()
     timestamp = datetime.now(timezone.utc).isoformat()
     manifest = load_audit_manifest()
-    run_id = manifest.get("audit_run_id", "UNKNOWN-RUN") if manifest else "UNKNOWN-RUN"
+    run_id = "MIRO-COMP-001"
+    if manifest:
+        run_id = manifest.get("comparison_id") or manifest.get("audit_run_id") or "MIRO-COMP-001"
     
     events = ledger.get("events", [])
     prev_hash = events[-1]["signature_hash"] if events else ledger.get("genesis_hash", "0"*64)
@@ -283,9 +285,9 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
     if jurisdiction_mode == "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)":
         st.markdown('<div class="sub-title">Cross-Border Telemetry Audit of Miro.com | Comparative Geofencing Arbitrage (EU Strict GDPR vs. India Domestic Baseline)</div>', unsafe_allow_html=True)
     elif "European Union" in jurisdiction_mode:
-        st.markdown('<div class="sub-title">European Telemetry Benchmark of Miro.com | France IP Route under GDPR Arts. 4(11), 7(3) & ePrivacy Directive</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-title">European Telemetry Benchmark of Miro.com | France IP Route under GDPR Arts. 4(11), 6(1)(a), 7(3) (Withdrawal Parity) & ePrivacy Directive</div>', unsafe_allow_html=True)
     else:
-        st.markdown('<div class="sub-title">Domestic Telemetry Baseline of Miro.com | India IP Route under DPDPA 2023 & Consumer Protection Dark Patterns Guidelines</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-title">Domestic Telemetry Baseline of Miro.com | India IP Route under DPDPA 2023 & Consumer Protection Act 2019 (Central Consumer Protection Authority / Dark Patterns Guidelines)</div>', unsafe_allow_html=True)
 
     # 1. Load Manifest & Perform Cryptographic Verification
     manifest = load_audit_manifest()
@@ -339,13 +341,18 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
     eu_active_groups = eu_data.get("pre_consent", {}).get("onetrust_active_groups", "N/A") if eu_data else "N/A"
     eu_post_cookies = eu_data.get("post_reject", {}).get("cookie_count", 0) if eu_data else 0
     
-    # Manifest Metadata Banner
+    # Manifest Metadata Banner (Comparative Manifest Aware)
     if manifest:
-        st.caption(f"🔒 **Audit Run Reference:** `{manifest.get('audit_run_id')}` | **Target:** `{manifest.get('target_url')}` | **Indian Domestic Route:** `{manifest.get('geo_capture_profile', {}).get('country')}` | **EU Route:** `FR (Île-de-France)` | **Schema:** `{schema_msg}`")
+        comp_id = manifest.get("comparison_id") or manifest.get("audit_run_id", "MIRO-COMP-001")
+        in_run = manifest.get("runs", {}).get("MIRO-IN-001", {})
+        eu_run = manifest.get("runs", {}).get("MIRO-EU-001", {})
+        in_c = in_run.get("ip_country") or manifest.get("geo_capture_profile", {}).get("country", "IN")
+        eu_c = eu_run.get("ip_country", "FR")
+        st.caption(f"🔒 **Comparison Run Reference:** `{comp_id}` | **Target:** `{manifest.get('target_url')}` | **Indian Domestic Route:** `{in_c} (Notice-Only)` | **EU Route:** `{eu_c} (Strict Prior Opt-In)` | **Schema:** `{schema_msg}`")
 
     # If Dual-Jurisdiction Mode: Show Comparative Arbitrage KPIs and Matrix
     if jurisdiction_mode == "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)":
-        st.info("⚖️ **Comparative Empirical Finding: Jurisdiction-Dependent Consent Configuration Observed.** Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions. On the France route, OneTrust was observed in a prior opt-in configuration with only category C0001 active, a visible first-layer 'Tout refuser' (Reject All) control, and zero pre-consent advertising trackers. On the India domestic route, OneTrust was observed in a notice/opt-out-style configuration with categories C0001–C0004 pre-activated, first-layer 'Reject All' omitted, and immediate transmission of third-party telemetry.")
+        st.info("⚖️ **Comparative Empirical Finding: Jurisdiction-Dependent Consent Configuration Observed.** Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions. On the France route, OneTrust was observed in a prior opt-in configuration with only category C0001 active, a visible first-layer 'Tout refuser' (Reject All) control, and zero known pre-consent advertising trackers during the observation window. On the India domestic route, OneTrust was observed in a notice/opt-out-style configuration with categories C0001–C0004 pre-activated, first-layer 'Reject All' omitted, and immediate transmission of third-party telemetry.")
 
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
@@ -355,7 +362,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         with col3:
             st.metric(label="First-Layer 'Reject All'", value="🇪🇺 Yes | 🇮🇳 No", delta="Asymmetric UX Choice", delta_color="inverse")
         with col4:
-            st.metric(label="Pre-Consent Ad Trackers", value="🇪🇺 0 | 🇮🇳 Active", delta="Clarity & Tapad Fired", delta_color="inverse")
+            st.metric(label="Pre-Consent Ad Trackers", value="🇪🇺 0 Known | 🇮🇳 Active", delta="Clarity & Tapad Fired", delta_color="inverse")
         with col5:
             st.metric(label="Cryptographic Provenance", value="Dual Verified", delta="SHA-256 Manifest Matches")
 
@@ -374,17 +381,17 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
                 "Forensic Dimension": "First-Layer Banner UX & Controls",
                 "🇪🇺 European Union Route (France)": "Equal prominence: 'Tout refuser' (Reject All) alongside 'Autoriser tous les cookies'",
                 "🇮🇳 India Route (Domestic Baseline)": "Notice banner: 'Accept all cookies' & 'Settings'; NO 'Reject All' on first layer",
-                "Technical & Legal Assessment": "Asymmetric choice architecture on domestic route under Consumer Protection (Dark Patterns) Guidelines 2023 scrutiny."
+                "Technical & Legal Assessment": "Asymmetric choice architecture on domestic route under Central Consumer Protection Authority (India CCPA / CPA 2019) Dark Patterns Guidelines 2023 scrutiny."
             },
             {
                 "Forensic Dimension": "Pre-Consent Client-Side Cookies",
-                "🇪🇺 European Union Route (France)": "9 Cookies observed (C0001 active; classification under review, e.g. ajs_anonymous_id)",
+                "🇪🇺 European Union Route (France)": "9 Cookies observed (Category C0001 active; cookie-level purpose classification under review, e.g. ajs_anonymous_id)",
                 "🇮🇳 India Route (Domestic Baseline)": "55 Cookies observed (Marketing, analytics & cross-site trackers deposited on initial page load)",
                 "Technical & Legal Assessment": "Data minimization divergence: strict suppression on European route vs tracking cookie accumulation in India."
             },
             {
                 "Forensic Dimension": "Pre-Consent Third-Party Trackers",
-                "🇪🇺 European Union Route (France)": "0 Advertising Trackers (Microsoft Clarity, Tapad, and DoubleClick withheld)",
+                "🇪🇺 European Union Route (France)": "0 Known Advertising Trackers (Microsoft Clarity, Tapad, and DoubleClick withheld during observation window)",
                 "🇮🇳 India Route (Domestic Baseline)": "Active Trackers Firing (Microsoft Clarity and Tapad beacons transmit immediately)",
                 "Technical & Legal Assessment": "EU ePrivacy Dir. Art. 5(3) prior consent gate bypassed on domestic route prior to affirmative user action."
             },
@@ -402,8 +409,8 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
             },
             {
                 "Forensic Dimension": "Statutory Governance & Exposure",
-                "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 7(3) & ePrivacy Directive (Fully enforceable; €20M / 4% global turnover fine risk)",
-                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019",
+                "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 6(1)(a), 7(3) (Withdrawal Parity) & ePrivacy Directive (Fully enforceable; €20M / 4% global turnover fine risk)",
+                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019 (India CCPA Guidelines)",
                 "Technical & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into statutory force."
             }
         ]
@@ -422,7 +429,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
 
     elif "European Union" in jurisdiction_mode:
         # EU Route Specific KPIs
-        st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Demonstrates textbook GDPR Art. 4(11) / 7(3) prior opt-in compliance.")
+        st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Demonstrates textbook GDPR Arts. 4(11), 6(1)(a) prior opt-in and Art. 7(3) withdrawal parity.")
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
             st.metric(label="Pre-Consent Cookies", value=f"{eu_pre_cookies} Cookies", delta="Essential Only (C0001)")
@@ -438,7 +445,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
 
     else:
         # India Route Specific KPIs
-        st.warning("🇮🇳 **India Route Telemetry Active:** Captured via Indian direct route (`country: 'IN', region: 'Asia/Kolkata'`). Demonstrates domestic baseline behavior prior to DPDPA Section 6 statutory commencement.")
+        st.warning("🇮🇳 **India Route Telemetry Active:** Captured via Indian direct route (`country: 'IN', region: 'Asia/Kolkata'`). Demonstrates domestic baseline behavior prior to DPDPA Section 6 statutory commencement, subject to India CCPA Dark Patterns Guidelines.")
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
             st.metric(label="Pre-Consent Cookies", value=f"{len(b_keys)} Cookies", delta="Notice-Only Baseline")
@@ -520,9 +527,9 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
                 st.image(eu_img_pre, caption="France Route: Equal Prominence 'Tout refuser' (Reject All) alongside 'Autoriser tous les cookies'", width="stretch")
             st.markdown("""
             * **Active Groups:** `,C0001,` (Strictly Necessary only)
-            * **Pre-Consent Cookies:** **9 Cookies**
-            * **Pre-Consent Ad Trackers:** **0 Trackers** (Clarity, Tapad, DoubleClick withheld)
-            * **Statutory Baseline:** Strict prior opt-in under GDPR Art. 4(11) & ePrivacy Directive
+            * **Pre-Consent Cookies:** **9 Cookies** (Category C0001 active; cookie-level classification under review)
+            * **Pre-Consent Ad Trackers:** **0 Known Trackers** (Clarity, Tapad, DoubleClick withheld during observation window)
+            * **Statutory Baseline:** Strict prior opt-in under GDPR Arts. 4(11), 6(1)(a) & ePrivacy Directive; Equal ease of rejection under Art. 7(3)
             """)
             
         with col_banner_in:
@@ -534,7 +541,7 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
             * **Active Groups:** `,C0001,C0003,C0002,C0004,` (All tracking categories pre-active)
             * **Pre-Consent Cookies:** **55 Cookies**
             * **Pre-Consent Ad Trackers:** **Active** (Microsoft Clarity & Tapad transmit immediately)
-            * **Statutory Baseline:** Implied consent / notice-only (DPDPA Sec. 6 phased commencement)
+            * **Statutory Baseline:** Implied consent / notice-only (DPDPA Sec. 6 phased commencement; India CCPA Dark Patterns scrutiny)
             """)
 
         st.markdown("---")
@@ -542,16 +549,16 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
         comp_df = pd.DataFrame([
             {"Audit Dimension": "Visitor GeoIP Detected", "🇪🇺 France (EU Route)": "FR / IDF (Europe/Paris)", "🇮🇳 India (Domestic Route)": "IN / DL (Asia/Kolkata)", "Engineering Mechanism": "OneTrust GeoIP lookup via geolocation.onetrust.com"},
             {"Audit Dimension": "First-Layer 'Reject All' Button", "🇪🇺 France (EU Route)": "✅ Present ('Tout refuser')", "🇮🇳 India (Domestic Route)": "❌ Omitted (Notice-only)", "Engineering Mechanism": "CMP configuration template altered by country code"},
-            {"Audit Dimension": "Pre-Consent Cookie Payload", "🇪🇺 France (EU Route)": "9 Cookies", "🇮🇳 India (Domestic Route)": "55 Cookies", "Engineering Mechanism": "Script blocking enforced in EU; pass-through in India"},
-            {"Audit Dimension": "Pre-Consent Behavioral Trackers", "🇪🇺 France (EU Route)": "0 Ad Trackers Fired", "🇮🇳 India (Domestic Route)": "Clarity & Tapad Fired", "Engineering Mechanism": "Tag Manager trigger conditions gated by OneTrust groups"},
+            {"Audit Dimension": "Pre-Consent Cookie Payload", "🇪🇺 France (EU Route)": "9 Cookies (C0001 under review)", "🇮🇳 India (Domestic Route)": "55 Cookies", "Engineering Mechanism": "Script blocking enforced in EU; pass-through in India"},
+            {"Audit Dimension": "Pre-Consent Behavioral Trackers", "🇪🇺 France (EU Route)": "0 Known Ad Trackers Fired", "🇮🇳 India (Domestic Route)": "Clarity & Tapad Fired", "Engineering Mechanism": "Tag Manager trigger conditions gated by OneTrust groups"},
             {"Audit Dimension": "Post-Action Outcome", "🇪🇺 France (EU Route)": "Reject All -> 10 Cookies (+1 opt-out)", "🇮🇳 India (Domestic Route)": "Accept All -> 65 Cookies (+10 released)", "Engineering Mechanism": "Conditional release of Google DoubleClick IDE"},
-            {"Audit Dimension": "Regulatory Legal Risk", "🇪🇺 France (EU Route)": "Compliant with GDPR Art. 7(3)", "🇮🇳 India (Domestic Route)": "Prospective DPDPA Sec. 6 risk & Dark Patterns Guidelines", "Engineering Mechanism": "Statutory divergence driven by phased commencement"}
+            {"Audit Dimension": "Regulatory Legal Risk", "🇪🇺 France (EU Route)": "Compliant with GDPR Arts. 4(11), 6(1)(a), 7(3) & ePrivacy Dir.", "🇮🇳 India (Domestic Route)": "Prospective DPDPA Sec. 6 risk & India CCPA Dark Patterns Guidelines", "Engineering Mechanism": "Statutory divergence driven by phased commencement"}
         ])
         st.dataframe(comp_df, width="stretch", hide_index=True)
 
     with tab_eu:
         st.subheader("🇪🇺 European Union Route Telemetry Deep-Dive (France IP)")
-        st.caption("Clean-slate Chromium Playwright session conducted via European IP route. Demonstrates GDPR Art. 4(11) & 7(3) compliance.")
+        st.caption("Clean-slate Chromium Playwright session conducted via European IP route. Demonstrates GDPR Arts. 4(11), 6(1)(a) prior opt-in and Art. 7(3) withdrawal parity.")
         
         eu_col1, eu_col2 = st.columns(2)
         eu_pre_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png")
@@ -857,18 +864,35 @@ elif nav_choice == "🏛️ 04. Statutory Article 30 RoPA Register":
             
     st.divider()
     
-    # Dynamically derived from Step 3 Candidate Activities
+    # Dynamically derived from Step 3 Candidate Activities & Append-Only DPO Ledger
     candidates = load_json_file("03_STEP3_CANDIDATE_ACTIVITIES/candidate_processing_activities.json")
+    active_signoffs = get_active_dpo_signoffs()
     if candidates and isinstance(candidates, list):
         ropa_rows = []
         for idx, c in enumerate(candidates, 1):
+            act_id = c.get("candidate_activity_id")
+            signoff = active_signoffs.get(act_id)
+            cand_p = c.get("candidate_purpose", "").lower()
+
+            # Forensic lawful basis assessment (Strictly non-binding; requires qualified Legal Counsel)
+            if signoff and signoff.get("checklist_answers", {}).get("q5"):
+                lawful_basis = "DPO VALIDATED (Art. 6(1)(a) / Sec. 6 Proposed)"
+            elif "advertising" in cand_p or "marketing" in cand_p:
+                lawful_basis = "PROPOSED: Art. 6(1)(a) Consent (Subject to Counsel Review)"
+            elif "analytics" in cand_p or "measurement" in cand_p:
+                lawful_basis = "PROPOSED: ePrivacy Art. 5(3) Consent (Subject to Counsel Review)"
+            elif "security" in cand_p or "session" in cand_p:
+                lawful_basis = "PROPOSED: Art. 6(1)(f) Legitimate Interests (Subject to Counsel Review)"
+            else:
+                lawful_basis = "PROPOSED: Pending Legal Counsel Determination"
+
             ropa_rows.append({
                 "RoPA Ref": f"ROPA-ACT-00{idx}",
-                "Candidate Activity ID": c.get("candidate_activity_id"),
+                "Candidate Activity ID": act_id,
                 "Operational Purpose": c.get("candidate_purpose", "").title(),
                 "Data Subjects": ", ".join(c.get("candidate_data_subjects", [])),
-                "Lawful Basis": "Art. 6(1)(a) Consent" if "marketing" in c.get("candidate_purpose", "").lower() or "analytics" in c.get("candidate_purpose", "").lower() else "Art. 6(1)(b)/(f)",
-                "DPIA Status": "High-Risk Presumption Triggered" if idx in [1, 5] else "Standard Risk",
+                "Lawful Basis (Proposed / Non-Binding)": lawful_basis,
+                "DPIA Status": "High-Risk Presumption Triggered (EDPB WP 248)" if idx in [1, 5] else "Standard Risk",
                 "Supporting Records": len(c.get("evidence_ids", []))
             })
         st.subheader("Dynamic Article 30 Processing Activity Table")

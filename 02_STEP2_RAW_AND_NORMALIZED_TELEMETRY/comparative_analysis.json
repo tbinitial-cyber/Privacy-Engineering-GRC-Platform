@@ -15,6 +15,7 @@
         "cookies_observed": 9,
         "onetrust_active_groups": ",C0001,",
         "third_party_ad_trackers": 0,
+        "third_party_ad_trackers_note": "0 known advertising trackers identified by current classifier during observation window",
         "first_layer_reject_all": true,
         "classification_status": "Category C0001 active in OneTrust; 9 client-side cookies observed (purpose classification under review, including ajs_anonymous_id)"
       },
@@ -22,6 +23,7 @@
         "cookies_observed": 55,
         "onetrust_active_groups": ",C0001,C0003,C0002,C0004,",
         "third_party_ad_trackers": 3,
+        "third_party_ad_trackers_note": "3 known third-party tracking beacons (Microsoft Clarity, Tapad, Hotjar) transmitting pre-consent",
         "first_layer_reject_all": false,
         "classification_status": "Categories C0001–C0004 pre-activated; third-party tracking beacons (Microsoft Clarity, Tapad, Hotjar) transmit prior to user interaction"
       }
@@ -55,14 +57,14 @@
   },
   "legal_assessment": {
     "eu_gdpr": {
-      "applicable_statute": "GDPR Arts. 4(11), 7(3) & ePrivacy Dir. 2002/58/EC Art. 5(3)",
-      "technical_finding": "Observed EU configuration aligns with prior opt-in mandate; non-essential trackers withheld pending affirmative click.",
+      "applicable_statute": "GDPR Arts. 4(11), 6(1)(a), 7(3) (Withdrawal Parity / Symmetry) & ePrivacy Dir. 2002/58/EC Art. 5(3)",
+      "technical_finding": "Observed EU configuration aligns with prior opt-in mandate; non-essential trackers withheld pending affirmative click; equal prominence for consent withdrawal/rejection provided.",
       "evidentiary_boundary": "Evidence reflects observed client-side telemetry on clean-slate browser profiles; does not constitute an authoritative legal certification."
     },
     "india_dpdpa": {
-      "applicable_statute": "DPDP Act 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019 (Dark Patterns Guidelines 2023)",
+      "applicable_statute": "DPDP Act 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019 (Central Consumer Protection Authority / Dark Patterns Guidelines 2023)",
       "technical_finding": "Observed notice/opt-out configuration deposits 55 cookies and fires analytics beacons pre-consent, with first-layer rejection omitted.",
-      "evidentiary_boundary": "Raises prospective DPDPA compliance risk once Section 6 commencement schedule matures; currently subject to dark pattern asymmetry scrutiny."
+      "evidentiary_boundary": "Raises prospective DPDPA compliance risk once Section 6 commencement schedule matures; currently subject to dark pattern asymmetry scrutiny under India CCPA 2023 guidelines."
     }
   }
 }

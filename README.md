@@ -47,12 +47,12 @@ Across controlled, clean-slate Chromium sessions on the audited production platf
 | :--- | :--- | :--- | :--- |
 | **Observed GeoIP** | `FR / IDF` (`Europe/Paris`) via proxy | `IN / DL` (`Asia/Kolkata`) direct IP | Intercepted OneTrust GeoIP endpoint (`geolocation.onetrust.com`). |
 | **CMP Active Groups** | `window.OnetrustActiveGroups = ",C0001,"` | `window.OnetrustActiveGroups = ",C0001,C0003,C0002,C0004,"` | Prior opt-in enforced on EU route; notice/opt-out configuration on domestic route. |
-| **First-Layer Banner UX** | Equal prominence: **"Tout refuser"** alongside **"Autoriser"** | Notice banner: **"Accept all cookies"**; NO **"Reject All"** on first layer | Asymmetric choice architecture in India under Consumer Protection (Dark Patterns) Guidelines 2023 scrutiny. |
-| **Pre-Consent Cookies** | **9 Cookies** *(Category C0001 active; classification under review)* | **55 Cookies** *(Marketing, analytics & cross-site trackers deposited on load)* | **-83.6% data minimization** observed on European route relative to domestic baseline. |
-| **Pre-Consent Ad Trackers** | **0 Trackers Fired** *(Clarity, Tapad, DoubleClick withheld)* | **Active Trackers Firing** *(Microsoft Clarity, Tapad, Hotjar transmit immediately)* | EU ePrivacy Directive Art. 5(3) prior consent gate bypassed on domestic route. |
+| **First-Layer Banner UX** | Equal prominence: **"Tout refuser"** alongside **"Autoriser"** | Notice banner: **"Accept all cookies"**; NO **"Reject All"** on first layer | Asymmetric choice architecture in India under Central Consumer Protection Authority (India CCPA / CPA 2019) Dark Patterns Guidelines 2023 scrutiny. |
+| **Pre-Consent Cookies** | **9 Cookies** *(Category C0001 active; cookie-level purpose classification under review)* | **55 Cookies** *(Marketing, analytics & cross-site trackers deposited on load)* | **-83.6% data minimization** observed on European route relative to domestic baseline. |
+| **Pre-Consent Ad Trackers** | **0 Known Trackers** *(Clarity, Tapad, DoubleClick withheld during observation window)* | **Active Trackers Firing** *(Microsoft Clarity, Tapad, Hotjar transmit immediately)* | EU ePrivacy Directive Art. 5(3) prior consent gate bypassed on domestic route. |
 | **Post-Reject State** | **10 Cookies** *(Clean rejection preserved; +1 preference cookie)* | **N/A** *(Requires secondary modal navigation / manual opt-out)* | Proves one-click rejection control is operational in EU but omitted on Indian landing layer. |
 | **Post-Accept State** | **53 Cookies** *(Affirmative consent releases analytics/ad cookies)* | **65 Cookies** *(Affirmative click releases gated Google DoubleClick IDE)* | Demonstrates conditional script-blocking works, but is dynamically relaxed on domestic route. |
-| **Applicable Law** | **GDPR Arts. 4(11), 7(3) & ePrivacy Dir.** *(Enforceable today)* | **DPDPA 2023 §6** *(Phased commencement)* & **CPA 2019** | Prospective DPDPA risk once Section 6 phased commencement schedule completes. |
+| **Applicable Law** | **GDPR Arts. 4(11), 6(1)(a), 7(3) & ePrivacy Dir.** *(Enforceable today)* | **DPDPA 2023 §6** *(Phased commencement)* & **CPA 2019 (India CCPA)** | Prospective DPDPA risk once Section 6 phased commencement schedule completes. |
 
 ---
 
@@ -140,15 +140,15 @@ flowchart TD
 
 | Statute / Instrument | Specific Section | Governance Application |
 | :--- | :--- | :--- |
-| **EU GDPR** | **Arts. 4(11), 7(3)** (Valid Consent) | Verified against European benchmark route; evaluated pre-consent gating. |
+| **EU GDPR** | **Arts. 4(11), 6(1)(a), 7(3)** (Valid Consent & Withdrawal Parity) | Verified against European benchmark route; evaluated pre-consent gating and rejection symmetry. |
 | **EU ePrivacy Directive** | **Art. 5(3)** (Terminal Storage Access) | Enforces prior opt-in for non-essential client-side cookies and DOM storage. |
 | **EU GDPR** | **Art. 30** (Records of Processing Activities) | Multi-sheet controller inventory with lawful bases, retention rules, and TOMs. |
 | **EU GDPR** | **Art. 35(1)** (High-Risk DPIA Screening) | Screened against EDPB WP 248 9-criteria matrix; 5 factors triggered. |
 | **EU GDPR** | **Art. 28** (Processor Contract Terms) | Standardized DPA redline playbook with mandatory audit and breach SLAs. |
 | **India DPDPA 2023** | **Sec. 6** (Notice & Consent Mandates) | Evaluated prospective compliance for domestic route under phased commencement. |
 | **India DPDPA 2023** | **Sec. 8** (Fiduciary Accountability) | Operational processing inventory maintained as organizational governance practice. |
-| **Consumer Protection Act 2019** | **Dark Patterns Guidelines 2023** | Scrutinizes omission of first-layer "Reject All" as asymmetric choice architecture. |
-| **US CCPA / CPRA** | **Cal. Civ. Code § 1798.135** | Identifies cross-context behavioral ad trackers triggering opt-out disclosures. |
+| **Consumer Protection Act 2019 (India)** | **Dark Patterns Guidelines 2023 (India CCPA)** | Scrutinizes omission of first-layer "Reject All" as asymmetric choice architecture (distinguished from California CCPA). |
+| **US CCPA / CPRA** | **Cal. Civ. Code § 1798.135** | Identifies cross-context behavioral ad trackers triggering opt-out disclosures (California). |
 
 ---
 

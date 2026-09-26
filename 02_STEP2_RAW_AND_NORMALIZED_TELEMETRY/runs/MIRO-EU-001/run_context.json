@@ -18,6 +18,7 @@
   "first_layer_reject_all_text": "Tout refuser",
   "first_layer_accept_all_text": "Autoriser tous les cookies",
   "pre_consent_ad_trackers_fired": [],
+  "pre_consent_ad_trackers_note": "0 known advertising trackers identified by current classifier during observation window",
   "post_reject_action": "Clicked 'Tout refuser' (Reject All)",
   "post_reject_cookies_count": 10,
   "post_reject_clean_state_maintained": true,

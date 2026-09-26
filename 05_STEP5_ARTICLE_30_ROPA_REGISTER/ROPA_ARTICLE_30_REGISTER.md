@@ -67,7 +67,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Data Protection Officer (DPO):** privacy@miro.com (Amsterdam, Netherlands)
 * **Operational Business Purpose:** Maintaining basic website operation, load balancing, DDoS attack mitigation, bot detection, feature flagging, and recording statutory user consent choices.
 * **Lawful Basis (GDPR Art. 6):** **Article 6(1)(f) - Legitimate Interests (Ensuring network and information security, platform availability, and GDPR Article 7 consent compliance)**
-* **Lawful Basis (DPDPA 2023):** **Section 7(a) - Legitimate Uses / Necessary operational purposes**
+* **Lawful Basis (DPDPA 2023):** **Operational Candidate Ground: Technical platform security / core session delivery; DPDPA 2023 does not establish an unconstrained 'legitimate interests' ground for cookies; to be operationalized under general Data Fiduciary duties (§ 8(5)) and Notice & Consent provisions (§ 6) upon notification.**
 * **Categories of Data Subjects:** All website visitors without exception
 * **Categories of Personal Data:** Session tokens, OneTrust consent preference string ('OptanonConsent'), Cloudflare bot mitigation token ('__cf_bm'), server experiment tokens ('server_experiment_viewed'), IP address
 * **Special Category Data (Art. 9):** None
@@ -76,7 +76,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Retention Schedule:** Strictly necessary session cookies: duration of browser session. Consent preference cookie ('OptanonConsent'): 12 months.
 * **TOMs (Art. 32 Security Measures):** Strictly necessary category; exempt from prior consent under ePrivacy Directive Art 5(3); Cloudflare automated WAF rate limiting; end-to-end HTTPS TLS 1.3.
 * **DPIA Requirement Trigger:** **NO (Essential operational and security telemetry)**
-* **Audit & Governance Status:** **`FULLY COMPLIANT (Properly documented, strictly necessary basis justified under Legitimate Interests)`**
+* **Audit & Governance Status:** **`LEGAL BASIS ASSESSMENT: PROPOSED / HUMAN REVIEW REQUIRED (Candidate technical classification; strictly necessary basis proposed under Legitimate Interests, requiring formal Legal Counsel validation)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-011-FA171931E3, EVD-WEB-012-7F782573A0, EVD-WEB-001-CDEB879188`
 
 ---
@@ -86,7 +86,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Data Protection Officer (DPO):** privacy@miro.com (Amsterdam, Netherlands)
 * **Operational Business Purpose:** Providing real-time technical and sales chat support to visitors, routing customer queries, and maintaining ticket continuity across browsing sessions.
 * **Lawful Basis (GDPR Art. 6):** **Article 6(1)(b) - Performance of a Contract / Pre-contractual steps at request of data subject, and Article 6(1)(f) Legitimate Interests**
-* **Lawful Basis (DPDPA 2023):** **Section 6(1) - Consent / Specified purpose of user engagement**
+* **Lawful Basis (DPDPA 2023):** **Section 6(1) - Consent / Specified purpose of user engagement (Proposed)**
 * **Categories of Data Subjects:** Website visitors actively interacting with the support widget, sales prospects
 * **Categories of Personal Data:** Intercom device identifier ('intercom-device-id-fsupkyat'), session identifier ('intercom-session-fsupkyat'), visitor ID ('intercom-id-fsupkyat'), chat message content, timestamps
 * **Special Category Data (Art. 9):** None (Chat guardrails prevent submission of sensitive data)
@@ -104,8 +104,8 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Data Controller:** RealtimeBoard Inc. d/b/a Miro (US) & RealtimeBoard B.V. (EU)
 * **Data Protection Officer (DPO):** privacy@miro.com (Amsterdam, Netherlands)
 * **Operational Business Purpose:** Replaying user session interactions (mouse movements, clicks, scrolling via Microsoft Clarity), identifying enterprise B2B company domains (Marketo Munchkin / Insightera), and syncing ad audiences (Reddit, Spotify, Facebook, Bing).
-* **Lawful Basis (GDPR Art. 6):** **Article 6(1)(a) - Requires Explicit Consent (HIGH RISK OF NON-COMPLIANCE: Currently firing PRE-CONSENT)**
-* **Lawful Basis (DPDPA 2023):** **Section 6(1) - Consent of the Data Principal**
+* **Lawful Basis (GDPR Art. 6):** **PROPOSED: Article 6(1)(a) Explicit Consent (Technical finding: currently transmitting prior to affirmative user action)**
+* **Lawful Basis (DPDPA 2023):** **Section 6(1) - Consent of the Data Principal (Proposed / Subject to Section 6 commencement)**
 * **Categories of Data Subjects:** Website visitors, prospective B2B corporate buyers
 * **Categories of Personal Data:** Session replay telemetry (Microsoft Clarity 'CLID', 'MUID', 'ANONCHK'), Marketo tracking ('AWSALBCORS', '_mkto_trk'), Facebook pixel ('fr'), Bing tracking ('MR', 'SRM_B'), cross-network identifiers
 * **Special Category Data (Art. 9):** Potential exposure to entered text / form field entries during session recording if masking fails
@@ -113,8 +113,8 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Cross-Border Transfers & Safeguards:** USA. Safeguard: Requires verified SCCs and Vendor Data Processing Agreements (DPAs).
 * **Retention Schedule:** Clarity session recordings: 30 days to 13 months. Marketo cookies: 2 years.
 * **TOMs (Art. 32 Security Measures):** Clarity client-side text masking enabled; HTTPS encryption in transit; however, Pre-Consent script blocking was NOT observed for Microsoft Clarity and Marketo.
-* **DPIA Requirement Trigger:** **YES (MANDATORY DPIA under GDPR Art 35(3)(a) due to systematic behavioral monitoring and session replay)**
-* **Audit & Governance Status:** **`CRITICAL AUDIT FINDING (Pre-consent firing violation + Undisclosed Subprocessors in official July 2026 notice: Clarity, Reddit, Spotify, Marketo)`**
+* **DPIA Requirement Trigger:** **YES (High-Risk Presumption under EDPB WP 248 rev.01 criteria: systematic monitoring & dataset matching)**
+* **Audit & Governance Status:** **`TECHNICAL AUDIT FINDING (Pre-consent firing observed + Subprocessors omitted from July 2026 public notice: Clarity, Reddit, Spotify, Marketo; Legal Counsel review required)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-017-D94CC7451C, EVD-WEB-041-389D98C946, EVD-WEB-030-DDD2C6CB6A`
 
 ---
@@ -127,11 +127,11 @@ This register bridges **live frontend network telemetry** captured via automated
 | **Intercom, Inc.** | `ROPA-ACT-004` | Real-time Helpdesk & Chat | USA | SCCs 2021/914 | ✅ Disclosed (July 2026) | **Observed Pre-Consent** (Functional) |
 | **Google LLC (GA4)** | `ROPA-ACT-002` | Web Audience Analytics | USA | EU-US DPF & SCCs | ⚠️ Looker Disclosed | **Requires Review** (Fires prior to opt-in) |
 | **Google LLC (DoubleClick)** | `ROPA-ACT-001` | Ad Remarketing & Conversion | USA | EU-US DPF & SCCs | ⚠️ DoubleClick Omitted | **Compliant Gate** (Held back until Accept All) |
-| **LinkedIn Corporation** | `ROPA-ACT-001` | B2B Retargeting & Attribution | Ireland / USA | SCCs 2021/914 | ❌ **Omitted from Subprocessors** | **Violation** (`bcookie` fires Pre-Consent) |
-| **Hotjar Ltd** | `ROPA-ACT-002` | Session Heatmaps & Replay | Malta (EU) | EU Internal / EEA | ❌ **Omitted from Subprocessors** | **Violation** (Fires Pre-Consent) |
-| **Microsoft Corp (Clarity)** | `ROPA-ACT-005` | Screen Replay & Behavioral Telemetry | USA | SCCs | ❌ **Clarity Omitted** | **CRITICAL Violation** (Fires Pre-Consent; Mandatory DPIA) |
-| **Tapad, Inc.** | `ROPA-ACT-001` | Cross-Device Identity Sync | USA | Unverified | ❌ **Undisclosed Shadow Tracker** | **Violation** (Fires Pre-Consent without legal basis) |
-| **Adobe / Marketo Inc.** | `ROPA-ACT-005` | B2B Marketing Automation | USA | EU-US DPF & SCCs | ❌ **Omitted from Subprocessors** | **Violation** (Munchkin tracking fires Pre-Consent) |
+| **LinkedIn Corporation** | `ROPA-ACT-001` | B2B Retargeting & Attribution | Ireland / USA | SCCs 2021/914 | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (`bcookie` fires pre-consent; prospective risk) |
+| **Hotjar Ltd** | `ROPA-ACT-002` | Session Heatmaps & Replay | Malta (EU) | EU Internal / EEA | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (Fires pre-consent; prospective risk) |
+| **Microsoft Corp (Clarity)** | `ROPA-ACT-005` | Screen Replay & Behavioral Telemetry | USA | SCCs | ❌ **Clarity Omitted** | **Observed Pre-Consent** (Fires pre-consent; EDPB WP 248 DPIA Presumption) |
+| **Tapad, Inc.** | `ROPA-ACT-001` | Cross-Device Identity Sync | USA | Unverified | ❌ **Undisclosed Shadow Tracker** | **Observed Pre-Consent** (Cross-device sync active without explicit gate) |
+| **Adobe / Marketo Inc.** | `ROPA-ACT-005` | B2B Marketing Automation | USA | EU-US DPF & SCCs | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (Munchkin tracking fires pre-consent) |
 
 ---
 

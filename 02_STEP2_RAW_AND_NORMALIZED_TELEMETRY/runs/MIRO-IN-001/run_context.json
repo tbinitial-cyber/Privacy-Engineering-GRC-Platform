@@ -2,7 +2,7 @@
   "audit_run_id": "MIRO-IN-001",
   "target_url": "https://miro.com",
   "jurisdiction_condition": "INDIA",
-  "applicable_framework": "DPDPA",
+  "applicable_framework": "DPDPA 2023 / Consumer Protection Act 2019 (India CCPA)",
   "ip_country": "IN",
   "ip_region": "DL",
   "miro_geo": "IN|India|Delhi|Asia/Kolkata",
