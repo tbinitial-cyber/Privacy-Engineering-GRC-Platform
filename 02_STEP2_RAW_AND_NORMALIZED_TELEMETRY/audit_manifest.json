@@ -29,6 +29,9 @@
     "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/normalized_evidence.json": "d5f0ea7fe0eb3b3a61f0c7dae68754bf955ebc893aff8eed55b3d6b393ee8b51",
     "03_STEP3_CANDIDATE_ACTIVITIES/candidate_processing_activities.json": "c8ebaced4942b86b9855191aa7011b21c253a91d59c637780e6ac9b36665a9c9",
     "04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/transparency_reconciliation_report.json": "19b7b56cfdd218792891f50fc4505c826f853ddf8045bfeebc12aa7b304ece17",
-    "04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/cookie_vendor_inventory.json": "0be57f38db5507da95c4780279994560d8004ead3dc3281e2b355d72892e01eb"
+    "04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/cookie_vendor_inventory.json": "0be57f38db5507da95c4780279994560d8004ead3dc3281e2b355d72892e01eb",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/miro_europe_telemetry.json": "c1b0a364dba6e02184d81978c5deed962418c18f0ea65532b988107847753378",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png": "81896893279a2ec4231074ab708f96ebd0d5c6899737150fe0d41a1d18ef9370",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_post_reject.png": "98ea0293714d97dfbe1876792c5cdd52bc22deec2fb9c5394f23c4c0d1f37c4f"
   }
 }
