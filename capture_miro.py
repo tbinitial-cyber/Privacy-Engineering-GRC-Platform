@@ -1,13 +1,21 @@
 """
 Canonical Reproducible Telemetry Capture Tool for Miro.com
-Supports:
-  - European Union Profile: python capture_miro.py --profile eu-france --proxy http://127.0.0.1:61809
-  - India Domestic Profile: python capture_miro.py --profile india
+Supports symmetric 6-state experiment design:
+  - European Union Profile: python capture_miro.py --profile eu-france --proxy http://127.0.0.1:61809 --action [baseline|accept|reject]
+  - India Domestic Profile:  python capture_miro.py --profile india --action [baseline|accept|reject]
+
+Experimental Design Note:
+  Both profiles use https://miro.com/ as the canonical initial URL. Geography (via GeoIP / EU proxy)
+  is the sole experimental variable. Any locale redirect (e.g. /fr/) is performed by the site and
+  recorded in initial_url / final_url / redirect_observed fields.
+
 Captures:
   - Verified GeoIP from geolocation.onetrust.com
   - DOM-level window.OnetrustActiveGroups
-  - Pre-Consent, Accept All, and Reject All states (where available)
-  - Full CDP network events and cookie inventories
+  - PRE_CONSENT baseline (baseline.json) for every run
+  - POST_ACCEPT state (post_accept.json) when --action accept
+  - POST_REJECT state (post_reject.json) when --action reject
+  - Full CDP network events, HAR recording, and cookie inventories
 """
 
 import asyncio
@@ -29,7 +37,10 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
     is_eu = profile.lower() in ["eu", "eu-france", "france"]
     run_id = "MIRO-EU-001" if is_eu else "MIRO-IN-001"
     jurisdiction = "EU" if is_eu else "INDIA"
-    target_url = "https://miro.com" if not is_eu else "https://miro.com/fr/"
+    # EXPERIMENTAL DESIGN NOTE: Both profiles use the same canonical root URL so that
+    # geography (via GeoIP/proxy) is the sole experimental variable. Any locale redirect
+    # (e.g. miro.com -> miro.com/fr/) is performed by the site and captured in redirect_chain.
+    target_url = "https://miro.com/"
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     output_dir = os.path.join(base_dir, "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY", "runs", run_id)
@@ -80,10 +91,14 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         }))
 
         print(f"Navigating to {target_url}...")
+        initial_url = target_url
         try:
             await page.goto(target_url, wait_until="networkidle", timeout=60000)
         except Exception as e:
             print(f"Note: Navigation finished with: {e}")
+        final_url = page.url
+        if final_url != initial_url:
+            print(f"Redirect observed: {initial_url} -> {final_url}")
         await page.wait_for_timeout(3000)
 
         # 1. PRE-CONSENT STATE
@@ -110,7 +125,10 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
             "profile": profile,
             "jurisdiction": jurisdiction,
             "timestamp": datetime.now(timezone.utc).isoformat(),
-            "target": target_url,
+            "initial_url": initial_url,
+            "final_url": final_url,
+            "redirect_observed": final_url != initial_url,
+            "target": final_url,
             "consent_state": "PRE_CONSENT",
             "onetrust_geoip": onetrust_geo,
             "geo_data_cookie": geo_cookie,
@@ -183,16 +201,25 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         run_context = {
             "audit_run_id": run_id,
             "profile": profile,
-            "target_url": target_url,
+            "action": action,
+            "initial_url": initial_url,
+            "final_url": final_url,
+            "redirect_observed": final_url != initial_url,
             "jurisdiction_condition": jurisdiction,
-            "applicable_framework": "GDPR" if is_eu else "DPDPA",
+            "applicable_framework": "GDPR / ePrivacy Directive" if is_eu else "DPDPA 2023 / Consumer Protection Act 2019 (India CCPA)",
             "proxy_used": proxy,
             "onetrust_geoip_captured": onetrust_geo,
             "miro_geo_cookie": geo_cookie,
             "pre_consent_cookie_count": len(pre_cookies),
             "pre_consent_active_groups": active_groups,
             "first_layer_reject_all_visible": has_reject,
-            "captured_at": datetime.now(timezone.utc).isoformat()
+            "first_layer_accept_all_visible": has_accept,
+            "captured_at": datetime.now(timezone.utc).isoformat(),
+            "temporal_confound_note": (
+                "Runs captured at different calendar dates introduce potential confounds "
+                "(site changes, A/B experiments, vendor config changes). "
+                "For production-grade audit, both jurisdictions must be captured in the same session window."
+            )
         }
         with open(os.path.join(output_dir, "run_context.json"), "w", encoding="utf-8") as f:
             json.dump(run_context, f, indent=2)

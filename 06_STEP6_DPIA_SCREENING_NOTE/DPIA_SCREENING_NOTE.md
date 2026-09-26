@@ -2,14 +2,18 @@
 ### *Statutory Threshold Assessment under GDPR Article 35, EDPB Guidelines WP 248 & Indian DPDPA 2023 Section 10*
 
 **Assessment Reference:** `DPIA-SCR-2026-MIRO-001`  
-**Target Surface:** Miro Web Platform & Public Marketing Surface (`https://miro.com`)  
+**Target Surface:** Miro Web Platform & Public Marketing Surface (`https://miro.com/`)  
 **Data Controller:** RealtimeBoard Inc. d/b/a Miro (Delaware, USA) & RealtimeBoard B.V. (Amsterdam, Netherlands)  
 **Appointed DPO Contact:** `privacy@miro.com` | Singel 540, 1017 AZ Amsterdam, Netherlands  
-**Audit Pipeline Reference:** `miro_live_audit_run_001`  
-**Underlying Canonical Evidence:** [normalized_evidence.json](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/normalized_evidence.json) (301 Records)  
-**Mapped RoPA Entries:** [ROPA_ARTICLE_30_REGISTER.xlsx](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/ROPA_ARTICLE_30_REGISTER.xlsx) (`ROPA-ACT-001`, `ROPA-ACT-005`)  
-**Assessment Date:** 24 September 2026  
+**Comparative Audit Reference:** `MIRO-COMP-001` (runs: `MIRO-IN-001` / `MIRO-EU-001`)  
+**Underlying Canonical Evidence:** `02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/normalized_evidence.json` (301 Records, India run)  
+**EU Telemetry Evidence:** `02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/miro_europe_telemetry.json`  
+**Comparative Analysis Artifact:** `02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/comparative_analysis.json`  
+**Assessment Date:** 24–26 September 2026 (India: 2026-09-24; EU: 2026-09-26)  
 **Status:** **FORMAL DPIA RECOMMENDED (EDPB WP 248 REGULATORY PRESUMPTION TRIGGERED)**
+
+> [!WARNING]
+> **Temporal Confound Notice:** India and EU runs were captured on different dates. Same-day paired runs are required for production-grade causal attribution of behavioral differences to geography alone.
 
 ---
 
@@ -22,11 +26,11 @@ Furthermore, under the **Article 29 Working Party / European Data Protection Boa
 ### Regulatory Assessment Finding:
 > [!WARNING]
 > **REGULATORY PRESUMPTION TRIGGERED: FORMAL DPIA RECOMMENDED UNDER GDPR ART. 35(1)**  
-> Based on empirical technical telemetry captured during `miro_live_audit_run_001`, the Miro web platform deploys two candidate processing operations triggering high-risk supervisory guidance factors:
+> Based on empirical technical telemetry captured during `MIRO-IN-001` (India, 2026-09-24) and `MIRO-EU-001` (France/EU, 2026-09-26), the Miro web platform deploys two candidate processing operations triggering high-risk supervisory guidance factors:
 > 1. **Session Screen Replay & DOM Telemetry (Microsoft Clarity & Hotjar):** Triggers **3 WP 248 Guidance Factors** (Systematic Monitoring, Innovative Technology, Large Scale).
 > 2. **Cross-Site Ad Synchronization (Tapad, Inc. & LinkedIn):** Triggers **3 WP 248 Guidance Factors** (Evaluation/Profiling, Data Matching/Combining, Large Scale).
 >
-> In addition, these technologies were empirically observed firing in the Indian baseline **PRE-CONSENT** (prior to affirmative user interaction with the banner), presenting operational and regulatory scrutiny under **ePrivacy Directive Article 5(3)**, **GDPR Article 6**, and **DPDPA 2023 Section 6 principles**.
+> In addition, these technologies were empirically observed firing in the Indian baseline **PRE-CONSENT** (prior to affirmative user interaction with the banner). The India route is assessed under **DPDPA 2023 Section 6** and **Consumer Protection Act 2019** principles, not EU ePrivacy Directive (which applies exclusively to the EU route). EU ePrivacy Directive Art. 5(3) applies to the EU run only.
 
 ---
 
@@ -81,9 +85,7 @@ flowchart TD
 #### B. The Privacy Risk Mechanics
 1. **DOM Mutation Serialization:** Clarity's client-side script serializes the webpage's Document Object Model (DOM) and transmits binary mutation batches to Microsoft servers every few seconds.
 2. **Accidental Keystroke Ingestion:** While Clarity provides default masking for input fields, if form fields on landing pages or embedded iframe widgets lack strict `data-clarity-mask` attributes, user-typed queries, email addresses, or unredacted text can be recorded and replayed in Microsoft dashboards.
-3. **Cross-Service Tracking:** The presence of `MUID` and `MR` cookies connects session recordings to Microsoft's wider Bing advertising network.
-4. **Pre-Consent Firing Violation:** In `baseline.json`, all 5 Clarity cookies and 2 Hotjar cookies were written **prior to the user clicking 'Accept All'**, violating the ePrivacy Directive requirement that non-essential analytics and replay cookies require prior opt-in.
-
+3. **Cross-Service Tracking:** The presence of `MUID` and `MR` cookies connects session recordings to Microsoft's wider Bing advertising netwo        4. **Pre-Consent Firing Observed (India Route - MIRO-IN-001):** In \aseline.json\, all 5 Clarity cookies and 2 Hotjar cookies were written **prior to the user clicking Accept All**. This is assessed under DPDPA 2023 Section 6 and Consumer Protection Act 2019 (India CCPA) principles on the India route. On the EU route (MIRO-EU-001), no Clarity or Hotjar cookies were present in the pre-consent baseline, consistent with an ePrivacy Directive Art. 5(3) prior opt-in gate. EU ePrivacy Dir. does not apply to the India route.
 ---
 
 ### Trigger 2: Tapad & LinkedIn Cross-Device Graph Synchronization

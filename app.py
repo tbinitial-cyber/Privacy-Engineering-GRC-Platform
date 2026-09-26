@@ -405,7 +405,8 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         eu_run = manifest.get("runs", {}).get("MIRO-EU-001", {})
         in_c = in_run.get("ip_country") or manifest.get("geo_capture_profile", {}).get("country", "IN")
         eu_c = eu_run.get("ip_country", "FR")
-        st.caption(f"🔒 **Comparison Run Reference:** `{comp_id}` | **Target:** `{manifest.get('target_url')}` | **Indian Domestic Route:** `{in_c} (Notice-Only)` | **EU Route:** `{eu_c} (Strict Prior Opt-In)` | **Schema:** `{schema_msg}`")
+        st.caption(f"🔒 **Comparison Run Reference:** `{comp_id}` | **Target:** `{manifest.get('target_url')}` | **Indian Domestic Route:** `{in_c} (Notice-Only)` | **EU Route:** `{eu_c} (Prior Opt-In Observed)` | **Schema:** `{schema_msg}`")
+    st.warning("⚠️ **Temporal Confound Notice:** India and EU runs were captured on different dates (IN: 2026-09-24; EU: 2026-09-26). Miro is a dynamic production site; behavioral differences could theoretically reflect site changes, A/B experiments, or vendor configuration changes in addition to geographic routing. Reproducibility requires same-day paired runs. This limitation applies to all comparative conclusions.")
 
     # If Dual-Jurisdiction Mode: Show Comparative Arbitrage KPIs and Matrix
     if jurisdiction_mode == "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)":
@@ -489,7 +490,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements. Consent and rejection controls observed on first layer.")
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
-            st.metric(label="Pre-Consent Cookies", value=f"{eu_pre_cookies} Cookies", delta="C0001 Active — Classification Pending")
+            st.metric(label="Pre-Consent Cookies", value=f"{eu_pre_cookies} Cookies", delta="C0001 Active - Classification Pending")
         with col2:
             st.metric(label="CMP Active Groups", value="C0001 Only", delta="Opt-In Enforced")
         with col3:
@@ -609,13 +610,13 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
             {"Audit Dimension": "Pre-Consent Cookie Payload", "🇪🇺 France (EU Route)": "9 Cookies (C0001 under review)", "🇮🇳 India (Domestic Route)": "55 Cookies", "Engineering Mechanism": "Script blocking enforced in EU; pass-through in India"},
             {"Audit Dimension": "Pre-Consent Behavioral Trackers", "🇪🇺 France (EU Route)": "0 Known Ad Trackers Fired", "🇮🇳 India (Domestic Route)": "Clarity & Tapad Fired", "Engineering Mechanism": "Tag Manager trigger conditions gated by OneTrust groups"},
             {"Audit Dimension": "Post-Action Outcome", "🇪🇺 France (EU Route)": "Reject All -> 10 Cookies (+1 opt-out)", "🇮🇳 India (Domestic Route)": "Accept All -> 65 Cookies (+10 released)", "Engineering Mechanism": "Conditional release of Google DoubleClick IDE"},
-            {"Audit Dimension": "Regulatory Legal Risk", "🇪🇺 France (EU Route)": "Compliant with GDPR Arts. 4(11), 6(1)(a), 7(3) & ePrivacy Dir.", "🇮🇳 India (Domestic Route)": "Prospective DPDPA Sec. 6 risk & India CCPA Dark Patterns Guidelines", "Engineering Mechanism": "Statutory divergence driven by phased commencement"}
+            {"Audit Dimension": "Regulatory Legal Risk", "🇪🇺 France (EU Route)": "Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements & ePrivacy Directive; withdrawal effectiveness under Art. 7(3) requires separate post-consent withdrawal test", "🇮🇳 India (Domestic Route)": "Prospective DPDPA Sec. 6 risk & India CCPA Dark Patterns Guidelines", "Engineering Mechanism": "Statutory divergence driven by phased commencement"}
         ])
         st.dataframe(comp_df, width="stretch", hide_index=True)
 
     with tab_eu:
         st.subheader("🇪🇺 European Union Route Telemetry Deep-Dive (France IP)")
-        st.caption("Clean-slate Chromium Playwright session conducted via European IP route. Demonstrates GDPR Arts. 4(11), 6(1)(a) prior opt-in and Art. 7(3) withdrawal parity.")
+        st.caption("Clean-slate Chromium Playwright session conducted via European IP route. Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements. Consent and rejection controls observed on first layer. NOTE: Art. 7(3) withdrawal effectiveness requires a separate post-consent withdrawal test not conducted in this run.")
         
         eu_col1, eu_col2 = st.columns(2)
         eu_pre_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png")
@@ -633,7 +634,7 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
         eu_telemetry = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/miro_europe_telemetry.json")
         if eu_telemetry:
             eu_c1, eu_c2, eu_c3 = st.columns(3)
-            eu_c1.metric("Pre-Consent Cookies", f"{eu_telemetry.get('pre_consent', {}).get('cookie_count')} Cookies", "Strictly Essential Only")
+            eu_c1.metric("Pre-Consent Cookies", f"{eu_telemetry.get('pre_consent', {}).get('cookie_count')} Cookies", "C0001 Active - Cookie-Level Classification Pending")
             eu_c2.metric("OneTrust Active Groups", eu_telemetry.get('pre_consent', {}).get('onetrust_active_groups', 'N/A'), "C0001 (Necessary) Only")
             eu_c3.metric("Post-Reject Cookies", f"{eu_telemetry.get('post_reject', {}).get('cookie_count')} Cookies", "+1 Preference Cookie Only")
             
@@ -947,23 +948,32 @@ elif nav_choice == "🏛️ 04. Statutory Article 30 RoPA Register":
             cand_p = c.get("candidate_purpose", "").lower()
 
             # Forensic lawful basis assessment (Strictly non-binding; requires qualified Legal Counsel)
+            # NOTE: ePrivacy Art. 5(3) is a terminal-equipment access rule, NOT a GDPR Art. 6 lawful basis.
+            # They are assessed separately. Only GDPR Art. 6 bases appear in the Lawful Basis column.
             if signoff and signoff.get("checklist_answers", {}).get("q5"):
-                lawful_basis = "DPO VALIDATED (Art. 6(1)(a) / Sec. 6 Proposed)"
+                gdpr_basis = "DPO VALIDATED (Art. 6(1)(a) / Sec. 6 Proposed)"
+                eprivacy_basis = "DPO VALIDATED"
             elif "advertising" in cand_p or "marketing" in cand_p:
-                lawful_basis = "PROPOSED: Art. 6(1)(a) Consent (Subject to Counsel Review)"
+                gdpr_basis = "UNASSESSED (Suggested: Art. 6(1)(a) Consent — Counsel Review Required)"
+                eprivacy_basis = "CONSENT REQUIRED (Suggested: Art. 5(3) ePrivacy — Counsel Review Required)"
             elif "analytics" in cand_p or "measurement" in cand_p:
-                lawful_basis = "PROPOSED: ePrivacy Art. 5(3) Consent (Subject to Counsel Review)"
+                gdpr_basis = "UNASSESSED (Suggested: Art. 6(1)(a) Consent — Counsel Review Required)"
+                eprivacy_basis = "CONSENT REQUIRED (Suggested: Art. 5(3) ePrivacy — Counsel Review Required)"
             elif "security" in cand_p or "session" in cand_p:
-                lawful_basis = "PROPOSED: Art. 6(1)(f) Legitimate Interests (Subject to Counsel Review)"
+                gdpr_basis = "UNASSESSED (Suggested: Art. 6(1)(f) Legitimate Interests — Counsel Review Required)"
+                eprivacy_basis = "NOT APPLICABLE (Suggested: Strictly Necessary Exception — Counsel Review Required)"
             else:
-                lawful_basis = "PROPOSED: Pending Legal Counsel Determination"
+                gdpr_basis = "UNASSESSED (Pending Legal Counsel Determination)"
+                eprivacy_basis = "UNASSESSED (Pending Legal Counsel Determination)"
+            lawful_basis = gdpr_basis
 
             ropa_rows.append({
                 "RoPA Ref": f"ROPA-ACT-00{idx}",
                 "Candidate Activity ID": act_id,
                 "Operational Purpose": c.get("candidate_purpose", "").title(),
                 "Data Subjects": ", ".join(c.get("candidate_data_subjects", [])),
-                "Lawful Basis (Proposed / Non-Binding)": lawful_basis,
+                "GDPR Art. 6 Basis (UNASSESSED)": gdpr_basis,
+                "ePrivacy Art. 5(3) (Separate Rule)": eprivacy_basis,
                 "DPIA Status": "High-Risk Presumption Triggered (EDPB WP 248)" if idx in [1, 5] else "Standard Risk",
                 "Supporting Records": len(c.get("evidence_ids", []))
             })
@@ -986,14 +996,14 @@ elif nav_choice == "🛡️ 05. High-Risk DPIA Threshold Assessment":
     st.caption("Statutory High-Risk Threshold Assessment under GDPR Article 35 & Article 29 WP / EDPB Guidelines WP 248 rev.01")
     
     criteria_data = [
-        {"Criterion": "1. Evaluation or Scoring (Profiling)", "Status": "TRIGGERED", "Evidence": "Tapad & LinkedIn conversion scoring"},
+        {"Criterion": "1. Evaluation or Scoring (Profiling)", "Status": "EVIDENCE-SUPPORTED", "Evidence": "Tapad sync identifiers & LinkedIn observed pre-consent; scoring inference based on vendor architecture — not directly verified from cookie observation alone"},
         {"Criterion": "2. Automated Decision-Making", "Status": "NOT TRIGGERED", "Evidence": "Ad bidding only; no legal effects"},
         {"Criterion": "3. Systematic Monitoring", "Status": "TRIGGERED", "Evidence": "Microsoft Clarity DOM & mouse recording"},
         {"Criterion": "4. Sensitive Data", "Status": "POTENTIAL", "Evidence": "Form field inputs captured if unmasked"},
         {"Criterion": "5. Large Scale", "Status": "TRIGGERED", "Evidence": "Millions of monthly global visitors"},
-        {"Criterion": "6. Matching / Combining Datasets", "Status": "TRIGGERED", "Evidence": "Tapad 3-Way Sync cross-device graph"},
+        {"Criterion": "6. Matching / Combining Datasets", "Status": "EVIDENCE-SUPPORTED", "Evidence": "TapAd_3WAY_SYNCS cookie observed; downstream cross-device graph construction not independently verified from this test run"},
         {"Criterion": "7. Vulnerable Subjects", "Status": "NOT TRIGGERED", "Evidence": "B2B SaaS workspace platform"},
-        {"Criterion": "8. Innovative Technology", "Status": "TRIGGERED", "Evidence": "Real-time DOM tree virtualization"},
+        {"Criterion": "8. Innovative Technology", "Status": "EVIDENCE-SUPPORTED", "Evidence": "Microsoft Clarity DOM mutation recording observed; classification as 'innovative technology' per WP 248 is an architectural assessment, not directly verified"},
         {"Criterion": "9. Denying Rights", "Status": "NOT TRIGGERED", "Evidence": "User can theoretically delete cookies"}
     ]
     criteria_df = pd.DataFrame(criteria_data)
@@ -1003,7 +1013,7 @@ elif nav_choice == "🛡️ 05. High-Risk DPIA Threshold Assessment":
     
     col_v1, col_v2 = st.columns([1, 2])
     with col_v1:
-        st.warning(f"⚠️ **REGULATORY PRESUMPTION TRIGGERED**:\n\n**FORMAL DPIA RECOMMENDED UNDER GDPR ART. 35(1)**\n\n{triggered_count} of {total_count} WP 248 Criteria Triggered (+{potential_count} Potential).")
+        st.warning(f"⚠️ **REGULATORY PRESUMPTION TRIGGERED**:\n\n**FORMAL DPIA RECOMMENDED UNDER GDPR ART. 35(1)**\n\n{triggered_count} of {total_count} WP 248 Criteria Triggered or Evidence-Supported (+{potential_count} Potential). NOTE: 'Evidence-Supported' means telemetry is consistent with the criterion; direct verification of the processing activity would require further investigation.")
         st.info("ℹ️ **Statutory Guidance:** Under Article 29 Working Party Guidelines WP 248 rev.01 (endorsed by the EDPB), meeting 2 or more criteria establishes a strong regulatory presumption in supervisory guidance that a processing operation is likely to result in high risk, recommending a formal DPIA under GDPR Article 35(1). Under Indian DPDPA 2023 Section 10, periodic DPIAs are mandatory for Significant Data Fiduciaries (SDF).")
         st.write("**Key Technical Triggers:**")
         st.write("1. Microsoft Clarity Screen Replay (`CLID`, `MUID` — Systematic Monitoring)")
