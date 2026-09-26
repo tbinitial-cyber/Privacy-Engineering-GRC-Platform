@@ -37,6 +37,37 @@
       "type": "string",
       "description": "Filename, report ID, HAR name, screenshot ID, or other traceable artifact reference."
     },
+    "audit_run_id": {
+      "type": "string",
+      "description": "Identifier of the empirical capture run (e.g. MIRO-IN-001, MIRO-EU-001)."
+    },
+    "jurisdiction": {
+      "type": "string",
+      "enum": [
+        "INDIA",
+        "EU",
+        "US",
+        "GLOBAL",
+        "UNKNOWN"
+      ],
+      "description": "Jurisdiction environment under which telemetry was gathered."
+    },
+    "applicable_framework": {
+      "type": "string",
+      "enum": [
+        "GDPR",
+        "DPDPA",
+        "CCPA",
+        "MULTIPLE",
+        "NONE"
+      ],
+      "description": "Primary statutory data protection framework evaluated."
+    },
+    "geo_context": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Empirical runtime geolocation telemetry (IP country, region, CMP detected rule)."
+    },
     "evidence_type": {
       "type": "string",
       "enum": [

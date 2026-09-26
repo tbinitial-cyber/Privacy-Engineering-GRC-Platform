@@ -1,0 +1,56 @@
+{
+  "comparison_meta": {
+    "target": "https://miro.com",
+    "cmp_vendor": "OneTrust",
+    "generated_at": "2026-09-26T22:36:00Z",
+    "core_finding": "Empirical Geofencing Privacy Arbitrage confirmed: Miro applies divergent CMP configurations and script blocking policies based on visitor GeoIP."
+  },
+  "runs_evaluated": [
+    "MIRO-IN-001",
+    "MIRO-EU-001"
+  ],
+  "metrics_comparison": {
+    "pre_consent_cookies": {
+      "MIRO-IN-001": 55,
+      "MIRO-EU-001": 9,
+      "differential_percentage": -83.6,
+      "interpretation": "GDPR Art. 5(1)(c) data minimization strictly enforced on European route; domestic Indian route deposits marketing/analytics cookies unconsented."
+    },
+    "onetrust_active_groups": {
+      "MIRO-IN-001": ",C0001,C0003,C0002,C0004,",
+      "MIRO-EU-001": ",C0001,",
+      "interpretation": "All tracking categories pre-activated on Indian route (implied consent); only strictly necessary C0001 active on EU route (prior opt-in)."
+    },
+    "first_layer_reject_all": {
+      "MIRO-IN-001": false,
+      "MIRO-EU-001": true,
+      "interpretation": "Equal prominence 'Tout refuser' present on EU first layer; omitted on Indian banner, creating asymmetric choice under Dark Patterns Guidelines 2023."
+    },
+    "pre_consent_third_party_ad_trackers": {
+      "MIRO-IN-001": [
+        "Microsoft Clarity (c.clarity.ms)",
+        "Tapad (pixel.tapad.com)",
+        "Hotjar (static.hotjar.com)"
+      ],
+      "MIRO-EU-001": [],
+      "interpretation": "Behavioral analytics and third-party ad sync beacons fire immediately in India prior to interaction; completely suppressed on EU route."
+    },
+    "post_action_behavior": {
+      "MIRO-IN-001": "Accept All -> 65 Cookies (+10 released including Google DoubleClick IDE)",
+      "MIRO-EU-001": "Tout refuser -> 10 Cookies (+1 preference cookie only; clean rejection maintained)",
+      "interpretation": "Affirmative consent mechanism reliably gates DoubleClick, but selective application demonstrates deliberate regional policy divergence."
+    }
+  },
+  "legal_assessment": {
+    "eu_gdpr": {
+      "applicable_statute": "GDPR Arts. 4(11), 7(3) & ePrivacy Dir. 2002/58/EC Art. 5(3)",
+      "status": "COMPLIANT_BENCHMARK",
+      "summary": "Technical controls meet CJEU Planet49 and EDPB Guidelines 05/2020 standard for valid prior freely given consent."
+    },
+    "india_dpdpa": {
+      "applicable_statute": "DPDP Act 2023 Sec. 6 & Consumer Protection Act 2019 (Dark Patterns Guidelines 2023)",
+      "status": "PROSPECTIVE_COMPLIANCE_RISK",
+      "summary": "Non-essential pre-consent tracking and omission of equal-prominence rejection raise prospective DPDPA Sec. 6 compliance risk upon completion of the 18-month phased commencement schedule."
+    }
+  }
+}

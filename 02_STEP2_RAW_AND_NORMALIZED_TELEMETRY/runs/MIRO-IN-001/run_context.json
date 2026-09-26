@@ -1,0 +1,28 @@
+{
+  "audit_run_id": "MIRO-IN-001",
+  "target_url": "https://miro.com",
+  "jurisdiction_condition": "INDIA",
+  "applicable_framework": "DPDPA",
+  "ip_country": "IN",
+  "ip_region": "DL",
+  "miro_geo": "IN|India|Delhi|Asia/Kolkata",
+  "cmp_provider": "OneTrust",
+  "cmp_rule_detected": "Notice-Only / Implied Consent",
+  "consent_model": "IMPLIED_OPT_OUT",
+  "browser": "Chromium",
+  "headless": true,
+  "pre_consent_cookies_count": 55,
+  "pre_consent_active_groups": ",C0001,C0003,C0002,C0004,",
+  "first_layer_reject_all_visible": false,
+  "pre_consent_ad_trackers_fired": [
+    "Microsoft Clarity (c.clarity.ms)",
+    "Tapad (pixel.tapad.com)",
+    "Hotjar (static.hotjar.com)"
+  ],
+  "post_action": "Clicked Accept All",
+  "post_action_cookies_count": 65,
+  "gated_cookies_released": [
+    "IDE (Google DoubleClick)",
+    "_fbp (Meta/Facebook)"
+  ]
+}

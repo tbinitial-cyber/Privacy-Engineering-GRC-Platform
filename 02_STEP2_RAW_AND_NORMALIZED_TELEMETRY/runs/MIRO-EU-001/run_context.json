@@ -1,0 +1,23 @@
+{
+  "audit_run_id": "MIRO-EU-001",
+  "target_url": "https://miro.com",
+  "jurisdiction_condition": "EU",
+  "applicable_framework": "GDPR",
+  "ip_country": "FR",
+  "ip_region": "IDF",
+  "miro_geo": "FR|France|Paris|Europe/Paris",
+  "cmp_provider": "OneTrust",
+  "cmp_rule_detected": "EU_STRICT_OPT_IN",
+  "consent_model": "PRIOR_OPT_IN",
+  "browser": "Chromium",
+  "headless": true,
+  "pre_consent_cookies_count": 9,
+  "pre_consent_active_groups": ",C0001,",
+  "first_layer_reject_all_visible": true,
+  "first_layer_reject_all_text": "Tout refuser",
+  "first_layer_accept_all_text": "Autoriser tous les cookies",
+  "pre_consent_ad_trackers_fired": [],
+  "post_action": "Clicked Tout refuser (Reject All)",
+  "post_action_cookies_count": 10,
+  "post_reject_clean_state_maintained": true
+}

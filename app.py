@@ -360,6 +360,17 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         ]
         st.dataframe(pd.DataFrame(comparative_matrix), width="stretch", hide_index=True)
 
+        with st.expander("🔬 View Machine-Readable Comparative Telemetry Artifact (`comparative_analysis.json`)"):
+            comp_json = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/comparative_analysis.json")
+            if comp_json:
+                st.json(comp_json)
+                st.download_button(
+                    label="📥 Download Comparative Analysis Artifact (JSON)",
+                    data=json.dumps(comp_json, indent=2),
+                    file_name="comparative_analysis.json",
+                    mime="application/json"
+                )
+
     elif "European Union" in jurisdiction_mode:
         # EU Route Specific KPIs
         st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Demonstrates textbook GDPR Art. 4(11) / 7(3) prior opt-in compliance.")

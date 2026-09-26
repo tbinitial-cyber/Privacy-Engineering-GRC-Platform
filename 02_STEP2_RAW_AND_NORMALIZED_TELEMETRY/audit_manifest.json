@@ -22,7 +22,7 @@
     "profile_detected": "Implied Consent / Notice-Only"
   },
   "expected_hashes": {
-    "01_STEP1_CANONICAL_SCHEMA/evidence.schema.json": "5c04bd6c8f7d99077877889027b9f2778b95a89a9148d59ae90f7ec49032d162",
+    "01_STEP1_CANONICAL_SCHEMA/evidence.schema.json": "e6fdbf5e56ef516f46b09556f13320be4a2e7bb54760d84c62175a36677f4b41",
     "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/baseline.json": "19e993a7e428d7ddbe1b0bfaa616164d52fc10e2bb1277910a402c23ffa3de2e",
     "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/post_consent.json": "8421c6a63fe4ee6e660d0914a43e457f954d866364ae6994b4b21c9861d02577",
     "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/host_inventory.json": "25a59c2183e6d6e5d7c9f77989751072adaab9f106e59b1cf95918248f8e2bb7",
@@ -32,6 +32,9 @@
     "04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/cookie_vendor_inventory.json": "0be57f38db5507da95c4780279994560d8004ead3dc3281e2b355d72892e01eb",
     "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/miro_europe_telemetry.json": "c1b0a364dba6e02184d81978c5deed962418c18f0ea65532b988107847753378",
     "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png": "81896893279a2ec4231074ab708f96ebd0d5c6899737150fe0d41a1d18ef9370",
-    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_post_reject.png": "98ea0293714d97dfbe1876792c5cdd52bc22deec2fb9c5394f23c4c0d1f37c4f"
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_post_reject.png": "98ea0293714d97dfbe1876792c5cdd52bc22deec2fb9c5394f23c4c0d1f37c4f",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/comparative_analysis.json": "60209c071186c38e3d2eca0d1fb145440172e21ed86c7ec5ade71d984b542965",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-IN-001/run_context.json": "8a8e1512bef7df915e3bbc8df393f8d07ffa0e6048f51dffdff3097e53c2e782",
+    "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/run_context.json": "539325e7f865c43b33c131e4b1eb74be100c340f4430ceebf5be45996f234ef8"
   }
 }
