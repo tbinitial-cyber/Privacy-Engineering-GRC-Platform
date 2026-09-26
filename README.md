@@ -1,10 +1,10 @@
 # 🛡️ Enterprise Privacy Engineering & Dual-Domain Telemetry GRC Platform
 
-> **An Empirical Privacy Engineering & Dual-Domain Telemetry GRC Framework Harmonizing Technical Digital Telemetry with Global Privacy Frameworks (EU GDPR, India DPDPA 2023, and US CCPA/CPRA).**
+> **An Empirical Privacy Engineering & Comparative Telemetry GRC Platform Harmonizing Client-Side Telemetry with Global Privacy Frameworks (EU GDPR, India DPDPA 2023, and US CCPA/CPRA).**
 
-[![Compliance](https://img.shields.io/badge/Statutory%20Framework-EU%20GDPR%20%7C%20India%20DPDPA%202023%20%7C%20US%20CCPA-0A66C2.svg)](#-regulatory--statutory-alignment)
-[![RoPA Status](https://img.shields.io/badge/Article%2030%20RoPA-Governance%20Mapped-2ea44f.svg)](#-step-5-statutory-article-30-ropa-register)
-[![DPIA Status](https://img.shields.io/badge/EDPB%20WP%20248-DPIA%20Screened%20(High--Risk)-critical.svg)](#-step-6-high-risk-dpia-threshold-assessment)
+[![Statutory Framework](https://img.shields.io/badge/Statutory%20Framework-EU%20GDPR%20%7C%20India%20DPDPA%202023%20%7C%20US%20CCPA-0A66C2.svg)](#-regulatory--statutory-alignment)
+[![RoPA Governance](https://img.shields.io/badge/RoPA%20Governance-GDPR%20Art.%2030%20%7C%20DPDPA%20Accountability-2ea44f.svg)](#-step-5-statutory-article-30-ropa-register)
+[![EDPB WP 248](https://img.shields.io/badge/EDPB%20WP%20248-DPIA%20Screened%20(Regulatory%20Presumption)-critical.svg)](#-step-6-high-risk-dpia-threshold-assessment)
 [![Evidence Integrity](https://img.shields.io/badge/Evidence%20Integrity-SHA--256%20Cryptographic%20Fingerprints-blueviolet.svg)](#-step-2-live-digital-telemetry--consent-gate-audit)
 [![License](https://img.shields.io/badge/License-MIT-informational.svg)](LICENSE)
 
@@ -12,271 +12,175 @@
 
 ## Executive Summary
 
-Modern digital platforms operate within an increasingly complex web of third-party tracking scripts, analytics beacons, behavioral telemetry, and persistent client-side identifiers. In enterprise environments, corporate privacy policies and statutory regulatory filings (such as Records of Processing Activities) are frequently authored in legal isolation—resulting in severe discrepancies between **what an organization claims it processes** and **what its digital assets actually transmit in production**.
+Modern enterprise web platforms deploy sophisticated Consent Management Platforms (CMPs) that dynamically adjust their consent interfaces, cookie storage, and tracking scripts depending on the visitor's geographic location. Evaluating client-side compliance without accounting for this regional variability produces flawed audits—either misapplying EU GDPR standards to non-EU traffic, or overlooking cross-border divergences in data protection controls.
 
-The **Enterprise Privacy Engineering & Dual-Domain Telemetry GRC Platform** solves this systemic governance breakdown. Designed as an end-to-end data protection bridge between technical engineering reality and statutory legal compliance, the platform provides automated telemetry capture, algorithmic processing activity discovery, dual-domain discrepancy reconciliation, and automated statutory documentation for Chief Information Security Officers (CISOs), Data Protection Officers (DPOs), and Enterprise Legal Counsel.
-
-### Key Audit Findings & Governance Metrics (Audited Platform: Miro Enterprise)
-
-| Metric | Technical Finding | Governance & Regulatory Implication |
-| :--- | :---: | :--- |
-| **Cryptographic Audit Records** | **301 Records** | Deterministic SHA-256 fingerprints verified against an immutable audit manifest. |
-| **External Network Telemetry Hosts** | **74 Hosts** | Outbound third-party data flows transmitting user and device telemetry across jurisdictions. |
-| **Persistent Browser Cookies** | **65 Cookies** | 55 baseline cookies captured prior to user interaction; 10 firing post-consent. |
-| **Pre-Consent Tracking Leaks** | **55 Cookies / 74 Hosts** | **Regulatory Observation:** Tracking scripts fired prior to affirmative consent in Indian baseline (ePrivacy Art. 5(3) & GDPR Art. 7). |
-| **Unclassified Shadow Telemetry** | **14 Cookies** | Undisclosed trackers spanning Microsoft Clarity, Meta, Adobe Marketo, and Cloudflare/OpenAI. |
-| **Candidate Processing Activities** | **5 Activities** | Grouped into Advertising, Analytics, Security, Support, and Unclassified. |
-| **Statutory Article 30 RoPA** | **5 Core Activities** | Processing inventory mapped to GDPR Art. 30 (Statutory) & DPDPA 2023 Sec. 8 (Fiduciary Governance). |
-| **High-Risk DPIA Presumption** | **5 of 9 WP 248 Criteria** | Session replay (Clarity) and third-party ad sync (Tapad) triggering regulatory presumption under GDPR Art. 35(1). |
-| **Vendor Contract Benchmark** | **10 Cloud Leaders** | Comparative 10-point DPA risk scorecard across AWS, Azure, Google Cloud, Salesforce, and others. |
+The **Enterprise Privacy Engineering & Dual-Domain Telemetry GRC Platform** bridges technical browser DevTools Protocol (CDP) telemetry with statutory legal compliance. The platform features an empirical **Dual-Jurisdiction Comparative Engine** contrasting real-world telemetry captured under a **European Union benchmark condition (France)** against an **Indian domestic baseline condition**.
 
 ---
 
-## Architecture: From Client-Side Reality to Statutory Governance
+### Core Empirical Finding: Jurisdiction-Dependent Consent Configuration Observed
+
+Across controlled, clean-slate Chromium sessions on the audited production platform (`https://miro.com`), the web platform exhibited materially divergent consent-management and client-side telemetry behavior based on detected visitor geography:
+
+```
+                                  Target: miro.com
+                                         │
+                 ┌───────────────────────┴───────────────────────┐
+                 ▼                                               ▼
+         🇪🇺 MIRO-EU-001                                  🇮🇳 MIRO-IN-001
+      France / Île-de-France                          India / Delhi Baseline
+     OneTrust Strict Prior Opt-In                    OneTrust Notice / Opt-Out Style
+                 │                                               │
+    ├─ Active Groups: ,C0001,                       ├─ Active Groups: ,C0001,C0003,C0002,C0004,
+    ├─ Pre-Consent Cookies: 9                       ├─ Pre-Consent Cookies: 55
+    ├─ Pre-Consent Ad Trackers: 0                   ├─ Pre-Consent Ad Trackers: 3 Firing (Clarity, Tapad)
+    ├─ First-Layer Reject All: "Tout refuser"       ├─ First-Layer Reject All: OMITTED (Notice-only)
+    ├─ Post-Reject: 10 cookies (Clean State)        ├─ Post-Reject: Unavailable on Layer 1
+    └─ Post-Accept: 53 cookies (Gated Release)      └─ Post-Accept: 65 cookies (DoubleClick IDE Released)
+```
+
+---
+
+### Key Comparative Metrics (Audited Platform: Miro Enterprise)
+
+| Forensic Dimension | 🇪🇺 European Union Route (`MIRO-EU-001`) | 🇮🇳 India Route (`MIRO-IN-001`) | Technical & Governance Assessment |
+| :--- | :--- | :--- | :--- |
+| **Observed GeoIP** | `FR / IDF` (`Europe/Paris`) via proxy | `IN / DL` (`Asia/Kolkata`) direct IP | Intercepted OneTrust GeoIP endpoint (`geolocation.onetrust.com`). |
+| **CMP Active Groups** | `window.OnetrustActiveGroups = ",C0001,"` | `window.OnetrustActiveGroups = ",C0001,C0003,C0002,C0004,"` | Prior opt-in enforced on EU route; notice/opt-out configuration on domestic route. |
+| **First-Layer Banner UX** | Equal prominence: **"Tout refuser"** alongside **"Autoriser"** | Notice banner: **"Accept all cookies"**; NO **"Reject All"** on first layer | Asymmetric choice architecture in India under Consumer Protection (Dark Patterns) Guidelines 2023 scrutiny. |
+| **Pre-Consent Cookies** | **9 Cookies** *(Category C0001 active; classification under review)* | **55 Cookies** *(Marketing, analytics & cross-site trackers deposited on load)* | **-83.6% data minimization** observed on European route relative to domestic baseline. |
+| **Pre-Consent Ad Trackers** | **0 Trackers Fired** *(Clarity, Tapad, DoubleClick withheld)* | **Active Trackers Firing** *(Microsoft Clarity, Tapad, Hotjar transmit immediately)* | EU ePrivacy Directive Art. 5(3) prior consent gate bypassed on domestic route. |
+| **Post-Reject State** | **10 Cookies** *(Clean rejection preserved; +1 preference cookie)* | **N/A** *(Requires secondary modal navigation / manual opt-out)* | Proves one-click rejection control is operational in EU but omitted on Indian landing layer. |
+| **Post-Accept State** | **53 Cookies** *(Affirmative consent releases analytics/ad cookies)* | **65 Cookies** *(Affirmative click releases gated Google DoubleClick IDE)* | Demonstrates conditional script-blocking works, but is dynamically relaxed on domestic route. |
+| **Applicable Law** | **GDPR Arts. 4(11), 7(3) & ePrivacy Dir.** *(Enforceable today)* | **DPDPA 2023 §6** *(Phased commencement)* & **CPA 2019** | Prospective DPDPA risk once Section 6 phased commencement schedule completes. |
+
+---
+
+## End-to-End Governance Architecture
 
 ```mermaid
 flowchart TD
-    subgraph ClientSide ["Client-Side Digital Surface (Production Application)"]
-        A1["Consent Gate Interface (Pre-Consent vs. Post-Consent)"]
-        A2["Network Beacons & Telemetry Traffic (74 External Hosts)"]
-        A3["Persistent Client-Side State (65 Cookies & DOM Storage)"]
+    subgraph CaptureLayer ["Multi-Jurisdiction Telemetry Capture (CDP / Playwright)"]
+        A1["🇪🇺 EU France Profile (MIRO-EU-001)<br/>Strict Prior Opt-In Verification"]
+        A2["🇮🇳 India Domestic Profile (MIRO-IN-001)<br/>Notice-Only Baseline Verification"]
     end
 
-    subgraph Step12 ["Data Ingestion & Cryptographic Standardization"]
-        B1["Canonical Evidence Schema (Mathematical Contract)"]
-        B2["Automated Telemetry Interceptor & Cryptographic Fingerprinting (SHA-256)"]
-        B3["Visual State Verification (Pre/Post Consent Proofs)"]
+    subgraph IntegrityLayer ["Cryptographic Integrity & Schema Enforcement"]
+        B1["Canonical Schema (evidence.schema.json)<br/>Runtime jsonschema validation across all records"]
+        B2["Audit Manifest (audit_manifest.json)<br/>Real-time uncached SHA-256 fingerprint verification"]
+        B3["Comparative Engine (comparative_analysis.json)<br/>Structured 4-quadrant symmetric delta analysis"]
     end
 
-    subgraph Step34 ["Algorithmic Discovery & Discrepancy Reconciliation"]
-        C1["Activity Clustering Engine (5 Core Business Purposes)"]
-        C2["Multi-Vector Confidence Scoring Engine (70% - 75% - 100%)"]
-        C3["Dual-Domain Transparency Reconciliation (Ground Truth vs. Public Disclosures)"]
-        C4["14 Shadow Trackers Flagged (Microsoft Clarity, Meta, Tapad, Hotjar)"]
+    subgraph DiscrepancyLayer ["Algorithmic Discovery & Reconciliation"]
+        C1["Clustering Engine (Candidate Activities)<br/>70/100 Single-Source | 75/100 Multi-Vector"]
+        C2["DPO Append-Only Cryptographic Ledger<br/>Hash-chained immutable review log (no record deletion)"]
+        C3["Dual-Domain Transparency Reconciliation<br/>Technical telemetry vs published subprocessor PDFs"]
     end
 
-    subgraph Step56 ["Statutory Legal Governance & Risk Assessment"]
-        D1["Multi-Jurisdictional Article 30 RoPA Register (GDPR Art. 30 & DPDPA Sec. 8)"]
-        D2["High-Risk DPIA Threshold Screening (EDPB Guidelines WP 248 9-Criteria)"]
+    subgraph StatutoryLayer ["Statutory Legal Governance"]
+        D1["Article 30 RoPA Register<br/>GDPR Art. 30 Statutory + DPDPA Sec. 8 Accountability"]
+        D2["EDPB WP 248 High-Risk Screening Note<br/>5 of 9 Criteria Met (Regulatory Presumption under Art. 35)"]
+        D3["Vendor DPA Playbook & 10-Provider Benchmark<br/>Contract redlines (48h breach SLA, AI training ban)"]
     end
 
-    subgraph Step789 ["Contractual Controls & Public Transparency"]
-        E1["Vendor DPA Redline Playbook (7 Battleground Clauses, AI Training Ban, 48h SLA)"]
-        E2["Cross-Industry 10-Vendor DPA Benchmark Scorecard & Specimen DPA"]
-        E3["Enterprise Privacy Notice Specimen & 25-Point Regulatory Audit Checklist"]
-    end
-
-    subgraph ExecutiveUI ["Executive Governance Portal"]
-        F1["Executive CISO & DPO Multi-Module Interactive Dashboard"]
-    end
-
-    ClientSide --> Step12
-    Step12 --> Step34
-    Step34 --> Step56
-    Step56 --> Step789
-    Step789 --> ExecutiveUI
+    CaptureLayer --> IntegrityLayer
+    IntegrityLayer --> DiscrepancyLayer
+    DiscrepancyLayer --> StatutoryLayer
 ```
 
 ---
 
-## What We Built: Step-by-Step Functional Walkthrough
+## Detailed Step-by-Step Methodology
 
-### 📐 Step 1: Canonical Audit Schema & Data Integrity Standard
-- **The Functional Delivery:** Created an audit-grade data schema establishing the strict mathematical specification for all digital privacy evidence captured across the platform.
-- **Why It Matters:** In privacy litigation, regulatory investigations, and external audits, unstandardized telemetry logs are frequently dismissed due to lack of chain of custody. Our canonical schema enforces:
-  - Universal metadata schema requiring deterministic event identifiers, microsecond timestamps, origin URLs, and jurisdiction tags.
-  - Strict payload validation ensuring HTTP method, host domain, URI query parameters, cookie headers, and storage vectors conform to international standards.
-  - Tamper-evident formatting preventing retroactive modification of evidence.
+### 📐 Step 1: Canonical Audit Schema ([`evidence.schema.json`](file:///C:/Users/acer/Privacy_Engineering_Master_Portfolio/01_STEP1_CANONICAL_SCHEMA/evidence.schema.json))
+- **Mathematical Specification:** Defines strict JSON schema constraints for all ingested evidence records, including `audit_run_id`, `jurisdiction` (`INDIA`, `EU`, `US`), `applicable_framework` (`GDPR`, `DPDPA`), and `geo_context`.
+- **Runtime Enforcement:** In [`app.py`](file:///C:/Users/acer/Privacy_Engineering_Master_Portfolio/app.py), `jsonschema.validate()` validates every evidence record upon loading.
 
-### 🌐 Step 2: Live Digital Telemetry Interception & Consent Gate Verification
-- **The Functional Delivery:** Conducted a comprehensive dual-state live telemetry audit on the production application surface (`https://miro.com`), intercepting all client-side network traffic and browser storage across two distinct operational states:
-  1. **Baseline State (Pre-Consent):** Captured all network requests, scripts, and storage initiated immediately upon page load *before* any user interaction with the consent banner.
-  2. **Active State (Post-Consent):** Captured the delta of network requests and cookies deployed immediately upon the user selecting "Accept All Cookies".
-- **Key Empirical Discoveries:**
-  - **301 Cryptographic Audit Records:** Each record was normalized and assigned a deterministic SHA-256 fingerprint.
-  - **74 External Network Telemetry Hosts:** Discovered outbound data flows communicating with third-party domains across the United States, European Union, and Asia-Pacific.
-  - **Pre-Consent Leakage:** Proved that **55 unique cookies** and dozen of analytical/marketing network beacons were executed *prior* to consent interaction, establishing a prima facie compliance breach under the EU ePrivacy Directive (Article 5(3)) and GDPR Article 7.
-  - **Post-Consent Tracker Activation:** Identified 10 additional advertising trackers activating instantaneously upon consent acceptance, reaching a cumulative total of **65 persistent tracking cookies**.
-  - **Visual Verification Proofs:** Captured lossless, full-page visual evidence snapshots corroborating the exact layout, banner text, and interactive buttons presented to the end user.
+### 🌐 Step 2: Standardized Multi-Jurisdiction Capture CLI ([`capture_miro.py`](file:///C:/Users/acer/Privacy_Engineering_Master_Portfolio/capture_miro.py))
+- **Reproducible Instrumentation:** Playwright Chromium script supporting both regional profiles:
+  ```bash
+  # Run European Union Strict Opt-In Benchmark (France Proxy)
+  python capture_miro.py --profile eu-france --proxy http://127.0.0.1:61809
 
-### 🧩 Step 3: Algorithmic Activity Discovery & Multi-Vector Confidence Scoring
-- **The Functional Delivery:** Engineered an algorithmic clustering engine that ingests raw telemetry records and clusters them into five functional business processing activities:
-  1. *Marketing & Cross-Device Advertising*
-  2. *Product Usage & Behavioral Analytics*
-  3. *Core Platform Security & Session State*
-  4. *Customer Support & Real-Time Communications*
-  5. *Unclassified & Shadow Telemetry*
-- **Algorithmic Confidence Scoring Architecture:**
-  The platform utilizes a structured, multi-tier confidence framework to evaluate technical evidence while respecting the statutory boundaries of regulatory compliance:
+  # Run India Domestic Baseline
+  python capture_miro.py --profile india
+  ```
+- **Observed Captures:** Records OneTrust GeoIP response, DOM-level `window.OnetrustActiveGroups`, full HTTP Archive (HAR), pre-consent cookies, and post-action cookies (Accept All vs. Reject All).
 
-```mermaid
-flowchart LR
-    A["Single-Vector Telemetry<br/>(Network Beacon OR Cookie Alone)<br/><b>Support Score: 70/100</b>"] --> B["Multi-Vector Corroboration<br/>(HTTP Beacon AND Local DOM Storage)<br/><b>Support Score: 75/100</b>"]
-    B --> C["Algorithmic Ceiling<br/>(Software cannot legally infer business intent)<br/><b>Machine Ceiling: &lt; 80/100</b>"]
-    C --> D["Cryptographically Signed DPO Review<br/>(8 Statutory Checklist Items Validated)<br/><b>Status: Signed & Logged</b>"]
-```
-
-  - **70/100 (Single-Vector Observation):** Assigned when an endpoint is detected via a single technical channel (e.g., an outbound network transmission alone or an orphaned cookie).
-  - **75/100 (Multi-Vector Corroboration):** Assigned when an activity is corroborated across multiple independent channels (e.g., both active HTTP network transmission *and* persistent client-side browser storage).
-  - **The Human-in-the-Loop Ceiling (<80/100):** Software algorithms cannot legally deduce corporate business intent, contractual relationships, or statutory lawful bases. Under GDPR Article 30 and Indian DPDPA Section 8, the algorithm intentionally caps its support index below 80 to mandate human legal oversight.
-  - **DPO Statutory Sign-Off & Cryptographic Seal:** Recorded when an authorized privacy professional completes the 8-question review, affirming lawful basis, purpose limitation, and transfer safeguards, producing a persistent cryptographic signature.
+### 🧩 Step 3: Algorithmic Discovery & Append-Only DPO Governance
+- **Algorithmic Support Index:**
+  - **70/100 (Single-Source):** Inferred from a single technical layer (e.g., HTTP Network Traffic only).
+  - **75/100 (Multi-Vector Corroboration):** Corroborated across multiple independent layers (e.g., active CDP network beacon *and* persistent DOM cookie storage).
+  - **Machine Ceiling (<80/100):** Software alone cannot declare legal lawful bases or business intent. Algorithmic scores are capped below 80 to mandate human legal review.
+- **Append-Only Event Ledger ([`dpo_signoff_log.json`](file:///C:/Users/acer/Privacy_Engineering_Master_Portfolio/03_STEP3_CANDIDATE_ACTIVITIES/dpo_signoff_log.json)):**
+  - Uses an immutable, cryptographically chained event log (`SIGNOFF_RECORDED`, `SIGNOFF_REVOKED`).
+  - Never mutates or deletes historical sign-off records; active state is derived chronologically.
+  - Human validation adds `dpo_review_status = APPROVED` without falsely inflating the technical support score.
 
 ### 🔍 Step 4: Dual-Domain Discrepancy & Transparency Reconciliation
-- **The Functional Delivery:** Built an automated reconciliation matrix comparing real-world technical discoveries against the organization's published public Privacy Policy, Cookie Policy, and official Third-Party Subprocessor Register.
-- **Critical Risk Discoveries:**
-  - **14 Unclassified Shadow Trackers Identified:** Isolated 14 persistent cookies belonging to four major tracking ecosystems operating without classification in the consent management platform:
-    - *Microsoft Clarity / Bing UET (`CLID`, `SM`, `MUID`, `MR`, `ANONCHK`)*: High-risk session replay and behavioral heatmapping trackers.
-    - *Meta Platforms (`fr`)*: Third-party behavioral retargeting and social graph sync.
-    - *Adobe Marketo (`AWSALBCORS`)*: Enterprise lead-tracking and identity linking.
-    - *Cloudflare / OpenAI (`_cfuvid`)*: Cross-session rate-limiting and security tracking.
-  - **Disclosed vs. Undisclosed Vendors:**
-    - *Properly Disclosed:* Intercom (Customer Support) and OpenAI (Generative AI Features).
-    - *Undisclosed Shadow Vendors:* **Microsoft Clarity, Tapad, Reddit Ads, and Hotjar** were actively transmitting data but were completely absent from the enterprise's public privacy disclosures and subprocessor list.
-  - **65-Cookie Enterprise Register:** Generated a comprehensive technical inventory detailing cookie name, provider domain, expiration lifespan, category, and direct regulatory risk ratings.
+- **Ground Truth vs. Public Disclosures:** Cross-references observed network destinations against Miro's public Subprocessor List PDF (July 2026).
+- **Discovered Shadow Telemetry:** Identified unlisted third-party trackers including **Microsoft Clarity** (`CLID`, `SM`, `MUID`), **Tapad Inc.** (`TapAd_3WAY_SYNCS`), and **Hotjar** actively communicating with external infrastructure.
 
-### 🏛️ Step 5: Multi-Jurisdictional Article 30 RoPA (Record of Processing Activities) Register
-- **The Functional Delivery:** Engineered a corporate, multi-sheet Article 30 RoPA register operationalizing statutory **EU GDPR Article 30** controller obligations and aligning with **India Digital Personal Data Protection Act (DPDPA) 2023 Section 8** general fiduciary accountability duties.
-- **Key Register Architecture (Generated as Corporate `.xlsx` & Markdown Specimen):**
-  - **Sheet 1: Executive Cover & Governance Scope:** Corporate data controller identification, DPO appointments, review cadences, and methodology notes.
-  - **Sheet 2: GDPR Article 30(1) Controller Register:** Maps each processing activity to its exact GDPR Article 6 lawful basis (Consent, Legitimate Interests, Contract Performance), categories of data subjects, categories of personal data, recipients, and technical security measures (TOMs).
-  - **Sheet 3: Indian DPDPA 2023 Section 8 Register:** Cross-walks every processing activity to DPDPA Section 6 (Consent Notice Requirements) and Section 7 (Certain Legitimate Uses), identifying Data Fiduciary obligations and Data Processor mandates.
-  - **Sheet 4: International Data Transfer Assessment:** Identifies cross-border data transfer destinations (EU to US, EU to India), legal transfer mechanisms (EU Standard Contractual Clauses 2021/914, EU-US Data Privacy Framework), and Transfer Impact Assessment (TIA) status.
+### 🏛️ Step 5: Multi-Jurisdictional RoPA Register ([`ROPA_ARTICLE_30_REGISTER.md`](file:///C:/Users/acer/Privacy_Engineering_Master_Portfolio/04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/ROPA_ARTICLE_30_REGISTER.md))
+- **GDPR Article 30:** Statutory Record of Processing Activities for Data Controllers.
+- **Indian DPDPA 2023 Alignment:** Clarifies that while DPDPA does not establish a statutory RoPA requirement, maintaining an internal processing inventory is an operational fiduciary best practice under Section 8 accountability duties.
 
-### 🛡️ Step 6: High-Risk Data Protection Impact Assessment (DPIA) Threshold Screening
-- **The Functional Delivery:** Developed an automated DPIA screening engine based on the **Article 29 Working Party / European Data Protection Board (EDPB) Guidelines WP 248 rev.01 9-Criteria Matrix** to determine whether processing activities trigger high-risk regulatory presumptions under Article 35.
-- **Key Findings & DPIA Presumption Triggers:**
-  - **Trigger 1: Systematic Monitoring of Data Subjects (Criterion 3):** Triggered by **Microsoft Clarity**. The tool captures DOM-level user interactions, mouse movements, scrolling velocity, and input interactions, constituting systematic behavioral surveillance.
-  - **Trigger 2: Cross-Device Profiling & Evaluation (Criterion 1):** Triggered by **Tapad Inc.** Tapad synchronization beacons (`TapAd_3WAY_SYNCS`) indicate third-party identity synchronization across advertising networks.
-  - **Regulatory Verdict:** Because both operations trigger 2 or more WP 248 criteria, a strong regulatory presumption is established under EDPB guidance warranting a formal Data Protection Impact Assessment under GDPR Article 35(1).
-  - **Mitigation Action Plan:** Implemented strict remediation requirements including client-side field masking for sensitive inputs, suppression of tracking scripts prior to explicit consent, and mandatory contractual data processing terms.
+### 🛡️ Step 6: High-Risk DPIA Threshold Assessment ([`DPIA_SCREENING_NOTE.md`](file:///C:/Users/acer/Privacy_Engineering_Master_Portfolio/06_STEP6_DPIA_SCREENING_NOTE/DPIA_SCREENING_NOTE.md))
+- **EDPB Guidelines WP 248 rev.01:** Evaluates live telemetry against the 9 supervisory criteria.
+- **5 of 9 Criteria Met:** Systematic monitoring (Clarity DOM replay), profiling (Tapad cross-device syncing), large-scale processing, dataset combination, and innovative technology.
+- **Regulatory Verdict:** Triggers a strong regulatory presumption in supervisory guidance warranting a formal Data Protection Impact Assessment under GDPR Article 35(1).
 
-### 📑 Step 7: Vendor Third-Party Risk Management (TPRM) & DPA Redline Playbook
-- **The Functional Delivery:** Formulated an enterprise-grade contract negotiation playbook containing 7 core battleground clauses designed to redline one-sided vendor click-wrap terms into protective, audit-grade Data Processing Agreements under GDPR Article 28 and Indian DPDPA.
-- **The 7 Core Contractual Battlegrounds:**
-  1. **Scope of Processing & Instructions:** Enforces that vendor processes telemetry solely on documented customer instructions, explicitly barring secondary monetization or analytics.
-  2. **AI & Machine Learning Training Prohibition:** Introduces strict contractual language prohibiting the vendor from ingesting customer telemetry, session replays, or prompts to train their proprietary foundational AI/LLM models.
-  3. **Data Breach Notification SLA:** Compresses the ambiguous standard "without undue delay" down to an enforceable **48-hour notification window**, requiring root-cause analysis and remediation timelines.
-  4. **Subprocessor Prior Authorization & Veto Rights:** Establishes a mandatory 30-day written notification window with an unconditional customer right to object and terminate without financial penalty.
-  5. **Direct Audit & Inspection Rights:** Guarantees customer-appointed third-party auditors annual physical and digital audit access, backed by mandatory SOC 2 Type II and ISO 27001 independent reporting.
-  6. **Cross-Border Transfers & SCC Execution:** Mandates seamless incorporation of EU Commission Standard Contractual Clauses (Module 2 Controller-to-Processor) without carve-outs.
-  7. **Liability Caps & Indemnification:** Carves out data protection, confidentiality, and regulatory fines from standard liability caps, ensuring uncapped indemnification for vendor-caused privacy breaches.
-
-### 🏢 Step 8: Cross-Industry DPA Governance Benchmark Scorecard
-- **The Functional Delivery:** Conducted a deep-dive contractual governance benchmark across **10 global cloud hyperscalers and enterprise SaaS providers**:
-  - *Amazon Web Services (AWS)*
-  - *Google Cloud Platform (GCP)*
-  - *Microsoft Azure*
-  - *Salesforce*
-  - *Snowflake*
-  - *Datadog*
-  - *Cloudflare*
-  - *Stripe*
-  - *Workday*
-  - *Zoho Corporation*
-- **Key Benchmark Deliverables:**
-  - **Comparative Excel Scorecard:** Detailed evaluation matrix rating all 10 providers across breach notification SLAs, subprocessor objection windows, AI model ingestion clauses, audit cooperation, and liability caps.
-  - **20-Page Enterprise Specimen DPA:** A comprehensive, fully executed specimen Data Processing Agreement incorporating the complete EU 2021/914 Standard Contractual Clauses (SCCs), Technical & Organizational Measures (TOMs), and UK International Data Transfer Addendum.
-
-### 📜 Step 9: Enterprise Privacy Notice Governance & Transparency Alignment
-- **The Functional Delivery:** Created an end-to-end framework translating technical RoPA registers into transparent, consumer-facing privacy notices that eliminate the gap between internal operations and external claims.
-- **Key Deliverables:**
-  - **RoPA-to-Policy Translation Architecture:** A structured methodology mapping internal data categories, retention periods, and lawful bases directly into user-friendly privacy disclosures.
-  - **25-Point Regulatory Privacy Notice Audit Checklist:** A verification checklist evaluating notice accessibility, lawful basis declarations, retention transparency, data subject rights mechanics, and third-party disclosure completeness.
-  - **Global Privacy Notice Specimen:** A comprehensive specimen privacy policy harmonizing GDPR Articles 13/14, DPDPA Section 6, and California CCPA/CPRA Section 1798.100 disclosures.
-
-### 📊 Executive CISO & DPO Interactive Compliance Dashboard
-- **The Functional Delivery:** Designed a centralized, multi-module executive dashboard that unifies all 8 technical and legal modules into a single pane of glass for compliance leadership.
-- **Dashboard Capabilities:**
-  - **Executive Summary KPI Bar:** Displays live statistics for audit records, cookies, external hosts, and DPIA risk levels.
-  - **Visual Telemetry & Consent Gate Viewer:** Side-by-side visual comparison of pre-consent vs. post-consent application states with full screenshot rendering.
-  - **Interactive Network & Host Inventory:** Searchable and filterable table of all 74 external network hosts with CSV export.
-  - **Algorithmic Activity Explorer:** Visual breakdown of processing activities with dynamic confidence score visualization.
-  - **Cookie Discrepancy & Risk Register:** Searchable inventory of all 65 cookies with category filters and unclassified tracker isolation.
-  - **Regulatory RoPA & DPIA Viewer:** Direct inspection and download of the Article 30 Excel workbook and EDPB DPIA screening note.
-  - **Vendor DPA Redline & Benchmark Explorer:** Interactive clause comparison and 10-vendor comparative scorecard viewer.
+### 📑 Step 7: Vendor DPA Contract Redline Playbook & 10-Provider Benchmark
+- **7 Battleground Contract Redlines:** 48-hour breach notification SLA, strict AI model training prohibition, 30-day subprocessor veto window, and direct audit rights.
+- **Cross-Industry Scorecard:** 10-point comparative analysis across AWS, GCP, Azure, Salesforce, Atlassian, Stripe, HubSpot, Cloudflare, Freshworks, and Zoho.
 
 ---
 
-## 🏛️ Regulatory & Statutory Alignment
+## 🏛️ Statutory Alignment Summary
 
-| Regulatory Instrument | Specific Article / Section | How This Platform Enforces Compliance |
+| Statute / Instrument | Specific Section | Governance Application |
 | :--- | :--- | :--- |
-| **EU GDPR** | **Article 5(1)(a)** (Lawfulness & Transparency) | Identifies undisclosed third-party trackers and validates public privacy disclosures against technical data flows. |
-| **EU GDPR** | **Article 7 & ePrivacy Art. 5(3)** (Consent Integrity) | Detects and proves pre-consent tracking leaks where marketing cookies fire prior to user acceptance. |
-| **EU GDPR** | **Article 28** (Processor Contract Mandates) | Redlines vendor contracts with mandatory audit rights, 48h breach SLAs, and AI training prohibitions. |
-| **EU GDPR** | **Article 30** (Records of Processing Activities) | Automatically generates multi-sheet, audit-grade corporate RoPA registers with lawful bases and retention rules. |
-| **EU GDPR** | **Article 35** (Data Protection Impact Assessments) | Evaluates EDPB WP 248 9-criteria triggers to automatically flag high-risk surveillance and profiling scripts. |
-| **EU GDPR** | **Chapter V (Articles 44–49)** (Cross-Border Transfers) | Assesses cross-border transfers and incorporates EU 2021/914 Standard Contractual Clauses (SCCs). |
-| **India DPDPA 2023** | **Section 6** (Notice & Consent Specifications) | Ensures privacy notices contain clear itemized descriptions of personal data collected and purposes served. |
-| **India DPDPA 2023** | **Section 7** (Certain Legitimate Uses) | Distinguishes between consent-backed activities and legitimate statutory exemptions in enterprise RoPA registers. |
-| **India DPDPA 2023** | **Section 8** (Data Fiduciary Obligations) | Documents organizational technical safeguards, processor oversight, and statutory data retention limits. |
-| **US CCPA / CPRA** | **Cal. Civ. Code § 1798.100 & § 1798.135** | Identifies third-party cross-context behavioral advertising trackers triggering "Do Not Sell/Share" opt-outs. |
+| **EU GDPR** | **Arts. 4(11), 7(3)** (Valid Consent) | Verified against European benchmark route; evaluated pre-consent gating. |
+| **EU ePrivacy Directive** | **Art. 5(3)** (Terminal Storage Access) | Enforces prior opt-in for non-essential client-side cookies and DOM storage. |
+| **EU GDPR** | **Art. 30** (Records of Processing Activities) | Multi-sheet controller inventory with lawful bases, retention rules, and TOMs. |
+| **EU GDPR** | **Art. 35(1)** (High-Risk DPIA Screening) | Screened against EDPB WP 248 9-criteria matrix; 5 factors triggered. |
+| **EU GDPR** | **Art. 28** (Processor Contract Terms) | Standardized DPA redline playbook with mandatory audit and breach SLAs. |
+| **India DPDPA 2023** | **Sec. 6** (Notice & Consent Mandates) | Evaluated prospective compliance for domestic route under phased commencement. |
+| **India DPDPA 2023** | **Sec. 8** (Fiduciary Accountability) | Operational processing inventory maintained as organizational governance practice. |
+| **Consumer Protection Act 2019** | **Dark Patterns Guidelines 2023** | Scrutinizes omission of first-layer "Reject All" as asymmetric choice architecture. |
+| **US CCPA / CPRA** | **Cal. Civ. Code § 1798.135** | Identifies cross-context behavioral ad trackers triggering opt-out disclosures. |
 
 ---
 
-## 📁 Repository Structure & Artifact Organization
-
-```
-Privacy_Engineering_Master_Portfolio/
-├── 📁 01_STEP1_CANONICAL_SCHEMA                 # Draft 2020-12 JSON Schema for telemetry standardization
-├── 📁 02_STEP2_RAW_AND_NORMALIZED_TELEMETRY     # 301 SHA-256 records, 65 cookies, 74 hosts, visual proofs, network HAR
-├── 📁 03_STEP3_CANDIDATE_ACTIVITIES             # 5 clustered processing activities & confidence scoring models
-├── 📁 04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER # Transparency reconciliation report & 65-cookie vendor register
-├── 📁 05_STEP5_ARTICLE_30_ROPA_REGISTER         # Corporate Article 30 RoPA workbook (.xlsx) & statutory markdown
-├── 📁 06_STEP6_DPIA_SCREENING_NOTE              # EDPB WP 248 high-risk screening note for Clarity & Tapad
-├── 📁 07_STEP7_VENDOR_DPA_REDLINE_PLAYBOOK      # 7-clause vendor negotiation playbook under GDPR Art. 28
-├── 📁 08_REAL_WORLD_DPA_BENCHMARK_SAMPLES       # Comparative benchmark of 10 cloud leaders & 20-page specimen DPA
-├── 📁 09_PRIVACY_POLICIES_AND_TRANSPARENCY_GOVERNANCE # RoPA-to-Policy translation matrix, 25-point checklist, specimen policy
-├── 📄 app.py                                    # Executive CISO & DPO Multi-Module Interactive Dashboard
-├── 📄 requirements.txt                          # Python dependencies for dashboard execution
-├── 📄 run_app.bat                               # Windows one-click dashboard launcher
-├── 📄 run_app.ps1                               # PowerShell automated dashboard launcher
-└── 📘 README.md                                 # This Master Architectural Documentation
-```
-
----
-
-## 🚀 Quickstart: Launching the Executive Dashboard Locally
+## 🚀 Running the Platform
 
 ### Prerequisites
-- Python 3.10+ installed on your workstation.
-- Google Chrome or Chromium (for viewing captured telemetry).
+* Python 3.10+
+* Google Chrome / Chromium installed via Playwright
 
-### Step 1: Clone the Repository
+### Installation
 ```bash
 git clone https://github.com/tbinitial-cyber/Privacy-Engineering-GRC-Platform.git
 cd Privacy-Engineering-GRC-Platform
+pip install -r requirements.lock
+playwright install chromium
 ```
 
-### Step 2: Install Dependencies
+### Launch Interactive Executive Portal
 ```bash
-pip install -r requirements.txt
+streamlit run app.py
 ```
 
-### Step 3: Launch the Executive Dashboard
-**Option A — Windows One-Click:**
-Double-click `run_app.bat` in the repository root directory.
-
-**Option B — Command Line:**
+### Reproduce Empirical Audit Captures
 ```bash
-python -m streamlit run app.py
-```
+# Capture European Union Strict Opt-In Benchmark (requires EU proxy on port 61809)
+python capture_miro.py --profile eu-france --proxy http://127.0.0.1:61809
 
-Open your browser at **`http://localhost:8501`** to access the live Executive CISO & DPO Governance Portal.
+# Capture Indian Domestic Baseline
+python capture_miro.py --profile india
+```
 
 ---
 
-## 🎯 Professional Positioning & Target Practice Areas
-
-This platform was conceived, architected, and built to demonstrate institutional-grade proficiency in **Privacy Engineering**, **Category 2 Governance, Risk & Compliance (GRC)**, and **Technology Law Advisory**. It directly bridges the gap between:
-- **Enterprise Privacy Engineering Teams:** Designing automated telemetry audits, CMP verification pipelines, and technical tracking reconciliations.
-- **Corporate Legal & Data Protection Teams (DPO Offices):** Authoring audit-grade Article 30 RoPA registers, conducting EDPB DPIA threshold assessments, and negotiating high-stakes vendor DPAs.
-- **Technology Law & Boutique Privacy Advisory Firms:** Providing clients with empirical, technical-backed compliance audits rather than generic, unverified legal opinions.
-
----
-
-## 📜 Intellectual Property & License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
-
-All empirical audit telemetry was gathered from public web platform surfaces for educational, research, and compliance methodology demonstration purposes in accordance with fair dealing principles.
+## License
+MIT License. Created for enterprise privacy engineering, technical GRC research, and regulatory compliance validation.

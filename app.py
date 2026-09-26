@@ -38,8 +38,7 @@ def get_path(rel_path: str) -> str:
         raise ValueError(f"Path traversal detected: {rel_path}")
     return target
 
-# Cryptographic SHA-256 runtime calculation
-@st.cache_data(show_spinner=False)
+# Cryptographic SHA-256 runtime calculation (Uncached for real-time forensic integrity)
 def compute_file_sha256(rel_path: str):
     try:
         full_path = get_path(rel_path)
@@ -110,7 +109,7 @@ def load_md_file(rel_path: str):
         return None
     return None
 
-# Runtime JSON Schema Validation
+# Runtime JSON Schema Validation (Full Exhaustive Record Validation)
 @st.cache_data(show_spinner=False)
 def validate_canonical_schema(data_subset):
     schema_path = get_path("01_STEP1_CANONICAL_SCHEMA/evidence.schema.json")
@@ -120,13 +119,15 @@ def validate_canonical_schema(data_subset):
         with open(schema_path, "r", encoding="utf-8") as f:
             schema = json.load(f)
         if isinstance(data_subset, list):
-            for item in data_subset[:10]:
+            for item in data_subset:
                 jsonschema.validate(instance=item, schema=schema)
+            return True, f"Enforced: All {len(data_subset)} Evidence Records Validated against JSON Schema"
         elif isinstance(data_subset, dict):
             jsonschema.validate(instance=data_subset, schema=schema)
-        return True, "Enforced (JSON Schema v2.1.0 Validated)"
+            return True, "Enforced (JSON Schema v2.1.0 Validated)"
     except Exception as e:
         return False, f"Schema Failure: {str(e)[:80]}"
+    return True, "Validated"
 
 # CSV Sanitizer to prevent spreadsheet formula injection
 def sanitize_csv_data(df: pd.DataFrame) -> bytes:
@@ -147,34 +148,55 @@ def get_cookie_identity(c: dict) -> tuple:
         str(c.get("sameSite", "None")).strip()
     )
 
-# DPO Sign-Off Log Helpers (Persistent Audit Trail)
+# DPO Append-Only Cryptographic Event Ledger (Audit-Grade Immutability)
 SIGNOFF_LOG_PATH = "03_STEP3_CANDIDATE_ACTIVITIES/dpo_signoff_log.json"
 
-def load_dpo_signoffs():
+def load_dpo_signoff_ledger():
     full_path = get_path(SIGNOFF_LOG_PATH)
     if os.path.exists(full_path):
         try:
             with open(full_path, "r", encoding="utf-8") as f:
-                return json.load(f)
+                data = json.load(f)
+                if "events" in data:
+                    return data
         except Exception:
             pass
-    return {"log_version": "1.0.0", "signoffs": []}
+    return {
+        "ledger_version": "2.0.0",
+        "genesis_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "events": []
+    }
+
+def get_active_dpo_signoffs():
+    """Derive active sign-off state chronologically without mutating historical log."""
+    ledger = load_dpo_signoff_ledger()
+    active = {}
+    for ev in ledger.get("events", []):
+        act_id = ev.get("activity_id")
+        if ev.get("event_type") == "SIGNOFF_RECORDED":
+            active[act_id] = ev
+        elif ev.get("event_type") == "SIGNOFF_REVOKED":
+            active.pop(act_id, None)
+    return active
 
 def save_dpo_signoff(activity_id, reviewer_name, reviewer_role, organization, answers_dict, notes):
+    """Append a new SIGNOFF_RECORDED event with cryptographic hash chaining."""
     full_path = get_path(SIGNOFF_LOG_PATH)
-    log_data = load_dpo_signoffs()
+    ledger = load_dpo_signoff_ledger()
     timestamp = datetime.now(timezone.utc).isoformat()
     manifest = load_audit_manifest()
     run_id = manifest.get("audit_run_id", "UNKNOWN-RUN") if manifest else "UNKNOWN-RUN"
     
-    # Compute immutable cryptographic signature of the sign-off record
-    raw_sig_material = f"{activity_id}|{reviewer_name}|{reviewer_role}|{timestamp}|{run_id}|{json.dumps(answers_dict, sort_keys=True)}"
-    signature_hash = hashlib.sha256(raw_sig_material.encode("utf-8")).hexdigest()
+    events = ledger.get("events", [])
+    prev_hash = events[-1]["signature_hash"] if events else ledger.get("genesis_hash", "0"*64)
+    event_id = f"EVT-SIGN-{len(events)+1:04d}"
     
-    # Remove previous entry for same activity if present
-    log_data["signoffs"] = [s for s in log_data.get("signoffs", []) if s.get("activity_id") != activity_id]
+    raw_material = f"{event_id}|SIGNOFF_RECORDED|{prev_hash}|{activity_id}|{reviewer_name}|{reviewer_role}|{timestamp}|{run_id}|{json.dumps(answers_dict, sort_keys=True)}"
+    sig_hash = hashlib.sha256(raw_material.encode("utf-8")).hexdigest()
     
-    record = {
+    event = {
+        "event_id": event_id,
+        "event_type": "SIGNOFF_RECORDED",
         "activity_id": activity_id,
         "audit_run_id": run_id,
         "reviewer_name": reviewer_name,
@@ -183,19 +205,40 @@ def save_dpo_signoff(activity_id, reviewer_name, reviewer_role, organization, an
         "timestamp": timestamp,
         "checklist_answers": answers_dict,
         "review_notes": notes,
-        "signature_hash": signature_hash
+        "previous_event_hash": prev_hash,
+        "signature_hash": sig_hash
     }
-    log_data["signoffs"].append(record)
+    ledger["events"].append(event)
     with open(full_path, "w", encoding="utf-8") as f:
-        json.dump(log_data, f, indent=2)
-    return record
+        json.dump(ledger, f, indent=2)
+    return event
 
-def revoke_dpo_signoff(activity_id):
+def revoke_dpo_signoff(activity_id, reason="Revoked by compliance review"):
+    """Append a new SIGNOFF_REVOKED event without deleting previous records."""
     full_path = get_path(SIGNOFF_LOG_PATH)
-    log_data = load_dpo_signoffs()
-    log_data["signoffs"] = [s for s in log_data.get("signoffs", []) if s.get("activity_id") != activity_id]
+    ledger = load_dpo_signoff_ledger()
+    timestamp = datetime.now(timezone.utc).isoformat()
+    
+    events = ledger.get("events", [])
+    prev_hash = events[-1]["signature_hash"] if events else ledger.get("genesis_hash", "0"*64)
+    event_id = f"EVT-REVOKE-{len(events)+1:04d}"
+    
+    raw_material = f"{event_id}|SIGNOFF_REVOKED|{prev_hash}|{activity_id}|{timestamp}|{reason}"
+    sig_hash = hashlib.sha256(raw_material.encode("utf-8")).hexdigest()
+    
+    event = {
+        "event_id": event_id,
+        "event_type": "SIGNOFF_REVOKED",
+        "activity_id": activity_id,
+        "timestamp": timestamp,
+        "revocation_reason": reason,
+        "previous_event_hash": prev_hash,
+        "signature_hash": sig_hash
+    }
+    ledger["events"].append(event)
     with open(full_path, "w", encoding="utf-8") as f:
-        json.dump(log_data, f, indent=2)
+        json.dump(ledger, f, indent=2)
+    return event
 
 # Sidebar Navigation
 st.sidebar.image("https://img.icons8.com/color/96/shield.png", width=64)
@@ -302,13 +345,13 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
 
     # If Dual-Jurisdiction Mode: Show Comparative Arbitrage KPIs and Matrix
     if jurisdiction_mode == "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)":
-        st.info("⚖️ **Geofencing Privacy Arbitrage Core Finding:** Miro's web infrastructure dynamically evaluates incoming visitor IP via OneTrust GeoIP service (`geolocation.onetrust.com`) and applies divergent consent rulesets. European visitors receive strict prior opt-in with a visible first-layer 'Reject All' button and zero advertising cookies. Domestic Indian visitors receive an implied consent / notice-only banner where all tracking cookie groups are pre-activated prior to affirmative action.")
+        st.info("⚖️ **Comparative Empirical Finding: Jurisdiction-Dependent Consent Configuration Observed.** Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions. On the France route, OneTrust was observed in a prior opt-in configuration with only category C0001 active, a visible first-layer 'Tout refuser' (Reject All) control, and zero pre-consent advertising trackers. On the India domestic route, OneTrust was observed in a notice/opt-out-style configuration with categories C0001–C0004 pre-activated, first-layer 'Reject All' omitted, and immediate transmission of third-party telemetry.")
 
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
             st.metric(label="Pre-Consent Cookies", value=f"🇪🇺 9 vs 🇮🇳 {len(b_keys)}", delta="-84% in Europe (Minimization)")
         with col2:
-            st.metric(label="CMP Pre-Active Groups", value="🇪🇺 C0001 | 🇮🇳 C1-C4", delta="Opt-In vs Opt-Out", delta_color="inverse")
+            st.metric(label="CMP Active Groups", value="🇪🇺 C0001 | 🇮🇳 C1-C4", delta="Opt-In vs Notice/Opt-Out", delta_color="inverse")
         with col3:
             st.metric(label="First-Layer 'Reject All'", value="🇪🇺 Yes | 🇮🇳 No", delta="Asymmetric UX Choice", delta_color="inverse")
         with col4:
@@ -323,39 +366,45 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         comparative_matrix = [
             {
                 "Forensic Dimension": "OneTrust Active Groups (Pre-Interaction)",
-                "🇪🇺 European Union Route (France)": "window.OnetrustActiveGroups = ',C0001,' (Strictly Necessary only)",
+                "🇪🇺 European Union Route (France)": "window.OnetrustActiveGroups = ',C0001,' (Category C0001 active)",
                 "🇮🇳 India Route (Domestic Baseline)": "window.OnetrustActiveGroups = ',C0001,C0003,C0002,C0004,' (All groups active)",
-                "Privacy Engineering & Legal Assessment": "Direct evidence of Geofencing Arbitrage: Opt-in enforced in EU, opt-out/implied in India."
+                "Technical & Legal Assessment": "Direct evidence of jurisdiction-dependent configuration: Prior opt-in enforced in EU; notice/opt-out style in India."
             },
             {
-                "Forensic Dimension": "First-Layer Banner UX & Buttons",
+                "Forensic Dimension": "First-Layer Banner UX & Controls",
                 "🇪🇺 European Union Route (France)": "Equal prominence: 'Tout refuser' (Reject All) alongside 'Autoriser tous les cookies'",
-                "🇮🇳 India Route (Domestic Baseline)": "Notice-only: 'Accept all cookies' & 'Settings'; NO 'Reject All' on first layer",
-                "Privacy Engineering & Legal Assessment": "CCPA Dark Patterns Guidelines 2023 scrutiny (interface interference / asymmetric choice architecture)."
+                "🇮🇳 India Route (Domestic Baseline)": "Notice banner: 'Accept all cookies' & 'Settings'; NO 'Reject All' on first layer",
+                "Technical & Legal Assessment": "Asymmetric choice architecture on domestic route under Consumer Protection (Dark Patterns) Guidelines 2023 scrutiny."
             },
             {
-                "Forensic Dimension": "Pre-Consent Cookie Volume",
-                "🇪🇺 European Union Route (France)": "9 Cookies (Strictly session & routing; userLocale, geo_data, OptanonConsent)",
-                "🇮🇳 India Route (Domestic Baseline)": "55 Cookies (Marketing, analytics & cross-site trackers deposited on page load)",
-                "Privacy Engineering & Legal Assessment": "GDPR Art. 5(1)(c) data minimization vs Indian unconsented tracking accumulation."
+                "Forensic Dimension": "Pre-Consent Client-Side Cookies",
+                "🇪🇺 European Union Route (France)": "9 Cookies observed (C0001 active; classification under review, e.g. ajs_anonymous_id)",
+                "🇮🇳 India Route (Domestic Baseline)": "55 Cookies observed (Marketing, analytics & cross-site trackers deposited on initial page load)",
+                "Technical & Legal Assessment": "Data minimization divergence: strict suppression on European route vs tracking cookie accumulation in India."
             },
             {
                 "Forensic Dimension": "Pre-Consent Third-Party Trackers",
                 "🇪🇺 European Union Route (France)": "0 Advertising Trackers (Microsoft Clarity, Tapad, and DoubleClick withheld)",
                 "🇮🇳 India Route (Domestic Baseline)": "Active Trackers Firing (Microsoft Clarity and Tapad beacons transmit immediately)",
-                "Privacy Engineering & Legal Assessment": "EU ePrivacy Dir. Art. 5(3) prior consent gate bypassed on domestic route."
+                "Technical & Legal Assessment": "EU ePrivacy Dir. Art. 5(3) prior consent gate bypassed on domestic route prior to affirmative user action."
             },
             {
-                "Forensic Dimension": "Post-Action Cookie Delta",
-                "🇪🇺 European Union Route (France)": "After 'Tout refuser': 10 Cookies (+1 preference cookie; clean state maintained)",
-                "🇮🇳 India Route (Domestic Baseline)": "After 'Accept All': 65 Cookies (+10 released including Google DoubleClick IDE)",
-                "Privacy Engineering & Legal Assessment": "Shows conditional gating works, but is selectively applied only to specific vendors and regions."
+                "Forensic Dimension": "Post-Action Cookie Delta (Reject All)",
+                "🇪🇺 European Union Route (France)": "10 Cookies (+1 preference cookie only; clean rejection state maintained)",
+                "🇮🇳 India Route (Domestic Baseline)": "N/A (First-layer 'Reject All' control omitted from domestic interface)",
+                "Technical & Legal Assessment": "European users can reject all non-essential processing in a single action; Indian users require multi-layer manual navigation."
+            },
+            {
+                "Forensic Dimension": "Post-Action Cookie Delta (Accept All)",
+                "🇪🇺 European Union Route (France)": "53 Cookies (Affirmative consent releases marketing/analytics cookies)",
+                "🇮🇳 India Route (Domestic Baseline)": "65 Cookies (+10 released including Google DoubleClick IDE)",
+                "Technical & Legal Assessment": "Proves conditional script blocking is technically implemented, but dynamically relaxed on the domestic route."
             },
             {
                 "Forensic Dimension": "Statutory Governance & Exposure",
                 "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 7(3) & ePrivacy Directive (Fully enforceable; €20M / 4% global turnover fine risk)",
                 "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019",
-                "Privacy Engineering & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into statutory force."
+                "Technical & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into statutory force."
             }
         ]
         st.dataframe(pd.DataFrame(comparative_matrix), width="stretch", hide_index=True)
@@ -636,9 +685,8 @@ elif nav_choice == "🧩 02. Algorithmic Processing Activities":
     > * **Human Governance Boundary:** Software alone cannot declare statutory lawful bases or legal certainty. Automated algorithms strictly output candidate activities (`legal_conclusion: null`). Full governance requires human DPO/Legal counsel review with cryptographic audit logging.
     """)
     
-    # Load persistent DPO sign-off log
-    signoff_log = load_dpo_signoffs()
-    active_signoffs = {s["activity_id"]: s for s in signoff_log.get("signoffs", [])}
+    # Load persistent DPO sign-off log from append-only ledger
+    active_signoffs = get_active_dpo_signoffs()
 
     candidates = load_json_file("03_STEP3_CANDIDATE_ACTIVITIES/candidate_processing_activities.json")
     if candidates:

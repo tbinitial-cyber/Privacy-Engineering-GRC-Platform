@@ -9,7 +9,7 @@
 **Underlying Canonical Evidence:** [normalized_evidence.json](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/normalized_evidence.json) (301 Records)  
 **Mapped RoPA Entries:** [ROPA_ARTICLE_30_REGISTER.xlsx](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/ROPA_ARTICLE_30_REGISTER.xlsx) (`ROPA-ACT-001`, `ROPA-ACT-005`)  
 **Assessment Date:** 24 September 2026  
-**Status:** **MANDATORY FULL DPIA TRIGGERED (LEGAL ESCALATION REQUIRED)**
+**Status:** **FORMAL DPIA RECOMMENDED (EDPB WP 248 REGULATORY PRESUMPTION TRIGGERED)**
 
 ---
 
@@ -59,9 +59,9 @@ flowchart TD
     B -->|Observed Reality| D["Tapad and LinkedIn Sync Fired"]
     C --> E["Session Replay Captured (Clicks, Scrolls, DOM)"]
     D --> F["Device Graph Synchronized across Ad Exchanges"]
-    E --> G["Regulatory Violation: No Prior Consent (Art 6 or ePrivacy)"]
+    E --> G["Regulatory Scrutiny: High-Risk Presumption under WP 248 Guidelines"]
     F --> G
-    G --> H["Mandatory Remediation Required"]
+    G --> H["Formal DPIA & Technical Tag Gating Recommended"]
 ```
 
 ---
@@ -161,9 +161,9 @@ REMEDIATION PLAYBOOK
 ### Official Determination:
 | Field | Status / Value |
 | :--- | :--- |
-| **Statutory Requirement:** | **Full DPIA is MANDATORY prior to continued operation of Clarity/Tapad** |
-| **Consultation with Supervisory Authority (Art 36):** | Not required **IF** Action 1 (Zero-Consent Tag Blocking) and Action 3 (Tapad removal) are completed immediately. |
-| **Lead DPO Assessment:** | *The processing of telemetry on miro.com exhibits high-risk session recording and third-party graphing. While the underlying business purpose (product improvement and marketing) is legitimate, firing these tools in a pre-consent state breaches European and Indian privacy laws. Engineering remediation must take priority.* |
+| **Supervisory Guidance Determination:** | **Formal DPIA is RECOMMENDED under EDPB WP 248 guidelines (5 of 9 criteria met)** |
+| **Consultation with Supervisory Authority (Art 36):** | Not required **IF** Action 1 (Zero-Consent Tag Blocking) and Action 3 (Tapad removal) are completed prior to continued deployment. |
+| **Lead DPO Assessment:** | *The processing of client telemetry exhibits high-risk session recording and third-party graphing. While the underlying business purpose (product diagnostics and marketing) is legitimate, firing these tools in a pre-consent state raises material regulatory scrutiny under European ePrivacy and prospective Indian privacy frameworks. Tag gating and field masking remediation must take priority.* |
 | **Next Step in Compliance Workflow:** | Proceed to **Step 7: Vendor DPA Contract Redlining Playbook** to remediate third-party contracts for discovered tracking vendors. |
 
 ---

@@ -1,6 +1,6 @@
 {
   "audit_run_id": "MIRO-EU-001",
-  "target_url": "https://miro.com",
+  "target_url": "https://miro.com/fr/",
   "jurisdiction_condition": "EU",
   "applicable_framework": "GDPR",
   "ip_country": "FR",
@@ -13,11 +13,14 @@
   "headless": true,
   "pre_consent_cookies_count": 9,
   "pre_consent_active_groups": ",C0001,",
+  "pre_consent_classification": "Category C0001 active; classification under review (e.g. ajs_anonymous_id)",
   "first_layer_reject_all_visible": true,
   "first_layer_reject_all_text": "Tout refuser",
   "first_layer_accept_all_text": "Autoriser tous les cookies",
   "pre_consent_ad_trackers_fired": [],
-  "post_action": "Clicked Tout refuser (Reject All)",
-  "post_action_cookies_count": 10,
-  "post_reject_clean_state_maintained": true
+  "post_reject_action": "Clicked 'Tout refuser' (Reject All)",
+  "post_reject_cookies_count": 10,
+  "post_reject_clean_state_maintained": true,
+  "post_accept_action": "Clicked 'Autoriser tous les cookies' (Accept All)",
+  "post_accept_cookies_count": 53
 }

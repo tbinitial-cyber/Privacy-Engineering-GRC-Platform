@@ -7,8 +7,8 @@
   "ip_region": "DL",
   "miro_geo": "IN|India|Delhi|Asia/Kolkata",
   "cmp_provider": "OneTrust",
-  "cmp_rule_detected": "Notice-Only / Implied Consent",
-  "consent_model": "IMPLIED_OPT_OUT",
+  "cmp_rule_detected": "Notice-Only / Opt-Out Configuration",
+  "consent_model": "NOTICE_OPT_OUT",
   "browser": "Chromium",
   "headless": true,
   "pre_consent_cookies_count": 55,
@@ -19,10 +19,11 @@
     "Tapad (pixel.tapad.com)",
     "Hotjar (static.hotjar.com)"
   ],
-  "post_action": "Clicked Accept All",
-  "post_action_cookies_count": 65,
-  "gated_cookies_released": [
+  "post_accept_action": "Clicked 'Accept all cookies'",
+  "post_accept_cookies_count": 65,
+  "post_accept_gated_released": [
     "IDE (Google DoubleClick)",
     "_fbp (Meta/Facebook)"
-  ]
+  ],
+  "post_reject_action": "First-layer 'Reject All' button unavailable in observed domestic interface"
 }
