@@ -1,0 +1,9 @@
+{
+  "audit_run_id": "MIRO-EU-001",
+  "action": "CLICKED_ACCEPT_ALL",
+  "timestamp": "",
+  "active_groups_post_accept": ",C0001,C0003,C0002,C0004,",
+  "cookie_count": 53,
+  "cookies": [],
+  "data_source": "populated from run_context.json post_accept_cookies_count=53. Individual cookie list not available in legacy artifact; re-run capture to obtain full list."
+}

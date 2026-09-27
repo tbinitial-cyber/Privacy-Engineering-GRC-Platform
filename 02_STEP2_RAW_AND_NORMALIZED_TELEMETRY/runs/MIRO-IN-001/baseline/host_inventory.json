@@ -1,0 +1,548 @@
+[
+  {
+    "host": "11345867.fls.doubleclick.net",
+    "request_count": 6,
+    "resource_types": [
+      "document"
+    ]
+  },
+  {
+    "host": "12017650.fls.doubleclick.net",
+    "request_count": 2,
+    "resource_types": [
+      "document"
+    ]
+  },
+  {
+    "host": "228-gpv-835.mktoresp.com",
+    "request_count": 1,
+    "resource_types": [
+      "ping"
+    ]
+  },
+  {
+    "host": "a.quora.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "ad.doubleclick.net",
+    "request_count": 9,
+    "resource_types": [
+      "fetch"
+    ]
+  },
+  {
+    "host": "adservice.google.com",
+    "request_count": 4,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "alb.reddit.com",
+    "request_count": 1,
+    "resource_types": [
+      "fetch"
+    ]
+  },
+  {
+    "host": "analytics.google.com",
+    "request_count": 1,
+    "resource_types": [
+      "fetch"
+    ]
+  },
+  {
+    "host": "api-iam.intercom.io",
+    "request_count": 3,
+    "resource_types": [
+      "fetch",
+      "xhr"
+    ]
+  },
+  {
+    "host": "api.cr-relay.com",
+    "request_count": 2,
+    "resource_types": [
+      "ping"
+    ]
+  },
+  {
+    "host": "api.framer.com",
+    "request_count": 1,
+    "resource_types": [
+      "fetch"
+    ]
+  },
+  {
+    "host": "app.framerstatic.com",
+    "request_count": 6,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "bat.bing.com",
+    "request_count": 4,
+    "resource_types": [
+      "image",
+      "ping",
+      "script"
+    ]
+  },
+  {
+    "host": "bzr.openai.com",
+    "request_count": 1,
+    "resource_types": [
+      "fetch"
+    ]
+  },
+  {
+    "host": "bzrcdn.openai.com",
+    "request_count": 2,
+    "resource_types": [
+      "fetch",
+      "script"
+    ]
+  },
+  {
+    "host": "c.bing.com",
+    "request_count": 1,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "c.clarity.ms",
+    "request_count": 2,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "cdn.cookielaw.org",
+    "request_count": 10,
+    "resource_types": [
+      "fetch",
+      "image",
+      "script",
+      "xhr"
+    ]
+  },
+  {
+    "host": "cdn.cr-relay.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "cdn.getsmartcontent.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "cdn.jsdelivr.net",
+    "request_count": 1,
+    "resource_types": [
+      "fetch"
+    ]
+  },
+  {
+    "host": "cdn.pdst.fm",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "connect.facebook.net",
+    "request_count": 2,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "eventhub.eu01.miro.com",
+    "request_count": 5,
+    "resource_types": [
+      "xhr"
+    ]
+  },
+  {
+    "host": "events.framer.com",
+    "request_count": 2,
+    "resource_types": [
+      "ping",
+      "script"
+    ]
+  },
+  {
+    "host": "fonts.googleapis.com",
+    "request_count": 1,
+    "resource_types": [
+      "stylesheet"
+    ]
+  },
+  {
+    "host": "fonts.gstatic.com",
+    "request_count": 5,
+    "resource_types": [
+      "font"
+    ]
+  },
+  {
+    "host": "framer.com",
+    "request_count": 3,
+    "resource_types": [
+      "document",
+      "script"
+    ]
+  },
+  {
+    "host": "framerusercontent.com",
+    "request_count": 26,
+    "resource_types": [
+      "fetch",
+      "font",
+      "image",
+      "other",
+      "script"
+    ]
+  },
+  {
+    "host": "geolocation.onetrust.com",
+    "request_count": 1,
+    "resource_types": [
+      "xhr"
+    ]
+  },
+  {
+    "host": "googleads.g.doubleclick.net",
+    "request_count": 7,
+    "resource_types": [
+      "fetch",
+      "image",
+      "script",
+      "xhr"
+    ]
+  },
+  {
+    "host": "i.ytimg.com",
+    "request_count": 2,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "ibc-flow.techtarget.com",
+    "request_count": 1,
+    "resource_types": [
+      "xhr"
+    ]
+  },
+  {
+    "host": "images.ctfassets.net",
+    "request_count": 15,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "jnn-pa.googleapis.com",
+    "request_count": 1,
+    "resource_types": [
+      "xhr"
+    ]
+  },
+  {
+    "host": "js.intercomcdn.com",
+    "request_count": 7,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "listen.audiohook.com",
+    "request_count": 1,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "miro-1-adswizz.attribution.adswizz.com",
+    "request_count": 1,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "miro.com",
+    "request_count": 3,
+    "resource_types": [
+      "document",
+      "fetch"
+    ]
+  },
+  {
+    "host": "mirostatic.com",
+    "request_count": 3,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "munchkin.marketo.net",
+    "request_count": 2,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "nld1rtp1-cdn.marketo.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "nld1rtp1.marketo.com",
+    "request_count": 6,
+    "resource_types": [
+      "script",
+      "xhr"
+    ]
+  },
+  {
+    "host": "pixel-config.reddit.com",
+    "request_count": 1,
+    "resource_types": [
+      "xhr"
+    ]
+  },
+  {
+    "host": "pixel.byspotify.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "pixel.tapad.com",
+    "request_count": 2,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "pixels.spotify.com",
+    "request_count": 2,
+    "resource_types": [
+      "fetch"
+    ]
+  },
+  {
+    "host": "px.ads.linkedin.com",
+    "request_count": 7,
+    "resource_types": [
+      "fetch",
+      "image"
+    ]
+  },
+  {
+    "host": "q.quora.com",
+    "request_count": 1,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "rtp-static.marketo.com",
+    "request_count": 4,
+    "resource_types": [
+      "script",
+      "stylesheet"
+    ]
+  },
+  {
+    "host": "script.getreditus.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "script.hotjar.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "scripts.appbind.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "scripts.clarity.ms",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "snap.licdn.com",
+    "request_count": 2,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "static-website.miro.com",
+    "request_count": 1,
+    "resource_types": [
+      "stylesheet"
+    ]
+  },
+  {
+    "host": "static.doubleclick.net",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "static.hotjar.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "stats.g.doubleclick.net",
+    "request_count": 1,
+    "resource_types": [
+      "ping"
+    ]
+  },
+  {
+    "host": "tag.clearbitscripts.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "tracking-api.g2.com",
+    "request_count": 1,
+    "resource_types": [
+      "ping"
+    ]
+  },
+  {
+    "host": "tracking.g2crowd.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "trk.techtarget.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "widget.intercom.io",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "www.clarity.ms",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "www.facebook.com",
+    "request_count": 1,
+    "resource_types": [
+      "document"
+    ]
+  },
+  {
+    "host": "www.google.co.in",
+    "request_count": 7,
+    "resource_types": [
+      "fetch",
+      "image"
+    ]
+  },
+  {
+    "host": "www.google.com",
+    "request_count": 16,
+    "resource_types": [
+      "fetch",
+      "image",
+      "script"
+    ]
+  },
+  {
+    "host": "www.googleadservices.com",
+    "request_count": 5,
+    "resource_types": [
+      "fetch",
+      "image"
+    ]
+  },
+  {
+    "host": "www.googletagmanager.com",
+    "request_count": 7,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "www.linkedin.com",
+    "request_count": 2,
+    "resource_types": [
+      "image"
+    ]
+  },
+  {
+    "host": "www.miro.com",
+    "request_count": 1,
+    "resource_types": [
+      "document"
+    ]
+  },
+  {
+    "host": "www.redditstatic.com",
+    "request_count": 1,
+    "resource_types": [
+      "script"
+    ]
+  },
+  {
+    "host": "www.youtube.com",
+    "request_count": 9,
+    "resource_types": [
+      "document",
+      "image",
+      "script",
+      "stylesheet",
+      "xhr"
+    ]
+  }
+]

@@ -174,6 +174,11 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
             json.dump(network_events, f, indent=2)
         print(f"Baseline saved ({len(pre_cookies)} cookies, groups: {active_groups}, {len(network_events)} responses, {pre_state['set_cookie_responses']} Set-Cookie headers)")
 
+        # Mark all events captured so far as PRE_CONSENT phase
+        pre_event_count = len(network_events)
+        for ev in network_events:
+            ev['phase'] = 'PRE_CONSENT'
+
         # 2. EXECUTE POST-CONSENT ACTION (symmetric: baseline/accept/reject supported for BOTH profiles)
         if action == "reject":
             if has_reject:
@@ -183,16 +188,21 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                 reject_cookies = await context.cookies()
                 reject_screenshot_path = os.path.join(output_dir, "post_reject.png")
                 await page.screenshot(path=reject_screenshot_path, full_page=False)
+                # Tag post-action events
+                for ev in network_events[pre_event_count:]:
+                    ev['phase'] = 'POST_REJECT'
                 reject_state = {
                     "audit_run_id": run_id,
                     "action": "CLICKED_REJECT_ALL",
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                     "cookie_count": len(reject_cookies),
-                    "cookies": reject_cookies
+                    "cookies": reject_cookies,
+                    "post_action_responses": len(network_events) - pre_event_count,
+                    "post_action_set_cookie": len([e for e in network_events[pre_event_count:] if e.get("set_cookie")])
                 }
                 with open(os.path.join(output_dir, "post_reject.json"), "w", encoding="utf-8") as f:
                     json.dump(reject_state, f, indent=2)
-                print(f"Post-Reject state saved ({len(reject_cookies)} cookies)")
+                print(f"Post-Reject saved ({len(reject_cookies)} cookies, {reject_state['post_action_responses']} post-action responses)")
             else:
                 print(f"WARNING: Reject All button not visible on {profile.upper()} route.")
 
@@ -205,22 +215,33 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                 accept_screenshot_path = os.path.join(output_dir, "post_accept.png")
                 await page.screenshot(path=accept_screenshot_path, full_page=False)
                 accept_groups = await page.evaluate("() => window.OnetrustActiveGroups || null")
+                # Tag post-action events
+                for ev in network_events[pre_event_count:]:
+                    ev['phase'] = 'POST_ACCEPT'
                 accept_state = {
                     "audit_run_id": run_id,
                     "action": "CLICKED_ACCEPT_ALL",
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                     "active_groups_post_accept": accept_groups,
                     "cookie_count": len(accept_cookies),
-                    "cookies": accept_cookies
+                    "cookies": accept_cookies,
+                    "post_action_responses": len(network_events) - pre_event_count,
+                    "post_action_set_cookie": len([e for e in network_events[pre_event_count:] if e.get("set_cookie")])
                 }
                 with open(os.path.join(output_dir, "post_accept.json"), "w", encoding="utf-8") as f:
                     json.dump(accept_state, f, indent=2)
-                print(f"Post-Accept state saved ({len(accept_cookies)} cookies, groups: {accept_groups})")
+                print(f"Post-Accept saved ({len(accept_cookies)} cookies, groups: {accept_groups}, {accept_state['post_action_responses']} post-action responses)")
             else:
                 print(f"WARNING: Accept All button not visible on {profile.upper()} route.")
 
         else:  # action == "baseline": PRE_CONSENT observation only, no click
             print("Baseline-only run: no consent interaction performed.")
+
+        # Issue 5 fix: Re-save network_events.json after action — now contains both PRE_CONSENT and
+        # POST_ACCEPT/POST_REJECT events, each tagged with 'phase' field.
+        with open(os.path.join(output_dir, "network_events.json"), "w", encoding="utf-8") as f:
+            json.dump(network_events, f, indent=2)
+        print(f"network_events.json updated: {len(network_events)} total responses ({pre_event_count} pre, {len(network_events)-pre_event_count} post)")
 
         # 3. RUN CONTEXT RECORD
         run_context = {
@@ -260,13 +281,14 @@ def main():
     parser.add_argument("--action", choices=["baseline", "accept", "reject"], default="reject",
                         help="Post-page-load action: 'baseline' (no click), 'accept' (Accept All), 'reject' (Reject All)")
     parser.add_argument("--proxy", default=None, help="Proxy URL for European route (e.g. http://127.0.0.1:61809)")
-    parser.add_argument("--headless", action="store_true", default=True, help="Run headless")
+    parser.add_argument("--headed", action="store_true", default=False,
+                        help="Run Chromium with a visible browser window (default: headless)")
     args = parser.parse_args()
 
     asyncio.run(capture_profile(
         profile=args.profile,
         proxy=args.proxy,
-        headless=args.headless,
+        headless=not args.headed,
         action=args.action
     ))
 

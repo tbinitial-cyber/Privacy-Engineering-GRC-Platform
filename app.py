@@ -340,7 +340,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
     st.markdown('<div class="main-title">🛡️ Privacy Engineering & Technical GRC Platform</div>', unsafe_allow_html=True)
     
     if jurisdiction_mode == "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)":
-        st.markdown('<div class="sub-title">Cross-Border Telemetry Audit of Miro.com | Comparative Geofencing Arbitrage (EU Strict GDPR vs. India Domestic Baseline)</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sub-title">Cross-Border Telemetry Audit of Miro.com | Jurisdictional Consent Configuration Comparison (EU/France Benchmark vs. India Domestic Baseline)</div>', unsafe_allow_html=True)
     elif "European Union" in jurisdiction_mode:
         st.markdown('<div class="sub-title">European Telemetry Benchmark of Miro.com | France IP Route -- Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements & ePrivacy Directive</div>', unsafe_allow_html=True)
     else:
@@ -617,11 +617,22 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
     with tab_eu:
         st.subheader("🇪🇺 European Union Route Telemetry Deep-Dive (France IP)")
         st.caption("Clean-slate Chromium Playwright session conducted via European IP route. Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements. Consent and rejection controls observed on first layer. NOTE: Art. 7(3) withdrawal effectiveness requires a separate post-consent withdrawal test not conducted in this run.")
-        
+        st.info("📦 **Canonical Evidence Source:** `02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/baseline/` · `accept/` · `reject/`")
+
         eu_col1, eu_col2 = st.columns(2)
-        eu_pre_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png")
-        eu_post_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_post_reject.png")
-        
+        # Load from canonical action subdirs
+        eu_baseline_data = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/baseline/baseline.json")
+        eu_reject_data   = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/reject/post_reject.json")
+        eu_accept_data   = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/accept/post_accept.json")
+
+        # Screenshots from runs dir or fallback to europe_audit
+        eu_pre_path  = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/baseline/pre_consent.png")
+        eu_post_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/reject/post_reject.png")
+        if not os.path.exists(eu_pre_path):
+            eu_pre_path  = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png")
+        if not os.path.exists(eu_post_path):
+            eu_post_path = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_post_reject.png")
+
         with eu_col1:
             st.markdown("#### 1. Europe Pre-Consent State")
             if os.path.exists(eu_pre_path):
@@ -630,19 +641,34 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
             st.markdown("#### 2. Europe Post-Reject State")
             if os.path.exists(eu_post_path):
                 st.image(eu_post_path, caption="France Route Post-Reject: Clean state preserved (Cookie count: 10)", width="stretch")
-                
-        eu_telemetry = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/miro_europe_telemetry.json")
-        if eu_telemetry:
-            eu_c1, eu_c2, eu_c3 = st.columns(3)
-            eu_c1.metric("Pre-Consent Cookies", f"{eu_telemetry.get('pre_consent', {}).get('cookie_count')} Cookies", "C0001 Active - Cookie-Level Classification Pending")
-            eu_c2.metric("OneTrust Active Groups", eu_telemetry.get('pre_consent', {}).get('onetrust_active_groups', 'N/A'), "C0001 (Necessary) Only")
-            eu_c3.metric("Post-Reject Cookies", f"{eu_telemetry.get('post_reject', {}).get('cookie_count')} Cookies", "+1 Preference Cookie Only")
-            
+
+        if eu_baseline_data:
+            pre_cookie_count  = eu_baseline_data.get('cookie_count', 'N/A')
+            active_grp        = eu_baseline_data.get('active_groups', 'N/A')
+            reject_count      = eu_reject_data.get('cookie_count', 'N/A') if eu_reject_data else 'N/A'
+            accept_count      = eu_accept_data.get('cookie_count', 'N/A') if eu_accept_data else 'N/A'
+            accept_note       = eu_accept_data.get('data_source', '') if eu_accept_data else ''
+
+            eu_c1, eu_c2, eu_c3, eu_c4 = st.columns(4)
+            eu_c1.metric("Pre-Consent Cookies", f"{pre_cookie_count} Cookies", "C0001 Active - Cookie-Level Classification Pending")
+            eu_c2.metric("OneTrust Active Groups", active_grp, "C0001 (Necessary) Only")
+            eu_c3.metric("Post-Reject Cookies", f"{reject_count} Cookies", "+1 Preference Cookie Only")
+            eu_c4.metric("Post-Accept Cookies", f"{accept_count} Cookies", "Affirmative consent releases analytics/ad cookies")
+
+            if accept_note and 'not available' in accept_note:
+                st.caption(f"⚠️ Accept cookie list: {accept_note}")
+
             st.markdown("#### Cookies Deposited on European Route Pre-Consent:")
-            eu_cookies_list = eu_telemetry.get("pre_consent", {}).get("cookies", [])
+            eu_cookies_list = eu_baseline_data.get("cookies", [])
             if eu_cookies_list:
-                df_eu_cookies = pd.DataFrame(eu_cookies_list)[["name", "domain", "path", "httpOnly", "secure", "sameSite"]]
-                st.dataframe(df_eu_cookies, width="stretch", hide_index=True)
+                try:
+                    df_eu_cookies = pd.DataFrame(eu_cookies_list)[["name", "domain", "path", "httpOnly", "secure", "sameSite"]]
+                    st.dataframe(df_eu_cookies, width="stretch", hide_index=True)
+                except Exception:
+                    st.json(eu_cookies_list[:10])
+        else:
+            st.warning("EU baseline artifact not found at `runs/MIRO-EU-001/baseline/baseline.json`. Run: `python capture_miro.py --profile eu-france --action baseline --proxy http://127.0.0.1:61809`")
+
 
     with tab_in:
         st.subheader("🇮🇳 India Domestic Route Telemetry Deep-Dive")
@@ -967,6 +993,20 @@ elif nav_choice == "🏛️ 04. Statutory Article 30 RoPA Register":
                 eprivacy_basis = "UNASSESSED (Pending Legal Counsel Determination)"
             lawful_basis = gdpr_basis
 
+            # Derive DPIA status from candidate data rather than hardcoded position index
+            dpia_required = c.get("dpia_required", None)
+            dpia_status_raw = c.get("dpia_status", None)
+            evidence_count = len(c.get("evidence_ids", []))
+            if dpia_required is True or dpia_status_raw in ["REQUIRED", "TRIGGERED", "HIGH_RISK"]:
+                dpia_status = "High-Risk Presumption Triggered (EDPB WP 248) — DPIA Recommended"
+            elif dpia_required is False or dpia_status_raw in ["NOT_REQUIRED", "STANDARD"]:
+                dpia_status = "Standard Risk — No DPIA Presumption"
+            elif evidence_count >= 30:
+                # High evidence volume suggests broad tracking — flag for review
+                dpia_status = "Potential High-Risk (High Evidence Volume — Human Review Required)"
+            else:
+                dpia_status = "Under Review — DPIA Screening Required"
+
             ropa_rows.append({
                 "RoPA Ref": f"ROPA-ACT-00{idx}",
                 "Candidate Activity ID": act_id,
@@ -974,8 +1014,8 @@ elif nav_choice == "🏛️ 04. Statutory Article 30 RoPA Register":
                 "Data Subjects": ", ".join(c.get("candidate_data_subjects", [])),
                 "GDPR Art. 6 Basis (UNASSESSED)": gdpr_basis,
                 "ePrivacy Art. 5(3) (Separate Rule)": eprivacy_basis,
-                "DPIA Status": "High-Risk Presumption Triggered (EDPB WP 248)" if idx in [1, 5] else "Standard Risk",
-                "Supporting Records": len(c.get("evidence_ids", []))
+                "DPIA Status": dpia_status,
+                "Supporting Records": evidence_count
             })
         st.subheader("Dynamic Article 30 Processing Activity Table")
         st.dataframe(pd.DataFrame(ropa_rows), width="stretch", hide_index=True)

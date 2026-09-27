@@ -339,5 +339,9 @@
     ],
     "onetrust_active_groups": ",C0001,"
   },
-  "post_accept": {}
+  "post_accept": {
+    "cookie_count": 53,
+    "cookies": [],
+    "note": "Post-Accept cookie count = 53 from run_context.json. Individual cookie list not available in this legacy summary artifact. See runs/MIRO-EU-001/accept/post_accept.json for current canonical record."
+  }
 }

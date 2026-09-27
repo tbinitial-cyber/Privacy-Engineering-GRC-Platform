@@ -1,9 +1,11 @@
-# 🛡️ Enterprise Privacy Engineering & Dual-Domain Telemetry GRC Platform
+# 🛡️ Privacy Engineering & Comparative Telemetry GRC Research Platform
 
-> **An Empirical Privacy Engineering & Comparative Telemetry GRC Platform Harmonizing Client-Side Telemetry with Global Privacy Frameworks (EU GDPR, India DPDPA 2023, and US CCPA/CPRA).**
+> **A reproducible privacy-engineering research prototype demonstrating cross-jurisdiction consent management analysis. Combines client-side telemetry capture (Playwright CDP) with evidence hashing, schema validation, and a comparative EU/India consent experiment on Miro.com.**
+>
+> ⚠️ **Research Prototype Notice:** This is an audit-methodology demonstration, not a certified compliance audit or legal advice. Legal conclusions require qualified legal counsel. Evidence is gathered with a heuristic Evidence Support Index and an append-only DPO review workflow — not a statistically calibrated scoring engine.
 
 [![Statutory Framework](https://img.shields.io/badge/Statutory%20Framework-EU%20GDPR%20%7C%20India%20DPDPA%202023%20%7C%20US%20CCPA-0A66C2.svg)](#-regulatory--statutory-alignment)
-[![RoPA Governance](https://img.shields.io/badge/RoPA%20Governance-GDPR%20Art.%2030%20%7C%20DPDPA%20Accountability-2ea44f.svg)](#-step-5-statutory-article-30-ropa-register)
+[![RoPA Governance](https://img.shields.io/badge/RoPA%20Governance-GDPR%20Art.%2030%20%7C%20DPDPA%20Sec.%208%20Inventory-2ea44f.svg)](#-step-5-statutory-article-30-ropa-register)
 [![EDPB WP 248](https://img.shields.io/badge/EDPB%20WP%20248-DPIA%20Screened%20(Regulatory%20Presumption)-critical.svg)](#-step-6-high-risk-dpia-threshold-assessment)
 [![Evidence Integrity](https://img.shields.io/badge/Evidence%20Integrity-SHA--256%20Cryptographic%20Fingerprints-blueviolet.svg)](#-step-2-live-digital-telemetry--consent-gate-audit)
 [![License](https://img.shields.io/badge/License-MIT-informational.svg)](LICENSE)

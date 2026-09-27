@@ -1,0 +1,109 @@
+{
+  "audit_run_id": "MIRO-EU-001",
+  "action": "CLICKED_REJECT_ALL",
+  "timestamp": "",
+  "cookie_count": 10,
+  "cookies": [
+    {
+      "name": "geo_data",
+      "value": "FR|France|Paris|Europe/Paris",
+      "domain": "miro.com",
+      "path": "/api/ff",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "geo_data",
+      "value": "FR|France|Paris|Europe/Paris",
+      "domain": "miro.com",
+      "path": "/fr",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "userLocale",
+      "value": "fr",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "geo_data",
+      "value": "FR|France|Paris|Europe/Paris",
+      "domain": "miro.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "ajs_anonymous_id",
+      "value": "%220d499a06-25b4-40ed-bb30-be8291580a28%22",
+      "domain": "miro.com",
+      "path": "/",
+      "expires": 1821972760.117605,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__ff_cookie_styles",
+      "value": "off",
+      "domain": "miro.com",
+      "path": "/",
+      "expires": 1790436880.117725,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__ff",
+      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v1\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
+      "domain": "miro.com",
+      "path": "/",
+      "expires": 1790436884.832708,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "server_experiment_viewed",
+      "value": "{\"treatment\":\"off\",\"experiment_name\":\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\",\"config\":null}",
+      "domain": "miro.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonAlertBoxClosed",
+      "value": "2026-09-26T15:32:50.721Z",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1821972770,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Sat+Sep+26+2026+17%3A32%3A50+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e1d5d353-5119-4110-a5c3-0dc67ff474a6&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0&intType=2",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1821972770,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "data_source": "migrated from miro_europe_telemetry.json post_reject block"
+}
