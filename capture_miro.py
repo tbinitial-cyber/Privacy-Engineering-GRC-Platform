@@ -15,7 +15,10 @@ Captures:
   - PRE_CONSENT baseline (baseline.json) for every run
   - POST_ACCEPT state (post_accept.json) when --action accept
   - POST_REJECT state (post_reject.json) when --action reject
-  - Full CDP network events, HAR recording, and cookie inventories
+  - Response-level network event stream (network_events.json):
+      URL, method, resource_type, HTTP status, selected response headers (Set-Cookie,
+      Content-Type, Location, Cache-Control). Full request/response bodies and initiator
+      chains are captured in the HAR file (network.har).
 """
 
 import asyncio
@@ -42,15 +45,20 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
     # (e.g. miro.com -> miro.com/fr/) is performed by the site and captured in redirect_chain.
     target_url = "https://miro.com/"
 
+    # Issue 9 fix: Each action gets its own subdirectory so runs don't overwrite each other.
+    # Structure: runs/MIRO-EU-001/baseline/ | accept/ | reject/
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    output_dir = os.path.join(base_dir, "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY", "runs", run_id)
+    output_dir = os.path.join(
+        base_dir, "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY", "runs", run_id, action
+    )
     os.makedirs(output_dir, exist_ok=True)
 
-    print(f"============================================================")
-    print(f"🔬 RUNNING STANDARDIZED AUDIT CAPTURE: {run_id}")
-    print(f"🌐 Jurisdiction Profile: {profile.upper()} ({jurisdiction})")
-    print(f"🔌 Network Proxy: {proxy or 'Direct Indian IP (No proxy)'}")
-    print(f"============================================================")
+    print(f"=================================================================")
+    print(f"AUDIT CAPTURE: {run_id} / action={action}")
+    print(f"Profile: {profile.upper()} ({jurisdiction})")
+    print(f"Proxy: {proxy or 'Direct IP (No proxy)'}")
+    print(f"Output: {output_dir}")
+    print(f"=================================================================")
 
     async with async_playwright() as p:
         launch_args = {"headless": headless}
@@ -72,23 +80,36 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         async def handle_response(response):
             nonlocal onetrust_geo
             try:
+                # Intercept OneTrust GeoIP endpoint
                 if "geolocation.onetrust.com" in response.url:
                     text = await response.text()
                     try:
                         onetrust_geo = json.loads(text)
-                        print(f"📍 Intercepted OneTrust GeoIP: {onetrust_geo}")
+                        print(f"Intercepted OneTrust GeoIP: {onetrust_geo}")
                     except Exception:
                         onetrust_geo = {"raw": text}
+
+                # Issue 7 fix: capture response headers and Set-Cookie for all requests
+                resp_headers = dict(response.headers)
+                set_cookie = resp_headers.get("set-cookie", None)
+                network_events.append({
+                    "url": response.url,
+                    "method": response.request.method,
+                    "resource_type": response.request.resource_type,
+                    "status": response.status,
+                    "response_headers": {
+                        k: v for k, v in resp_headers.items()
+                        if k.lower() in ("content-type", "set-cookie", "location",
+                                         "x-frame-options", "cache-control", "vary")
+                    },
+                    "set_cookie": set_cookie,
+                    "timestamp": datetime.now(timezone.utc).isoformat()
+                })
             except Exception:
                 pass
 
         page.on("response", handle_response)
-        page.on("request", lambda req: network_events.append({
-            "url": req.url,
-            "method": req.method,
-            "resource_type": req.resource_type,
-            "timestamp": datetime.now(timezone.utc).isoformat()
-        }))
+
 
         print(f"Navigating to {target_url}...")
         initial_url = target_url
@@ -142,12 +163,16 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
             },
             "cookie_count": len(pre_cookies),
             "cookies": pre_cookies,
-            "total_requests": len(network_events)
+            "total_responses_captured": len(network_events),
+            "set_cookie_responses": len([e for e in network_events if e.get("set_cookie")])
         }
 
         with open(os.path.join(output_dir, "baseline.json"), "w", encoding="utf-8") as f:
             json.dump(pre_state, f, indent=2)
-        print(f"✅ Baseline saved ({len(pre_cookies)} cookies, active groups: {active_groups})")
+        # Save detailed network event stream (response-level with Set-Cookie) as separate artifact
+        with open(os.path.join(output_dir, "network_events.json"), "w", encoding="utf-8") as f:
+            json.dump(network_events, f, indent=2)
+        print(f"Baseline saved ({len(pre_cookies)} cookies, groups: {active_groups}, {len(network_events)} responses, {pre_state['set_cookie_responses']} Set-Cookie headers)")
 
         # 2. EXECUTE POST-CONSENT ACTION (symmetric: baseline/accept/reject supported for BOTH profiles)
         if action == "reject":

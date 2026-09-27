@@ -2,19 +2,26 @@
 ### *Enterprise Compliance Documentation under GDPR Article 30 (Statutory) & DPDPA 2023 General Fiduciary Governance Alignment*
 **Organization:** RealtimeBoard Inc. d/b/a Miro (Delaware, USA) & RealtimeBoard B.V. (Amsterdam, Netherlands)  
 **Appointed DPO Contact:** `privacy@miro.com` | Singel 540, 1017 AZ Amsterdam, Netherlands  
-**Audit Reference:** `miro_live_audit_run_001` | **Document Status:** Operational Governance Draft (Uncertified Candidate)  
-**Verification Base:** [normalized_evidence.json](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/normalized_evidence.json) (301 Deterministic SHA-256 Telemetry Records)  
-**Associated Excel Workbook:** [ROPA_ARTICLE_30_REGISTER.xlsx](file:///C:/Users/acer/Downloads/privacy_engineering_real_collection/privacy_engineering_real_collection/runs/miro_audit/ROPA_ARTICLE_30_REGISTER.xlsx)
+**Comparative Audit Reference:** `MIRO-COMP-001` (India: `MIRO-IN-001` / EU: `MIRO-EU-001`) | **Document Status:** Operational Governance Draft (Uncertified Candidate; Human Legal Counsel Review Required)  
+**Verification Base:** `02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/normalized_evidence.json` (301 Deterministic SHA-256 Telemetry Records)  
+**Associated Excel Workbook:** `05_STEP5_ARTICLE_30_ROPA_REGISTER/ROPA_ARTICLE_30_REGISTER.xlsx`
 
 ---
 
 ## 1. Executive Governance & Legal Scope
 
-Under **GDPR Article 30(1)**, data controllers are legally obligated to maintain an immutable, detailed record of all personal data processing activities under their responsibility. While India's **Digital Personal Data Protection Act (DPDPA) 2023** does not establish an explicit statutory RoPA register, maintaining an operational processing inventory is recognized as an industry-standard mechanism to demonstrate compliance with general Data Fiduciary accountability and security obligations under Section 8.
+**GDPR Article 30** requires data controllers to maintain records of processing activities. This platform applies versioning, SHA-256 hashing, and append-only controls as internal evidence-integrity engineering measures; the term "immutable" describes these engineering controls and is not statutory wording from Article 30 itself.
 
-This register bridges **live frontend network telemetry** captured via automated browser instrumentation with **authoritative legal classifications**, documenting:
-1. Exact operational purposes and corresponding statutory lawful bases.
-2. Categories of data subjects and personal data elements processed.
+**Indian DPDPA 2023** does not establish an explicit statutory RoPA register. This document maintains a **DPDP-aligned governance inventory** as an operational mechanism to demonstrate general Data Fiduciary accountability under Section 8. It is distinct from the GDPR Article 30 statutory register and should not be treated as equivalent.
+
+> [!NOTE]
+> These two governance instruments are maintained separately:
+> - **GDPR Article 30 RoPA** — Statutory controller record (EU law)
+> - **DPDP-Aligned Governance Inventory** — Operational best practice (Indian DPDPA 2023 Sec. 8)
+
+This register bridges **live frontend network telemetry** captured via automated browser instrumentation with **candidate legal classifications**, documenting:
+1. Candidate operational purposes and proposed statutory lawful bases (Human Legal Counsel determination required).
+2. Categories of data subjects and personal data elements observed.
 3. Third-party recipients, cloud subprocessors, and cross-border international transfer safeguards (Standard Contractual Clauses / DPF).
 4. Retention schedules and Technical and Organisational Measures (TOMs) under GDPR Article 32.
 5. Mandatory Data Protection Impact Assessment (DPIA) triggers.

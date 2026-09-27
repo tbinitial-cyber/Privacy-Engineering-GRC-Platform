@@ -1008,12 +1008,13 @@ elif nav_choice == "🛡️ 05. High-Risk DPIA Threshold Assessment":
     ]
     criteria_df = pd.DataFrame(criteria_data)
     triggered_count = int(criteria_df["Status"].eq("TRIGGERED").sum())
+    supported_count = int(criteria_df["Status"].isin(["TRIGGERED", "EVIDENCE-SUPPORTED"]).sum())
     potential_count = int(criteria_df["Status"].eq("POTENTIAL").sum())
     total_count = len(criteria_df)
     
     col_v1, col_v2 = st.columns([1, 2])
     with col_v1:
-        st.warning(f"⚠️ **REGULATORY PRESUMPTION TRIGGERED**:\n\n**FORMAL DPIA RECOMMENDED UNDER GDPR ART. 35(1)**\n\n{triggered_count} of {total_count} WP 248 Criteria Triggered or Evidence-Supported (+{potential_count} Potential). NOTE: 'Evidence-Supported' means telemetry is consistent with the criterion; direct verification of the processing activity would require further investigation.")
+        st.warning(f"⚠️ **REGULATORY PRESUMPTION TRIGGERED**:\n\n**FORMAL DPIA RECOMMENDED UNDER GDPR ART. 35(1)**\n\n{triggered_count} of {total_count} WP 248 Criteria Directly Triggered + {supported_count - triggered_count} Evidence-Supported = **{supported_count} total** (+{potential_count} Potential). NOTE: 'Evidence-Supported' means telemetry is consistent with the criterion; direct verification would require further investigation beyond cookie observation.")
         st.info("ℹ️ **Statutory Guidance:** Under Article 29 Working Party Guidelines WP 248 rev.01 (endorsed by the EDPB), meeting 2 or more criteria establishes a strong regulatory presumption in supervisory guidance that a processing operation is likely to result in high risk, recommending a formal DPIA under GDPR Article 35(1). Under Indian DPDPA 2023 Section 10, periodic DPIAs are mandatory for Significant Data Fiduciaries (SDF).")
         st.write("**Key Technical Triggers:**")
         st.write("1. Microsoft Clarity Screen Replay (`CLID`, `MUID` — Systematic Monitoring)")
