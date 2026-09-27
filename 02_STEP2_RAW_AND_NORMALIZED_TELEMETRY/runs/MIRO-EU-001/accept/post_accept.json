@@ -5,5 +5,8 @@
   "active_groups_post_accept": ",C0001,C0003,C0002,C0004,",
   "cookie_count": 53,
   "cookies": [],
-  "data_source": "populated from run_context.json post_accept_cookies_count=53. Individual cookie list not available in legacy artifact; re-run capture to obtain full list."
+  "data_source": "populated from run_context.json post_accept_cookies_count=53. Individual cookie list not available in legacy artifact; re-run capture to obtain full list.",
+  "artifact_status": "LEGACY_MIGRATED",
+  "recapture_required": true,
+  "recapture_note": "LEGACY_MIGRATED \u2014 cookie_count from run_context metadata; cookies[] is empty placeholder; re-run capture_miro.py --profile eu-france --action accept --proxy <EU_PROXY> to obtain real cookie list"
 }

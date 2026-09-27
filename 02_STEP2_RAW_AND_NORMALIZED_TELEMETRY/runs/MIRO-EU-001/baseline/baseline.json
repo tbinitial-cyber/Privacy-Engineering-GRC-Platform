@@ -113,5 +113,8 @@
   ],
   "total_responses_captured": 0,
   "set_cookie_responses": 0,
-  "data_source": "migrated from miro_europe_telemetry.json pre_consent block"
+  "data_source": "migrated from miro_europe_telemetry.json pre_consent block",
+  "artifact_status": "LEGACY_MIGRATED",
+  "recapture_required": true,
+  "recapture_note": "LEGACY_MIGRATED \u2014 migrated from miro_europe_telemetry.json pre_consent block; re-run capture_miro.py --profile eu-france --action baseline --proxy <EU_PROXY> to obtain fresh artifact"
 }

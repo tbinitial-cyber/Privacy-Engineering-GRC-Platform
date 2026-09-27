@@ -408,7 +408,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         st.caption(f"🔒 **Comparison Run Reference:** `{comp_id}` | **Target:** `{manifest.get('target_url')}` | **Indian Domestic Route:** `{in_c} (Notice-Only)` | **EU Route:** `{eu_c} (Prior Opt-In Observed)` | **Schema:** `{schema_msg}`")
     st.warning("⚠️ **Temporal Confound Notice:** India and EU runs were captured on different dates (IN: 2026-09-24; EU: 2026-09-26). Miro is a dynamic production site; behavioral differences could theoretically reflect site changes, A/B experiments, or vendor configuration changes in addition to geographic routing. Reproducibility requires same-day paired runs. This limitation applies to all comparative conclusions.")
 
-    # If Dual-Jurisdiction Mode: Show Comparative Arbitrage KPIs and Matrix
+    # If Dual-Jurisdiction Mode: Show Jurisdictional Consent Comparison KPIs and Matrix
     if jurisdiction_mode == "⚖️ Dual-Jurisdiction Comparative Mode (EU vs. India)":
         st.info("⚖️ **Comparative Empirical Finding: Jurisdiction-Dependent Consent Configuration Observed.** Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions. On the France route, OneTrust was observed in a prior opt-in configuration with only category C0001 active, a visible first-layer 'Tout refuser' (Reject All) control, and zero known pre-consent advertising trackers during the observation window. On the India domestic route, OneTrust was observed in a notice/opt-out-style configuration with categories C0001–C0004 pre-activated, first-layer 'Reject All' omitted, and immediate transmission of third-party telemetry.")
 
@@ -426,13 +426,22 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
 
         st.divider()
 
-        # Side-by-Side Comparison Matrix Table
+        # Executive comparison matrix — values sourced from comparative_analysis.json
         st.subheader("⚖️ Empirical Cross-Jurisdiction Telemetry & Statutory Matrix")
+        _comp_json = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/comparative_analysis.json")
+        _stm = _comp_json.get("symmetric_treatment_matrix", {}) if _comp_json else {}
+        _eu_pre  = _stm.get("pre_consent_state",  {}).get("MIRO-EU-001", {})
+        _in_pre  = _stm.get("pre_consent_state",  {}).get("MIRO-IN-001", {})
+        _eu_acc  = _stm.get("post_accept_state",  {}).get("MIRO-EU-001", {})
+        _in_acc  = _stm.get("post_accept_state",  {}).get("MIRO-IN-001", {})
+        _eu_rej  = _stm.get("post_reject_state",  {}).get("MIRO-EU-001", {})
+        _in_rej  = _stm.get("post_reject_state",  {}).get("MIRO-IN-001", {})
+
         comparative_matrix = [
             {
                 "Forensic Dimension": "OneTrust Active Groups (Pre-Interaction)",
-                "🇪🇺 European Union Route (France)": "window.OnetrustActiveGroups = ',C0001,' (Category C0001 active)",
-                "🇮🇳 India Route (Domestic Baseline)": "window.OnetrustActiveGroups = ',C0001,C0003,C0002,C0004,' (All groups active)",
+                "🇪🇺 European Union Route (France)": f"window.OnetrustActiveGroups = '{_eu_pre.get('onetrust_active_groups','N/A')}' (Category C0001 active)",
+                "🇮🇳 India Route (Domestic Baseline)": f"window.OnetrustActiveGroups = '{_in_pre.get('onetrust_active_groups','N/A')}' (All groups active)",
                 "Technical & Legal Assessment": "Direct evidence of jurisdiction-dependent configuration: Prior opt-in enforced in EU; notice/opt-out style in India."
             },
             {
@@ -443,33 +452,33 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
             },
             {
                 "Forensic Dimension": "Pre-Consent Client-Side Cookies",
-                "🇪🇺 European Union Route (France)": "9 Cookies observed (Category C0001 active; cookie-level purpose classification under review, e.g. ajs_anonymous_id)",
-                "🇮🇳 India Route (Domestic Baseline)": "55 Cookies observed (Marketing, analytics & cross-site trackers deposited on initial page load)",
+                "🇪🇺 European Union Route (France)": f"{_eu_pre.get('cookies_observed','N/A')} Cookies observed ({_eu_pre.get('classification_status','cookie-level classification under review')})",
+                "🇮🇳 India Route (Domestic Baseline)": f"{_in_pre.get('cookies_observed','N/A')} Cookies observed ({_in_pre.get('classification_status','Marketing, analytics & cross-site trackers deposited on load')})",
                 "Technical & Legal Assessment": "Data minimization divergence: strict suppression on European route vs tracking cookie accumulation in India."
             },
             {
                 "Forensic Dimension": "Pre-Consent Third-Party Trackers",
-                "🇪🇺 European Union Route (France)": "0 Known Advertising Trackers (Microsoft Clarity, Tapad, and DoubleClick withheld during observation window)",
-                "🇮🇳 India Route (Domestic Baseline)": "Active Trackers Firing (Microsoft Clarity and Tapad beacons transmit immediately)",
-                "Technical & Legal Assessment": "Pre-consent cookie deposition observed on domestic route prior to affirmative user action. Assessed under Indian statutory framework (DPDPA 2023 Sec. 6 / Consumer Protection Act 2019); EU ePrivacy Directive does not apply to the Indian route."
+                "🇪🇺 European Union Route (France)": f"{_eu_pre.get('third_party_ad_trackers','0')} Known Advertising Trackers ({_eu_pre.get('third_party_ad_trackers_note','Trackers withheld during observation window')})",
+                "🇮🇳 India Route (Domestic Baseline)": f"{_in_pre.get('third_party_ad_trackers','N/A')} Active Trackers ({_in_pre.get('third_party_ad_trackers_note','Trackers transmit immediately')})",
+                "Technical & Legal Assessment": "Pre-consent cookie deposition observed on domestic route prior to affirmative user action. Assessed under Indian statutory framework; EU ePrivacy Directive does not apply to the Indian route."
             },
             {
                 "Forensic Dimension": "Post-Action Cookie Delta (Reject All)",
-                "🇪🇺 European Union Route (France)": "10 Cookies (+1 preference cookie only; clean rejection state maintained)",
-                "🇮🇳 India Route (Domestic Baseline)": "N/A (First-layer 'Reject All' control omitted from domestic interface)",
-                "Technical & Legal Assessment": "European users can reject all non-essential processing in a single action; Indian users require multi-layer manual navigation."
+                "🇪🇺 European Union Route (France)": f"{_eu_rej.get('cookies_observed','N/A')} Cookies ({_eu_rej.get('telemetry_delta','clean rejection state maintained')})",
+                "🇮🇳 India Route (Domestic Baseline)": f"{_in_rej.get('cookies_observed','N/A')} Cookies — {_in_rej.get('action','N/A')} ({_in_rej.get('telemetry_delta','')})",
+                "Technical & Legal Assessment": "Post-reject state: both routes now have fresh captured artifact. India reject button was found and successfully clicked in fresh capture."
             },
             {
                 "Forensic Dimension": "Post-Action Cookie Delta (Accept All)",
-                "🇪🇺 European Union Route (France)": "53 Cookies (Affirmative consent releases marketing/analytics cookies)",
-                "🇮🇳 India Route (Domestic Baseline)": "65 Cookies (+10 released including Google DoubleClick IDE)",
+                "🇪🇺 European Union Route (France)": f"{_eu_acc.get('cookies_observed','N/A')} Cookies ({_eu_acc.get('telemetry_delta','Affirmative consent releases marketing/analytics cookies')})",
+                "🇮🇳 India Route (Domestic Baseline)": f"{_in_acc.get('cookies_observed','N/A')} Cookies ({_in_acc.get('telemetry_delta','')})",
                 "Technical & Legal Assessment": "Proves conditional script blocking is technically implemented, but dynamically relaxed on the domestic route."
             },
             {
                 "Forensic Dimension": "Statutory Governance & Exposure",
-                "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 6(1)(a) & ePrivacy Directive (Fully enforceable; €20M / 4% global turnover fine risk). Consent and rejection controls observed on first layer.",
-                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019 (India CCPA / Dark Patterns Guidelines 2023)",
-                "Technical & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into statutory force. EU frameworks assessed independently on EU route only."
+                "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 6(1)(a) & ePrivacy Directive (Fully enforceable). Consent and first-layer rejection controls observed. Art. 7(3) withdrawal effectiveness not tested.",
+                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement) & Consumer Protection Act 2019 (India CCPA / Dark Patterns Guidelines 2023)",
+                "Technical & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into force. EU frameworks assessed independently on EU route only."
             }
         ]
         st.dataframe(pd.DataFrame(comparative_matrix), width="stretch", hide_index=True)
@@ -536,7 +545,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         st.markdown("### 1. Technical Collection")
         st.markdown("""
         * **Automated Chromium Instrumentation:** Playwright CDP capture across multiple IP routes.
-        * **Geofencing Consent Gate Verification:** Comparative Pre-Consent vs Post-Consent & Reject-All baselines.
+        * **Multi-Jurisdiction Consent Gate Verification:** Comparative Pre-Consent vs Post-Consent & Reject-All baselines.
         * **Canonical Normalization:** Validated against canonical schema with deterministic SHA-256 IDs.
         """)
     with c2:
@@ -576,43 +585,110 @@ elif nav_choice == "🌐 01. Live Telemetry & Consent Gate Audit":
         st.markdown("""
         **The Technical Phenomenon:** Multinational tech platforms utilize dynamic GeoIP lookups (via OneTrust CDN endpoints such as `geolocation.onetrust.com/cookieconsentpub/v1/geo/location`) to detect the geographic location of incoming visitors. Depending on the detected country, the Consent Management Platform (CMP) dynamically swaps its UI, legal text, and script execution policies.
         """)
-        
+
+        # Issue 9: Load comparison from canonical JSON artifact — not hardcoded
+        comp_analysis = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/comparative_analysis.json")
+
         col_banner_eu, col_banner_in = st.columns(2)
         with col_banner_eu:
             st.markdown("#### 🇪🇺 European Union (France IP Route)")
-            eu_img_pre = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png")
+            eu_img_pre = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/baseline/pre_consent.png")
+            if not os.path.exists(eu_img_pre):
+                eu_img_pre = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/europe_pre_consent.png")
             if os.path.exists(eu_img_pre):
-                st.image(eu_img_pre, caption="France Route: Equal Prominence 'Tout refuser' (Reject All) alongside 'Autoriser tous les cookies'", width="stretch")
-            st.markdown("""
-            * **Active Groups:** `,C0001,` (Strictly Necessary only)
-            * **Pre-Consent Cookies:** **9 Cookies** (Category C0001 active; cookie-level classification under review)
-            * **Pre-Consent Ad Trackers:** **0 Known Trackers** (Clarity, Tapad, DoubleClick withheld during observation window)
-            * **Statutory Baseline:** Strict prior opt-in under GDPR Arts. 4(11), 6(1)(a) & ePrivacy Directive; Equal ease of rejection under Art. 7(3)
-            """)
-            
+                st.image(eu_img_pre, caption="France Route: Equal Prominence 'Tout refuser' alongside 'Autoriser tous les cookies'", width="stretch")
+            if comp_analysis:
+                eu_pre = comp_analysis.get("symmetric_treatment_matrix", {}).get("pre_consent_state", {}).get("MIRO-EU-001", {})
+                st.markdown(f"""
+                * **Active Groups:** `{eu_pre.get('onetrust_active_groups', 'N/A')}` (C0001 active; cookie-level purpose classification under review)
+                * **Pre-Consent Cookies:** **{eu_pre.get('cookies_observed', 'N/A')} Cookies** ({eu_pre.get('classification_status', '')})
+                * **Pre-Consent Ad Trackers:** **{eu_pre.get('third_party_ad_trackers', 'N/A')} Known Trackers** ({eu_pre.get('third_party_ad_trackers_note', '')})
+                * **First-Layer Reject All:** `{'✅ Present' if eu_pre.get('first_layer_reject_all') else '❌ Absent'}`
+                """)
+
         with col_banner_in:
             st.markdown("#### 🇮🇳 India (Domestic IP Route)")
-            in_img_pre = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/pre_consent.png")
+            in_img_pre = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-IN-001/baseline/pre_consent.png")
+            if not os.path.exists(in_img_pre):
+                in_img_pre = get_path("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/pre_consent.png")
             if os.path.exists(in_img_pre):
                 st.image(in_img_pre, caption="India Route: Notice-Only Banner with 'Accept all cookies'; NO first-layer 'Reject All' button", width="stretch")
-            st.markdown("""
-            * **Active Groups:** `,C0001,C0003,C0002,C0004,` (All tracking categories pre-active)
-            * **Pre-Consent Cookies:** **55 Cookies**
-            * **Pre-Consent Ad Trackers:** **Active** (Microsoft Clarity & Tapad transmit immediately)
-            * **Statutory Baseline:** Implied consent / notice-only (DPDPA Sec. 6 phased commencement; India CCPA Dark Patterns scrutiny)
-            """)
+            if comp_analysis:
+                in_pre = comp_analysis.get("symmetric_treatment_matrix", {}).get("pre_consent_state", {}).get("MIRO-IN-001", {})
+                st.markdown(f"""
+                * **Active Groups:** `{in_pre.get('onetrust_active_groups', 'N/A')}` (All tracking categories pre-active)
+                * **Pre-Consent Cookies:** **{in_pre.get('cookies_observed', 'N/A')} Cookies**
+                * **Pre-Consent Ad Trackers:** **{in_pre.get('third_party_ad_trackers', 'N/A')} Active** ({in_pre.get('third_party_ad_trackers_note', '')})
+                * **First-Layer Reject All:** `{'✅ Present' if in_pre.get('first_layer_reject_all') else '❌ Absent (Notice-only)'}`
+                """)
 
         st.markdown("---")
         st.subheader("Detailed Forensic Dimension Comparison")
-        comp_df = pd.DataFrame([
-            {"Audit Dimension": "Visitor GeoIP Detected", "🇪🇺 France (EU Route)": "FR / IDF (Europe/Paris)", "🇮🇳 India (Domestic Route)": "IN / DL (Asia/Kolkata)", "Engineering Mechanism": "OneTrust GeoIP lookup via geolocation.onetrust.com"},
-            {"Audit Dimension": "First-Layer 'Reject All' Button", "🇪🇺 France (EU Route)": "✅ Present ('Tout refuser')", "🇮🇳 India (Domestic Route)": "❌ Omitted (Notice-only)", "Engineering Mechanism": "CMP configuration template altered by country code"},
-            {"Audit Dimension": "Pre-Consent Cookie Payload", "🇪🇺 France (EU Route)": "9 Cookies (C0001 under review)", "🇮🇳 India (Domestic Route)": "55 Cookies", "Engineering Mechanism": "Script blocking enforced in EU; pass-through in India"},
-            {"Audit Dimension": "Pre-Consent Behavioral Trackers", "🇪🇺 France (EU Route)": "0 Known Ad Trackers Fired", "🇮🇳 India (Domestic Route)": "Clarity & Tapad Fired", "Engineering Mechanism": "Tag Manager trigger conditions gated by OneTrust groups"},
-            {"Audit Dimension": "Post-Action Outcome", "🇪🇺 France (EU Route)": "Reject All -> 10 Cookies (+1 opt-out)", "🇮🇳 India (Domestic Route)": "Accept All -> 65 Cookies (+10 released)", "Engineering Mechanism": "Conditional release of Google DoubleClick IDE"},
-            {"Audit Dimension": "Regulatory Legal Risk", "🇪🇺 France (EU Route)": "Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements & ePrivacy Directive; withdrawal effectiveness under Art. 7(3) requires separate post-consent withdrawal test", "🇮🇳 India (Domestic Route)": "Prospective DPDPA Sec. 6 risk & India CCPA Dark Patterns Guidelines", "Engineering Mechanism": "Statutory divergence driven by phased commencement"}
-        ])
-        st.dataframe(comp_df, width="stretch", hide_index=True)
+        st.caption("📦 Source: `02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/comparative_analysis.json` — comparison JSON is canonical; app UI is derived from this file.")
+
+        if comp_analysis:
+            stm = comp_analysis.get("symmetric_treatment_matrix", {})
+            eu_pre  = stm.get("pre_consent_state",  {}).get("MIRO-EU-001", {})
+            in_pre  = stm.get("pre_consent_state",  {}).get("MIRO-IN-001", {})
+            eu_acc  = stm.get("post_accept_state",  {}).get("MIRO-EU-001", {})
+            in_acc  = stm.get("post_accept_state",  {}).get("MIRO-IN-001", {})
+            eu_rej  = stm.get("post_reject_state",  {}).get("MIRO-EU-001", {})
+            in_rej  = stm.get("post_reject_state",  {}).get("MIRO-IN-001", {})
+            la_eu   = comp_analysis.get("legal_assessment", {}).get("eu_gdpr", {})
+            la_in   = comp_analysis.get("legal_assessment", {}).get("india_dpdpa", {})
+
+            comp_df = pd.DataFrame([
+                {
+                    "Audit Dimension": "Pre-Consent Cookie Payload",
+                    "🇪🇺 France (EU Route)": f"{eu_pre.get('cookies_observed','N/A')} Cookies — {eu_pre.get('classification_status','')}",
+                    "🇮🇳 India (Domestic Route)": f"{in_pre.get('cookies_observed','N/A')} Cookies — {in_pre.get('classification_status','')}",
+                    "Source": "comparative_analysis.json / symmetric_treatment_matrix / pre_consent_state"
+                },
+                {
+                    "Audit Dimension": "OneTrust Active Groups Pre-Consent",
+                    "🇪🇺 France (EU Route)": eu_pre.get('onetrust_active_groups','N/A'),
+                    "🇮🇳 India (Domestic Route)": in_pre.get('onetrust_active_groups','N/A'),
+                    "Source": "comparative_analysis.json / pre_consent_state"
+                },
+                {
+                    "Audit Dimension": "Pre-Consent Behavioral Trackers",
+                    "🇪🇺 France (EU Route)": f"{eu_pre.get('third_party_ad_trackers','N/A')} trackers — {eu_pre.get('third_party_ad_trackers_note','')}",
+                    "🇮🇳 India (Domestic Route)": f"{in_pre.get('third_party_ad_trackers','N/A')} trackers — {in_pre.get('third_party_ad_trackers_note','')}",
+                    "Source": "comparative_analysis.json / pre_consent_state"
+                },
+                {
+                    "Audit Dimension": "First-Layer 'Reject All' Button",
+                    "🇪🇺 France (EU Route)": "✅ Present ('Tout refuser')" if eu_pre.get("first_layer_reject_all") else "❌ Absent",
+                    "🇮🇳 India (Domestic Route)": "✅ Present" if in_pre.get("first_layer_reject_all") else "❌ Omitted (Notice-only)",
+                    "Source": "comparative_analysis.json / pre_consent_state"
+                },
+                {
+                    "Audit Dimension": "Post-Accept State",
+                    "🇪🇺 France (EU Route)": f"{eu_acc.get('cookies_observed','N/A')} cookies — {eu_acc.get('telemetry_delta','')}",
+                    "🇮🇳 India (Domestic Route)": f"{in_acc.get('cookies_observed','N/A')} cookies — {in_acc.get('telemetry_delta','')}",
+                    "Source": "comparative_analysis.json / post_accept_state"
+                },
+                {
+                    "Audit Dimension": "Post-Reject State",
+                    "🇪🇺 France (EU Route)": f"{eu_rej.get('cookies_observed','N/A')} cookies — {eu_rej.get('telemetry_delta','')}",
+                    "🇮🇳 India (Domestic Route)": f"{in_rej.get('action','N/A')} — {in_rej.get('telemetry_delta','')}",
+                    "Source": "comparative_analysis.json / post_reject_state"
+                },
+                {
+                    "Audit Dimension": "Applicable Legal Framework",
+                    "🇪🇺 France (EU Route)": la_eu.get("applicable_statute", "GDPR & ePrivacy Directive"),
+                    "🇮🇳 India (Domestic Route)": la_in.get("applicable_statute", "DPDPA 2023 / CPA 2019") if la_in else "DPDPA 2023 (phased) & CPA 2019 Dark Patterns Guidelines",
+                    "Source": "comparative_analysis.json / legal_assessment"
+                },
+            ])
+            st.dataframe(comp_df, width="stretch", hide_index=True)
+
+            # Show canonical JSON for transparency
+            with st.expander("📄 View Raw Canonical Comparison JSON (comparative_analysis.json)"):
+                st.json(comp_analysis)
+        else:
+            st.error("comparative_analysis.json not found. Dashboard cannot build comparison table from evidence.")
+
 
     with tab_eu:
         st.subheader("🇪🇺 European Union Route Telemetry Deep-Dive (France IP)")

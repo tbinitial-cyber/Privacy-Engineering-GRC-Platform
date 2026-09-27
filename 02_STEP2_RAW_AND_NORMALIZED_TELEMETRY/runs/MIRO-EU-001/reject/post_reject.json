@@ -105,5 +105,8 @@
       "sameSite": "Lax"
     }
   ],
-  "data_source": "migrated from miro_europe_telemetry.json post_reject block"
+  "data_source": "migrated from miro_europe_telemetry.json post_reject block",
+  "artifact_status": "LEGACY_MIGRATED",
+  "recapture_required": true,
+  "recapture_note": "LEGACY_MIGRATED \u2014 migrated from miro_europe_telemetry.json post_reject block; re-run capture_miro.py --profile eu-france --action reject --proxy <EU_PROXY> to obtain fresh artifact"
 }

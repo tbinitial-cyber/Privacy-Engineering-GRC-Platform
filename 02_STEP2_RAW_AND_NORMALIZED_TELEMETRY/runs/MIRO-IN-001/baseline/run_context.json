@@ -1,30 +1,24 @@
 {
   "audit_run_id": "MIRO-IN-001",
-  "target_url": "https://miro.com",
+  "profile": "india",
+  "action": "baseline",
+  "initial_url": "https://miro.com/",
+  "final_url": "https://miro.com/",
+  "redirect_observed": false,
   "jurisdiction_condition": "INDIA",
   "applicable_framework": "DPDPA 2023 / Consumer Protection Act 2019 (India CCPA)",
-  "ip_country": "IN",
-  "ip_region": "DL",
-  "miro_geo": "IN|India|Delhi|Asia/Kolkata",
-  "cmp_provider": "OneTrust",
-  "cmp_rule_detected": "Notice-Only / Opt-Out Configuration",
-  "consent_model": "NOTICE_OPT_OUT",
-  "browser": "Chromium",
-  "headless": true,
-  "pre_consent_cookies_count": 55,
-  "pre_consent_active_groups": ",C0001,C0003,C0002,C0004,",
-  "first_layer_reject_all_visible": false,
-  "pre_consent_ad_trackers_fired": [
-    "Microsoft Clarity (c.clarity.ms)",
-    "Tapad (pixel.tapad.com)",
-    "Hotjar (static.hotjar.com)"
-  ],
-  "post_accept_action": "Clicked 'Accept all cookies'",
-  "post_accept_cookies_count": 65,
-  "post_accept_gated_released": [
-    "IDE (Google DoubleClick)",
-    "_fbp (Meta/Facebook)"
-  ],
-  "post_reject_action": "First-layer 'Reject All' button unavailable in observed domestic interface",
-  "action": "baseline"
+  "proxy_used": null,
+  "onetrust_geoip_captured": {
+    "country": "IN",
+    "state": "DL",
+    "stateName": "Delhi",
+    "continent": "AS"
+  },
+  "miro_geo_cookie": "IN|India|Delhi|Asia/Kolkata",
+  "pre_consent_cookie_count": 60,
+  "pre_consent_active_groups": ",C0007,C0004,C0001,C0002,C0003,",
+  "first_layer_reject_all_visible": true,
+  "first_layer_accept_all_visible": true,
+  "captured_at": "2026-09-27T17:40:40.441977+00:00",
+  "temporal_confound_note": "Runs captured at different calendar dates introduce potential confounds (site changes, A/B experiments, vendor config changes). For production-grade audit, both jurisdictions must be captured in the same session window."
 }

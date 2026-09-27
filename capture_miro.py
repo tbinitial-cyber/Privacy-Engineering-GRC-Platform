@@ -273,7 +273,7 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         await context.close()
         await browser.close()
 
-    print(f"🎉 Capture complete! Artifacts verified in {output_dir}")
+    print(f"Capture complete. Artifacts in: {output_dir}")
 
 def main():
     parser = argparse.ArgumentParser(description="Miro.com Standardized Telemetry Capture CLI")

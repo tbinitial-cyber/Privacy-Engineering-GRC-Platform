@@ -1,11 +1,29 @@
 {
-  "collection_started": "2026-09-24T10:31:28.118108+00:00",
-  "baseline_started": "2026-09-24T10:31:29.459686+00:00",
-  "baseline_completed": "2026-09-24T10:31:36.761245+00:00",
-  "target": "https://www.miro.com",
+  "audit_run_id": "MIRO-IN-001",
+  "profile": "india",
+  "jurisdiction": "INDIA",
+  "timestamp": "2026-09-27T17:40:40.412853+00:00",
+  "initial_url": "https://miro.com/",
   "final_url": "https://miro.com/",
-  "title": "AI Innovation Workspace | Miro",
+  "redirect_observed": false,
+  "target": "https://miro.com/",
   "consent_state": "PRE_CONSENT",
+  "onetrust_geoip": {
+    "country": "IN",
+    "state": "DL",
+    "stateName": "Delhi",
+    "continent": "AS"
+  },
+  "geo_data_cookie": "IN|India|Delhi|Asia/Kolkata",
+  "optanon_consent_cookie": "isGpcEnabled=0&datestamp=Sun+Sep+27+2026+23%3A10%3A36+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0007%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1%2CC0003%3A1",
+  "active_groups": ",C0007,C0004,C0001,C0002,C0003,",
+  "banner_visible": true,
+  "banner_text": "Cookies, anyone?\nBy clicking \u201cAccept All Cookies\u201d, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nCookies Settings\nReject All\nAccept All Cookies",
+  "buttons": {
+    "accept_all": true,
+    "reject_all": true
+  },
+  "cookie_count": 60,
   "cookies": [
     {
       "name": "geo_data",
@@ -19,10 +37,10 @@
     },
     {
       "name": "ajs_anonymous_id",
-      "value": "%222e6133bb-ed33-49f4-85ee-edea445f4367%22",
+      "value": "%22be60e7fc-e29f-4070-a69c-7912ca9d9d4f%22",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1821781889.922494,
+      "expires": 1822066833.683515,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -32,7 +50,7 @@
       "value": "off",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790246009.922704,
+      "expires": 1790530953.68417,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -49,10 +67,10 @@
     },
     {
       "name": "__ff",
-      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"off\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
+      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v1\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790246011.533657,
+      "expires": 1790530955.138884,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -72,7 +90,7 @@
       "value": "undefined",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1792837891,
+      "expires": 1793122836,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -82,7 +100,7 @@
       "value": "undefined",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1792837891,
+      "expires": 1793122836,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -92,14 +110,14 @@
       "value": "1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1792837892,
+      "expires": 1793122836,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "sessionTimer",
-      "value": "1790245892557",
+      "value": "1790530836658",
       "domain": "miro.com",
       "path": "/",
       "expires": -1,
@@ -108,58 +126,38 @@
       "sameSite": "Lax"
     },
     {
+      "name": "__cf_bm",
+      "value": "33XwqJezXhIANNqh9r.EVXSWemXD3fHEn9tBJw97MSA-1790530836.5301893-1.0.1.1-lAAm.8crOwQN3bvXQa25.qTcoO_koVpLyNDWQQXVlEkGq6IjGTXjzkysNR4L0.guRlB5NCgGAGc8SFSd0xI3VLUjOak4n6LAbEJtdW0X_yFWOzKJmtFouIhueVmFB9HB",
+      "domain": ".g2crowd.com",
+      "path": "/",
+      "expires": 1790532636.746797,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Thu+Sep+24+2026+16%3A01%3A32+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0007%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1%2CC0003%3A1",
+      "value": "isGpcEnabled=0&datestamp=Sun+Sep+27+2026+23%3A10%3A36+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0007%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1%2CC0003%3A1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1821781892,
+      "expires": 1822066836,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__cf_bm",
-      "value": "pk4U_IJ7V_RBoz84Op920C1wbkN6rpYMJFAvhpnmFno-1790245894.072279-1.0.1.1-oNPD7T4pX39qIIBF7KH2LfHzDdcQrpzkutp2Av3uRCFQ8E3M55hpHViEbTW7bHMHj66LOyCEctt4uzG0Sca4hIrvIOcaVud0MGQzKKg2HXSppEVGFJzZmakkP0xlFG2w",
-      "domain": ".g2crowd.com",
-      "path": "/",
-      "expires": 1790247692.683155,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_rdt_uuid",
-      "value": "1790245892716.a04264b1-c9ad-4d44-9a6d-275a2f93bd0d",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798021892,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "__pdst",
-      "value": "b71ec88b48a64317b38dd7a11bb8de50",
-      "domain": "miro.com",
-      "path": "/",
-      "expires": 1821781892,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "xlOzPX0bDwARW77UrqleoRH.C4akJYmGJQRRw8cxCqw-1790245894.2321029-1.0.1.1-k.c2D4M8BGSiy9WGLQKYXqBmQePGAFYryI70XTEPlGlNbuK6n_5nsZvza0zRslSbWgQX0lqODPRWNBazUTwukGnbZd4XzdrB9EGSzD1y5wYqqfr5vR3fESSKa5jagx3m",
+      "value": "TSTpGC9QxSBc3imLNVuKdJhAVjLP25Kj_ssMgVjMSjU-1790530836.6706586-1.0.1.1-Stg_2e9qxqXMf2jObsEfCUIpVhQEHFinE52oRavFWHdTLfFxoNOAey1SQdCMJbs9D5A3nFQ13jGG4SoHtwmJy.G9ZNZfIcb6Q0KtRa5GokWneNdfh33nfxCZUHuW7_ZZ",
       "domain": ".bzrcdn.openai.com",
       "path": "/",
-      "expires": 1790247692.830835,
+      "expires": 1790532636.883017,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_cfuvid",
-      "value": "j_yQh8yQFESfPTD2Jn8JIIeT5jTHGazYR4DaknH1Rd4-1790245894.2321029-1.0.1.1-QJ32_PUAlwL2zajfdkMCPlLeg3.NjZAnBOIAZiwGuJk",
+      "value": "8iaDHZ_3XFy9RIzUjAWldOwSaTy3I9XSWIqQQ210SOM-1790530836.6706586-1.0.1.1-JxdXaB3u4cmNPYs1Tb2W6iaFHxBWw_PVJmBfNMgQbRQ",
       "domain": ".bzrcdn.openai.com",
       "path": "/",
       "expires": -1,
@@ -168,241 +166,181 @@
       "sameSite": "None"
     },
     {
+      "name": "__pdst",
+      "value": "12ff26c3cd6a4e5a82a9a9b571b374a6",
+      "domain": "miro.com",
+      "path": "/",
+      "expires": 1822066836,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
       "name": "CLID",
-      "value": "9c4088b18f4b4b4bb29754d1f3dc172e.20260924.20270924",
+      "value": "8cc4d4b6828349578d4af3ad6a8e5614.20260927.20270927",
       "domain": "www.clarity.ms",
       "path": "/",
-      "expires": 1821781892.959575,
+      "expires": 1822066836.944325,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "_fbp",
-      "value": "fb.1.1790245892990.808359835328696888",
+      "name": "_rdt_uuid",
+      "value": "1790530836974.e28841dc-cb69-495c-81fb-d3cb92cb3771",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1798021892,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "fr",
-      "value": "0aLskW9eXN1tbwA86..BqtPwG...1.0.BqtPwG.AWcflw9PmfrQQxXw0z_Uqa9zncU",
-      "domain": ".facebook.com",
-      "path": "/",
-      "expires": 1798021893.117062,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "i_NvJfDU0gjA_HaeUmQbj7IEj9xm1z_TcPPV.2stT5I-1790245894.4266202-1.0.1.1-H4lypsrWM6vhi0piec3esgqsd4ZhJ9yCTzekjtXm0uepjcBf2jdeIKWDjuSNOvuByjFPrxqC1AidaeArmb4Xzjvt5gIeDcQD7RSeCc_ib4asqbFNwjw7MytR8xfKrGBv",
-      "domain": ".g2.com",
-      "path": "/",
-      "expires": 1790247693.254651,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "signals-sdk-user-id",
-      "value": "bf6a64fb-9944-4706-ad0e-0361fdebb1cc",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1821781893,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "signals-sdk-session-id",
-      "value": "34d8ad34-b1e8-4eb9-adc8-2f62609cfc0a",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790247693,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_uetsid",
-      "value": "1cd60780b80311f1a547814dcf6dcad2",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790332293,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_uetvid",
-      "value": "1cd643d0b80311f1a162650438fff424",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1823941893,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_clck",
-      "value": "1ms975%5E2%5Eg9q%5E0%5E2458",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1821781893,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".bat.bing.com",
-      "path": "/",
-      "expires": 1790850693.5835,
+      "expires": 1798306836,
       "httpOnly": false,
       "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bcookie",
-      "value": "\"v=2&b20d7c08-dc27-401f-8c5f-3ef15a21efa8\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1821781894.592228,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "lidc",
-      "value": "\"b=TGST09:s=T:r=T:a=T:p=T:g=3345:u=1:x=1:i=1790245894:t=1790332294:v=2:sig=AQH9FE0rEIy7OKZ5FWQInfpzJLTHi0t-\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1790332293.509433,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "pa6A7nuv8idCFmP.nJkqAYW1B0KEuMIhyMPdQJoed4c-1790245894.63076-1.0.1.1-kdcSe2PscyfbZfTiN4WDnEAoBWaOT1u7qURNDtEo9bMjtJ2zuw58w_zVO7lcDav7d2bO3bNUxveS1q6AZnHy3UX94t6TZ9NQtudAhk5E9JcrthODxPnvX2Az1yjNm.L7",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1790247693.509475,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AWSALBCORS",
-      "value": "wlYvj7FpdIr5RvwbHXEc/ta1D8ckFP1boUcTwdgsgEOWcMP4hMcjzVb6nNIOu8VoI5avbwk+DmE/8Y70DbHlZrHxy70k4yUA8hKEIkqnnypmKIJFJ3Nr6BixRo5I",
-      "domain": "nld1rtp1-cdn.marketo.com",
-      "path": "/",
-      "expires": 1790850693.584176,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_TS",
-      "value": "1790245895124",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1795429893.915763,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_DID",
-      "value": "6ebfdf32-0852-4be7-9bcd-9d5e9c5f9fdd",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1795429893.915849,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MUID",
-      "value": "08A683D595446F612334940B94376EB7",
-      "domain": ".bing.com",
-      "path": "/",
-      "expires": 1823941894.863682,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1790850694.863818,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "SRM_B",
-      "value": "08A683D595446F612334940B94376EB7",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1823941894.863858,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_3WAY_SYNCS",
-      "value": "",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1795429893.915882,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
+      "sameSite": "Strict"
     },
     {
       "name": "__obref",
-      "value": "c5b26c94-0c42-4318-81a3-1658c620bf60",
+      "value": "c2e051f6-89b1-451d-a623-06f957359159",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1821781893.981613,
+      "expires": 1822066837.066808,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "_mkto_trk",
-      "value": "id:228-GPV-835&token:_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1",
+      "value": "id:228-GPV-835&token:_mch-miro.com-ae68c51dd386f0433d8358649e9dd573",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1824805893.984313,
+      "expires": 1825090837.21807,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "_hjSessionUser_763128",
-      "value": "eyJpZCI6ImZjYmFkM2ZhLWYyOTEtNTAyYS05YzhlLWQ4MTNhNTIxM2JkZSIsImNyZWF0ZWQiOjE3OTAyNDU4OTQwMTcsImV4aXN0aW5nIjpmYWxzZX0=",
+      "name": "__cf_bm",
+      "value": "abrsqP9wyIi92hUC3.mXfeq9qySpmvdNqWFdrEvKSXE-1790530836.8876395-1.0.1.1-lhRHIeskrU8I1xek4QSbSEvpDQHtEGNuFJYmihe6ny8rPfcVoRa.U0Y1IL9nwIXT_ZIYc_eEF_6f2uT66SLzq797JbvAiVv8e5O.cIrg2S0kJl4TcTaaMaud14..RFRP",
+      "domain": ".g2.com",
+      "path": "/",
+      "expires": 1790532637.34767,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1790530837405.733868806122344441",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1821781894,
+      "expires": 1798306837,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=OGST05:s=O:r=O:a=O:p=O:g=3680:u=1:x=1:i=1790530837:t=1790617237:v=2:sig=AQFSriGSZVF6N4tYsFNkAomt8BQhmSSA\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1790617237.462631,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "_hjSession_763128",
-      "value": "eyJpZCI6IjY0ZTQ1NDkzLTk4ZTAtNDc5NS05ZDcwLTVjYzE0YTg4NGUwOSIsImMiOjE3OTAyNDU4OTQwMTgsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=",
+      "name": "__cf_bm",
+      "value": "miV.QmAseoUHE2MIcsP2RNSHNiO9V6kUupB1PX9VLLk-1790530836.9987664-1.0.1.1-HeskfSCRv..0LJ1cfCaNYNBx_cXrtQFeK2ftjO2Ihi.gxlFrNeGW0fNOS.gD19d5yMU.17aMexql5.e2BaW6cWYFxlx.8SRKJaJ_G7YWyFFw0Ac5YaHPwvyzu7Q.rnAk",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1790532637.462685,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "signals-sdk-user-id",
+      "value": "d07e9340-5086-4fdc-8c6a-f7cf798950cc",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1790247694,
+      "expires": 1822066837,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "signals-sdk-session-id",
+      "value": "a92d7b6b-9a40-4c3a-bf7f-c90c85c2aa13",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790532637,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clck",
+      "value": "17wq8sn%5E2%5Eg9t%5E0%5E2461",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1822066837,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetsid",
+      "value": "8cd70af0ba9a11f1825c8552e7c009cd",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790617237,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetvid",
+      "value": "8cd73210ba9a11f198d237716e479ebd",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1824226837,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TapAd_TS",
+      "value": "1790530837378",
+      "domain": ".tapad.com",
+      "path": "/",
+      "expires": 1795714838.019591,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "TapAd_DID",
+      "value": "9a3e855b-8ebe-478f-817e-75c0c6337e03",
+      "domain": ".tapad.com",
+      "path": "/",
+      "expires": 1795714838.019695,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1791135638.641252,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "18E8564317036E75102641A216FB6F2B",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1824226838.641276,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -419,10 +357,10 @@
     },
     {
       "name": "MUID",
-      "value": "08A683D595446F612334940B94376EB7",
+      "value": "18E8564317036E75102641A216FB6F2B",
       "domain": ".clarity.ms",
       "path": "/",
-      "expires": 1823941894.022686,
+      "expires": 1824226837.806607,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -432,7 +370,7 @@
       "value": "0",
       "domain": ".c.clarity.ms",
       "path": "/",
-      "expires": 1790850694.02275,
+      "expires": 1791135637.806671,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -442,338 +380,256 @@
       "value": "0",
       "domain": ".c.clarity.ms",
       "path": "/",
-      "expires": 1790246494.022781,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "trwv.uid",
-      "value": "realtimeboard-1790245894100-d6064adb%3A1",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1824805894.100957,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "trwsa.sid",
-      "value": "realtimeboard-1790245894101-3cae35b1%3A1",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790247694,
+      "expires": 1790531437.806699,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "li_sugr",
-      "value": "614e3d1c-5ded-4f0b-b6b1-d891a37c83d4",
+      "value": "347d5e5f-81c6-4442-b4f8-5cfc94f128e4",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1798021894.592059,
+      "expires": 1798306838.441895,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "intercom-id-fsupkyat",
-      "value": "9669716a-a662-4a7b-886d-bdda6e154dfc",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1813575894,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "intercom-session-fsupkyat",
-      "value": "",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790850694,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "intercom-device-id-fsupkyat",
-      "value": "ee1fed38-1324-48c8-9953-da41b158ebeb",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1813575894,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_clsk",
-      "value": "ufqlqm%5E1790245894466%5E1%5E1%5El.clarity.ms%2Fcollect",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790332294,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_gcl_au",
-      "value": "1.1.791566007.1790245894",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798021894,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "UserMatchHistory",
-      "value": "AQKiMTho9tifHQAAAaDS-H6vnxfKtcqu5BmmbnQcfMByHYpkSV_B1j-PjMbbnzD5z9n9Mc2FMo2N7A",
+      "value": "AQIM5dfXWbVOnQAAAaDj9Fuv1pVwDwho4vnPmvJrkWBAfrwAlueIItWR2A-pl8ZqZWDDyw59n8GxEA",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1792837894.592153,
+      "expires": 1793122837.807639,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "AnalyticsSyncHistory",
-      "value": "AQLoJCKcd1dvMQAAAaDS-H6vIwDWgWzK1X_Qbmoz6u0CE6OZtdEpN2CcZHHirzbBJNHWy5QZ06cFe6UDUX3pOA",
+      "value": "AQKui9tF_tpJqgAAAaDj9FuvhUSoeBHQlp8ied11ybhtk6WyTJhP6k8tQ4RiIggfvoGHwfvjsLXs82ZUsuzMtw",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1792837894.592187,
+      "expires": 1793122837.807709,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "_ga_FK1CGSZNDB",
-      "value": "GS2.1.s1790245893$o1$g0$t1790245893$j60$l0$h0",
+      "name": "bcookie",
+      "value": "\"v=2&b27fd579-40aa-4d1f-8e77-af4f483332c0\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1822066838.442071,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".bat.bing.com",
+      "path": "/",
+      "expires": 1791135637.899695,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "3D314D310854617C14395AD009AC6034",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1824226837.899631,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "TapAd_3WAY_SYNCS",
+      "value": "",
+      "domain": ".tapad.com",
+      "path": "/",
+      "expires": 1795714838.019738,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AWSALBCORS",
+      "value": "64cbQVJJZ47g03jXqnQ0nn1bD52u3Psz+uWHnjm8oNzi4h4VSrZ1k1a/NMxMeBdWdaqVWhRJYa/ejryQQpJ61HXOvscdhI4bzfAX0IGcVli69tqapsSP9TcbUUSW",
+      "domain": "nld1rtp1-cdn.marketo.com",
+      "path": "/",
+      "expires": 1791135638.04555,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bscookie",
+      "value": "\"v=1&20260927174037520c0084-dd19-4dc1-8deb-51b3db00ba6aAQF3IKC0hAPaf6pVAOpAU4IXwErj0KF9\"",
+      "domain": ".www.linkedin.com",
+      "path": "/",
+      "expires": 1822066838.151193,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.662346202.1790530838",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1824805894.61458,
+      "expires": 1798306838,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_FK1CGSZNDB",
+      "value": "GS2.1.s1790530837$o1$g0$t1790530837$j60$l0$h0",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1825090838.456443,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.1983538274.1790245895",
+      "value": "GA1.1.509709958.1790530838",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1824805894.615164,
+      "expires": 1825090838.457112,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
+    },
+    {
+      "name": "trwv.uid",
+      "value": "realtimeboard-1790530838503-1ba7ff04%3A1",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1825090838.504505,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "trwsa.sid",
+      "value": "realtimeboard-1790530838504-4d1214ab%3A1",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790532638,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clsk",
+      "value": "118xn89%5E1790530838543%5E1%5E1%5El.clarity.ms%2Fcollect",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790617238,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUnsD-VipEoLT9qrEaEmhH2KRyMA2zHw5PRKiTXdtEfebaMT5UFP6NbrV4UGaL8",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1825090838.958639,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "pPzWJGPcorsMde8jE._cTZZTZZbOkUPYemW9lnC9YiM-1790530838.4812853-1.0.1.1-Tp1pOLW.tRjJN_.wqKe2mwW7Yhux6mJgZmoq58L1UVfVXW1aXHTv49fo3gztzzEDfYqHOyc28EXf1VjBPn6K1onmJOr20hsL17jRT115hkQD7vWxChgqy_MZ4T56vp2i",
+      "domain": ".bzr.openai.com",
+      "path": "/",
+      "expires": 1790532639.004959,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cfuvid",
+      "value": "yusaqMlgJEaV9wxX5eqGceNOQOZmgN.h8UwoTVwmgPU-1790530838.4812853-1.0.1.1-_Z.VkJWsP0vm.9kFH_86o4QfBQSlOUxuon9uzBX1vYw",
+      "domain": ".bzr.openai.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AWSALBCORS",
+      "value": "Vewiiige1PPCMMmMcMV909mtkWiAlldtj6p5TNUHWLqYVM+QxIy1kLOZO1lycYNXTwXx2x7zs9G5Tel8YzN0u4Z5yLYai/sAp8I7oiy69AxAsouVBOf29aBgDGun",
+      "domain": "nld1rtp1.marketo.com",
+      "path": "/",
+      "expires": 1791135639.312403,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-YNID",
+      "value": "22.YT=rPJLtAGJO_eEBIZaLjZ2qxzemHmX4T3x3eKIU0WDAkXI0-l1iW70_9dOwPHlPvcep9sPNEoh6YXQcYyn2rs3jhZwpY0Z912r01PUExR1TxHkiPcQYD2oGGGfnTpABzLxD_K-WgpKUAFlntJW7rFC5Q0V1B-47Uth5tnOAGbcnaS_-jTBH5n3KR9QUvyxAhBpLIYOdv_KwSSDE3myfOlr_5bhuPUH4CsJqliAfCftvZxSmCPMTtFfDZkPxntQhO4sGoLBZROKhM6NJHrC17MjQ2YD7Cw-Qu7YwQAlitu42-30wcun38KK8E-z7GzGkbRHOSzN8sAX8hlg3l9DGJPXvg",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806082839.376092,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://miro.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "YSC",
+      "value": "BOEJvlmgE2E",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "VISITOR_INFO1_LIVE",
+      "value": "tR0wCznJ58I",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806082839.376544,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "VISITOR_PRIVACY_METADATA",
+      "value": "CgJJThIEGgAgSg%3D%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806082839.376586,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-ROLLOUT_TOKEN",
+      "value": "CIXIwrb1g_axkAEQqdr-lKePlwMYqdr-lKePlwM%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806082839.376625,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://miro.com",
+      "_crHasCrossSiteAncestor": true
     }
   ],
-  "local_storage": {
-    "lastExternalReferrerTime": "1790245892971",
-    "_uetvid_exp": "Tue, 19 Oct 2027 10:31:33 GMT",
-    "_uetsid_exp": "Fri, 25 Sep 2026 10:31:33 GMT",
-    "_uetvid": "1cd643d0b80311f1a162650438fff424",
-    "__anon_id": "\"a981e648-c6b5-412f-9508-8b2df686aafb\"",
-    "g2tracking": "{\"20260824\":[\",Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/148.0.0.0Safari/537.36,1280x720,en-US,-330,3946,,\"]}",
-    "lastExternalReferrer": "empty",
-    "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":1,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1790245894500},\"expires\":1798021894500},\"gsid_dc\":{\"value\":{\"joinId\":\"MKLkeUnHPyZccqOdUAjW2FJ6yHaT690fRQ\",\"lastJoinedTimeMs\":1790245894550},\"expires\":1790246194550}}",
-    "intercom.intercom-state-fsupkyat": "{\"app\":{\"openConfig\":{\"unifiedStyling\":true,\"openTo\":\"conversation\",\"spaces\":[{\"type\":\"messages\",\"label\":\"Messages\",\"navigationLabel\":\"Messages\",\"badge\":null}],\"userHasReceivedChecklists\":false,\"userHasLiveNewsfeed\":false,\"userHasTickets\":false},\"selfServeSuggestionsMatch\":false,\"name\":\"Mira\",\"features\":{\"anonymousInboundMessages\":true,\"googleAnalytics\":false,\"hubspotInstalled\":false,\"inboundMessages\":true,\"marketoEnrichmentInstalled\":false,\"googleAnalytics4Integration\":true,\"improveOpenBehavior\":false,\"messengerErrorCallbacks\":false},\"helpCenterSiteUrl\":\"https://intercom.help/miro-demand-gen\",\"inboundConversationsDisabled\":false,\"isDeveloperWorkspace\":false,\"customGoogleAnalyticsTrackerId\":null},\"launcher\":{\"isLauncherEnabled\":false},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":false},\"launcherSettings\":{\"alignment\":\"right\",\"color\":\"#0071b2\",\"colorDark\":\"#0071b2\",\"hasRequiredFeatures\":true,\"horizontalPadding\":20,\"instantBootEnabled\":false,\"launcherLogoUrl\":null,\"launcherLogoDarkUrl\":null,\"messengerLayout\":\"widget\",\"messengerModeSwitcherEnabled\":false,\"secondaryColor\":\"#0071b2\",\"secondaryColorDark\":\"#0071b2\",\"showLauncher\":false,\"themeMode\":\"system\",\"updatedAt\":1790223947,\"verticalPadding\":20,\"showBookMeetingButton\":false,\"isLoading\":false},\"user\":{\"id\":\"6ab4fc072a09d0e006198b98\",\"role\":\"visitor\",\"locale\":\"en-us\",\"hasConversations\":false},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{},\"lastOpenAtTimestamp\":1790245894369},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"isInitialized\":false,\"navigationQueue\":[]}}",
-    "_uetsid": "1cd60780b80311f1a547814dcf6dcad2",
-    "li_adsId": "af5436a0-44de-4dd9-b787-b7ed44a3785a"
-  },
-  "session_storage": {
-    "SESSION_ID_KEY": "f78178e4-8f67-4470-87f7-82587c46a0ea",
-    "_rdt_cfg": "{\"pixelId\":\"t2_mxmmhsm8\",\"esc\":{\"page_metadata\":true}}",
-    "__pdst": "1576117986d14c038da04eee23552bc2",
-    "_cltk": "sefilg"
-  },
-  "script_urls": [
-    "https://a.quora.com/qevents.js",
-    "https://bat.bing.com/bat.js",
-    "https://bat.bing.com/p/action/5798164.js",
-    "https://bzrcdn.openai.com/sdk/oaiq.min.js",
-    "https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/otSDKStub.js",
-    "https://cdn.cookielaw.org/scripttemplates/202408.1.0/otBannerSdk.js",
-    "https://cdn.cr-relay.com/v1/site/4a3f2aa6-fd84-4177-aea4-c2fe259a8256/signals.js",
-    "https://cdn.getsmartcontent.com/DQM58VVM.js",
-    "https://cdn.pdst.fm/ping.min.js",
-    "https://connect.facebook.net/en_US/fbevents.js",
-    "https://connect.facebook.net/signals/config/1788119838315928?v=2.9.408&r=stable&domain=miro.com&hme=f9ad993bedcdbb3fffd47532e189463ba18afe816a0bd364070ce559e4a6ac26&ex_m=117%2C239%2C169%2C27%2C81%2C82%2C160%2C77%2C76%2C11%2C179%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C174%2C181%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C161%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C162%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C164%2C163%2C165%2C156%2C154%2C30%2C42%2C66%2C122%2C176%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C175%2C178%2C41%2C56%2C126%2C54%2C183%2C109%2C182%2C208%2C253%2C83%2C267%2C266%2C265%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C170%2C85%2C173%2C171%2C172%2C57%2C67%2C136%2C19%2C177%2C52%2C316%2C317%2C318%2C315%2C331%2C356%2C246%2C235%2C69%2C236%2C234%2C359%2C350%2C59%2C247%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C71%2C166%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C180%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C185%2C186%2C105%2C106%2C9%2C115%2C184%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C167%2C50%2C158%2C0%2C93%2C151%2C155%2C168%2C45%2C121%2C13%2C187",
-    "https://events.framer.com/script?v=2",
-    "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/script_main.BMANVIVx.mjs",
-    "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/382441813/?random=1790245893970&cv=11&fst=1790245893970&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v889634115z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118131809~118897920~118897930~120213116~120385423~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=16&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&userId=%25222e6133bb-ed33-49f4-85ee-edea445f4367%2522&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=4",
-    "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/726271593/?random=1790245893913&cv=11&fst=1790245893913&bg=ffffff&guid=ON&async=1&gtm=45be69n0h2v876641257z8830648269za20gzb830648269zd830648269xeaxf1&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~120213116~120385422~120469145~120469153&u_w=1280&u_h=720&url=https%3A%2F%2Fmiro.com%2F&rcb=5&frm=0&tiba=AI%20Innovation%20Workspace%20%7C%20Miro&did=dNzMyY2%2CdYWJhMj&gdid=dNzMyY2.dYWJhMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=791566007.1790245894&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.96&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&ept=9&rfmt=3&fmt=4",
-    "https://mirostatic.com/website/services-provider-scripts/optanonWrapper.js",
-    "https://mirostatic.com/website/static/production-eu/framer-code-components/web-tracker.esm.js",
-    "https://munchkin.marketo.net/165/munchkin.js",
-    "https://munchkin.marketo.net/munchkin.js",
-    "https://nld1rtp1-cdn.marketo.com/rtp-api/v1/rtp.js?aid=realtimeboard",
-    "https://nld1rtp1.marketo.com/gw1/msg?a=2&sid=realtimeboard-1790245894101-3cae35b1&aid=realtimeboard&ma=id%3A228-GPV-835%26token%3A_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&viewedTypes=&0.6921921090987054&rts=1790245894166",
-    "https://nld1rtp1.marketo.com/gw1/trw?aid=realtimeboard&trwv.uid=realtimeboard-1790245894100-d6064adb&trwv.vc=1&trwsa.sid=realtimeboard-1790245894101-3cae35b1&trwsb.cpv=1&ctzo=+05:30&uri=https%3A%2F%2Fmiro.com%2F&ma=id%3A228-GPV-835%26token%3A_mch-miro.com-b11add30125088bb2eb2936e2acbb9a1&pm=&viewedTypes=&rts=1790245894102",
-    "https://pixel.byspotify.com/ping.min.js",
-    "https://rtp-static.marketo.com/rtp/libs/ga-integration-2.0.5.js",
-    "https://rtp-static.marketo.com/rtp/libs/jquery/3.7.0/jquery.min.js",
-    "https://script.getreditus.com/v2.js",
-    "https://script.hotjar.com/modules.e762be2b6b709245aabb.js",
-    "https://scripts.appbind.com/v0/skyhook.js",
-    "https://scripts.clarity.ms/0.8.70/clarity.js",
-    "https://snap.licdn.com/li.lms-analytics/insight.min.js",
-    "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
-    "https://static.hotjar.com/c/hotjar-763128.js?sv=7",
-    "https://tag.clearbitscripts.com/v1/pk_ffc0d0810226847786b05e7193234567/tags.js",
-    "https://tracking.g2crowd.com/attribution_tracking/conversions/3946.js?p=https://miro.com/&e=",
-    "https://trk.techtarget.com/tracking.js",
-    "https://widget.intercom.io/widget/fsupkyat",
-    "https://www.clarity.ms/tag/hn9ca7nm9h",
-    "https://www.googletagmanager.com/gtag/destination?id=AW-382441813&cx=c&gtm=4e69n0h2",
-    "https://www.googletagmanager.com/gtag/destination?id=AW-726271593&cx=c&gtm=4e69n0h2",
-    "https://www.googletagmanager.com/gtag/destination?id=AW-972905154&cx=c&gtm=4e69n0h2",
-    "https://www.googletagmanager.com/gtag/destination?id=DC-11345867&cx=c&gtm=4e69n0h2",
-    "https://www.googletagmanager.com/gtag/destination?id=DC-12017650&cx=c&gtm=4e69n0h2",
-    "https://www.googletagmanager.com/gtag/js?id=G-FK1CGSZNDB&cx=c&gtm=4e69n0h2",
-    "https://www.googletagmanager.com/gtm.js?id=GTM-N5MCLT8",
-    "https://www.redditstatic.com/ads/pixel.js"
-  ],
-  "link_urls": [
-    {
-      "rel": "canonical",
-      "href": "https://miro.com/"
-    },
-    {
-      "rel": "icon",
-      "href": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
-    },
-    {
-      "rel": "icon",
-      "href": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png"
-    },
-    {
-      "rel": "preconnect",
-      "href": "https://fonts.gstatic.com/"
-    },
-    {
-      "rel": "stylesheet",
-      "href": "https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:ital,wght@0,400&display=swap"
-    },
-    {
-      "rel": "preconnect",
-      "href": "https://fonts.gstatic.com/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/de/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/fr/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/ja/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/es/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/pt/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/ko/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/pl/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/da/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/fi/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/it/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/nb/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/nl/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/ru/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/sv/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/th/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/tr/"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://miro.com/"
-    },
-    {
-      "rel": "stylesheet",
-      "href": "https://static-website.miro.com/miro-site-lp-build-assets/assets/styles/one-trust-cookie-banner.css"
-    },
-    {
-      "rel": "stylesheet",
-      "href": "https://rtp-static.marketo.com/rtp/libs/jquery-ui-insightera-custom-1.9.6.css"
-    },
-    {
-      "rel": "preconnect",
-      "href": "https://i.ytimg.com/"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/rolldown-runtime.Dh6celcD.mjs"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/react.DoA55duw.mjs"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/framer.CXS9Z_P9.mjs"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/motion.00bxZqWM.mjs"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/T-PdX224_Kp9O52vyjM8dGW3WXEM085y5SsF9XoZfZs.DK6N-l7v.mjs"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/shared-lib.BK9Q3u9e.mjs"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/Interactive_animated_gradient.BchoQ0J_.mjs"
-    },
-    {
-      "rel": "modulepreload",
-      "href": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/FLgq0w7ZOK-Hka8VjUHuTXbl2yhxoRVLGCvHD52oZ50.F5Caf4Is.mjs"
-    }
-  ]
+  "total_responses_captured": 227,
+  "set_cookie_responses": 0
 }

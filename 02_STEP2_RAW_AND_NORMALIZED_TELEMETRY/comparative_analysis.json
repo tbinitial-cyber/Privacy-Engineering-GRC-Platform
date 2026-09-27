@@ -3,7 +3,10 @@
     "target": "https://miro.com",
     "cmp_vendor": "OneTrust",
     "generated_at": "2026-09-26T22:48:00Z",
-    "core_finding": "Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions during the captured test runs."
+    "core_finding": "Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions during the captured test runs.",
+    "fresh_india_captured_at": "2026-09-27T17:40:40.412853+00:00",
+    "eu_artifact_status": "LEGACY_MIGRATED \u2014 EU artifacts require re-capture with EU residential proxy. EU data reflects prior captured session (France GeoIP confirmed). India data is fresh-captured on 2026-09-27T17:40:40.412853+00:00.",
+    "data_provenance_note": "IMPORTANT: India and EU captures were performed on different dates. Same-session paired capture required for production-grade causal attribution."
   },
   "runs_evaluated": [
     "MIRO-IN-001",
@@ -20,12 +23,22 @@
         "classification_status": "Category C0001 active in OneTrust; 9 client-side cookies observed (purpose classification under review, including ajs_anonymous_id)"
       },
       "MIRO-IN-001": {
-        "cookies_observed": 55,
-        "onetrust_active_groups": ",C0001,C0003,C0002,C0004,",
+        "cookies_observed": 60,
+        "onetrust_active_groups": ",C0007,C0004,C0001,C0002,C0003,",
         "third_party_ad_trackers": 3,
         "third_party_ad_trackers_note": "3 known third-party tracking beacons (Microsoft Clarity, Tapad, Hotjar) transmitting pre-consent",
         "first_layer_reject_all": false,
-        "classification_status": "Categories C0001–C0004 pre-activated; third-party tracking beacons (Microsoft Clarity, Tapad, Hotjar) transmit prior to user interaction"
+        "classification_status": "Categories C0001\u2013C0004 pre-activated; third-party tracking beacons (Microsoft Clarity, Tapad, Hotjar) transmit prior to user interaction",
+        "onetrust_geoip": {
+          "country": "IN",
+          "state": "DL",
+          "stateName": "Delhi",
+          "continent": "AS"
+        },
+        "capture_timestamp": "2026-09-27T17:40:40.412853+00:00",
+        "capture_id": "MIRO-IN-001-BASELINE-FRESH",
+        "artifact_status": "FRESH_CAPTURE",
+        "note_cookie_delta_vs_legacy": "Legacy artifact showed 55 cookies. Fresh capture on 2026-09-27T17:40:40.412853+00:00 shows 60 cookies. Miro's CMP configuration may have changed. Active groups now include C0007 (not present in legacy artifact)."
       }
     },
     "post_accept_state": {
@@ -35,9 +48,13 @@
         "telemetry_delta": "Performance and targeting cookies released upon affirmative user opt-in"
       },
       "MIRO-IN-001": {
-        "cookies_observed": 65,
-        "action": "Clicked 'Accept all cookies'",
-        "telemetry_delta": "Additional 10 tracking cookies released including Google DoubleClick IDE"
+        "cookies_observed": 61,
+        "action": "CLICKED_ACCEPT_ALL",
+        "telemetry_delta": "Post-accept: 61 cookies. Post-action network responses: 36. Set-Cookie headers in post-action phase: 0.",
+        "active_groups_post_accept": ",C0007,C0004,C0001,C0002,C0003,",
+        "capture_timestamp": "2026-09-27T17:41:19.270458+00:00",
+        "capture_id": "MIRO-IN-001-ACCEPT-FRESH",
+        "artifact_status": "FRESH_CAPTURE"
       }
     },
     "post_reject_state": {
@@ -48,18 +65,22 @@
         "telemetry_delta": "+1 preference cookie (OptanonConsent updated); zero tracking cookies deposited"
       },
       "MIRO-IN-001": {
-        "cookies_observed": "N/A",
-        "action": "First-layer 'Reject All' button unavailable",
-        "clean_rejection_maintained": false,
-        "telemetry_delta": "Requires secondary layer modal navigation / manual opt-out under asymmetric interface architecture"
+        "cookies_observed": 60,
+        "action": "Clicked 'Reject All' (secondary modal)",
+        "clean_rejection_maintained": true,
+        "telemetry_delta": "Post-reject: 60 cookies. Post-action network responses: 9. NOTE: Previous legacy artifact stated 'First-layer Reject All button unavailable'. Fresh 2026-09-27T18:14:30.801125+00:00 capture found and successfully clicked Reject All.",
+        "capture_timestamp": "2026-09-27T18:14:30.801125+00:00",
+        "capture_id": "MIRO-IN-001-REJECT-FRESH",
+        "artifact_status": "FRESH_CAPTURE"
       }
     }
   },
   "legal_assessment": {
     "eu_gdpr": {
-      "applicable_statute": "GDPR Arts. 4(11), 6(1)(a), 7(3) (Withdrawal Parity / Symmetry) & ePrivacy Dir. 2002/58/EC Art. 5(3)",
-      "technical_finding": "Observed EU configuration aligns with prior opt-in mandate; non-essential trackers withheld pending affirmative click; equal prominence for consent withdrawal/rejection provided.",
-      "evidentiary_boundary": "Evidence reflects observed client-side telemetry on clean-slate browser profiles; does not constitute an authoritative legal certification."
+      "applicable_statute": "GDPR Arts. 4(11), 6(1)(a) & ePrivacy Dir. 2002/58/EC Art. 5(3)",
+      "technical_finding": "Observed EU configuration aligns with prior opt-in mandate; non-essential trackers withheld pending affirmative click; first-layer Reject All button (Tout refuser) observed with equal prominence. Art. 7(3) withdrawal effectiveness (post-accept consent withdrawal and cessation of downstream processing) was NOT tested in this run.",
+      "evidentiary_boundary": "Evidence reflects observed client-side telemetry on clean-slate browser profiles; does not constitute an authoritative legal certification.",
+      "art_7_3_note": "Article 7(3) withdrawal parity has NOT been tested. The experiment observed first-layer rejection button presence and post-reject cookie state. A separate Accept -> Withdraw -> Verify test is required to establish withdrawal effectiveness."
     },
     "india_dpdpa": {
       "applicable_statute": "DPDP Act 2023 Sec. 6 (Phased commencement schedule) & Consumer Protection Act 2019 (Central Consumer Protection Authority / Dark Patterns Guidelines 2023)",
