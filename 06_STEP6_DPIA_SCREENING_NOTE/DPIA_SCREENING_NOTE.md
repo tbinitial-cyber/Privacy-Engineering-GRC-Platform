@@ -113,7 +113,7 @@ We evaluate the inherent risk (without controls) versus the residual risk (with 
 
 | Risk Threat Vector | Vulnerability / Cause | Inherent Likelihood (1-5) | Inherent Severity (1-5) | Inherent Risk (1-25) | Regulatory Non-Compliance Exposure |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| **R1: Unlawful Session Recording** | Clarity recording users without prior consent | **OBSERVED IN TEST RUN — Production-Wide Prevalence: Requires Repeat-Run Validation** | **4 (Major)** | **Pending Repeat-Run Validation** | GDPR Art 6(1)(a), Art 5(1)(a) Lawfulness; CNIL & DPC session replay sanctions. |
+| **R1: Ungated Session Recording** | Clarity recording users without prior consent | **OBSERVED IN TEST RUN — Production-Wide Prevalence: Requires Repeat-Run Validation** | **4 (Major)** | **Pending Repeat-Run Validation** | GDPR Art 6(1)(a), Art 5(1)(a) Lawfulness; CNIL & DPC session replay sanctions. |
 | **R2: Unintended Data Ingestion** | Form text or canvas metadata captured in Clarity video replays | **3 (Possible)** | **4 (Major)** | **12 (HIGH)** | GDPR Art 9 Sensitive Data / Art 5(1)(c) Data Minimisation. |
 | **R3: Undisclosed Third-Party Sync** | Tapad device graph sharing without DPA or notice | **OBSERVED IN TEST RUN — Production-Wide Prevalence: Requires Repeat-Run Validation** | **4 (Major)** | **Pending Repeat-Run Validation** | GDPR Art 13 Transparency, Art 28 Processor obligations; DPDPA Sec 6. |
 | **R4: Cross-Border Transfer Exposure** | Replay and ad telemetry transmitted to US without verified SCCs | **4 (Likely)** | **3 (Moderate)** | **12 (HIGH)** | GDPR Chapter V (Art 44-46) International Data Transfers. |

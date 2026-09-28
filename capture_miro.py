@@ -51,6 +51,8 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
     output_dir = os.path.join(
         base_dir, "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY", "runs", run_id, action
     )
+    if os.path.exists(os.path.join(output_dir, "baseline.json")):
+        raise FileExistsError(f"Directory {output_dir} already contains evidence. To ensure immutability, archive or delete the existing artifacts before running a fresh capture.")
     os.makedirs(output_dir, exist_ok=True)
 
     print(f"=================================================================")
@@ -117,6 +119,17 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         page.on("response", handle_response)
 
 
+        def handle_request_failed(request):
+            network_events.append({
+                "url": request.url,
+                "method": request.method,
+                "resource_type": request.resource_type,
+                "status": 0,
+                "failure": request.failure,
+                "timestamp": datetime.now(timezone.utc).isoformat()
+            })
+        page.on("requestfailed", handle_request_failed)
+
         print(f"Navigating to {target_url}...")
         initial_url = target_url
         try:
@@ -126,7 +139,12 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         final_url = page.url
         if final_url != initial_url:
             print(f"Redirect observed: {initial_url} -> {final_url}")
-        await page.wait_for_timeout(3000)
+        
+        # Proper quiet-period observation window instead of fixed sleep
+        try:
+            await page.wait_for_load_state("networkidle", timeout=10000)
+        except:
+            pass
 
         # 1. PRE-CONSENT STATE
         pre_cookies = await context.cookies()
@@ -191,7 +209,10 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
             if has_reject:
                 print("Clicking 'Reject All'...")
                 await reject_btn.click()
-                await page.wait_for_timeout(3000)
+                try:
+                    await page.wait_for_load_state("networkidle", timeout=10000)
+                except:
+                    pass
                 reject_cookies = await context.cookies()
                 reject_screenshot_path = os.path.join(output_dir, "post_reject.png")
                 await page.screenshot(path=reject_screenshot_path, full_page=False)
@@ -218,7 +239,10 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
             if has_accept:
                 print("Clicking 'Accept All'...")
                 await accept_btn.click()
-                await page.wait_for_timeout(3000)
+                try:
+                    await page.wait_for_load_state("networkidle", timeout=10000)
+                except:
+                    pass
                 accept_cookies = await context.cookies()
                 accept_screenshot_path = os.path.join(output_dir, "post_accept.png")
                 await page.screenshot(path=accept_screenshot_path, full_page=False)

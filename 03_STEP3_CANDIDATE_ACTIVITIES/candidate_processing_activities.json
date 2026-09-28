@@ -10,10 +10,6 @@
     "candidate_recipients": [
       {
         "kind": "URL",
-        "identifier": "https://fonts.gstatic.com/s/nanumpenscript/v25/daaDSSYiLGqEal3MvdA_FOL_3FkN6zn0aQ.woff2"
-      },
-      {
-        "kind": "URL",
         "identifier": "https://www.redditstatic.com/ads/pixel.js"
       },
       {

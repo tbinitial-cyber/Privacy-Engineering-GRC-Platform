@@ -44,7 +44,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Cross-Border Transfers & Safeguards:** USA & Ireland (Third countries). Safeguard: EU Standard Contractual Clauses (SCCs 2021/914 Module 2/3) and EU-US Data Privacy Framework (DPF) certified.
 * **Retention Schedule:** Ad tracking cookies: 90 days to 13 months maximum. Aggregated campaign conversion metrics: 24 months.
 * **TOMs (Art. 32 Security Measures):** Enforced Pre-Consent gate via OneTrust CMP; TLS 1.3 encryption in transit; SHA-256 pseudonymous identifier hashing; access restricted via corporate SSO/MFA.
-* **DPIA Requirement Trigger:** **YES (High Risk due to systematic cross-site tracking and behavioral profiling across ad exchanges)**
+* **WP248 DPIA Triggers Detected:** **5** (High Risk due to systematic cross-site tracking and behavioral profiling across ad exchanges)**
 * **Audit & Governance Status:** **`REQUIRES LEGAL ACTION (Google DoubleClick & LinkedIn tracking active; Tapad cross-device sync undisclosed in Subprocessor list)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-113-EFD6DA7DD7, EVD-WEB-112-528146B09C, EVD-WEB-027-562EE0EB49`
 
@@ -63,7 +63,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Cross-Border Transfers & Safeguards:** USA & Malta. Safeguard: EU Standard Contractual Clauses (SCCs) and adequacy / DPF framework.
 * **Retention Schedule:** Google Analytics 4 data retention set to 14 months; session cookies expire on browser close.
 * **TOMs (Art. 32 Security Measures):** Google Analytics IP Anonymization enabled; TLS 1.3 in-transit encryption; OneTrust category classification under 'Performance / Analytics'.
-* **DPIA Requirement Trigger:** **NO (Standard web analytics with IP anonymization, provided keystroke/screen replay is sanitized)**
+* **WP248 DPIA Triggers Detected:** **0** (Standard web analytics with IP anonymization, provided keystroke/screen replay is sanitized)**
 * **Audit & Governance Status:** **`COMPLIANT WITH DISCLOSURE GAP (Google Looker disclosed in Subprocessor PDF, but omitted from July 2026 subprocessor list)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-056-D2832FE2EA, EVD-WEB-055-4EA077D761, EVD-WEB-039-9F98B6C691`
 
@@ -82,7 +82,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Cross-Border Transfers & Safeguards:** USA & EU. Safeguard: EU Standard Contractual Clauses (SCCs) & Adequacy.
 * **Retention Schedule:** Strictly necessary session cookies: duration of browser session. Consent preference cookie ('OptanonConsent'): 12 months.
 * **TOMs (Art. 32 Security Measures):** Strictly necessary category; exempt from prior consent under ePrivacy Directive Art 5(3); Cloudflare automated WAF rate limiting; end-to-end HTTPS TLS 1.3.
-* **DPIA Requirement Trigger:** **NO (Essential operational and security telemetry)**
+* **WP248 DPIA Triggers Detected:** **0** (Essential operational and security telemetry)**
 * **Audit & Governance Status:** **`LEGAL BASIS ASSESSMENT: PROPOSED / HUMAN REVIEW REQUIRED (Candidate technical classification; strictly necessary basis proposed under Legitimate Interests, requiring formal Legal Counsel validation)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-011-FA171931E3, EVD-WEB-012-7F782573A0, EVD-WEB-001-CDEB879188`
 
@@ -101,7 +101,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Cross-Border Transfers & Safeguards:** USA. Safeguard: EU Standard Contractual Clauses (SCCs 2021/914) & DPA with Intercom, Inc.
 * **Retention Schedule:** Support session cookies: 9 months. Chat transcripts: 24 months in customer CRM, unless deletion requested.
 * **TOMs (Art. 32 Security Measures):** Intercom SOC 2 Type II certified; TLS 1.3 encrypted websocket communication; data at rest encrypted via AES-256.
-* **DPIA Requirement Trigger:** **NO (Standard enterprise customer support channel)**
+* **WP248 DPIA Triggers Detected:** **0** (Standard enterprise customer support channel)**
 * **Audit & Governance Status:** **`DOCUMENTED & DISCLOSED (Intercom, Inc. is explicitly listed in Miro's official July 2026 Subprocessor List)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-048-A73DAC25C6, EVD-WEB-049-1BBF093E51, EVD-WEB-050-D43AC9B9E3`
 
@@ -120,7 +120,7 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Cross-Border Transfers & Safeguards:** USA. Safeguard: Requires verified SCCs and Vendor Data Processing Agreements (DPAs).
 * **Retention Schedule:** Clarity session recordings: 30 days to 13 months. Marketo cookies: 2 years.
 * **TOMs (Art. 32 Security Measures):** Clarity client-side text masking enabled; HTTPS encryption in transit; however, Pre-Consent script blocking was NOT observed for Microsoft Clarity and Marketo.
-* **DPIA Requirement Trigger:** **YES (High-Risk Presumption under EDPB WP 248 rev.01 criteria: systematic monitoring & dataset matching)**
+* **WP248 DPIA Triggers Detected:** **5** (High-Risk Presumption under EDPB WP 248 rev.01 criteria: systematic monitoring & dataset matching)**
 * **Audit & Governance Status:** **`TECHNICAL AUDIT FINDING (Pre-consent firing observed + Subprocessors omitted from July 2026 public notice: Clarity, Reddit, Spotify, Marketo; Legal Counsel review required)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-017-D94CC7451C, EVD-WEB-041-389D98C946, EVD-WEB-030-DDD2C6CB6A`
 
@@ -129,11 +129,11 @@ This register bridges **live frontend network telemetry** captured via automated
 
 | Subprocessor Legal Name | Processing Activity Mapped | Service Function | Jurisdiction | Transfer Mechanism | Miro Subprocessor List Status | Consent Gate Finding |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **OneTrust LLC** | `ROPA-ACT-003` | Consent Management Platform | USA / UK | Adequacy & SCCs | ✅ Disclosed | **Compliant** (Fires Pre-Consent to log choices) |
-| **Cloudflare, Inc.** | `ROPA-ACT-003` | DDoS Protection & Bot Mitigation | USA / Global | SCCs (Module 2/3) | ✅ Disclosed | **Compliant** (Strictly necessary security token) |
+| **OneTrust LLC** | `ROPA-ACT-003` | Consent Management Platform | USA / UK | Adequacy & SCCs | ✅ Disclosed | **Behavior:** Functional Pre-Consent |
+| **Cloudflare, Inc.** | `ROPA-ACT-003` | DDoS Protection & Bot Mitigation | USA / Global | SCCs (Module 2/3) | ✅ Disclosed | **Behavior:** Functional Pre-Consent |
 | **Intercom, Inc.** | `ROPA-ACT-004` | Real-time Helpdesk & Chat | USA | SCCs 2021/914 | ✅ Disclosed (July 2026) | **Observed Pre-Consent** (Functional) |
 | **Google LLC (GA4)** | `ROPA-ACT-002` | Web Audience Analytics | USA | EU-US DPF & SCCs | ⚠️ Looker Disclosed | **Requires Review** (Fires prior to opt-in) |
-| **Google LLC (DoubleClick)** | `ROPA-ACT-001` | Ad Remarketing & Conversion | USA | EU-US DPF & SCCs | ⚠️ DoubleClick Omitted | **Compliant Gate** (Held back until Accept All) |
+| **Google LLC (DoubleClick)** | `ROPA-ACT-001` | Ad Remarketing & Conversion | USA | EU-US DPF & SCCs | ⚠️ DoubleClick Omitted | **Behavior:** Post-Consent Only (Gated) |
 | **LinkedIn Corporation** | `ROPA-ACT-001` | B2B Retargeting & Attribution | Ireland / USA | SCCs 2021/914 | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (`bcookie` fires pre-consent; prospective risk) |
 | **Microsoft Corp (Clarity)** | `ROPA-ACT-005` | Screen Replay & Behavioral Telemetry | USA | SCCs | ❌ **Clarity Omitted** | **Observed Pre-Consent** (Fires pre-consent; EDPB WP 248 DPIA Presumption) |
 | **Tapad, Inc.** | `ROPA-ACT-001` | Cross-Device Identity Sync | USA | Unverified | ❌ **Undisclosed Shadow Tracker** | **Observed Pre-Consent** (Cross-device sync active without explicit gate) |

@@ -552,10 +552,12 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
     # Manifest Verification Status Callout
     if is_ev_verified and is_eu_verified:
         st.success(f"✅ **Cryptographic Provenance Dual-Verified:** Both Indian baseline (`{ev_computed[:10]}...`) and European telemetry (`{eu_computed[:10]}...`) match expected SHA-256 fingerprints in `audit_manifest.json`. Runtime JSON schema validation passed.")
-    elif is_ev_verified:
-        st.success(f"✅ **Cryptographic Provenance Verified:** Evidence payload matches SHA-256 fingerprint in manifest (`{ev_computed[:10]}...`).")
-    else:
-        st.warning(f"⚠️ **Provenance Notice:** `{ev_hash_label}`")
+    elif not is_ev_verified:
+        st.error(f"🚨 **CRITICAL AUDIT INTEGRITY FAILURE**: `{ev_hash_label}`. In accordance with strict fail-closed audit policy, analysis is aborted.")
+        st.stop()
+    elif not is_eu_verified:
+        st.error(f"🚨 **CRITICAL AUDIT INTEGRITY FAILURE**: `{eu_hash_label}`. In accordance with strict fail-closed audit policy, analysis is aborted.")
+        st.stop()
 
     # Architecture Overview
     st.subheader("🏛️ Enterprise End-to-End Compliance Lifecycle")
