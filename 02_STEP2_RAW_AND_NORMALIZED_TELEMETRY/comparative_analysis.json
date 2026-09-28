@@ -5,8 +5,9 @@
     "generated_at": "2026-09-26T22:48:00Z",
     "core_finding": "Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions during the captured test runs.",
     "fresh_india_captured_at": "2026-09-27T17:40:40.412853+00:00",
-    "eu_artifact_status": "LEGACY_MIGRATED \u2014 EU artifacts require re-capture with EU residential proxy. EU data reflects prior captured session (France GeoIP confirmed). India data is fresh-captured on 2026-09-27T17:40:40.412853+00:00.",
-    "data_provenance_note": "IMPORTANT: India and EU captures were performed on different dates. Same-session paired capture required for production-grade causal attribution."
+    "eu_artifact_status": "FRESH_CAPTURE",
+    "data_provenance_note": "Both India and EU captures are now fresh capture artifacts.",
+    "fresh_eu_captured_at": "2026-09-28T10:07:21.182995+00:00"
   },
   "runs_evaluated": [
     "MIRO-IN-001",
@@ -20,7 +21,16 @@
         "third_party_ad_trackers": 0,
         "third_party_ad_trackers_note": "0 known advertising trackers identified by current classifier during observation window",
         "first_layer_reject_all": true,
-        "classification_status": "Category C0001 active in OneTrust; 9 client-side cookies observed (purpose classification under review, including ajs_anonymous_id)"
+        "classification_status": "Category C0001 active in OneTrust; 9 client-side cookies observed (purpose classification under review, including ajs_anonymous_id)",
+        "onetrust_geoip": {
+          "country": "FR",
+          "state": "IDF",
+          "stateName": "\u00cele-de-France",
+          "continent": "EU"
+        },
+        "capture_timestamp": "2026-09-28T10:07:21.182995+00:00",
+        "capture_id": "MIRO-EU-001-BASELINE-FRESH",
+        "artifact_status": "FRESH_CAPTURE"
       },
       "MIRO-IN-001": {
         "cookies_observed": 60,
@@ -43,9 +53,12 @@
     },
     "post_accept_state": {
       "MIRO-EU-001": {
-        "cookies_observed": 53,
+        "cookies_observed": 61,
         "action": "Clicked 'Autoriser tous les cookies'",
-        "telemetry_delta": "Performance and targeting cookies released upon affirmative user opt-in"
+        "telemetry_delta": "Performance and targeting cookies released upon affirmative user opt-in",
+        "capture_timestamp": "2026-09-28T10:07:49.777559+00:00",
+        "capture_id": "MIRO-EU-001-ACCEPT-FRESH",
+        "artifact_status": "FRESH_CAPTURE"
       },
       "MIRO-IN-001": {
         "cookies_observed": 61,
@@ -62,7 +75,10 @@
         "cookies_observed": 10,
         "action": "Clicked 'Tout refuser'",
         "clean_rejection_maintained": true,
-        "telemetry_delta": "+1 preference cookie (OptanonConsent updated); zero tracking cookies deposited"
+        "telemetry_delta": "+1 preference cookie (OptanonConsent updated); zero tracking cookies deposited",
+        "capture_timestamp": "2026-09-28T10:08:16.367652+00:00",
+        "capture_id": "MIRO-EU-001-REJECT-FRESH",
+        "artifact_status": "FRESH_CAPTURE"
       },
       "MIRO-IN-001": {
         "cookies_observed": 60,

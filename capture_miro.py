@@ -77,6 +77,19 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         onetrust_geo = None
         network_events = []
 
+        if is_eu and not proxy:
+            # Mock the OneTrust endpoint to simulate EU location
+            async def mock_onetrust(route):
+                nonlocal onetrust_geo
+                geo_data = {"country": "FR", "state": "IDF", "stateName": "Île-de-France", "continent": "EU"}
+                onetrust_geo = geo_data
+                await route.fulfill(
+                    status=200,
+                    content_type="application/json",
+                    json=geo_data
+                )
+            await page.route("**/geolocation.onetrust.com/cookieconsentpub/v1/geo/location", mock_onetrust)
+
         async def handle_response(response):
             nonlocal onetrust_geo
             try:

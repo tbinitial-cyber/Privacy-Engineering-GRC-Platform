@@ -1,19 +1,24 @@
 {
   "audit_run_id": "MIRO-EU-001",
-  "action": "baseline",
   "profile": "eu-france",
   "jurisdiction": "EU",
-  "timestamp": "",
+  "timestamp": "2026-09-28T10:07:21.182995+00:00",
   "initial_url": "https://miro.com/",
-  "final_url": "https://miro.com/fr/",
-  "redirect_observed": true,
-  "target": "https://miro.com/fr/",
+  "final_url": "https://miro.com/",
+  "redirect_observed": false,
+  "target": "https://miro.com/",
   "consent_state": "PRE_CONSENT",
-  "onetrust_geoip": null,
-  "geo_data_cookie": null,
+  "onetrust_geoip": {
+    "country": "FR",
+    "state": "IDF",
+    "stateName": "\u00cele-de-France",
+    "continent": "EU"
+  },
+  "geo_data_cookie": "IN|India|Delhi|Asia/Kolkata",
+  "optanon_consent_cookie": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A37%3A16+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=cd3a0a66-0449-4588-b741-7a9a24adf827&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0",
   "active_groups": ",C0001,",
   "banner_visible": true,
-  "banner_text": "Votre vie priv\u00e9e",
+  "banner_text": "Cookies, anyone?\nBy clicking \u201cAccept All Cookies\u201d, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nCookies Settings\nReject All\nAccept All Cookies",
   "buttons": {
     "accept_all": true,
     "reject_all": true
@@ -22,7 +27,7 @@
   "cookies": [
     {
       "name": "geo_data",
-      "value": "FR|France|Paris|Europe/Paris",
+      "value": "IN|India|Delhi|Asia/Kolkata",
       "domain": "miro.com",
       "path": "/api/ff",
       "expires": -1,
@@ -31,41 +36,11 @@
       "sameSite": "Strict"
     },
     {
-      "name": "geo_data",
-      "value": "FR|France|Paris|Europe/Paris",
-      "domain": "miro.com",
-      "path": "/fr",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "userLocale",
-      "value": "fr",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "geo_data",
-      "value": "FR|France|Paris|Europe/Paris",
-      "domain": "miro.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Strict"
-    },
-    {
       "name": "ajs_anonymous_id",
-      "value": "%220d499a06-25b4-40ed-bb30-be8291580a28%22",
+      "value": "%2213b24b62-0afe-41bd-8d2f-f50e1099710b%22",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1821972760.117605,
+      "expires": 1822126033.770539,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -75,27 +50,27 @@
       "value": "off",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790436880.117725,
+      "expires": 1790590153.771802,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
-      "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Sat+Sep+26+2026+17%3A32%3A44+GMT%2B0200+(heure+d%E2%80%99%C3%A9t%C3%A9+d%E2%80%99Europe+centrale)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e1d5d353-5119-4110-a5c3-0dc67ff474a6&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fmiro.com%2Ffr%2F&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0",
-      "domain": ".miro.com",
+      "name": "geo_data",
+      "value": "IN|India|Delhi|Asia/Kolkata",
+      "domain": "miro.com",
       "path": "/",
-      "expires": 1821972764,
+      "expires": -1,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "Lax"
+      "sameSite": "Strict"
     },
     {
       "name": "__ff",
-      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v1\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
+      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v2\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790436884.832708,
+      "expires": 1790590155.514949,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -109,12 +84,40 @@
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
+    },
+    {
+      "name": "fbp_tracked",
+      "value": "undefined",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1793182036,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rdt_uuid_tracked",
+      "value": "undefined",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1793182036,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A37%3A16+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=cd3a0a66-0449-4588-b741-7a9a24adf827&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1822126036,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
     }
   ],
-  "total_responses_captured": 0,
+  "total_responses_captured": 105,
   "set_cookie_responses": 0,
-  "data_source": "migrated from miro_europe_telemetry.json pre_consent block",
-  "artifact_status": "LEGACY_MIGRATED",
-  "recapture_required": true,
-  "recapture_note": "LEGACY_MIGRATED \u2014 migrated from miro_europe_telemetry.json pre_consent block; re-run capture_miro.py --profile eu-france --action baseline --proxy <EU_PROXY> to obtain fresh artifact"
+  "capture_id": "MIRO-EU-001-BASELINE-FRESH",
+  "artifact_status": "FRESH_CAPTURE"
 }

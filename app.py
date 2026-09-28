@@ -454,7 +454,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
                 "Forensic Dimension": "Pre-Consent Client-Side Cookies",
                 "🇪🇺 European Union Route (France)": f"{_eu_pre.get('cookies_observed','N/A')} Cookies observed ({_eu_pre.get('classification_status','cookie-level classification under review')})",
                 "🇮🇳 India Route (Domestic Baseline)": f"{_in_pre.get('cookies_observed','N/A')} Cookies observed ({_in_pre.get('classification_status','Marketing, analytics & cross-site trackers deposited on load')})",
-                "Technical & Legal Assessment": "Data minimization divergence: strict suppression on European route vs tracking cookie accumulation in India."
+                "Technical & Legal Assessment": "Observed difference in cookie state under the captured EU and India test conditions."
             },
             {
                 "Forensic Dimension": "Pre-Consent Third-Party Trackers",
@@ -476,8 +476,8 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
             },
             {
                 "Forensic Dimension": "Statutory Governance & Exposure",
-                "🇪🇺 European Union Route (France)": "GDPR Arts. 4(11), 6(1)(a) & ePrivacy Directive (Fully enforceable). Consent and first-layer rejection controls observed. Art. 7(3) withdrawal effectiveness not tested.",
-                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement) & Consumer Protection Act 2019 (India CCPA / Dark Patterns Guidelines 2023)",
+                "🇪🇺 European Union Route (France)": "Observed France/EU consent configuration and client-side behavior relevant to GDPR consent and ePrivacy Article 5(3) assessment. Consent and first-layer rejection controls observed. Art. 7(3) withdrawal effectiveness not tested.",
+                "🇮🇳 India Route (Domestic Baseline)": "DPDPA 2023 Sec. 6 (Phased commencement) & Consumer Protection Act, 2019 / CCPA Dark Patterns Guidelines",
                 "Technical & Legal Assessment": "Prospective DPDPA non-compliance risk once phased commencement brings Sec. 6 into force. EU frameworks assessed independently on EU route only."
             }
         ]
@@ -496,7 +496,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
 
     elif "European Union" in jurisdiction_mode:
         # EU Route Specific KPIs
-        st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Observed consent configuration consistent with GDPR Arts. 4(11), 6(1)(a) prior opt-in requirements. Consent and rejection controls observed on first layer.")
+        st.success("🇪🇺 **European Union Route Telemetry Active:** Captured via France clean-slate route with verified French GeoIP (`country: 'FR', state: 'IDF'`). Observed France/EU consent configuration and client-side behavior relevant to GDPR consent and ePrivacy Article 5(3) assessment. Consent and rejection controls observed on first layer.")
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
             st.metric(label="Pre-Consent Cookies", value=f"{eu_pre_cookies} Cookies", delta="C0001 Active - Classification Pending")
