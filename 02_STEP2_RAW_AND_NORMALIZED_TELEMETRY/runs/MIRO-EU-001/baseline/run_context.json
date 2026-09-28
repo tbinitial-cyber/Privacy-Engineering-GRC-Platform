@@ -7,18 +7,13 @@
   "redirect_observed": false,
   "jurisdiction_condition": "EU",
   "applicable_framework": "GDPR / ePrivacy Directive",
-  "proxy_used": null,
-  "onetrust_geoip_captured": {
-    "country": "FR",
-    "state": "IDF",
-    "stateName": "\u00cele-de-France",
-    "continent": "EU"
-  },
-  "miro_geo_cookie": "IN|India|Delhi|Asia/Kolkata",
-  "pre_consent_cookie_count": 9,
-  "pre_consent_active_groups": ",C0001,",
-  "first_layer_reject_all_visible": true,
-  "first_layer_accept_all_visible": true,
-  "captured_at": "2026-09-28T10:07:21.190202+00:00",
+  "proxy_used": "http://79.137.78.133:8012",
+  "onetrust_geoip_captured": null,
+  "miro_geo_cookie": "UA|Ukraine|Kyiv|Europe/Kyiv",
+  "pre_consent_cookie_count": 8,
+  "pre_consent_active_groups": null,
+  "first_layer_reject_all_visible": false,
+  "first_layer_accept_all_visible": false,
+  "captured_at": "2026-09-28T10:18:28.114273+00:00",
   "temporal_confound_note": "Runs captured at different calendar dates introduce potential confounds (site changes, A/B experiments, vendor config changes). For production-grade audit, both jurisdictions must be captured in the same session window."
 }

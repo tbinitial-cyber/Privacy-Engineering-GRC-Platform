@@ -11,573 +11,7 @@
       "x-frame-options": "SAMEORIGIN"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:13.783184+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/loS6p22EjrWydpGk0StsYV9aNOk.png?width=945&height=584",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.040859+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/FRcHsyYXl8UUK5IhGNVCf91p2jY.png?scale-down-to=2048&width=2550&height=1605",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.044183+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/CDX2v6A9WCQL0JTUEGCGlf9AJM.png?scale-down-to=512&width=520&height=370",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.046182+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/E9OVCUR4UEyKCU8ODMEv3ay1I.png?width=453&height=172",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.048314+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/oZXojsskiyRYgABxePIYvM5HZ8k.png?scale-down-to=512&width=1024&height=1024",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.052466+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/0vI8qnLAcRrcJnR1mD6Zvz1Juqo.svg?scale-down-to=512&width=784&height=418",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/svg+xml",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.063775+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/nDl7hMgk3lz5P8pMtAuj1ud7Hy8.png?scale-down-to=512&width=540&height=420",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.069625+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/sKiwlC23bqmQuePnZcGOiejWtHU.png?scale-down-to=512&width=540&height=420",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.070968+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/jE9EEchZdIvXR2nxDldppRlf4UQ.png?scale-down-to=512&width=540&height=420",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.072645+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/9UpWE0ntDpz31gYdqHX0PnWoZo.png?scale-down-to=512&width=540&height=420",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.074984+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/aWqMa3w2fGAiOiCaAifW1vI5iZ0.png?scale-down-to=512&width=540&height=420",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.076853+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/54fgARxfE1yaO0U194V6yowtGTQ.png?scale-down-to=512&width=540&height=420",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.078803+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/3TuENhmSygpLnIFoErQBRy/7b37607d0d6768a519e79affe97d4083/GDPR.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.127300+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/2jrk9yUWDGCZgFi8XpBqCo/0f5e372412c0bc49afce1e09f74a547e/ISO_Badge__2_.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.128061+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/5Ki053lYq38fYIHu5AOcpr/0992cf7cf88feac09b632f0e676dc346/G2__1_.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.129269+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/69nUaLt9qbx2mYs7V5xU3u/5226904f0421943d938edfc2c6d61303/ISO_Badge__1_.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.130603+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/2GnazBVVWJ8guM2zvYNMCY/3347d25a4f0c602eac02187e542b746b/G2.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.132120+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/1WIOsC8qZrgMQ8MrD8bcrS/cea1792e288c5092864710e706116a10/ISO_Badge.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.133295+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/assets/IWIJ9TEwVer0sH7Pi9PuwiGLfPI.woff2",
-    "method": "GET",
-    "resource_type": "font",
-    "status": 200,
-    "response_headers": {
-      "content-type": "font/woff2",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.134570+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/3O5MzR09mczhdTlOaVuH3W/017858b4cade63f7af52746d77249edc/TR.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.136096+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/4uhvW0Mixrt27kr2DdJeur/018f560db325613d3c14316c957aa74c/icon-social-x.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.137724+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/4otvnm6zLR7ji9eVZY69Zf/c2c9e910c14e8fcdeee302ccfa45c341/icon-social-linkedin.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.139131+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/5gJmvJDndMVOJ3FKTdaVkO/e6d727001c80b9f60a568196d88adf7b/icon-social-facebook.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.142299+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/lBk1HpkxVPRgmlIHinigL/9bb251edbca75b02e7d223da8e3f34c1/icon-social-youtube.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.144066+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/13YODLlKdzJHwQgA6gj1Oy/f82b0a280d8b719a3398aee0bf2bf3aa/reddit-icon.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.146498+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/32kQ9JkxEseUIjSm18OLKy/3263ebe3fe9c1ab1c992827edebc83a9/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917_3.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.149502+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/1oClmO2hBbCTR7T0ArtHoP/0d4dfe4eab808821bb4e7376ebea2634/icon-social-instagram.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.152451+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://images.ctfassets.net/x3tur5ylnyf2/7Lryw2nfTo2luGgMD2TnoY/4b56104f1efaa82f79886cf1d94408f2/google-play-badge.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=31536000",
-      "content-type": "image/svg+xml",
-      "vary": "Accept-Encoding"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.155600+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://mirostatic.com/website/static/production-eu/framer-code-components/web-tracker.esm.js",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Access-Control-Request-Headers,Access-Control-Request-Method,Origin",
-      "cache-control": "maxage=120, stale-while-revalidate=31535880"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.159656+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/ipyXy5FeC.CFgf-KwL.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Accept-Encoding,Origin",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.163489+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/fKq2fcFFX0ZetCn8Yaj5EfdEoR_po2ZRKc02NFYWNwE.CTERgz2M.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Accept-Encoding,Origin",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.165203+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/rolldown-runtime.Dh6celcD.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Origin",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.169715+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/sHRlIqPUfmQ_aD55JSzsr68u8fKYeoK46tIgnUWZRB4.DJURrSO4.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Accept-Encoding,Origin",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.172670+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/motion.00bxZqWM.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Accept-Encoding,Origin",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.182974+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/script_main.BMANVIVx.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Accept-Encoding,Origin",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.186678+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/react.DoA55duw.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Accept-Encoding,Origin",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.189525+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/otSDKStub.js",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/javascript",
-      "vary": "accept-encoding",
-      "cache-control": "public, max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.196360+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/framer.CXS9Z_P9.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Origin,Accept-Encoding",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.199680+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://i.ytimg.com/vi_webp/3ODE5xkD7Uo/maxresdefault.webp",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/webp",
-      "vary": "Origin",
-      "cache-control": "public, max-age=7200"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.235353+00:00",
+    "timestamp": "2026-09-28T10:18:14.124646+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -592,11 +26,53 @@
       "cache-control": "private, max-age=86400, stale-while-revalidate=604800"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.294589+00:00",
+    "timestamp": "2026-09-28T10:18:15.194959+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://framerusercontent.com/images/AqnllWibgpIBTVXKokCobdPdVpE.png?width=347&height=292",
+    "url": "https://events.framer.com/script?v=2",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=300, stale-while-revalidate=2419200, stale-if-error=2419200",
+      "content-type": "text/javascript"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:15.478489+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://i.ytimg.com/vi_webp/3ODE5xkD7Uo/maxresdefault.webp",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/webp",
+      "vary": "Origin",
+      "cache-control": "public, max-age=7200"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:15.543584+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/0vI8qnLAcRrcJnR1mD6Zvz1Juqo.svg?width=784&height=418",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/svg+xml",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:15.575814+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/hxmGIee0j4wLp4wcDyiGOm9PY.png?scale-down-to=512&width=543&height=543",
     "method": "GET",
     "resource_type": "image",
     "status": 200,
@@ -607,24 +83,26 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.296634+00:00",
+    "timestamp": "2026-09-28T10:18:15.729431+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A99Y41P6zHtY.woff2",
+    "url": "https://framerusercontent.com/images/nDl7hMgk3lz5P8pMtAuj1ud7Hy8.png?scale-down-to=512&width=540&height=420",
     "method": "GET",
-    "resource_type": "font",
+    "resource_type": "image",
     "status": 200,
     "response_headers": {
-      "content-type": "font/woff2",
-      "cache-control": "public, max-age=31536000"
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.298882+00:00",
+    "timestamp": "2026-09-28T10:18:15.738334+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://framerusercontent.com/assets/ydBr7kp9mqNBSElJ9WM908UYMc.woff2",
+    "url": "https://framerusercontent.com/assets/IWIJ9TEwVer0sH7Pi9PuwiGLfPI.woff2",
     "method": "GET",
     "resource_type": "font",
     "status": 200,
@@ -634,7 +112,51 @@
       "cache-control": "public, max-age=31536000, immutable"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.300833+00:00",
+    "timestamp": "2026-09-28T10:18:15.862791+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/QeyLBoPrWkgQgRWBRSNHgjvygE.svg?width=347&height=292",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/svg+xml",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:15.897153+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/X9P9B9t1LdPrXWW794yPzZbWK58.svg?scale-down-to=512&width=520&height=370",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/svg+xml",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:15.898711+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-N5MCLT8",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "application/javascript; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "cache-control": "private, max-age=900"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:15.899973+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -648,35 +170,7 @@
       "vary": "Access-Control-Request-Headers,Access-Control-Request-Method,Origin, Origin"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.304554+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://events.framer.com/script?v=2",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "cache-control": "max-age=300, stale-while-revalidate=2419200, stale-if-error=2419200",
-      "content-type": "text/javascript"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.326792+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/shared-lib.BK9Q3u9e.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Origin,Accept-Encoding",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.382626+00:00",
+    "timestamp": "2026-09-28T10:18:16.000751+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -686,11 +180,358 @@
     "status": 200,
     "response_headers": {
       "content-type": "font/woff2",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.033945+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/9UpWE0ntDpz31gYdqHX0PnWoZo.png?scale-down-to=512&width=540&height=420",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.038851+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/N9yF3kgyckNB0yHBBJHC73oYtg4.png?scale-down-to=512&width=543&height=543",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.040034+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://mirostatic.com/website/static/production-eu/framer-code-components/web-tracker.esm.js",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Access-Control-Request-Headers,Access-Control-Request-Method,Origin",
+      "cache-control": "maxage=120, stale-while-revalidate=31535880"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.066243+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4gaVI.woff2",
+    "method": "GET",
+    "resource_type": "font",
+    "status": 200,
+    "response_headers": {
+      "content-type": "font/woff2",
+      "cache-control": "public, max-age=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.154937+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAjBO9a6VI.woff2",
+    "method": "GET",
+    "resource_type": "font",
+    "status": 200,
+    "response_headers": {
+      "content-type": "font/woff2",
+      "cache-control": "public, max-age=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.167561+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+    "method": "GET",
+    "resource_type": "font",
+    "status": 200,
+    "response_headers": {
+      "content-type": "font/woff2",
       "x-frame-options": "DENY",
       "cache-control": "public, max-age=31536000, immutable"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.443865+00:00",
+    "timestamp": "2026-09-28T10:18:16.186660+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/assets/ynxJLpJmNmhxBFJOqRq8uP2oWE.woff2",
+    "method": "GET",
+    "resource_type": "font",
+    "status": 200,
+    "response_headers": {
+      "content-type": "font/woff2",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.188897+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/rolldown-runtime.Dh6celcD.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.191343+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/assets/BEFj6qqjMwjP8zopZ1v70Ptegeg.woff2",
+    "method": "GET",
+    "resource_type": "font",
+    "status": 200,
+    "response_headers": {
+      "content-type": "font/woff2",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.193055+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/nanumpenscript/v25/daaDSSYiLGqEal3MvdA_FOL_3FkN6zn0aQ.woff2",
+    "method": "GET",
+    "resource_type": "font",
+    "status": 200,
+    "response_headers": {
+      "content-type": "font/woff2",
+      "cache-control": "public, max-age=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.306787+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/react.DoA55duw.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.348633+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/tFKh4ohEz323jq7V7lJ3B6_zW7t4sTN1lkICwr_0kNY.QS_7A2Cd.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.356444+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://mirostatic.com/website/static/production-eu/framer-code-components/shared/package-BP3D_YLp.esm.js",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Access-Control-Request-Headers,Access-Control-Request-Method,Origin",
+      "cache-control": "maxage=120, stale-while-revalidate=31535880"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.361829+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/motion.00bxZqWM.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.363601+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/framer.CXS9Z_P9.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.370309+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/Interactive_animated_gradient.BchoQ0J_.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.510371+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/74CFNhFvFE72z0ULFXJKlrXrcvyIXF_v5pLsZ3RbWsk.cYwM8yNt.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.513247+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/ipyXy5FeC.CFgf-KwL.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.514328+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/shared-lib.BK9Q3u9e.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.604713+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyD9A99Y41P6zHtY.woff2",
+    "method": "GET",
+    "resource_type": "font",
+    "status": 200,
+    "response_headers": {
+      "content-type": "font/woff2",
+      "cache-control": "public, max-age=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.715520+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/aWqMa3w2fGAiOiCaAifW1vI5iZ0.png?scale-down-to=512&width=540&height=420",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.759313+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/jE9EEchZdIvXR2nxDldppRlf4UQ.png?scale-down-to=512&width=540&height=420",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.806027+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/54fgARxfE1yaO0U194V6yowtGTQ.png?scale-down-to=512&width=540&height=420",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.882380+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/sKiwlC23bqmQuePnZcGOiejWtHU.png?scale-down-to=512&width=540&height=420",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:16.884251+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -705,7 +546,283 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.447423+00:00",
+    "timestamp": "2026-09-28T10:18:17.255162+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/sites/4OLT6jMsyZ1Z4eMN7xvy4X/script_main.BMANVIVx.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding,Origin",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.264344+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/1WIOsC8qZrgMQ8MrD8bcrS/cea1792e288c5092864710e706116a10/ISO_Badge.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.753773+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/5Ki053lYq38fYIHu5AOcpr/0992cf7cf88feac09b632f0e676dc346/G2__1_.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.757634+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/2GnazBVVWJ8guM2zvYNMCY/3347d25a4f0c602eac02187e542b746b/G2.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.777667+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/3TuENhmSygpLnIFoErQBRy/7b37607d0d6768a519e79affe97d4083/GDPR.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.803268+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/2jrk9yUWDGCZgFi8XpBqCo/0f5e372412c0bc49afce1e09f74a547e/ISO_Badge__2_.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.924906+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/69nUaLt9qbx2mYs7V5xU3u/5226904f0421943d938edfc2c6d61303/ISO_Badge__1_.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.926583+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://miro.com/api/ff/?apiKey=QoFZgKza2g7SsIrwVd7wP0ikoeFLzAhw&holdout=1",
+    "method": "GET",
+    "resource_type": "fetch",
+    "status": 200,
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:17.972818+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://miro.com/api/ff/?apiKey=QoFZgKza2g7SsIrwVd7wP0ikoeFLzAhw&flag=WEBSITE-2000-exp-29-google-one-tap-home-page-2",
+    "method": "GET",
+    "resource_type": "fetch",
+    "status": 200,
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.054054+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://static-website.miro.com/miro-site-lp-build-assets/assets/styles/one-trust-cookie-banner.css",
+    "method": "GET",
+    "resource_type": "stylesheet",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/css",
+      "vary": "Accept-Encoding, Origin",
+      "cache-control": "public, max-age=7200, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.104270+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://eventhub.eu01.miro.com/api/stream/v1/p",
+    "method": "POST",
+    "resource_type": "xhr",
+    "status": 200,
+    "response_headers": {
+      "content-type": "application/json",
+      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.224798+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/3O5MzR09mczhdTlOaVuH3W/017858b4cade63f7af52746d77249edc/TR.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.566406+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/4uhvW0Mixrt27kr2DdJeur/018f560db325613d3c14316c957aa74c/icon-social-x.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.568578+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/5gJmvJDndMVOJ3FKTdaVkO/e6d727001c80b9f60a568196d88adf7b/icon-social-facebook.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.578243+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/4otvnm6zLR7ji9eVZY69Zf/c2c9e910c14e8fcdeee302ccfa45c341/icon-social-linkedin.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.578827+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/1oClmO2hBbCTR7T0ArtHoP/0d4dfe4eab808821bb4e7376ebea2634/icon-social-instagram.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.579384+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/lBk1HpkxVPRgmlIHinigL/9bb251edbca75b02e7d223da8e3f34c1/icon-social-youtube.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.826811+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/13YODLlKdzJHwQgA6gj1Oy/f82b0a280d8b719a3398aee0bf2bf3aa/reddit-icon.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.862499+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/32kQ9JkxEseUIjSm18OLKy/3263ebe3fe9c1ab1c992827edebc83a9/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917_3.svg",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.864889+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framer.com/edit/beta/init.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript; charset=utf-8",
+      "vary": "Accept-Encoding",
+      "cache-control": "max-age=300"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:18.916443+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -720,20 +837,21 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.448991+00:00",
+    "timestamp": "2026-09-28T10:18:18.982576+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0B4gaVI.woff2",
+    "url": "https://images.ctfassets.net/x3tur5ylnyf2/7Lryw2nfTo2luGgMD2TnoY/4b56104f1efaa82f79886cf1d94408f2/google-play-badge.svg",
     "method": "GET",
-    "resource_type": "font",
+    "resource_type": "image",
     "status": 200,
     "response_headers": {
-      "content-type": "font/woff2",
-      "cache-control": "public, max-age=31536000"
+      "cache-control": "max-age=31536000",
+      "content-type": "image/svg+xml",
+      "vary": "Accept-Encoding"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.459061+00:00",
+    "timestamp": "2026-09-28T10:18:19.038998+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -748,36 +866,7 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.580637+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/GHMgTmbz8qR7eeU8e7Oo86AVxIQ.jpeg?scale-down-to=512&width=720&height=1280",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.581904+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/assets/BEFj6qqjMwjP8zopZ1v70Ptegeg.woff2",
-    "method": "GET",
-    "resource_type": "font",
-    "status": 200,
-    "response_headers": {
-      "content-type": "font/woff2",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.582955+00:00",
+    "timestamp": "2026-09-28T10:18:19.134616+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -792,25 +881,11 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.584111+00:00",
+    "timestamp": "2026-09-28T10:18:19.152903+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://framerusercontent.com/assets/ynxJLpJmNmhxBFJOqRq8uP2oWE.woff2",
-    "method": "GET",
-    "resource_type": "font",
-    "status": 200,
-    "response_headers": {
-      "content-type": "font/woff2",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.584984+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/ydQ4lfokqxcCYfp2CxNAzOzCc.jpeg?scale-down-to=512&width=1280&height=719",
+    "url": "https://framerusercontent.com/images/GHMgTmbz8qR7eeU8e7Oo86AVxIQ.jpeg?scale-down-to=512&width=720&height=1280",
     "method": "GET",
     "resource_type": "image",
     "status": 200,
@@ -821,170 +896,7 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.586813+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/3aN9meKGAp4IQCF4QoQfjFiK0c.png?scale-down-to=512&width=1024&height=1024",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.587377+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/id3aQCVAlGsfjavYwoAaB4f3rWc.png?scale-down-to=512&width=842&height=560",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.587986+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/S59JIB0LvIERSybNdUQTvcF8q9M.png?scale-down-to=512&width=520&height=519",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.589410+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/z2qmzkvAMeSiqy90xtPMZ2jivhk.png?scale-down-to=512&width=6548&height=3339",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.590026+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://fonts.gstatic.com/s/notosans/v42/o-0mIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjcz6L1SoM-jCpoiyAjBO9a6VI.woff2",
-    "method": "GET",
-    "resource_type": "font",
-    "status": 200,
-    "response_headers": {
-      "content-type": "font/woff2",
-      "cache-control": "public, max-age=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.591330+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/ZpigQu7HNgotvajoe2aaA9IquYg.png?scale-down-to=512&width=1288&height=930",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.592013+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/jQSaPTXvdn6dlshet1JAAWA86k.png?scale-down-to=1024&width=1081&height=1441",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.592649+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/Q4muRV2qZnqhXV9FRszqe6yVh0.png?scale-down-to=1024&width=1081&height=1441",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.593789+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/UE6PN5AkKpZr9wiHr9XmecEwBe8.png?scale-down-to=1024&width=3840&height=2160",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.594723+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/NMqH7K10eCTkwlJtgFZGukM7V8.jpg?width=81&height=81",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/jpeg",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.595854+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/v4XK0ugTz9PgDOg9IizoOjpw.png?scale-down-to=1024&width=1921&height=1081",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/avif",
-      "vary": "Accept",
-      "x-frame-options": "deny",
-      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.596648+00:00",
+    "timestamp": "2026-09-28T10:18:19.155287+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -999,11 +911,11 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.598785+00:00",
+    "timestamp": "2026-09-28T10:18:19.251984+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://framerusercontent.com/images/jEBfMRQ9CEbwCHlIsSZ8arK5Jt0.png?scale-down-to=1024&width=3840&height=2160",
+    "url": "https://framerusercontent.com/images/ydQ4lfokqxcCYfp2CxNAzOzCc.jpeg?scale-down-to=512&width=1280&height=719",
     "method": "GET",
     "resource_type": "image",
     "status": 200,
@@ -1014,11 +926,11 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.599573+00:00",
+    "timestamp": "2026-09-28T10:18:19.301856+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://framerusercontent.com/images/Yuc5oFlUGxrhIlp7DDzijhyh3k.png?scale-down-to=1024&width=3840&height=2160",
+    "url": "https://framerusercontent.com/images/id3aQCVAlGsfjavYwoAaB4f3rWc.png?scale-down-to=512&width=842&height=560",
     "method": "GET",
     "resource_type": "image",
     "status": 200,
@@ -1029,7 +941,112 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.601093+00:00",
+    "timestamp": "2026-09-28T10:18:19.304297+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/ZpigQu7HNgotvajoe2aaA9IquYg.png?scale-down-to=512&width=1288&height=930",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:19.387132+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/jQSaPTXvdn6dlshet1JAAWA86k.png?scale-down-to=1024&width=1081&height=1441",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:19.400815+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/3aN9meKGAp4IQCF4QoQfjFiK0c.png?scale-down-to=512&width=1024&height=1024",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:19.499551+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/S59JIB0LvIERSybNdUQTvcF8q9M.png?scale-down-to=512&width=520&height=519",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:19.555158+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/z2qmzkvAMeSiqy90xtPMZ2jivhk.png?scale-down-to=512&width=6548&height=3339",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:19.588559+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/Q4muRV2qZnqhXV9FRszqe6yVh0.png?scale-down-to=1024&width=1081&height=1441",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:19.668572+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framerusercontent.com/images/v4XK0ugTz9PgDOg9IizoOjpw.png?scale-down-to=1024&width=1921&height=1081",
+    "method": "GET",
+    "resource_type": "image",
+    "status": 200,
+    "response_headers": {
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:19.720442+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -1044,121 +1061,56 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.602294+00:00",
+    "timestamp": "2026-09-28T10:18:19.758869+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://fonts.gstatic.com/s/nanumpenscript/v25/daaDSSYiLGqEal3MvdA_FOL_3FkN6zn0aQ.woff2",
+    "url": "https://framerusercontent.com/images/Yuc5oFlUGxrhIlp7DDzijhyh3k.png?scale-down-to=1024&width=3840&height=2160",
     "method": "GET",
-    "resource_type": "font",
+    "resource_type": "image",
     "status": 200,
     "response_headers": {
-      "content-type": "font/woff2",
-      "cache-control": "public, max-age=31536000"
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.603159+00:00",
+    "timestamp": "2026-09-28T10:18:19.802954+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://www.googletagmanager.com/gtm.js?id=GTM-N5MCLT8",
+    "url": "https://framerusercontent.com/images/jEBfMRQ9CEbwCHlIsSZ8arK5Jt0.png?scale-down-to=1024&width=3840&height=2160",
     "method": "GET",
-    "resource_type": "script",
+    "resource_type": "image",
     "status": 200,
     "response_headers": {
-      "content-type": "application/javascript; charset=UTF-8",
-      "vary": "Accept-Encoding",
-      "cache-control": "private, max-age=900"
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.605301+00:00",
+    "timestamp": "2026-09-28T10:18:19.852846+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://mirostatic.com/website/static/production-eu/framer-code-components/shared/package-BP3D_YLp.esm.js",
+    "url": "https://framerusercontent.com/images/UE6PN5AkKpZr9wiHr9XmecEwBe8.png?scale-down-to=1024&width=3840&height=2160",
     "method": "GET",
-    "resource_type": "script",
+    "resource_type": "image",
     "status": 200,
     "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Access-Control-Request-Headers,Access-Control-Request-Method,Origin",
-      "cache-control": "maxage=120, stale-while-revalidate=31535880"
+      "content-type": "image/avif",
+      "vary": "Accept",
+      "x-frame-options": "deny",
+      "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.826245+00:00",
+    "timestamp": "2026-09-28T10:18:19.950510+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://mirostatic.com/website/static/production-eu/framer-code-components/web-tracker.esm.js",
-    "method": "GET",
-    "resource_type": "other",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Access-Control-Request-Headers,Access-Control-Request-Method,Origin",
-      "cache-control": "maxage=120, stale-while-revalidate=31535880"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.828953+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://static-website.miro.com/miro-site-lp-build-assets/assets/styles/one-trust-cookie-banner.css",
-    "method": "GET",
-    "resource_type": "stylesheet",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/css",
-      "vary": "Accept-Encoding, Origin",
-      "cache-control": "public, max-age=7200, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.865932+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/4133a0ef-6999-461d-909d-24f2b05bbc15.json",
-    "method": "GET",
-    "resource_type": "xhr",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "accept-encoding",
-      "cache-control": "public, max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:14.958329+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
-    "method": "GET",
-    "resource_type": "xhr",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "Origin"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.010565+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/otBannerSdk.js",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/javascript",
-      "vary": "accept-encoding",
-      "cache-control": "max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.080966+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framerusercontent.com/images/lKk9mVEFEfPGVTMhhn5LhD4DhT8.jpg?width=81&height=81",
+    "url": "https://framerusercontent.com/images/NMqH7K10eCTkwlJtgFZGukM7V8.jpg?width=81&height=81",
     "method": "GET",
     "resource_type": "image",
     "status": 200,
@@ -1169,21 +1121,7 @@
       "cache-control": "public, max-age=31536000, stale-while-revalidate=31536000"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.253235+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framer.com/edit/beta/init.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript; charset=utf-8",
-      "vary": "Accept-Encoding",
-      "cache-control": "max-age=300"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.299268+00:00",
+    "timestamp": "2026-09-28T10:18:19.982144+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -1198,177 +1136,7 @@
       "cache-control": "public, max-age=31536000, immutable"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.422542+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://miro.com/api/ff/?apiKey=QoFZgKza2g7SsIrwVd7wP0ikoeFLzAhw&holdout=1",
-    "method": "GET",
-    "resource_type": "fetch",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json; charset=utf-8"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.448380+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://eventhub.eu01.miro.com/api/stream/v1/p",
-    "method": "POST",
-    "resource_type": "xhr",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.468313+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://miro.com/api/ff/?apiKey=QoFZgKza2g7SsIrwVd7wP0ikoeFLzAhw&flag=WEBSITE-2000-exp-29-google-one-tap-home-page-2",
-    "method": "GET",
-    "resource_type": "fetch",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json; charset=utf-8"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:15.525149+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/consent/4133a0ef-6999-461d-909d-24f2b05bbc15/0198743b-babb-7ee7-bf25-d985f48660f5/en.json",
-    "method": "GET",
-    "resource_type": "fetch",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "accept-encoding",
-      "cache-control": "public, max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.090697+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/otFlat.json",
-    "method": "GET",
-    "resource_type": "fetch",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "accept-encoding",
-      "cache-control": "max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.167220+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/v2/otPcCenter.json",
-    "method": "GET",
-    "resource_type": "fetch",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "accept-encoding",
-      "cache-control": "max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.167911+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/scripttemplates/202408.1.0/assets/otCommonStyles.css",
-    "method": "GET",
-    "resource_type": "fetch",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/css",
-      "cache-control": "max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.169566+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://eventhub.eu01.miro.com/api/stream/v1/t",
-    "method": "POST",
-    "resource_type": "xhr",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.247475+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://eventhub.eu01.miro.com/api/stream/v1/t",
-    "method": "POST",
-    "resource_type": "xhr",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.249563+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/logos/static/ot_company_logo.png",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/png",
-      "cache-control": "max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.270637+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
-    "method": "GET",
-    "resource_type": "image",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/svg+xml",
-      "cache-control": "max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.271526+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://eventhub.eu01.miro.com/api/stream/v1/t",
-    "method": "POST",
-    "resource_type": "xhr",
-    "status": 200,
-    "response_headers": {
-      "content-type": "application/json",
-      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.274428+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
-    "method": "GET",
-    "resource_type": "fetch",
-    "status": 200,
-    "response_headers": {
-      "content-type": "image/svg+xml",
-      "cache-control": "max-age=86400"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.275645+00:00",
+    "timestamp": "2026-09-28T10:18:20.150936+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -1380,11 +1148,50 @@
       "content-type": "application/json"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.397775+00:00",
+    "timestamp": "2026-09-28T10:18:20.329072+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://framer.com/edit/beta?framerSiteId=e581c7ce765b3408a75d0214f5780cf058394ce4a71192ea92c1fd723a9b858f&source=miro.com&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%2C%22onPageRichTextBlockSelection%22%3Atrue%7D&loadStart=1790590035426",
+    "url": "https://eventhub.eu01.miro.com/api/stream/v1/t",
+    "method": "POST",
+    "resource_type": "xhr",
+    "status": 200,
+    "response_headers": {
+      "content-type": "application/json",
+      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:21.369746+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://eventhub.eu01.miro.com/api/stream/v1/t",
+    "method": "POST",
+    "resource_type": "xhr",
+    "status": 200,
+    "response_headers": {
+      "content-type": "application/json",
+      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:21.414253+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://eventhub.eu01.miro.com/api/stream/v1/t",
+    "method": "POST",
+    "resource_type": "xhr",
+    "status": 200,
+    "response_headers": {
+      "content-type": "application/json",
+      "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:21.448351+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://framer.com/edit/beta?framerSiteId=e581c7ce765b3408a75d0214f5780cf058394ce4a71192ea92c1fd723a9b858f&source=miro.com&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%2C%22onPageRichTextBlockSelection%22%3Atrue%7D&loadStart=1790590700149",
     "method": "GET",
     "resource_type": "document",
     "status": 200,
@@ -1394,7 +1201,7 @@
       "vary": "Accept-Encoding"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.467176+00:00",
+    "timestamp": "2026-09-28T10:18:22.549790+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -1409,7 +1216,7 @@
       "cache-control": "public, max-age=31536000, immutable"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.502776+00:00",
+    "timestamp": "2026-09-28T10:18:22.827282+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -1423,7 +1230,36 @@
       "cache-control": "public, max-age=31536000, immutable"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.504045+00:00",
+    "timestamp": "2026-09-28T10:18:22.861568+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://app.framerstatic.com/chunk-WOEOGJ2W.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:22.862711+00:00",
+    "phase": "PRE_CONSENT"
+  },
+  {
+    "url": "https://app.framerstatic.com/editorbar.RXP22IYR.mjs",
+    "method": "GET",
+    "resource_type": "script",
+    "status": 200,
+    "response_headers": {
+      "content-type": "text/javascript",
+      "vary": "Accept-Encoding",
+      "x-frame-options": "DENY",
+      "cache-control": "public, max-age=31536000, immutable"
+    },
+    "set_cookie": null,
+    "timestamp": "2026-09-28T10:18:22.863757+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -1438,40 +1274,11 @@
       "cache-control": "public, max-age=31536000, immutable"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.504771+00:00",
+    "timestamp": "2026-09-28T10:18:22.864908+00:00",
     "phase": "PRE_CONSENT"
   },
   {
-    "url": "https://app.framerstatic.com/chunk-WOEOGJ2W.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.513124+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://app.framerstatic.com/editorbar.VJDRA5KS.mjs",
-    "method": "GET",
-    "resource_type": "script",
-    "status": 200,
-    "response_headers": {
-      "content-type": "text/javascript",
-      "vary": "Accept-Encoding",
-      "x-frame-options": "DENY",
-      "cache-control": "public, max-age=31536000, immutable"
-    },
-    "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.514193+00:00",
-    "phase": "PRE_CONSENT"
-  },
-  {
-    "url": "https://framer.com/bootstrap.4f690c3e96434e61f39574e61228e3ad7b400ad8.js",
+    "url": "https://framer.com/bootstrap.5c9a091b6cf5e3ca48bb73fa81bfc0499573cddb.js",
     "method": "GET",
     "resource_type": "script",
     "status": 200,
@@ -1482,7 +1289,7 @@
       "cache-control": "max-age=3600"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:16.745640+00:00",
+    "timestamp": "2026-09-28T10:18:22.929850+00:00",
     "phase": "PRE_CONSENT"
   },
   {
@@ -1497,7 +1304,7 @@
       "cache-control": "private, no-store"
     },
     "set_cookie": null,
-    "timestamp": "2026-09-28T10:07:17.287327+00:00",
+    "timestamp": "2026-09-28T10:18:24.279555+00:00",
     "phase": "PRE_CONSENT"
   }
 ]

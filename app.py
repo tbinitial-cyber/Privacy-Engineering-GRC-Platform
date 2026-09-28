@@ -348,6 +348,29 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
 
     # 1. Load Manifest & Perform Cryptographic Verification
     manifest = load_audit_manifest()
+    
+    # Geographic Integrity Check
+    if "European Union" in jurisdiction_mode:
+        _comp_json = load_json_file("02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/comparative_analysis.json")
+        _eu_pre = _comp_json.get("symmetric_treatment_matrix", {}).get("pre_consent_state", {}).get("MIRO-EU-001", {}) if _comp_json else {}
+        
+        onetrust_geo = _eu_pre.get('onetrust_geoip', {}) or {}
+        miro_cookie_geo = _eu_pre.get('geo_data_cookie', '')
+        proxy_used = _eu_pre.get('proxy_used')
+        
+        ot_country = onetrust_geo.get('country')
+        miro_country = miro_cookie_geo.split('|')[0] if isinstance(miro_cookie_geo, str) else None
+        EU_COUNTRIES = ['FR', 'DE', 'IE', 'NL', 'IT', 'ES', 'BE', 'AT']
+        
+        geo_ok = (
+            proxy_used is not None
+            and ot_country in EU_COUNTRIES
+            and miro_country in EU_COUNTRIES
+        )
+        if not geo_ok:
+            st.error(f"🚨 **GEO INTEGRITY: FAILED**. Conflicting geographic signals detected in EU run. Proxy: {proxy_used}, OneTrust: {ot_country}, Miro: {miro_country}")
+            st.stop()
+            
     ev_rel_path = "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/normalized_evidence.json"
     is_ev_verified, ev_computed, ev_expected, ev_hash_label = verify_artifact_manifest(ev_rel_path)
     

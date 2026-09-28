@@ -78,17 +78,10 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
         network_events = []
 
         if is_eu and not proxy:
-            # Mock the OneTrust endpoint to simulate EU location
-            async def mock_onetrust(route):
-                nonlocal onetrust_geo
-                geo_data = {"country": "FR", "state": "IDF", "stateName": "Île-de-France", "continent": "EU"}
-                onetrust_geo = geo_data
-                await route.fulfill(
-                    status=200,
-                    content_type="application/json",
-                    json=geo_data
-                )
-            await page.route("**/geolocation.onetrust.com/cookieconsentpub/v1/geo/location", mock_onetrust)
+            raise RuntimeError(
+                "EU profile requires a verified EU proxy. "
+                "Synthetic geolocation is prohibited for audit evidence."
+            )
 
         async def handle_response(response):
             nonlocal onetrust_geo
@@ -156,6 +149,7 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
 
         pre_state = {
             "audit_run_id": run_id,
+            "capture_id": f"{run_id}-BASELINE-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M')}",
             "profile": profile,
             "jurisdiction": jurisdiction,
             "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -206,6 +200,7 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                     ev['phase'] = 'POST_REJECT'
                 reject_state = {
                     "audit_run_id": run_id,
+                    "capture_id": f"{run_id}-REJECT-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M')}",
                     "action": "CLICKED_REJECT_ALL",
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                     "cookie_count": len(reject_cookies),
@@ -233,6 +228,7 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                     ev['phase'] = 'POST_ACCEPT'
                 accept_state = {
                     "audit_run_id": run_id,
+                    "capture_id": f"{run_id}-ACCEPT-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M')}",
                     "action": "CLICKED_ACCEPT_ALL",
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                     "active_groups_post_accept": accept_groups,

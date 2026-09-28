@@ -33,13 +33,15 @@ Across controlled, clean-slate Chromium sessions on the audited production platf
       France / Île-de-France                          India / Delhi Baseline
      OneTrust Strict Prior Opt-In                    OneTrust Notice / Opt-Out Style
                  │                                               │
-    ├─ Active Groups: ,C0001,                       ├─ Active Groups: ,C0001,C0003,C0002,C0004,
-    ├─ Pre-Consent Cookies: 9                       ├─ Pre-Consent Cookies: 55
-    ├─ Pre-Consent Ad Trackers: 0                   ├─ Pre-Consent Ad Trackers: 3 Firing (Clarity, Tapad)
-    ├─ First-Layer Reject All: "Tout refuser"       ├─ First-Layer Reject All: OMITTED (Notice-only)
-    ├─ Post-Reject: 10 cookies (Clean State)        ├─ Post-Reject: Unavailable on Layer 1
-    └─ Post-Accept: 53 cookies (Gated Release)      └─ Post-Accept: 65 cookies (DoubleClick IDE Released)
+    ├─ Active Groups: ,C0001,                       ├─ Active Groups: ,C0001,C0002,C0003,C0004,C0007,
+    ├─ Pre-Consent Cookies: 9                       ├─ Pre-Consent Cookies: 60 (Temporal variation vs earlier 55)
+    ├─ Pre-Consent Ad Trackers: 0                   ├─ Pre-Consent Ad Trackers: Firing (Clarity, Tapad)
+    ├─ First-Layer Reject All: "Tout refuser"       ├─ First-Layer Reject All: Yes (Observed in latest capture)
+    ├─ Post-Reject: 10 cookies (Clean State)        ├─ Post-Reject: 60 cookies
+    └─ Post-Accept: 61 cookies                      └─ Post-Accept: 61 cookies
 ```
+
+*Observation Caveat:* Multiple India captures over a 3-day window demonstrated temporal configuration variability (India pre-consent cookies fluctuated from 55 on Sept 24 to 60 on Sept 27, and a First-Layer Reject All button appeared in the latest run). The platform highlights this configuration variance as an important empirical finding.
 
 ---
 
@@ -48,13 +50,13 @@ Across controlled, clean-slate Chromium sessions on the audited production platf
 | Forensic Dimension | 🇪🇺 European Union Route (`MIRO-EU-001`) | 🇮🇳 India Route (`MIRO-IN-001`) | Technical & Governance Assessment |
 | :--- | :--- | :--- | :--- |
 | **Observed GeoIP** | `FR / IDF` (`Europe/Paris`) via proxy | `IN / DL` (`Asia/Kolkata`) direct IP | Intercepted OneTrust GeoIP endpoint (`geolocation.onetrust.com`). |
-| **CMP Active Groups** | `window.OnetrustActiveGroups = ",C0001,"` | `window.OnetrustActiveGroups = ",C0001,C0003,C0002,C0004,"` | Prior opt-in enforced on EU route; notice/opt-out configuration on domestic route. |
-| **First-Layer Banner UX** | Equal prominence: **"Tout refuser"** alongside **"Autoriser"** | Notice banner: **"Accept all cookies"**; NO **"Reject All"** on first layer | Asymmetric choice architecture in India under Central Consumer Protection Authority (India CCPA / CPA 2019) Dark Patterns Guidelines 2023 scrutiny. |
-| **Pre-Consent Cookies** | **9 Cookies** *(Category C0001 active; cookie-level purpose classification under review)* | **55 Cookies** *(Marketing, analytics & cross-site trackers deposited on load)* | **-83.6% data minimization** observed on European route relative to domestic baseline. |
+| **CMP Active Groups** | `window.OnetrustActiveGroups = ",C0001,"` | `window.OnetrustActiveGroups = ",C0001,C0002,C0003,C0004,C0007,"` | Prior opt-in enforced on EU route; notice/opt-out configuration on domestic route. |
+| **First-Layer Banner UX** | Equal prominence: **"Tout refuser"** alongside **"Autoriser"** | Banner included **"Reject All"** in the latest capture (absent in previous) | Varied choice architecture across runs on domestic route under India CPA 2019 Dark Patterns scrutiny. |
+| **Pre-Consent Cookies** | **9 Cookies** *(Category C0001 active; cookie-level purpose classification under review)* | **60 Cookies** *(Marketing, analytics & cross-site trackers deposited on load)* | Data minimization observed on European route relative to domestic baseline. |
 | **Pre-Consent Ad Trackers** | **0 Known Trackers** *(Clarity, Tapad, DoubleClick withheld during observation window)* | **Active Trackers Firing** *(Microsoft Clarity, Tapad, Hotjar transmit immediately)* | Pre-consent cookie deposition and tracker firing observed on domestic route before affirmative user interaction. Assessed under Indian framework (DPDPA 2023 Sec. 6 / CPA 2019); EU ePrivacy Directive applies to EU route only. |
-| **Post-Reject State** | **10 Cookies** *(Clean rejection preserved; +1 preference cookie)* | **N/A** *(Requires secondary modal navigation / manual opt-out)* | Proves one-click rejection control is operational in EU but omitted on Indian landing layer. |
-| **Post-Accept State** | **53 Cookies** *(Affirmative consent releases analytics/ad cookies)* | **65 Cookies** *(Affirmative click releases gated Google DoubleClick IDE)* | Demonstrates conditional script-blocking works, but is dynamically relaxed on domestic route. |
-| **Applicable Law** | **GDPR Arts. 4(11), 6(1)(a) & ePrivacy Dir. (prior opt-in configuration observed; Art. 7(3) withdrawal lifecycle not separately tested)** *(Enforceable today)* | **DPDPA 2023 §6** *(Phased commencement)* & **CPA 2019 (India CCPA)** | Prospective DPDPA risk once Section 6 phased commencement schedule completes. |
+| **Post-Reject State** | **10 Cookies** *(Clean rejection preserved; +1 preference cookie)* | **60 Cookies** | Proves one-click rejection control is operational in EU. |
+| **Post-Accept State** | **61 Cookies** *(Affirmative consent releases analytics/ad cookies)* | **61 Cookies** *(Consent yields parity with baseline + slight variance)* | Demonstrates conditional script-blocking works, but is dynamically relaxed on domestic route. |
+| **Applicable Law** | **Observed France/EU consent configuration and client-side behavior relevant to GDPR consent and ePrivacy Article 5(3) assessment.** | **DPDPA 2023 §6** *(Phased commencement)* & **Consumer Protection Act, 2019 / CCPA Dark Patterns Guidelines** | Prospective DPDPA risk once Section 6 phased commencement schedule completes. |
 
 ---
 
