@@ -19,6 +19,27 @@
   "pre_consent_active_groups": ",C0007,C0004,C0001,C0002,C0003,",
   "first_layer_reject_all_visible": true,
   "first_layer_accept_all_visible": true,
-  "captured_at": "2026-09-28T10:31:35.619791+00:00",
+  "captured_at": "2026-09-28T11:27:15.101331+00:00",
+  "environment_fingerprint": {
+    "browser": {
+      "type": "chromium",
+      "version": "148.0.7778.96"
+    },
+    "playwright_version": "1.60.0",
+    "python_version": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+    "os": {
+      "platform": "win32",
+      "version": "26200"
+    },
+    "browser_context": {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+      "locale": "en-IN",
+      "timezone": "Asia/Kolkata"
+    }
+  },
   "temporal_confound_note": "Runs captured at different calendar dates introduce potential confounds (site changes, A/B experiments, vendor config changes). For production-grade audit, both jurisdictions must be captured in the same session window."
 }

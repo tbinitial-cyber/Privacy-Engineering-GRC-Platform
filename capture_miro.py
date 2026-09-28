@@ -23,6 +23,7 @@ Captures:
 
 import asyncio
 import argparse
+import sys
 import json
 import os
 import hashlib
@@ -85,7 +86,10 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                 "Synthetic geolocation is prohibited for audit evidence."
             )
 
+        last_activity_time = [asyncio.get_event_loop().time()]
+        
         async def handle_response(response):
+            last_activity_time[0] = asyncio.get_event_loop().time()
             nonlocal onetrust_geo
             try:
                 # Intercept OneTrust GeoIP endpoint
@@ -113,13 +117,18 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                     "set_cookie": set_cookie,
                     "timestamp": datetime.now(timezone.utc).isoformat()
                 })
-            except Exception:
-                pass
+            except Exception as exc:
+                network_events.append({
+                    "event_type": "telemetry_parse_error",
+                    "error": repr(exc),
+                    "timestamp": datetime.now(timezone.utc).isoformat()
+                })
 
         page.on("response", handle_response)
 
 
         def handle_request_failed(request):
+            last_activity_time[0] = asyncio.get_event_loop().time()
             network_events.append({
                 "url": request.url,
                 "method": request.method,
@@ -129,11 +138,31 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                 "timestamp": datetime.now(timezone.utc).isoformat()
             })
         page.on("requestfailed", handle_request_failed)
+        
+        async def wait_for_quiet_period(quiet_ms=2500, max_wait_ms=15000):
+            # Reset activity time if the last event was long ago (e.g. before a click)
+            if (asyncio.get_event_loop().time() - last_activity_time[0]) * 1000 > quiet_ms:
+                last_activity_time[0] = asyncio.get_event_loop().time()
+            
+            start_time = asyncio.get_event_loop().time()
+            while True:
+                now = asyncio.get_event_loop().time()
+                elapsed_total = (now - start_time) * 1000
+                elapsed_quiet = (now - last_activity_time[0]) * 1000
+                
+                if elapsed_quiet >= quiet_ms:
+                    print(f"Quiet period achieved ({quiet_ms}ms window) after {elapsed_total:.0f}ms.")
+                    break
+                if elapsed_total >= max_wait_ms:
+                    print(f"Max wait time hit ({max_wait_ms}ms). Halting observation.")
+                    break
+                await asyncio.sleep(0.1)
 
         print(f"Navigating to {target_url}...")
         initial_url = target_url
         try:
-            await page.goto(target_url, wait_until="networkidle", timeout=60000)
+            await page.goto(target_url, wait_until="domcontentloaded", timeout=60000)
+            await wait_for_quiet_period()
         except Exception as e:
             print(f"Note: Navigation finished with: {e}")
         final_url = page.url
@@ -210,8 +239,8 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                 print("Clicking 'Reject All'...")
                 await reject_btn.click()
                 try:
-                    await page.wait_for_load_state("networkidle", timeout=10000)
-                except:
+                    await wait_for_quiet_period()
+                except Exception as e:
                     pass
                 reject_cookies = await context.cookies()
                 reject_screenshot_path = os.path.join(output_dir, "post_reject.png")
@@ -240,8 +269,8 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
                 print("Clicking 'Accept All'...")
                 await accept_btn.click()
                 try:
-                    await page.wait_for_load_state("networkidle", timeout=10000)
-                except:
+                    await wait_for_quiet_period()
+                except Exception as e:
                     pass
                 accept_cookies = await context.cookies()
                 accept_screenshot_path = os.path.join(output_dir, "post_accept.png")
@@ -294,6 +323,24 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
             "first_layer_reject_all_visible": has_reject,
             "first_layer_accept_all_visible": has_accept,
             "captured_at": datetime.now(timezone.utc).isoformat(),
+            "environment_fingerprint": {
+                "browser": {
+                    "type": browser.browser_type.name,
+                    "version": browser.version
+                },
+                "playwright_version": "1.60.0",
+                "python_version": sys.version.replace("\n", ""),
+                "os": {
+                    "platform": sys.platform,
+                    "version": str(sys.getwindowsversion().build) if sys.platform == "win32" else "unknown"
+                },
+                "browser_context": {
+                    "viewport": {"width": 1280, "height": 800},
+                    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+                    "locale": "fr-FR" if is_eu else "en-IN",
+                    "timezone": "Europe/Paris" if is_eu else "Asia/Kolkata"
+                }
+            },
             "temporal_confound_note": (
                 "Runs captured at different calendar dates introduce potential confounds "
                 "(site changes, A/B experiments, vendor config changes). "
