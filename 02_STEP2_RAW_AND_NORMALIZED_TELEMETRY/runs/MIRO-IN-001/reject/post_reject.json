@@ -610,5 +610,7 @@
     }
   ],
   "post_action_responses": 9,
-  "post_action_set_cookie": 0
+  "post_action_set_cookie": 0,
+  "capture_id": "MIRO-IN-001-REJECT-POST-20260927",
+  "artifact_status": "FRESH_CAPTURE"
 }

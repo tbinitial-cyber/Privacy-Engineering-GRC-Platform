@@ -238,7 +238,16 @@
     "notes": [
       "Candidate activity generated from technical/documentary evidence.",
       "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
-    ]
+    ],
+    "dpia_required": true,
+    "dpia_status": "TRIGGERED",
+    "dpia_assessment_ref": "DPIA-SCR-2026-MIRO-001",
+    "dpia_trigger_criteria": [
+      "criterion_1_evaluation_profiling",
+      "criterion_5_large_scale_external",
+      "criterion_6_data_matching"
+    ],
+    "dpia_note": "Advertising/marketing activity directly observed involving cross-site ad sync (Tapad, LinkedIn) which triggers WP248 criteria 1 and 6 empirically."
   },
   {
     "candidate_activity_id": "CAND-ACT-975E87D5",
@@ -525,7 +534,16 @@
     "notes": [
       "Candidate activity generated from technical/documentary evidence.",
       "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
-    ]
+    ],
+    "dpia_required": true,
+    "dpia_status": "TRIGGERED",
+    "dpia_assessment_ref": "DPIA-SCR-2026-MIRO-001",
+    "dpia_trigger_criteria": [
+      "criterion_3_systematic_monitoring",
+      "criterion_5_large_scale_external",
+      "criterion_8_innovative_tech"
+    ],
+    "dpia_note": "Analytics activity involves session replay vendors (Clarity, Hotjar) triggering WP248 criterion 3 (endpoint + cookie presence observed)."
   },
   {
     "candidate_activity_id": "CAND-ACT-625DEF79",
@@ -1267,7 +1285,12 @@
     "notes": [
       "Candidate activity generated from technical/documentary evidence.",
       "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
-    ]
+    ],
+    "dpia_required": false,
+    "dpia_status": "STANDARD",
+    "dpia_assessment_ref": "DPIA-SCR-2026-MIRO-001",
+    "dpia_trigger_criteria": [],
+    "dpia_note": "Authentication/session management is strictly necessary operation. No WP248 high-risk criteria triggered by session cookies alone."
   },
   {
     "candidate_activity_id": "CAND-ACT-E01DEC6E",
@@ -1313,7 +1336,12 @@
     "notes": [
       "Candidate activity generated from technical/documentary evidence.",
       "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
-    ]
+    ],
+    "dpia_required": false,
+    "dpia_status": "STANDARD",
+    "dpia_assessment_ref": "DPIA-SCR-2026-MIRO-001",
+    "dpia_trigger_criteria": [],
+    "dpia_note": "Customer support processing; insufficient telemetry evidence to trigger DPIA criteria."
   },
   {
     "candidate_activity_id": "CAND-ACT-6BF44E43",
@@ -1685,6 +1713,11 @@
     "notes": [
       "Candidate activity generated from technical/documentary evidence.",
       "This output is not a final RoPA entry and does not establish a lawful basis, retention period, DPIA requirement, or legal violation."
-    ]
+    ],
+    "dpia_required": null,
+    "dpia_status": "UNDER_REVIEW",
+    "dpia_assessment_ref": "DPIA-SCR-2026-MIRO-001",
+    "dpia_trigger_criteria": [],
+    "dpia_note": "Purpose validation pending; high evidence volume (67 records). DPIA status to be determined after purpose classification."
   }
 ]

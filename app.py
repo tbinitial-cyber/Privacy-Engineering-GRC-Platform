@@ -351,7 +351,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
     ev_rel_path = "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/normalized_evidence.json"
     is_ev_verified, ev_computed, ev_expected, ev_hash_label = verify_artifact_manifest(ev_rel_path)
     
-    eu_rel_path = "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/europe_audit/miro_europe_telemetry.json"
+    eu_rel_path = "02_STEP2_RAW_AND_NORMALIZED_TELEMETRY/runs/MIRO-EU-001/baseline/baseline.json"
     is_eu_verified, eu_computed, eu_expected, eu_hash_label = verify_artifact_manifest(eu_rel_path)
 
     # 2. Strict Fail-Closed Evidence Ingestion

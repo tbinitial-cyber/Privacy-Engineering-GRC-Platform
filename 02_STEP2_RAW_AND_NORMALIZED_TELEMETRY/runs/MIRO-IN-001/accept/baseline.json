@@ -631,5 +631,7 @@
     }
   ],
   "total_responses_captured": 229,
-  "set_cookie_responses": 0
+  "set_cookie_responses": 0,
+  "capture_id": "MIRO-IN-001-ACCEPT-PRE-20260927",
+  "artifact_status": "FRESH_CAPTURE"
 }

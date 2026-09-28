@@ -631,5 +631,7 @@
     }
   ],
   "total_responses_captured": 227,
-  "set_cookie_responses": 0
+  "set_cookie_responses": 0,
+  "capture_id": "MIRO-IN-001-BASELINE-20260927",
+  "artifact_status": "FRESH_CAPTURE"
 }
