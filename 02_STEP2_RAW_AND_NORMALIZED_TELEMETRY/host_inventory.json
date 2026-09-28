@@ -1,548 +1,332 @@
 [
   {
     "host": "11345867.fls.doubleclick.net",
-    "request_count": 6,
-    "resource_types": [
-      "document"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "12017650.fls.doubleclick.net",
-    "request_count": 2,
-    "resource_types": [
-      "document"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "228-gpv-835.mktoresp.com",
-    "request_count": 1,
-    "resource_types": [
-      "ping"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "a.quora.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "ad.doubleclick.net",
-    "request_count": 9,
-    "resource_types": [
-      "fetch"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "adservice.google.com",
-    "request_count": 4,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "alb.reddit.com",
-    "request_count": 1,
-    "resource_types": [
-      "fetch"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "analytics.google.com",
-    "request_count": 1,
-    "resource_types": [
-      "fetch"
-    ]
-  },
-  {
-    "host": "api-iam.intercom.io",
-    "request_count": 3,
-    "resource_types": [
-      "fetch",
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "api.cr-relay.com",
-    "request_count": 2,
-    "resource_types": [
-      "ping"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "api.framer.com",
-    "request_count": 1,
-    "resource_types": [
-      "fetch"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "app.framerstatic.com",
-    "request_count": 6,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "bat.bing.com",
-    "request_count": 4,
-    "resource_types": [
-      "image",
-      "ping",
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "bzr.openai.com",
-    "request_count": 1,
-    "resource_types": [
-      "fetch"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "bzrcdn.openai.com",
-    "request_count": 2,
-    "resource_types": [
-      "fetch",
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "c.bing.com",
-    "request_count": 1,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "c.clarity.ms",
-    "request_count": 2,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "cdn.cookielaw.org",
-    "request_count": 10,
-    "resource_types": [
-      "fetch",
-      "image",
-      "script",
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "cdn.cr-relay.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
-  },
-  {
-    "host": "cdn.getsmartcontent.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
-  },
-  {
-    "host": "cdn.jsdelivr.net",
-    "request_count": 1,
-    "resource_types": [
-      "fetch"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "cdn.pdst.fm",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "connect.facebook.net",
-    "request_count": 2,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "eventhub.eu01.miro.com",
-    "request_count": 5,
-    "resource_types": [
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "events.framer.com",
-    "request_count": 2,
-    "resource_types": [
-      "ping",
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "fonts.googleapis.com",
-    "request_count": 1,
-    "resource_types": [
-      "stylesheet"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "fonts.gstatic.com",
-    "request_count": 5,
-    "resource_types": [
-      "font"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "framer.com",
-    "request_count": 3,
-    "resource_types": [
-      "document",
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "framerusercontent.com",
-    "request_count": 26,
-    "resource_types": [
-      "fetch",
-      "font",
-      "image",
-      "other",
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "geolocation.onetrust.com",
-    "request_count": 1,
-    "resource_types": [
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "googleads.g.doubleclick.net",
-    "request_count": 7,
-    "resource_types": [
-      "fetch",
-      "image",
-      "script",
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "i.ytimg.com",
-    "request_count": 2,
-    "resource_types": [
-      "image"
-    ]
-  },
-  {
-    "host": "ibc-flow.techtarget.com",
-    "request_count": 1,
-    "resource_types": [
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "images.ctfassets.net",
-    "request_count": 15,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "jnn-pa.googleapis.com",
-    "request_count": 1,
-    "resource_types": [
-      "xhr"
-    ]
-  },
-  {
-    "host": "js.intercomcdn.com",
-    "request_count": 7,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "listen.audiohook.com",
-    "request_count": 1,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "miro-1-adswizz.attribution.adswizz.com",
-    "request_count": 1,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "miro.com",
-    "request_count": 3,
-    "resource_types": [
-      "document",
-      "fetch"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "mirostatic.com",
-    "request_count": 3,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "munchkin.marketo.net",
-    "request_count": 2,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "nld1rtp1-cdn.marketo.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "nld1rtp1.marketo.com",
-    "request_count": 6,
-    "resource_types": [
-      "script",
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
+  },
+  {
+    "host": "o.clarity.ms",
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "pixel-config.reddit.com",
-    "request_count": 1,
-    "resource_types": [
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "pixel.byspotify.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "pixel.tapad.com",
-    "request_count": 2,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "pixels.spotify.com",
-    "request_count": 2,
-    "resource_types": [
-      "fetch"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "px.ads.linkedin.com",
-    "request_count": 7,
-    "resource_types": [
-      "fetch",
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "q.quora.com",
-    "request_count": 1,
-    "resource_types": [
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "rtp-static.marketo.com",
-    "request_count": 4,
-    "resource_types": [
-      "script",
-      "stylesheet"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "script.getreditus.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
-  },
-  {
-    "host": "script.hotjar.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
-  },
-  {
-    "host": "scripts.appbind.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "scripts.clarity.ms",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "snap.licdn.com",
-    "request_count": 2,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "static-website.miro.com",
-    "request_count": 1,
-    "resource_types": [
-      "stylesheet"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "static.doubleclick.net",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "static.hotjar.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "stats.g.doubleclick.net",
-    "request_count": 1,
-    "resource_types": [
-      "ping"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "tag.clearbitscripts.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "tracking-api.g2.com",
-    "request_count": 1,
-    "resource_types": [
-      "ping"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "tracking.g2crowd.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "trk.techtarget.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "widget.intercom.io",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.clarity.ms",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
-  },
-  {
-    "host": "www.facebook.com",
-    "request_count": 1,
-    "resource_types": [
-      "document"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.google.co.in",
-    "request_count": 7,
-    "resource_types": [
-      "fetch",
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.google.com",
-    "request_count": 16,
-    "resource_types": [
-      "fetch",
-      "image",
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.googleadservices.com",
-    "request_count": 5,
-    "resource_types": [
-      "fetch",
-      "image"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.googletagmanager.com",
-    "request_count": 7,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.linkedin.com",
-    "request_count": 2,
-    "resource_types": [
-      "image"
-    ]
-  },
-  {
-    "host": "www.miro.com",
-    "request_count": 1,
-    "resource_types": [
-      "document"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.redditstatic.com",
-    "request_count": 1,
-    "resource_types": [
-      "script"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   },
   {
     "host": "www.youtube.com",
-    "request_count": 9,
-    "resource_types": [
-      "document",
-      "image",
-      "script",
-      "stylesheet",
-      "xhr"
-    ]
+    "jurisdiction": "IN",
+    "first_seen": "PRE_CONSENT"
   }
 ]

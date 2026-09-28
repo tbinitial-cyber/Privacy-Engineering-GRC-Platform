@@ -28,7 +28,7 @@ Use this 25-point checklist to audit any company's privacy policy:
 * [ ] **Point 6: Itemized Personal Data Categories:** Does the notice specify actual data elements collected (IP, cookie IDs, canvas content) rather than vague terms like "information"? *(GDPR Art. 13(1)(c))*
 * [ ] **Point 7: Lawful Basis Mapping (GDPR Art. 6):** Is every processing purpose mapped to an explicit lawful basis (Consent, Contract, Legitimate Interests)?
 * [ ] **Point 8: Legitimate Interests Justification:** If relying on Legitimate Interests (Art. 6(1)(f)), does the notice explain what those interests actually are?
-* [ ] **Point 9: Automated Telemetry & Replay Disclosure:** Does the notice disclose session screen replay tools (Microsoft Clarity, Hotjar) and behavioral analytics? *(Our Miro Audit Finding!)*
+* [ ] **Point 9: Automated Telemetry & Replay Disclosure:** Does the notice disclose session screen replay tools (Microsoft Clarity, G2) and behavioral analytics? *(Our Miro Audit Finding!)*
 * [ ] **Point 10: Special Category / Sensitive Data Disclosure:** Does the policy state whether sensitive data (biometrics, health, financial) is collected, and provide opt-out mechanics?
 
 ---

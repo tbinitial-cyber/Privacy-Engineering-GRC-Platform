@@ -575,7 +575,7 @@ if nav_choice == "📊 Executive CISO & DPO Dashboard":
         st.markdown("### 2. Reconciliation & Risk")
         st.markdown("""
         * **Audit Truth Check:** Technical telemetry vs published privacy statements and regional geofence.
-        * **Discovered Undisclosed Vendors:** Tapad, Reddit, Spotify, Hotjar, Clarity.
+        * **Discovered Undisclosed Vendors:** Tapad, Reddit, Spotify, G2, Clarity.
         * **EDPB DPIA Screening:** 5 of 9 WP 248 criteria met triggering high-risk regulatory presumption.
         """)
     with c3:

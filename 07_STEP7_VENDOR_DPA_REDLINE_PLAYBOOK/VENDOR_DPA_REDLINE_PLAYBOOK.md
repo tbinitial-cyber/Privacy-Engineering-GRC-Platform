@@ -13,7 +13,7 @@
 
 ## 1. Executive Framework & Strategic Purpose
 
-When automated web telemetry audits detect third-party trackers, pixels, and session replay scripts—such as **Microsoft Clarity (`clarity.ms`)**, **Tapad, Inc. (`tapad.com`)**, **Hotjar Ltd**, and **LinkedIn Insight Tags**—technical discovery is only the first step. 
+When automated web telemetry audits detect third-party trackers, pixels, and session replay scripts—such as **Microsoft Clarity (`clarity.ms`)**, **Tapad, Inc. (`tapad.com`)**, **G2**, and **LinkedIn Insight Tags**—technical discovery is only the first step. 
 
 Under **GDPR Article 28(1)** and **Indian DPDPA 2023 Section 8(2)**, a data controller/fiduciary is legally prohibited from engaging a data processor without entering into a **binding, written Data Processing Agreement (DPA)** that strictly circumscribes how the vendor handles customer personal data.
 
@@ -37,7 +37,7 @@ Based on our live capture of 301 telemetry events on `https://miro.com`, the 10 
 | Risk Tier | Vendors Discovered | Processing Functions | Primary Threat Vector | Mandatory Action |
 | :---: | :--- | :--- | :--- | :--- |
 | **TIER 1<br>(CRITICAL RISK)** | **Microsoft Clarity**<br>• `CLID`, `MUID`, `SM`<br>**Tapad, Inc.**<br>• `TapAd_DID`, `3WAY_SYNCS` | • Continuous DOM screen replay<br>• Keystroke & cursor telemetry<br>• Cross-device graph syncing | • Keystroke leakage<br>• Data broker re-identification<br>• Undisclosed subprocessor | **MANDATORY DPA REDLINE** or immediate script removal. |
-| **TIER 2<br>(MEDIUM RISK)** | **LinkedIn Ireland / Corp**<br>• `bcookie`, `bscookie`<br>**Hotjar Ltd**<br>• `_hjSessionUser`<br>**Adobe / Marketo**<br>• `_mkto_trk` | • B2B Ad Retargeting<br>• Session heatmaps<br>• Marketing automation | • Pre-consent cookie firing<br>• Cross-site ad tracking<br>• Omission from public notice | Enforce CMP pre-consent tag gating; execute updated DPA. |
+| **TIER 2<br>(MEDIUM RISK)** | **LinkedIn Ireland / Corp**<br>• `bcookie`, `bscookie`<br>**G2**<br>• `_hjSessionUser`<br>**Adobe / Marketo**<br>• `_mkto_trk` | • B2B Ad Retargeting<br>• Session heatmaps<br>• Marketing automation | • Pre-consent cookie firing<br>• Cross-site ad tracking<br>• Omission from public notice | Enforce CMP pre-consent tag gating; execute updated DPA. |
 | **TIER 3<br>(LOW RISK)** | **Cloudflare, Inc.**<br>• `__cf_bm`<br>**OneTrust LLC**<br>• `OptanonConsent`<br>**Intercom, Inc.**<br>• `intercom-id` | • WAF & Bot mitigation<br>• Statutory consent logging<br>• In-app customer support | • Operational vendor dependency | Fully disclosed; maintain standard SCCs and annual SOC 2 review. |
 
 ---
@@ -165,7 +165,7 @@ Below are the **7 core Battleground Clauses** where commercial SaaS vendors atte
 | **Microsoft Corporation (Clarity)** | Execute custom enterprise DPA incorporating **Clause 1 (Prohibition on Copilot/AI training)** and **Clause 5 (SCCs Module 2)**. Ensure Clarity terms do not cross-license data to the Bing Ads network. | Enforce `data-clarity-mask="true"` on all Miro canvas inputs and gate behind OneTrust `C0002` consent. |
 | **Tapad, Inc.** | **Issue Immediate Stop-Processing / De-tagging Notice.** Tapad operates as a third-party data broker without an executed DPA or public subprocessor listing. | Delete the Tapad script tag from GTM/container immediately. |
 | **LinkedIn Corporation** | Require LinkedIn to confirm that Insight Tag event telemetry is processed strictly under Controller-to-Processor terms (Module 2) rather than Controller-to-Controller joint processing for off-platform audience building. | Gate `bcookie` and `bscookie` behind OneTrust `C0004` (Targeting) consent. |
-| **Hotjar Ltd** | Execute standard EU DPA with Hotjar Ltd (Malta) incorporating strict 30-day session deletion SLA and keystroke suppression verification. | Gate `_hjSessionUser` behind OneTrust `C0002` consent. |
+| **G2** | Execute standard EU DPA with G2 incorporating strict 30-day session deletion SLA and keystroke suppression verification. | Gate `_hjSessionUser` behind OneTrust `C0002` consent. |
 
 ---
 

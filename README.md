@@ -37,7 +37,7 @@ Across controlled, clean-slate Chromium sessions on the audited production platf
     ├─ Pre-Consent Cookies: 7                       ├─ Pre-Consent Cookies: 60 (Temporal variation vs earlier 55)
     ├─ Pre-Consent Ad Trackers: 0                   ├─ Pre-Consent Ad Trackers: Firing (Clarity, Tapad)
     ├─ First-Layer Reject All: "Tout refuser"       ├─ First-Layer Reject All: Yes (Observed in latest capture)
-    ├─ Post-Reject: 8 cookies (Clean State)         ├─ Post-Reject: 59 cookies
+    ├─ Post-Reject: 8 cookies (Clean State)         ├─ Post-Reject: 57 cookies
     └─ Post-Accept: 18 cookies                      └─ Post-Accept: 61 cookies
 ```
 
@@ -53,8 +53,8 @@ Across controlled, clean-slate Chromium sessions on the audited production platf
 | **CMP Active Groups** | `window.OnetrustActiveGroups = ",C0001,"` | `window.OnetrustActiveGroups = ",C0001,C0002,C0003,C0004,C0007,"` | Prior opt-in enforced on EU route; notice/opt-out configuration on domestic route. |
 | **First-Layer Banner UX** | Equal prominence: **"Tout refuser"** alongside **"Autoriser"** | Banner included **"Reject All"** in the latest capture (absent in previous) | Varied choice architecture across runs on domestic route under India CPA 2019 Dark Patterns scrutiny. |
 | **Pre-Consent Cookies** | **7 Cookies** *(Category C0001 active; cookie-level purpose classification under review)* | **60 Cookies** *(Marketing, analytics & cross-site trackers deposited on load)* | Data minimization observed on European route relative to domestic baseline. |
-| **Pre-Consent Ad Trackers** | **0 Known Trackers** *(Clarity, Tapad, DoubleClick withheld during observation window)* | **Active Trackers Firing** *(Microsoft Clarity, Tapad, Hotjar transmit immediately)* | Pre-consent cookie deposition and tracker firing observed on domestic route before affirmative user interaction. Assessed under Indian framework (DPDPA 2023 Sec. 6 / CPA 2019); EU ePrivacy Directive applies to EU route only. |
-| **Post-Reject State** | **8 Cookies** *(Clean rejection preserved; +1 preference cookie)* | **59 Cookies** | Proves one-click rejection control is operational in EU. |
+| **Pre-Consent Ad Trackers** | **0 Known Trackers** *(Clarity, Tapad, DoubleClick withheld during observation window)* | **Active Trackers Firing** *(Microsoft Clarity, Tapad transmit immediately)* | Pre-consent cookie deposition and tracker firing observed on domestic route before affirmative user interaction. Assessed under Indian framework (DPDPA 2023 Sec. 6 / CPA 2019); EU ePrivacy Directive applies to EU route only. |
+| **Post-Reject State** | **8 Cookies** *(Clean rejection preserved; +1 preference cookie)* | **57 Cookies** | Proves one-click rejection control is operational in EU. |
 | **Post-Accept State** | **18 Cookies** *(Affirmative consent releases analytics/ad cookies)* | **61 Cookies** *(Consent yields parity with baseline + slight variance)* | Demonstrates conditional script-blocking works, but is dynamically relaxed on domestic route. |
 | **Applicable Law** | **Observed France/EU consent configuration and client-side behavior relevant to GDPR consent and ePrivacy Article 5(3) assessment.** | **DPDPA 2023 §6** *(Phased commencement)* & **Consumer Protection Act, 2019 / CCPA Dark Patterns Guidelines** | Prospective DPDPA risk once Section 6 phased commencement schedule completes. |
 
@@ -128,7 +128,7 @@ flowchart TD
 
 ### 🔍 Step 4: Dual-Domain Discrepancy & Transparency Reconciliation
 - **Ground Truth vs. Public Disclosures:** Cross-references observed network destinations against Miro's public Subprocessor List PDF (July 2026).
-- **Discovered Shadow Telemetry:** Identified unlisted third-party trackers including **Microsoft Clarity** (`CLID`, `SM`, `MUID`), **Tapad Inc.** (`TapAd_3WAY_SYNCS`), and **Hotjar** actively communicating with external infrastructure.
+- **Discovered Shadow Telemetry:** Identified unlisted third-party trackers including **Microsoft Clarity** (`CLID`, `SM`, `MUID`), **Tapad Inc.** (`TapAd_3WAY_SYNCS`), and **G2** actively communicating with external infrastructure.
 
 ### 🏛️ Step 5: Multi-Jurisdictional RoPA Register ([`ROPA_ARTICLE_30_REGISTER.md`](04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER/ROPA_ARTICLE_30_REGISTER.md))
 - **GDPR Article 30 RoPA (Statutory):** Statutory Record of Processing Activities for Data Controllers.

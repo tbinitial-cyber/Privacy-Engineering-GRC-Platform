@@ -46,7 +46,7 @@ We collect personal data directly from you, automatically through your use of ou
 │                                 │ consent preference strings ('OptanonConsent').         │
 ├─────────────────────────────────┼────────────────────────────────────────────────────────┤
 │ 4. Telemetry & Behavioral Replay│ Clicks, mouse movements, scrolling paths, feature usage│
-│                                 │ (via Microsoft Clarity & Hotjar), and referrer URLs.   │
+│                                 │ (via Microsoft Clarity), and referrer URLs.   │
 ├─────────────────────────────────┼────────────────────────────────────────────────────────┤
 │ 5. Customer Content & Workspace │ Collaborative whiteboard canvas text, shapes, uploaded  │
 │                                 │ files, comments, and in-app customer support chats.    │
@@ -65,7 +65,7 @@ Under **GDPR Article 6** and **Indian DPDPA 2023 Section 4**, we process your pe
 | :--- | :--- | :--- | :--- |
 | **Providing Core Platform & Services** | Identity, Account Data, Workspace Content | **Article 6(1)(b):** Performance of a Contract | **Section 6(1):** Consent / Fulfillment of Service |
 | **Session Security & Bot Mitigation** | IP address, Cloudflare tokens (`__cf_bm`) | **Article 6(1)(f):** Legitimate Interests (Platform security) | **Section 7(a):** Certain Legitimate Uses (Operational security) |
-| **Web Traffic Analytics & UX Improvement** | Google Analytics (`_ga`), Hotjar session replays | **Article 6(1)(a):** Prior Affirmative Consent | **Section 6(1):** Consent of Data Principal |
+| **Web Traffic Analytics & UX Improvement** | Google Analytics (`_ga`), G2 session replays | **Article 6(1)(a):** Prior Affirmative Consent | **Section 6(1):** Consent of Data Principal |
 | **Targeted Advertising & B2B Retargeting** | Google DoubleClick (`IDE`), LinkedIn (`bcookie`) | **Article 6(1)(a):** Prior Affirmative Consent | **Section 6(1):** Consent of Data Principal |
 | **In-App Customer Support** | Chat transcripts, Intercom device tokens | **Article 6(1)(b):** Contract / Pre-contractual steps | **Section 6(1):** Consent / User Request |
 | **Legal Compliance & Fraud Defense** | Billing records, transaction logs, IP logs | **Article 6(1)(c):** Legal Obligation | **Section 7(c):** Compliance with Law |
@@ -77,7 +77,7 @@ Under **GDPR Article 6** and **Indian DPDPA 2023 Section 4**, we process your pe
 We utilize cookies, web beacons, and software development kits (SDKs) to operate our platform, measure performance, and deliver relevant marketing:
 
 * **Strictly Necessary Cookies:** Essential for page navigation, session management, and bot protection (e.g. Cloudflare `__cf_bm` and OneTrust `OptanonConsent`). These cookies do not require prior consent under the ePrivacy Directive and cannot be disabled in our systems.
-* **Performance & Analytics Cookies:** Help us understand user navigation flow and identify site errors (e.g. Google Analytics 4, Segment, Hotjar).
+* **Performance & Analytics Cookies:** Help us understand user navigation flow and identify site errors (e.g. Google Analytics 4, Segment, G2).
 * **Targeting & Advertising Cookies:** Set by our advertising partners (Google DoubleClick, LinkedIn, YouTube) to build an interest profile and display relevant advertisements across third-party websites.
 * **Consent Management:** When you first visit our website, you are presented with our **OneTrust Consent Preference Center**. Non-essential cookies are blocked by default and are only released after you click "**Accept All**" or opt in via cookie settings.
 * **Global Privacy Control (GPC):** We automatically detect and honor browser-level Global Privacy Control opt-out signals (`navigator.globalPrivacyControl`).
@@ -91,7 +91,7 @@ We share personal data with vetted third-party service providers (Data Processor
 1. **Cloud Hosting & Infrastructure:** Amazon Web Services (AWS, USA/EU).
 2. **Security & Content Delivery:** Cloudflare, Inc. (USA/Global Anycast).
 3. **Customer Support:** Intercom, Inc. (USA).
-4. **Analytics & Performance:** Google LLC (Google Analytics 4), Twilio/Segment Inc., Hotjar Ltd (Malta).
+4. **Analytics & Performance:** Google LLC (Google Analytics 4), Twilio/Segment Inc., G2.
 5. **Digital Marketing Partners:** Google LLC (DoubleClick), LinkedIn Corporation, Adobe/Marketo.
 
 * **Subprocessor Transparency:** Our full, updated list of third-party subprocessors is publicly available on our corporate trust portal.
@@ -222,7 +222,7 @@ Use this 25-point checklist to audit any company's privacy policy:
 * [ ] **Point 6: Itemized Personal Data Categories:** Does the notice specify actual data elements collected (IP, cookie IDs, canvas content) rather than vague terms like "information"? *(GDPR Art. 13(1)(c))*
 * [ ] **Point 7: Lawful Basis Mapping (GDPR Art. 6):** Is every processing purpose mapped to an explicit lawful basis (Consent, Contract, Legitimate Interests)?
 * [ ] **Point 8: Legitimate Interests Justification:** If relying on Legitimate Interests (Art. 6(1)(f)), does the notice explain what those interests actually are?
-* [ ] **Point 9: Automated Telemetry & Replay Disclosure:** Does the notice disclose session screen replay tools (Microsoft Clarity, Hotjar) and behavioral analytics? *(Our Miro Audit Finding!)*
+* [ ] **Point 9: Automated Telemetry & Replay Disclosure:** Does the notice disclose session screen replay tools (Microsoft Clarity, G2) and behavioral analytics? *(Our Miro Audit Finding!)*
 * [ ] **Point 10: Special Category / Sensitive Data Disclosure:** Does the policy state whether sensitive data (biometrics, health, financial) is collected, and provide opt-out mechanics?
 
 ---
@@ -313,7 +313,7 @@ When technical reality diverges from your Privacy Policy, regulatory exposure is
 │ Tapad 3-Way Device Sync active  │ Undisclosed third-party sync.   │ CCPA § 1798.120 failure to      │
 │ (`TapAd_3WAY_SYNCS`)            │                                 │ disclose "Sale/Sharing".        │
 ├─────────────────────────────────┼─────────────────────────────────┼─────────────────────────────────┤
-│ Hotjar heatmaps firing          │ Claims all non-essential cookies│ ePrivacy Directive Art. 5(3)    │
+│ G2 heatmaps firing          │ Claims all non-essential cookies│ ePrivacy Directive Art. 5(3)    │
 │ Pre-Consent in `baseline.json`  │ require prior consent.          │ False and deceptive claim.      │
 └─────────────────────────────────┴─────────────────────────────────┴─────────────────────────────────┘
 ```

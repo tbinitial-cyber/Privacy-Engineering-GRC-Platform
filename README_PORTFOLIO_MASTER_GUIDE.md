@@ -41,8 +41,8 @@ C:\Users\acer\Privacy_Engineering_Master_Portfolio\
 │
 ├── 📁 02_STEP2_RAW_AND_NORMALIZED_TELEMETRY
 │   ├── 🌐 normalized_evidence.json (301 records with deterministic SHA-256 IDs)
-│   ├── 🍪 baseline.json (55 unique pre-consent cookies)
-│   ├── 🍪 post_consent.json (65 total post-consent cookies)
+│   ├── 🍪 baseline.json (60 unique pre-consent cookies)
+│   ├── 🍪 post_consent.json (61 total post-consent cookies)
 │   ├── 🖥️ host_inventory.json (74 external hosts discovered)
 │   ├── 📸 pre_consent.png (Full-page screenshot showing OneTrust banner)
 │   ├── 📸 post_consent.png (Full-page screenshot after clicking Accept All)
@@ -56,7 +56,7 @@ C:\Users\acer\Privacy_Engineering_Master_Portfolio\
 ├── 📁 04_STEP4_TRANSPARENCY_AND_COOKIE_REGISTER
 │   ├── 🔍 TRANSPARENCY_RECONCILIATION_REPORT.md (Technical reality vs Privacy Policy)
 │   ├── 📊 transparency_reconciliation_report.json
-│   ├── 🍪 COOKIE_VENDOR_INVENTORY.md (65 cookies grouped by vendor and category)
+│   ├── 🍪 COOKIE_VENDOR_INVENTORY.md (61 cookies grouped by vendor and category)
 │   ├── 📋 cookie_vendor_inventory.json
 │   └── 📘 README_STEP4_TRANSPARENCY.md
 │
@@ -94,9 +94,9 @@ C:\Users\acer\Privacy_Engineering_Master_Portfolio\
 If you ever feel lost or need to explain this project in an interview, here is the simple 7-step story:
 
 1. **Step 1 (The Rulebook):** We wrote a strict JSON Schema (`evidence.schema.json`) that sets the ground rules. No telemetry data is accepted unless it satisfies this exact mathematical format.
-2. **Step 2 (The Live Crime Scene Capture):** We launched a real browser on `https://miro.com`. We captured 55 unique cookies and 74 external servers before touching the consent banner (`baseline.json` & `pre_consent.png`), and then captured the 10 brand-new cookies that fired immediately after clicking "Accept All" (`post_consent.json` & `post_consent.png`), bringing the total to 65 cookies. We normalized all 301 records into `normalized_evidence.json` with SHA-256 cryptographic fingerprints.
+2. **Step 2 (The Live Crime Scene Capture):** We launched a real browser on `https://miro.com`. We captured 60 unique cookies and 74 external servers before touching the consent banner (`baseline.json` & `pre_consent.png`), and then captured the 10 brand-new cookies that fired immediately after clicking "Accept All" (`post_consent.json` & `post_consent.png`), bringing the total to 61 cookies. We normalized all 301 records into `normalized_evidence.json` with SHA-256 cryptographic fingerprints.
 3. **Step 3 (The Initial Sorting):** An automated engine grouped the 301 raw records into 5 candidate activities (Advertising, Analytics, Session/Security, Customer Support, Unclassified). Crucially, the machine left the legal conclusion as `None` because only a qualified human can apply the law.
-4. **Step 4 (The Audit Truth Check):** We compared what the website actually did against Miro's official Privacy Policy and Subprocessor list. We discovered that Miro disclosed Intercom and OpenAI, but **failed to disclose Tapad, Reddit, Spotify, Hotjar, and Microsoft Clarity**! We also created a complete 65-cookie inventory register (`COOKIE_VENDOR_INVENTORY.md`).
+4. **Step 4 (The Audit Truth Check):** We compared what the website actually did against Miro's official Privacy Policy and Subprocessor list. We discovered that Miro disclosed Intercom and OpenAI, but **failed to disclose Tapad, Reddit, Spotify, and Microsoft Clarity**! We also created a complete 61-cookie inventory register (`COOKIE_VENDOR_INVENTORY.md`).
 5. **Step 5 (The Legal Regulatory Filing):** We acted as the Data Protection Officer (DPO) and built the official **Article 30 RoPA** (`ROPA_ARTICLE_30_REGISTER.xlsx`), assigning proper lawful bases under GDPR Art 6 and Indian DPDPA Sec 6/7, cross-border transfer mechanisms (SCCs/DPF), and retention periods.
 6. **Step 6 (The High-Risk Warning):** Because Miro runs Microsoft Clarity (screen replay) and Tapad (device tracking), we triggered a formal **Data Protection Impact Assessment (DPIA)** under GDPR Article 35. We proved that Clarity fired in a pre-consent state, creating a severe regulatory violation.
 7. **Step 7 (The Commercial Shield):** We wrote the **Vendor DPA Redline Playbook** (`VENDOR_DPA_REDLINE_PLAYBOOK.md`). We took standard vendor click-wrap terms and aggressively redlined them under GDPR Article 28 to forbid vendors from using our telemetry to train their AI models and to mandate a 48-hour breach notification SLA.

@@ -50,7 +50,7 @@ When technical reality diverges from your Privacy Policy, regulatory exposure is
 │ Tapad 3-Way Device Sync active  │ Undisclosed third-party sync.   │ CCPA § 1798.120 failure to      │
 │ (`TapAd_3WAY_SYNCS`)            │                                 │ disclose "Sale/Sharing".        │
 ├─────────────────────────────────┼─────────────────────────────────┼─────────────────────────────────┤
-│ Hotjar heatmaps firing          │ Claims all non-essential cookies│ ePrivacy Directive Art. 5(3)    │
+│ G2 heatmaps firing          │ Claims all non-essential cookies│ ePrivacy Directive Art. 5(3)    │
 │ Pre-Consent in `baseline.json`  │ require prior consent.          │ False and deceptive claim.      │
 └─────────────────────────────────┴─────────────────────────────────┴─────────────────────────────────┘
 ```

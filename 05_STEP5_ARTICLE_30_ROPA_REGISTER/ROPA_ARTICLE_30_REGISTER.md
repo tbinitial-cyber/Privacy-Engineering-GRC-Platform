@@ -57,14 +57,14 @@ This register bridges **live frontend network telemetry** captured via automated
 * **Lawful Basis (GDPR Art. 6):** **Article 6(1)(a) - Consent (e-Privacy Directive Art 5(3) & GDPR Art 6(1)(a))**
 * **Lawful Basis (DPDPA 2023):** **Section 6(1) - Consent of the Data Principal**
 * **Categories of Data Subjects:** Website visitors, prospective registered users
-* **Categories of Personal Data:** Google Analytics Client ID ('_ga', '_ga_FK1CGSZNDB'), Segment anonymous ID ('ajs_anonymous_id'), Hotjar session identifier ('_hjSessionUser_763128'), truncated IP, screen resolution, operating system
+* **Categories of Personal Data:** Google Analytics Client ID ('_ga', '_ga_FK1CGSZNDB'), Segment anonymous ID ('ajs_anonymous_id'), G2 session identifier ('_hjSessionUser_763128'), truncated IP, screen resolution, operating system
 * **Special Category Data (Art. 9):** None collected or inferred
-* **Recipients & Cloud Subprocessors:** Google LLC (Google Analytics 4, USA), Twilio / Segment Inc. (USA), Hotjar Ltd (Malta / EU)
+* **Recipients & Cloud Subprocessors:** Google LLC (Google Analytics 4, USA), Twilio / Segment Inc. (USA), G2 (Malta / EU)
 * **Cross-Border Transfers & Safeguards:** USA & Malta. Safeguard: EU Standard Contractual Clauses (SCCs) and adequacy / DPF framework.
-* **Retention Schedule:** Google Analytics 4 data retention set to 14 months; Hotjar user identifiers retained up to 365 days; session cookies expire on browser close.
+* **Retention Schedule:** Google Analytics 4 data retention set to 14 months; G2 user identifiers retained up to 365 days; session cookies expire on browser close.
 * **TOMs (Art. 32 Security Measures):** Google Analytics IP Anonymization enabled; TLS 1.3 in-transit encryption; OneTrust category classification under 'Performance / Analytics'.
 * **DPIA Requirement Trigger:** **NO (Standard web analytics with IP anonymization, provided keystroke/screen replay is sanitized)**
-* **Audit & Governance Status:** **`COMPLIANT WITH DISCLOSURE GAP (Google Looker disclosed in Subprocessor PDF, but Hotjar omitted from July 2026 subprocessor list)`**
+* **Audit & Governance Status:** **`COMPLIANT WITH DISCLOSURE GAP (Google Looker disclosed in Subprocessor PDF, but G2 omitted from July 2026 subprocessor list)`**
 * **Sample Cryptographic Evidence IDs:** `EVD-WEB-056-D2832FE2EA, EVD-WEB-055-4EA077D761, EVD-WEB-039-9F98B6C691`
 
 ---
@@ -135,7 +135,7 @@ This register bridges **live frontend network telemetry** captured via automated
 | **Google LLC (GA4)** | `ROPA-ACT-002` | Web Audience Analytics | USA | EU-US DPF & SCCs | ⚠️ Looker Disclosed | **Requires Review** (Fires prior to opt-in) |
 | **Google LLC (DoubleClick)** | `ROPA-ACT-001` | Ad Remarketing & Conversion | USA | EU-US DPF & SCCs | ⚠️ DoubleClick Omitted | **Compliant Gate** (Held back until Accept All) |
 | **LinkedIn Corporation** | `ROPA-ACT-001` | B2B Retargeting & Attribution | Ireland / USA | SCCs 2021/914 | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (`bcookie` fires pre-consent; prospective risk) |
-| **Hotjar Ltd** | `ROPA-ACT-002` | Session Heatmaps & Replay | Malta (EU) | EU Internal / EEA | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (Fires pre-consent; prospective risk) |
+| **G2** | `ROPA-ACT-002` | Session Heatmaps & Replay | Malta (EU) | EU Internal / EEA | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (Fires pre-consent; prospective risk) |
 | **Microsoft Corp (Clarity)** | `ROPA-ACT-005` | Screen Replay & Behavioral Telemetry | USA | SCCs | ❌ **Clarity Omitted** | **Observed Pre-Consent** (Fires pre-consent; EDPB WP 248 DPIA Presumption) |
 | **Tapad, Inc.** | `ROPA-ACT-001` | Cross-Device Identity Sync | USA | Unverified | ❌ **Undisclosed Shadow Tracker** | **Observed Pre-Consent** (Cross-device sync active without explicit gate) |
 | **Adobe / Marketo Inc.** | `ROPA-ACT-005` | B2B Marketing Automation | USA | EU-US DPF & SCCs | ❌ **Omitted from Subprocessors** | **Observed Pre-Consent** (Munchkin tracking fires pre-consent) |
@@ -145,9 +145,9 @@ This register bridges **live frontend network telemetry** captured via automated
 ## 4. Remediation Action Plan for Legal & Engineering Teams
 
 1. **Immediate CMP Tag Manager Lockdown:**
-   - Configure OneTrust to strictly withhold Microsoft Clarity (`clarity.ms`), Hotjar (`hotjar.com`), Tapad (`tapad.com`), and LinkedIn tracking scripts until explicit user opt-in (`C0002` - Performance, `C0004` - Targeting) is received.
+   - Configure OneTrust to strictly withhold Microsoft Clarity (`clarity.ms`), G2 (`hotjar.com`), Tapad (`tapad.com`), and LinkedIn tracking scripts until explicit user opt-in (`C0002` - Performance, `C0004` - Targeting) is received.
 2. **Subprocessor Disclosure Synchronization:**
-   - Update Miro's public Subprocessor List PDF to include Hotjar Ltd, LinkedIn Ireland, Microsoft Clarity, and Adobe/Marketo.
+   - Update Miro's public Subprocessor List PDF to include G2, LinkedIn Ireland, Microsoft Clarity, and Adobe/Marketo.
 3. **Execution of Vendor Data Processing Agreements (DPAs):**
    - Execute formal DPAs featuring EU Standard Contractual Clauses (Module 2 Controller-to-Processor) with Tapad, Inc. and Reddit, Inc.
 4. **Initiation of Mandatory DPIA:**
