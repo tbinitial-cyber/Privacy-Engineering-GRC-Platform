@@ -42,7 +42,7 @@ The table below evaluates Miro's live web telemetry against the 9 regulatory gui
 | :---: | :--- | :---: | :--- |
 | **1** | **Evaluation or scoring (profiling)** | **YES** | **Tapad & LinkedIn ad tracking** — Tapad sync beacons (`TapAd_3WAY_SYNCS`, `TapAd_TS`, `TapAd_DID`) and LinkedIn (`UserMatchHistory`, `AnalyticsSyncHistory`) cookies directly observed in India baseline pre-consent capture. _Evidence class: EMPIRICAL — directly captured cookies and network responses in MIRO-IN-001/baseline/network_events.json._ |
 | **2** | **Automated decision-making with legal/similar effect** | **NO** | Telemetry informs ad bidding algorithms but no binding legal determinations or service denials evidenced in this capture. |
-| **3** | **Systematic monitoring of data subjects** | **EVIDENCE-SUPPORTED** | **Microsoft Clarity (`c.clarity.ms`, `tag/hn9ca7nm9h`) & G2** — beacon endpoints and associated tracking cookies (`CLID`, `SM`, `MUID`) observed firing pre-consent. Clarity/G2 are documented session-replay vendors. _Evidence class: ENDPOINT + COOKIE PRESENCE — session-replay payload data itself was not extracted from HAR; systematic monitoring is inferred from vendor identity and known product capability, not directly confirmed replay payload. Scope confirmation requires HAR payload inspection._ |
+| **3** | **Systematic monitoring of data subjects** | **EVIDENCE-SUPPORTED** | **Microsoft Clarity (`c.clarity.ms`, `tag/hn9ca7nm9h`) &** — beacon endpoints and associated tracking cookies (`CLID`, `SM`, `MUID`) observed firing pre-consent. Clarity/G2 are documented session-replay vendors. _Evidence class: ENDPOINT + COOKIE PRESENCE — session-replay payload data itself was not extracted from HAR; systematic monitoring is inferred from vendor identity and known product capability, not directly confirmed replay payload. Scope confirmation requires HAR payload inspection._ |
 | **4** | **Sensitive data or data of a highly personal nature** | **POTENTIAL** | Session replay technology captures raw DOM mutations. If client-side masking fails, personal information entered into search/contact forms may be ingested. _Evidence class: ARCHITECTURAL RISK INFERENCE — not directly observed in this run._ |
 | **5** | **Data processed on a large scale** | **EVIDENCE-SUPPORTED (EXTERNAL CONTEXT)** | Multi-jurisdiction user base and enterprise SaaS scale inferred from public Miro company statements and third-party traffic estimates. _Evidence class: EXTERNAL CONTEXT — not established by this telemetry run. This capture tested a single browser session; volume/scale was not measured. Source: Miro public disclosures / third-party web analytics. Not to be conflated with empirical capture findings._ |
 | **6** | **Matching or combining of datasets** | **YES** | **Tapad Synchronization Beacons (`TapAd_3WAY_SYNCS`)** and **LinkedIn (`UserMatchHistory`, `AnalyticsSyncHistory`)** directly observed correlating identifiers across external ad networks. _Evidence class: EMPIRICAL — cookies and network responses directly captured in MIRO-IN-001 baseline._ |
@@ -85,7 +85,7 @@ flowchart TD
 #### B. The Privacy Risk Mechanics
 1. **DOM Mutation Serialization:** Clarity's client-side script serializes the webpage's Document Object Model (DOM) and transmits binary mutation batches to Microsoft servers every few seconds.
 2. **Accidental Keystroke Ingestion:** While Clarity provides default masking for input fields, if form fields on landing pages or embedded iframe widgets lack strict `data-clarity-mask` attributes, user-typed queries, email addresses, or unredacted text can be recorded and replayed in Microsoft dashboards.
-3. **Cross-Service Tracking:** The presence of `MUID` and `MR` cookies connects session recordings to Microsoft's wider Bing advertising netwo        4. **Pre-Consent Firing Observed (India Route - MIRO-IN-001):** In \aseline.json\, Clarity cookies were written **prior to the user clicking Accept All**. This is assessed under DPDPA 2023 Section 6 and Consumer Protection Act, 2019 / CCPA Dark Patterns Guidelines principles on the India route. On the EU route (MIRO-EU-001), no Clarity or G2 cookies were present in the pre-consent baseline. EU ePrivacy Dir. does not apply to the India route.
+3. **Cross-Service Tracking:** The presence of `MUID` and `MR` cookies connects session recordings to Microsoft's wider Bing advertising netwo        4. **Pre-Consent Firing Observed (India Route - MIRO-IN-001):** In \aseline.json\, Clarity cookies were written **prior to the user clicking Accept All**. This is assessed under DPDPA 2023 Section 6 and Consumer Protection Act, 2019 / CCPA Dark Patterns Guidelines principles on the India route. On the EU route (MIRO-EU-001), no Clarity or cookies were present in the pre-consent baseline. EU ePrivacy Dir. does not apply to the India route.
 ---
 
 ### Trigger 2: Tapad & LinkedIn Cross-Device Graph Synchronization
@@ -135,7 +135,7 @@ REMEDIATION PLAYBOOK
 
 ### Action 1: Tag Manager Consent Gating (Engineering)
 * **Problem:** `clarity.js` and `clarity.js` currently load synchronously in the `<head>` of `miro.com` without evaluating the `OptanonConsent` cookie.
-* **Fix:** Modify Google Tag Manager / script loader to assign the trigger `OneTrustGroupsUpdated`. Do NOT fire Microsoft Clarity or G2 until the event contains `C0002` (Performance / Analytics Cookies) = `1`.
+* **Fix:** Modify Google Tag Manager / script loader to assign the trigger `OneTrustGroupsUpdated`. Do NOT fire Microsoft Clarity or until the event contains `C0002` (Performance / Analytics Cookies) = `1`.
 
 ### Action 2: Client-Side DOM Masking Configuration (Engineering)
 * **Problem:** Default masking may miss dynamic whiteboard canvas or custom inputs.
@@ -150,7 +150,7 @@ REMEDIATION PLAYBOOK
 * **Fix:** Completely remove the Tapad pixel tag and delete associated 3-way sync scripts from the production web container.
 
 ### Action 4: Official Subprocessor Transparency Update (Legal)
-* **Problem:** Omission of Microsoft Clarity, LinkedIn Ireland, and G2 from the public subprocessor register.
+* **Problem:** Omission of Microsoft Clarity, LinkedIn Ireland, from the public subprocessor register.
 * **Fix:** Issue an addendum to Miro's public Subprocessor List PDF documenting:
   - Vendor: *Microsoft Corporation (Clarity)*
   - Purpose: *Session diagnostics and user interface interaction analysis*

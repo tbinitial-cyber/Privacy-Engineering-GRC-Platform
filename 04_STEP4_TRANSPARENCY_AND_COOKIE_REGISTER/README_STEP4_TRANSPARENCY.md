@@ -9,4 +9,4 @@
 - **The "Audit Gotchas" Found:**
   - **Disclosed:** Intercom (Chatbot) and OpenAI are properly disclosed.
   - **Partially Disclosed:** Google Looker is disclosed, but Google DoubleClick ad tracking is omitted.
-  - **Completely Undisclosed:** Tapad (cross-device sync), Reddit Pixel, Spotify Pixel, G2 (screen recording), and Microsoft Clarity were completely missing from the official subprocessor list!
+  - **Completely Undisclosed:** Tapad (cross-device sync), Reddit Pixel, Spotify Pixel (screen recording), and Microsoft Clarity were completely missing from the official subprocessor list!

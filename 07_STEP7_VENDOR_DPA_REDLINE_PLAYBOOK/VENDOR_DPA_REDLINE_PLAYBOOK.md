@@ -165,7 +165,6 @@ Below are the **7 core Battleground Clauses** where commercial SaaS vendors atte
 | **Microsoft Corporation (Clarity)** | Execute custom enterprise DPA incorporating **Clause 1 (Prohibition on Copilot/AI training)** and **Clause 5 (SCCs Module 2)**. Ensure Clarity terms do not cross-license data to the Bing Ads network. | Enforce `data-clarity-mask="true"` on all Miro canvas inputs and gate behind OneTrust `C0002` consent. |
 | **Tapad, Inc.** | **Issue Immediate Stop-Processing / De-tagging Notice.** Tapad operates as a third-party data broker without an executed DPA or public subprocessor listing. | Delete the Tapad script tag from GTM/container immediately. |
 | **LinkedIn Corporation** | Require LinkedIn to confirm that Insight Tag event telemetry is processed strictly under Controller-to-Processor terms (Module 2) rather than Controller-to-Controller joint processing for off-platform audience building. | Gate `bcookie` and `bscookie` behind OneTrust `C0004` (Targeting) consent. |
-| **G2** | Execute standard EU DPA with G2 incorporating strict 30-day session deletion SLA and keystroke suppression verification. | Gate `_hjSessionUser` behind OneTrust `C0002` consent. |
 
 ---
 
