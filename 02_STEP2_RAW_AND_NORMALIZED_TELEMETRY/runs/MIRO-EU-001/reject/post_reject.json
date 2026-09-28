@@ -1,12 +1,13 @@
 {
   "audit_run_id": "MIRO-EU-001",
+  "capture_id": "MIRO-EU-001-REJECT-20260928-1028",
   "action": "CLICKED_REJECT_ALL",
-  "timestamp": "2026-09-28T10:08:16.367652+00:00",
-  "cookie_count": 10,
+  "timestamp": "2026-09-28T10:28:55.361600+00:00",
+  "cookie_count": 8,
   "cookies": [
     {
       "name": "geo_data",
-      "value": "IN|India|Delhi|Asia/Kolkata",
+      "value": "FR|France||Europe/Paris",
       "domain": "miro.com",
       "path": "/api/ff",
       "expires": -1,
@@ -16,10 +17,10 @@
     },
     {
       "name": "ajs_anonymous_id",
-      "value": "%226a41fed4-f14a-4377-a601-9eecf3ecd39c%22",
+      "value": "%22216de6b9-424c-4d01-84ea-dc776ddb30da%22",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1822126086.180097,
+      "expires": 1822127317.672644,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -29,14 +30,14 @@
       "value": "off",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790590206.181125,
+      "expires": 1790591437.673431,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "geo_data",
-      "value": "IN|India|Delhi|Asia/Kolkata",
+      "value": "FR|France||Europe/Paris",
       "domain": "miro.com",
       "path": "/",
       "expires": -1,
@@ -46,10 +47,10 @@
     },
     {
       "name": "__ff",
-      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v2\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
+      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"holdout\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790590207.761408,
+      "expires": 1790591443.141038,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -65,48 +66,26 @@
       "sameSite": "Lax"
     },
     {
-      "name": "fbp_tracked",
-      "value": "undefined",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1793182088,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "rdt_uuid_tracked",
-      "value": "undefined",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1793182088,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "OptanonAlertBoxClosed",
-      "value": "2026-09-28T10:08:13.134Z",
+      "value": "2026-09-28T10:28:52.072Z",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1822126093,
+      "expires": 1822127332,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A38%3A13+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=d627c1fc-901f-4630-a376-77d413097ced&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0&intType=2",
+      "value": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A58%3A52+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=f405dcfb-a325-4ed3-a171-fd584b8db921&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0&intType=2",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1822126093,
+      "expires": 1822127332,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     }
   ],
-  "post_action_responses": 2,
-  "post_action_set_cookie": 0,
-  "capture_id": "MIRO-EU-001-REJECT-POST-FRESH",
-  "artifact_status": "FRESH_CAPTURE"
+  "post_action_responses": 3,
+  "post_action_set_cookie": 0
 }

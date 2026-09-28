@@ -5,9 +5,10 @@
     "generated_at": "2026-09-26T22:48:00Z",
     "core_finding": "Miro exhibited materially divergent consent-management and client-side telemetry behavior under verified France/EU vs. India network conditions during the captured test runs.",
     "fresh_india_captured_at": "2026-09-27T17:40:40.412853+00:00",
-    "eu_artifact_status": "FRESH_CAPTURE",
-    "data_provenance_note": "Both India and EU captures are now fresh capture artifacts.",
-    "fresh_eu_captured_at": "2026-09-28T10:07:21.182995+00:00"
+    "eu_artifact_status": "NATIVE_VPN_CAPTURE",
+    "data_provenance_note": "100% Native Same-Window Symmetric Capture (No Mocks/Proxies Spoofed)",
+    "fresh_eu_captured_at": "2026-09-28T10:07:21.182995+00:00",
+    "comparison_timestamp": "2026-09-28T10:30:42.232540+00:00"
   },
   "runs_evaluated": [
     "MIRO-IN-001",
@@ -16,7 +17,7 @@
   "symmetric_treatment_matrix": {
     "pre_consent_state": {
       "MIRO-EU-001": {
-        "cookies_observed": 9,
+        "cookies_observed": 7,
         "onetrust_active_groups": ",C0001,",
         "third_party_ad_trackers": 0,
         "third_party_ad_trackers_note": "0 known advertising trackers identified by current classifier during observation window",
@@ -24,12 +25,12 @@
         "classification_status": "Category C0001 active in OneTrust; 9 client-side cookies observed (purpose classification under review, including ajs_anonymous_id)",
         "onetrust_geoip": {
           "country": "FR",
-          "state": "IDF",
-          "stateName": "\u00cele-de-France",
+          "state": "GES",
+          "stateName": "Grand Est",
           "continent": "EU"
         },
-        "capture_timestamp": "2026-09-28T10:07:21.182995+00:00",
-        "capture_id": "MIRO-EU-001-BASELINE-FRESH",
+        "capture_timestamp": "2026-09-28T10:27:42.140045+00:00",
+        "capture_id": "MIRO-EU-001-BASELINE-20260928-1027",
         "artifact_status": "FRESH_CAPTURE"
       },
       "MIRO-IN-001": {
@@ -45,19 +46,19 @@
           "stateName": "Delhi",
           "continent": "AS"
         },
-        "capture_timestamp": "2026-09-27T17:40:40.412853+00:00",
-        "capture_id": "MIRO-IN-001-BASELINE-FRESH",
+        "capture_timestamp": "2026-09-28T10:30:42.232540+00:00",
+        "capture_id": "MIRO-IN-001-BASELINE-20260928-1030",
         "artifact_status": "FRESH_CAPTURE",
         "note_cookie_delta_vs_legacy": "Legacy artifact showed 55 cookies. Fresh capture on 2026-09-27T17:40:40.412853+00:00 shows 60 cookies. Miro's CMP configuration may have changed. Active groups now include C0007 (not present in legacy artifact)."
       }
     },
     "post_accept_state": {
       "MIRO-EU-001": {
-        "cookies_observed": 61,
+        "cookies_observed": 18,
         "action": "Clicked 'Autoriser tous les cookies'",
         "telemetry_delta": "Performance and targeting cookies released upon affirmative user opt-in",
-        "capture_timestamp": "2026-09-28T10:07:49.777559+00:00",
-        "capture_id": "MIRO-EU-001-ACCEPT-FRESH",
+        "capture_timestamp": "2026-09-28T10:28:22.490810+00:00",
+        "capture_id": "MIRO-EU-001-ACCEPT-20260928-1028",
         "artifact_status": "FRESH_CAPTURE"
       },
       "MIRO-IN-001": {
@@ -65,28 +66,28 @@
         "action": "CLICKED_ACCEPT_ALL",
         "telemetry_delta": "Post-accept: 61 cookies. Post-action network responses: 36. Set-Cookie headers in post-action phase: 0.",
         "active_groups_post_accept": ",C0007,C0004,C0001,C0002,C0003,",
-        "capture_timestamp": "2026-09-27T17:41:19.270458+00:00",
-        "capture_id": "MIRO-IN-001-ACCEPT-FRESH",
+        "capture_timestamp": "2026-09-28T10:31:09.859465+00:00",
+        "capture_id": "MIRO-IN-001-ACCEPT-20260928-1031",
         "artifact_status": "FRESH_CAPTURE"
       }
     },
     "post_reject_state": {
       "MIRO-EU-001": {
-        "cookies_observed": 10,
+        "cookies_observed": 8,
         "action": "Clicked 'Tout refuser'",
         "clean_rejection_maintained": true,
         "telemetry_delta": "+1 preference cookie (OptanonConsent updated); zero tracking cookies deposited",
-        "capture_timestamp": "2026-09-28T10:08:16.367652+00:00",
-        "capture_id": "MIRO-EU-001-REJECT-FRESH",
+        "capture_timestamp": "2026-09-28T10:28:55.361600+00:00",
+        "capture_id": "MIRO-EU-001-REJECT-20260928-1028",
         "artifact_status": "FRESH_CAPTURE"
       },
       "MIRO-IN-001": {
-        "cookies_observed": 60,
+        "cookies_observed": 59,
         "action": "Clicked 'Reject All' (secondary modal)",
         "clean_rejection_maintained": true,
         "telemetry_delta": "Post-reject: 60 cookies. Post-action network responses: 9. NOTE: Previous legacy artifact stated 'First-layer Reject All button unavailable'. Fresh 2026-09-27T18:14:30.801125+00:00 capture found and successfully clicked Reject All.",
-        "capture_timestamp": "2026-09-27T18:14:30.801125+00:00",
-        "capture_id": "MIRO-IN-001-REJECT-FRESH",
+        "capture_timestamp": "2026-09-28T10:31:35.608143+00:00",
+        "capture_id": "MIRO-IN-001-REJECT-20260928-1031",
         "artifact_status": "FRESH_CAPTURE"
       }
     }

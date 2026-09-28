@@ -19,6 +19,6 @@
   "pre_consent_active_groups": ",C0007,C0004,C0001,C0002,C0003,",
   "first_layer_reject_all_visible": true,
   "first_layer_accept_all_visible": true,
-  "captured_at": "2026-09-27T17:40:40.441977+00:00",
+  "captured_at": "2026-09-28T10:30:42.248585+00:00",
   "temporal_confound_note": "Runs captured at different calendar dates introduce potential confounds (site changes, A/B experiments, vendor config changes). For production-grade audit, both jurisdictions must be captured in the same session window."
 }

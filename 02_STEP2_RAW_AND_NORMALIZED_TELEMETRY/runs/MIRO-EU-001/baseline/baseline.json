@@ -1,28 +1,34 @@
 {
   "audit_run_id": "MIRO-EU-001",
+  "capture_id": "MIRO-EU-001-BASELINE-20260928-1027",
   "profile": "eu-france",
   "jurisdiction": "EU",
-  "timestamp": "2026-09-28T10:18:28.106936+00:00",
+  "timestamp": "2026-09-28T10:27:42.140045+00:00",
   "initial_url": "https://miro.com/",
   "final_url": "https://miro.com/",
   "redirect_observed": false,
   "target": "https://miro.com/",
   "consent_state": "PRE_CONSENT",
-  "onetrust_geoip": null,
-  "geo_data_cookie": "UA|Ukraine|Kyiv|Europe/Kyiv",
-  "optanon_consent_cookie": null,
-  "active_groups": null,
-  "banner_visible": false,
-  "banner_text": null,
-  "buttons": {
-    "accept_all": false,
-    "reject_all": false
+  "onetrust_geoip": {
+    "country": "FR",
+    "state": "GES",
+    "stateName": "Grand Est",
+    "continent": "EU"
   },
-  "cookie_count": 8,
+  "geo_data_cookie": "FR|France||Europe/Paris",
+  "optanon_consent_cookie": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A57%3A35+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=87c68d12-f99f-4eb5-94f0-fb2aa048e15b&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0",
+  "active_groups": ",C0001,",
+  "banner_visible": true,
+  "banner_text": "Cookies, anyone?\nBy clicking \u201cAccept All Cookies\u201d, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nCookies Settings\nReject All\nAccept All Cookies",
+  "buttons": {
+    "accept_all": true,
+    "reject_all": true
+  },
+  "cookie_count": 7,
   "cookies": [
     {
       "name": "geo_data",
-      "value": "UA|Ukraine|Kyiv|Europe/Kyiv",
+      "value": "FR|France||Europe/Paris",
       "domain": "miro.com",
       "path": "/api/ff",
       "expires": -1,
@@ -32,10 +38,10 @@
     },
     {
       "name": "ajs_anonymous_id",
-      "value": "%22994341b5-654b-4c49-be5a-ff93f482f4b9%22",
+      "value": "%224eef4d6b-2b4a-4db1-9011-6045386c5ac5%22",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1822126694.117751,
+      "expires": 1822127249.597846,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -45,14 +51,14 @@
       "value": "off",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790590814.119179,
+      "expires": 1790591369.599455,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "geo_data",
-      "value": "UA|Ukraine|Kyiv|Europe/Kyiv",
+      "value": "FR|France||Europe/Paris",
       "domain": "miro.com",
       "path": "/",
       "expires": -1,
@@ -62,10 +68,10 @@
     },
     {
       "name": "__ff",
-      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v1\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
+      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v2\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790590818.036752,
+      "expires": 1790591375.028795,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -81,26 +87,16 @@
       "sameSite": "Lax"
     },
     {
-      "name": "fbp_tracked",
-      "value": "undefined",
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A57%3A35+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=87c68d12-f99f-4eb5-94f0-fb2aa048e15b&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1793182701,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "rdt_uuid_tracked",
-      "value": "undefined",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1793182701,
+      "expires": 1822127255,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     }
   ],
-  "total_responses_captured": 91,
+  "total_responses_captured": 101,
   "set_cookie_responses": 0
 }

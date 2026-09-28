@@ -62,7 +62,7 @@ async def capture_profile(profile: str, proxy: str = None, headless: bool = True
 
     async with async_playwright() as p:
         launch_args = {"headless": headless}
-        if proxy:
+        if proxy and proxy.lower() not in ["direct", "vpn", "system"]:
             launch_args["proxy"] = {"server": proxy}
 
         browser = await p.chromium.launch(**launch_args)

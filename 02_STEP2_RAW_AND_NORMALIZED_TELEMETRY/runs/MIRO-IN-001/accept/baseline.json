@@ -1,8 +1,9 @@
 {
   "audit_run_id": "MIRO-IN-001",
+  "capture_id": "MIRO-IN-001-BASELINE-20260928-1031",
   "profile": "india",
   "jurisdiction": "INDIA",
-  "timestamp": "2026-09-27T17:41:15.835166+00:00",
+  "timestamp": "2026-09-28T10:31:06.127557+00:00",
   "initial_url": "https://miro.com/",
   "final_url": "https://miro.com/",
   "redirect_observed": false,
@@ -15,7 +16,7 @@
     "continent": "AS"
   },
   "geo_data_cookie": "IN|India|Delhi|Asia/Kolkata",
-  "optanon_consent_cookie": "isGpcEnabled=0&datestamp=Sun+Sep+27+2026+23%3A11%3A12+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0007%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1%2CC0003%3A1",
+  "optanon_consent_cookie": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+16%3A00%3A57+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0007%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1%2CC0003%3A1",
   "active_groups": ",C0007,C0004,C0001,C0002,C0003,",
   "banner_visible": true,
   "banner_text": "Cookies, anyone?\nBy clicking \u201cAccept All Cookies\u201d, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.\nCookies Settings\nReject All\nAccept All Cookies",
@@ -37,10 +38,10 @@
     },
     {
       "name": "ajs_anonymous_id",
-      "value": "%221b1d9dcb-960e-43b9-a90c-82c5c1c70340%22",
+      "value": "%22f1a72b5a-d60d-449b-9498-8c221336a9cc%22",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1822066869.870329,
+      "expires": 1822127455.046714,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -50,7 +51,7 @@
       "value": "off",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790530989.871175,
+      "expires": 1790591575.047762,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -66,31 +67,11 @@
       "sameSite": "Strict"
     },
     {
-      "name": "fbp_tracked",
-      "value": "undefined",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1793122871,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "rdt_uuid_tracked",
-      "value": "undefined",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1793122871,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "__ff",
-      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v1\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
+      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"holdout\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790530991.368877,
+      "expires": 1790591576.572005,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -106,18 +87,38 @@
       "sameSite": "Lax"
     },
     {
+      "name": "fbp_tracked",
+      "value": "undefined",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1793183456,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rdt_uuid_tracked",
+      "value": "undefined",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1793183456,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
       "name": "pageviewCount",
       "value": "1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1793122872,
+      "expires": 1793183457,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "sessionTimer",
-      "value": "1790530872543",
+      "value": "1790591457107",
       "domain": "miro.com",
       "path": "/",
       "expires": -1,
@@ -127,37 +128,37 @@
     },
     {
       "name": "__cf_bm",
-      "value": "sOzuTYRNVwQTTghGiaKuK_qBZQ2RelnY5Wl7so1jGQs-1790530872.3935773-1.0.1.1-jc8vqo0Th.kibCPmdYVqlmzRQc3KqLCd6pX05hICci1Y7VKch8cRNYLfctJb660Whnhz.jkAaN908IoySmcItHM8SPqUzplrAphqdvHCEr8JB0iAdN2eMBWikEJZLzef",
+      "value": "brSwtTYXiKe6vIGtTVMvLDAJcXktWQFBdplZhKgmmzQ-1790591458.8212502-1.0.1.1-PP5RnKtL2McwJ0ddS3wSqY8Hu6t8.KA3UfIn4mQParPZ1Vd58KPnHK0R7Pie_PBQmjLzTM6nff44nXOzVDdtFuEBZ0MYPIdFkNe7HtZvxWqFcfD3FQFqENVtWo3x3HRv",
       "domain": ".g2crowd.com",
       "path": "/",
-      "expires": 1790532672.610757,
+      "expires": 1790593257.159515,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Sun+Sep+27+2026+23%3A11%3A12+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0007%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1%2CC0003%3A1",
+      "value": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+16%3A00%3A57+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fmiro.com%2F&groups=C0007%3A1%2CC0004%3A1%2CC0001%3A1%2CC0002%3A1%2CC0003%3A1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1822066872,
+      "expires": 1822127457,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__cf_bm",
-      "value": ".UWJqUeS9pRZ8vYz3M2D_RtN8.7EqDDfeRr9B.9NSZw-1790530872.5077899-1.0.1.1-IoRBf5UXTsRJmuuC25AaCN7k0uOSjLoKdNh6i.qewtY9R04M7oHKmshgUDtYX2f2ad9UJZYEWylbkMpvvUFJym2lx236_StMubkWWd1u.GMf2FvV_VvuJcfOHQlRKVu7",
+      "value": "yxE852EDdeYUDul4GbG3J3Kmxn__kMxMGCzuv1OOyO4-1790591458.9174614-1.0.1.1-dQCU1e7njYRSy.kRndErp4hh5rJXq1IScmnm6u8BE5j8fEU_Cto_LkcXJiDRnMC5JZBlnMtruIS.3PZyPT93KcTPWCQFYQC5bTGaWeHhkYDMno3BgDt0yolMfq.C6GOs",
       "domain": ".bzrcdn.openai.com",
       "path": "/",
-      "expires": 1790532672.722644,
+      "expires": 1790593257.26193,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_cfuvid",
-      "value": "nP2_1f.jXP0NmQLwM5Z340tvYVPe6kzBS.jyxr69c7w-1790530872.5077899-1.0.1.1-vGsMiPoYHqnYgA4F3.6eeMRU5H9aJY49AbmoZ_8tLi0",
+      "value": "Ya5z1ith78qIw9_0ABF0sKo7ePXrDmTIfh8XDA_AZw0-1790591458.9174614-1.0.1.1-NsBlTnbEPFxBj.DpU9vNdgoQEd.VSiBq5Tl37DxK4TY",
       "domain": ".bzrcdn.openai.com",
       "path": "/",
       "expires": -1,
@@ -166,171 +167,221 @@
       "sameSite": "None"
     },
     {
-      "name": "_rdt_uuid",
-      "value": "1790530872810.52ab5db4-d4ed-4596-a04d-7218ae96f39e",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798306872,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "__pdst",
-      "value": "483c414036904f45bab069c20d905800",
-      "domain": "miro.com",
-      "path": "/",
-      "expires": 1822066872,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Strict"
-    },
-    {
       "name": "CLID",
-      "value": "b0544ba3eb624d64940807c9086348ba.20260927.20270927",
+      "value": "2739e54eff6e49e9a226d1008bf1af86.20260928.20270928",
       "domain": "www.clarity.ms",
       "path": "/",
-      "expires": 1822066872.877085,
+      "expires": 1822127457.388607,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "__obref",
-      "value": "23ae88bc-ab24-43ba-a433-b6b8be4ee670",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1822066872.927667,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_mkto_trk",
-      "value": "id:228-GPV-835&token:_mch-miro.com-661aab6965ad6fa4866b4bfa322472a0",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1825090872.951508,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "vYgh248_wW7OsnGUTkoNyCVLnOpBRLLV.HAH5S_8TnY-1790530872.6139665-1.0.1.1-.AAO_o.Mtbz2H2oMAF1.x7aD767U_.ZXxIBZCcpSKY0v58056MYd2eC_xvMfIRrFnsKXGwzs1wugwoA0sWHERktzgNdCl8U01gnTkVGOQajBDi9bMpewsD1isxFXfweA",
-      "domain": ".g2.com",
-      "path": "/",
-      "expires": 1790532673.055006,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_clck",
-      "value": "3dup4s%5E2%5Eg9t%5E0%5E2461",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1822066873,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
     },
     {
       "name": "AWSALBCORS",
-      "value": "zFPyRzrMVSEKBT03lIhdkwjpYdRMoUrWI+wgnjRU6XOX1JpoV3qGqzRK3oesB3U/Y5vjpwejQFatvb4K0nNQ1pB/ee5O1RFZ9g3xeaXxmnsChnbMi13XsnN2iQ+x",
+      "value": "p0aIANB/Rm8XIcTqStgEZTHVkkizikRNYjs0xWrjepAZodErfJeB8kbDVYvxN/SF0+/kARKQ9oLOYvM6DHVc5tcv3I0wJFaiyj33AZz1oKD2iaQdqiN+UlpKlhIl",
       "domain": "nld1rtp1-cdn.marketo.com",
       "path": "/",
-      "expires": 1791135673.229553,
+      "expires": 1791196257.811908,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "_uetsid",
-      "value": "a21e3ad0ba9a11f1beea617ae9886f55",
-      "domain": ".miro.com",
+      "name": "__pdst",
+      "value": "da49efad6b78488d9d6a77471f0296a3",
+      "domain": "miro.com",
       "path": "/",
-      "expires": 1790617273,
+      "expires": 1822127457,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_uetvid",
-      "value": "a21e6d00ba9a11f1bf200b53969f007f",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1824226873,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_fbp",
-      "value": "fb.1.1790530873309.191989058271420445",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798306873,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "signals-sdk-user-id",
-      "value": "23b1097c-786a-4a75-bd90-70c4fe3b6eac",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1822066873,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "signals-sdk-session-id",
-      "value": "8000c9e7-233b-4323-a800-f4b0f92aabef",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790532673,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1791135674.417219,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "SRM_B",
-      "value": "3FF9DC8C622462AE050BCB6D638C63AA",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1824226874.417265,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
+      "sameSite": "Strict"
     },
     {
       "name": "TapAd_TS",
-      "value": "1790530873205",
+      "value": "1790591459634",
       "domain": ".tapad.com",
       "path": "/",
-      "expires": 1795714873.595813,
+      "expires": 1795775458.15375,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "TapAd_DID",
-      "value": "3af9d046-121b-497c-b4f1-ffac9c3d509d",
+      "value": "6e56b9cf-3d61-4a9d-bc68-77515fb6541f",
       "domain": ".tapad.com",
       "path": "/",
-      "expires": 1795714873.595935,
+      "expires": 1795775458.153948,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_rdt_uuid",
+      "value": "1790591458104.1551ce6c-0224-4e99-8bf8-9abca8bbd0bf",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1798367458,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "TapAd_3WAY_SYNCS",
+      "value": "",
+      "domain": ".tapad.com",
+      "path": "/",
+      "expires": 1795775458.154037,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "trwv.uid",
+      "value": "realtimeboard-1790591458220-f7e1c4ad%3A1",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1825151458.221066,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "trwsa.sid",
+      "value": "realtimeboard-1790591458221-f1f66221%3A1",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790593258,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "QsXOpcLi_ghqFPP2fvLNZ6VKyHYJaurzfegY_KOK.kE-1790591459.7473402-1.0.1.1-kRaPR551RUH2GaSalYq1s_BJ6uhJ69D8pEza7VJxSM5sPic1RLyQ7fB6rFAW.DaER_vFXC6fBR2_ZxdewLOJb6iHxA6Jk3RbKr2kecqVFvGer0bRSGcEYiE4qIyiv9rR",
+      "domain": ".g2.com",
+      "path": "/",
+      "expires": 1790593258.317981,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__obref",
+      "value": "bb9523cb-9324-4cf5-9eea-f0314ff07a06",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1822127458.443174,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_mkto_trk",
+      "value": "id:228-GPV-835&token:_mch-miro.com-471b8333f92fac0eb56daf21c944d3e9",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1825151458.452878,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AWSALBCORS",
+      "value": "08Mgb17HmuscIxaPiGSH/rM7Q2UMHzcQLRe4xDgUbMpNYa0Y8IsNVTkXIzSzPXt2uE6F1qEHsRAmAT97MXiaE5z36BzhT8XFHQmX11AmpFvflGdwH2IioMy+dLGv",
+      "domain": "nld1rtp1.marketo.com",
+      "path": "/",
+      "expires": 1791196258.703233,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "signals-sdk-user-id",
+      "value": "1fae32a0-28b4-4902-b627-a8425442bcb0",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1822127458,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "signals-sdk-session-id",
+      "value": "12320a30-ae14-403c-8dd1-ed0b4261f2a1",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790593258,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1790591458830.24607522798005486",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1798367458,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clck",
+      "value": "1c4zyr8%5E2%5Eg9u%5E0%5E2462",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1822127458,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "li_sugr",
+      "value": "aeecccc0-67a1-49c6-9d19-859512fb6cc5",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1798367459.941678,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bcookie",
+      "value": "\"v=2&9c5956ab-e5ef-4331-8c29-5530d9846e94\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1822127459.94184,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=VGST05:s=V:r=V:a=V:p=V:g=3682:u=1:x=1:i=1790591460:t=1790677860:v=2:sig=AQFDr9Ph9qcsEtkoROzonK8U2Ws-NvVF\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1790677858.888475,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "_UwW88F11zmit1QmaD8HXFxoyY4M0ZUq8V44pD.mq2o-1790591460.2693627-1.0.1.1-7JnJeZJlAJ7LDQh5a5trpn6EpRmNgSZ15ImrdKd6oqlSxhcjmN_MllL.nZCjfrOTREyw5Jg_WETLsd8NwBS2wT9GTm.6L68m54f1m8Vj7l7_mO5UsMos6MN.Esr8w0eh",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1790593258.888537,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "0F2C43818E0C6B2B3E8454638F7F6A5D",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1824287460.608782,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -338,20 +389,74 @@
     {
       "name": "MR",
       "value": "0",
-      "domain": ".bat.bing.com",
+      "domain": ".c.bing.com",
       "path": "/",
-      "expires": 1791135674.504111,
+      "expires": 1791196258.922095,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "MUID",
-      "value": "1C489B36523D646D02388CD7539565A8",
-      "domain": ".bing.com",
+      "name": "SRM_B",
+      "value": "0F2C43818E0C6B2B3E8454638F7F6A5D",
+      "domain": ".c.bing.com",
       "path": "/",
-      "expires": 1824226874.504022,
+      "expires": 1824287458.922138,
       "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-YNID",
+      "value": "22.YT=DPrCLbvoJZbY2rGSxsvOtJjXipjhP7nKr4D67PMw-JHrfDetasZ_dtS5WzKOHHkY59U3rA34fmPFttm8-KHoAZZ6v7zFJZBtjBnx6wPy0L14yOs7EjjNvZAFUvqcEMr-VhoZbb9ajrtDfrA3nv9f9vJR48qbSFRIE8NopEjB_kr_1aa_VRTC9Qb4Zt5aBG1kSHg8c71thd9SECbphHxLLeiYMirCeVi5sB21p8mQN9lpe70-adl896ap0PjMHWgQh8-LSV-YrlhSodMJYhlR6zUoFG5QUky9hqcalm0PeO394O6rNBnKqULzwMb892QhM53oCzQ5R6mDxOQmBVrBgw",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806143459.036995,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://miro.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "YSC",
+      "value": "Rtfb81hSwrs",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Secure-ROLLOUT_TOKEN",
+      "value": "CJv1rO_JoeHUKhDNnsr_iJGXAxjNnsr_iJGXAw%3D%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806143459.037271,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://miro.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "VISITOR_INFO1_LIVE",
+      "value": "AMwiq0Ho3bM",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806143459.037388,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "VISITOR_PRIVACY_METADATA",
+      "value": "CgJJThIEGgAgaw%3D%3D",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1806143459.037429,
+      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
@@ -367,10 +472,10 @@
     },
     {
       "name": "MUID",
-      "value": "3FF9DC8C622462AE050BCB6D638C63AA",
+      "value": "0F2C43818E0C6B2B3E8454638F7F6A5D",
       "domain": ".clarity.ms",
       "path": "/",
-      "expires": 1824226873.594611,
+      "expires": 1824287459.09305,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -380,7 +485,7 @@
       "value": "0",
       "domain": ".c.clarity.ms",
       "path": "/",
-      "expires": 1791135673.594695,
+      "expires": 1791196259.093162,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -390,228 +495,104 @@
       "value": "0",
       "domain": ".c.clarity.ms",
       "path": "/",
-      "expires": 1790531473.59473,
+      "expires": 1790592059.093222,
       "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_3WAY_SYNCS",
-      "value": "",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1795714873.596006,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "li_sugr",
-      "value": "4ab6e64c-0374-4bbf-922e-c65f259eb95b",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1798306874.795713,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bcookie",
-      "value": "\"v=2&eb044529-ed2b-46e4-81de-f0b845db5e7a\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1822066874.79583,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "lidc",
-      "value": "\"b=OGST05:s=O:r=O:a=O:p=O:g=3680:u=1:x=1:i=1790530873:t=1790617273:v=2:sig=AQF7-jZZtAhTr8u53lgU5tTr9aZE9FJH\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1790617273.783425,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "pKmgejCqVreAJ7GhMfynodfEbdlSgWVytBDNWeibSyc-1790530873.3004196-1.0.1.1-LgjPFrHGXVUAl5qhbOp7YAbZ0pfU.pjp5IBSMcUIcqDHhgB6hkmP4VULhxCpGVuIFJjeOqV2ZuzhNMgLDPQ0vCcqJV.X_SQG4pEVa6fFkr4P0PZeZlqq3fkcg9bpGzXf",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1790532673.783574,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "trwv.uid",
-      "value": "realtimeboard-1790530873855-ad110178%3A1",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1825090873.855744,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "trwsa.sid",
-      "value": "realtimeboard-1790530873855-aed14f70%3A1",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790532673,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_clsk",
-      "value": "1my0kxj%5E1790530874171%5E1%5E1%5Eb.clarity.ms%2Fcollect",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790617274,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "AWSALBCORS",
-      "value": "YcREDlNKa0+EJ16d+Q60GxmfSxA13PJX1gYvBE9zmPQT80oQpUXD6cuk9j5mXfiymTspiKiaOXE75J/4z14isLL3laApZcHDEbX2+ITtIRASywhpYWEAhyb3tzg/",
-      "domain": "nld1rtp1.marketo.com",
-      "path": "/",
-      "expires": 1791135674.221509,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_gcl_au",
-      "value": "1.1.1880849731.1790530874",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798306874,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__Secure-YNID",
-      "value": "22.YT=MfkXzuB7U5-odrwkg-souxB56xR4qLDwJ2h_HmkxY17PRlcYX6qKM06biMutcn-3Xd5GqQI5K1RysnrdykEfX9hcjilWJJOxVMlH3KwjWljofemc5t1N2DOFdxeDNptSutmnFJtMVsKq8Zjt_zy9cLPu7Wvu5cBKTIE8o4az9az43_ZVPpiWjFXNpkSgRaRqQrlk5ToEHvmnVAOwn1gqxjehConsJmxenjosbAmbkMVzBMZwIuKX_fx-E2zGlMDIAkHgUPueu-ajBKEDRNPNYe27hDRFnVxgmpvvsLJQpMXBMOJDwHsjKvcjJ8qFaPliKL20vSP7Fx0cDswTSAbKDw",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806082874.433579,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None",
-      "partitionKey": "https://miro.com",
-      "_crHasCrossSiteAncestor": true
-    },
-    {
-      "name": "YSC",
-      "value": "xbDj5BlnF10",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "VISITOR_INFO1_LIVE",
-      "value": "vjcfLUFtoN0",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806082874.433704,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJJThIEGgAgUA%3D%3D",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806082874.43372,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "CLrqjJvrlOCibhClg9qlp4-XAxilg9qlp4-XAw%3D%3D",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806082874.433738,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None",
-      "partitionKey": "https://miro.com",
-      "_crHasCrossSiteAncestor": true
-    },
-    {
-      "name": "_ga_FK1CGSZNDB",
-      "value": "GS2.1.s1790530873$o1$g0$t1790530873$j60$l0$h0",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1825090874.485416,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga",
-      "value": "GA1.1.337069380.1790530874",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1825090874.48602,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "bscookie",
-      "value": "\"v=1&20260927174114ea93d730-39e1-42a8-8faa-0925850eb53dAQFITxk3uFpNvpe0BICXeK3eqgEcTe5U\"",
-      "domain": ".www.linkedin.com",
-      "path": "/",
-      "expires": 1822066874.516717,
-      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "UserMatchHistory",
-      "value": "AQLAdVXTUcwFiAAAAaDj9Ou7TDky7D9qIjsi2SjvANDaZXCTfAvMN9w7L7PRUzNUtRUOIkR-3kLNHw",
+      "value": "AQKrX790HDITXgAAAaDnkWWRlr3mExjB5Ynwtz9IQRA4qa8DhzLUvDV7FXUxvbESR3szT1Mwdeap0g",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1793122874.627626,
+      "expires": 1793183459.216692,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "AnalyticsSyncHistory",
-      "value": "AQJjA186_kIrWAAAAaDj9Ou7xhaR6bneQDCMcWlWSpVpECGED1Ln7WZQ5uzyPsFSTPEP_pYGVPiUG8rOt2lAFg",
+      "value": "AQIcYSvdCTBmfgAAAaDnkWWRMyRnncHOo0rOtmQk6rU-Ws69MGS4BO-WGcvNGEO6K1OCBUb54Ywi7HbrlaRDng",
       "domain": ".linkedin.com",
       "path": "/",
-      "expires": 1793122874.627719,
+      "expires": 1793183459.216773,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
+      "name": "_uetsid",
+      "value": "b2355850bb2711f19054c564b3e70fd7",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790677859,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_uetvid",
+      "value": "b235ada0bb2711f1a67375bf8eb81aad",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1824287459,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".bat.bing.com",
+      "path": "/",
+      "expires": 1791196260.608959,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bscookie",
+      "value": "\"v=1&20260928103101fbf993fd-f08b-474c-82e9-3f922b7c5507AQHSjesZ611Yo5j1lKhiLYBVRGucKMli\"",
+      "domain": ".www.linkedin.com",
+      "path": "/",
+      "expires": 1822127459.594475,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clsk",
+      "value": "1r57q2m%5E1790591459957%5E1%5E1%5Ei.clarity.ms%2Fcollect",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1790677859,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.178125001.1790591460",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1798367460,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
       "name": "__cf_bm",
-      "value": "HbP_Xd.LF9Vub8W6OhtNvBs_fTaNE40Eo5leXbe1Kfg-1790530874.3874846-1.0.1.1-QYWs3oeFIlN9qAhRuE5Nj20n50o_ncVivbIpAo6yhEn4bxq6eakBLjNMFVMfhAr4IGAcUVbuRucM7.mhlTCEbOXCSmcP6Zptuwr8AmA4.ovhnx7HXH1GWsA5FlUYQjg2",
+      "value": "wovooghVmNIF_qPNudpeVT.rHzlxMS6b1gviKXBYkpo-1790591461.7349427-1.0.1.1-7kk8Y4BLl_p.Fy6jaeVm8Z8EL6UmMM8cu5RdQFhIgtm.gygA6zEKOYi9wK8_gehd0VSq4JdF7pIIEncIzNC_yac4yUHeCx.eGDE1hkxhMqqhiMCyY5QCKmkz_VuGd22Z",
       "domain": ".bzr.openai.com",
       "path": "/",
-      "expires": 1790532674.905668,
+      "expires": 1790593260.3488,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_cfuvid",
-      "value": "NdXZxskyKcoofEbFZQCcNPukdRdPEaw1hEFTtMubIfI-1790530874.3874846-1.0.1.1-RfubyMHNYdYw42_RSIBaY4eK8JYaBGHj8C_rvTgLq6g",
+      "value": "Ed7orNZk2X1Nwei2pHbwZfnp7.k9dC_P0Tj3eaNW3z8-1790591461.7349427-1.0.1.1-h4pdeac08GeAmvzAzMMbIh_joLaZwNHRQ9lrnxXRvhs",
       "domain": ".bzr.openai.com",
       "path": "/",
       "expires": -1,
@@ -620,18 +601,36 @@
       "sameSite": "None"
     },
     {
+      "name": "_ga_FK1CGSZNDB",
+      "value": "GS2.1.s1790591458$o1$g0$t1790591458$j60$l0$h0",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1825151460.442399,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1747524668.1790591460",
+      "domain": ".miro.com",
+      "path": "/",
+      "expires": 1825151460.443409,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
       "name": "IDE",
-      "value": "AHWqTUlbNrzJWxhopgFux5V_sL1Ha7dGOQ4W4Ui1xE1pjjI0o1PKMFttv7ODvd527x0",
+      "value": "AHWqTUl36NmX4E1Y7PgXyJ8iL4q-Xw0M1rKHMe3H88N1LTzrciYYE9xM2pkHsAocS6g",
       "domain": ".doubleclick.net",
       "path": "/",
-      "expires": 1825090875.100886,
+      "expires": 1825151460.938853,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     }
   ],
-  "total_responses_captured": 229,
-  "set_cookie_responses": 0,
-  "capture_id": "MIRO-IN-001-ACCEPT-PRE-20260927",
-  "artifact_status": "FRESH_CAPTURE"
+  "total_responses_captured": 219,
+  "set_cookie_responses": 0
 }

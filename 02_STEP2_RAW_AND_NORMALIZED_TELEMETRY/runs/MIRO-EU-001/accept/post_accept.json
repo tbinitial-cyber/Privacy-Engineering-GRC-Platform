@@ -1,13 +1,14 @@
 {
   "audit_run_id": "MIRO-EU-001",
+  "capture_id": "MIRO-EU-001-ACCEPT-20260928-1028",
   "action": "CLICKED_ACCEPT_ALL",
-  "timestamp": "2026-09-28T10:07:49.777559+00:00",
+  "timestamp": "2026-09-28T10:28:22.490810+00:00",
   "active_groups_post_accept": ",C0001,C0002,C0003,C0004,",
-  "cookie_count": 61,
+  "cookie_count": 18,
   "cookies": [
     {
       "name": "geo_data",
-      "value": "IN|India|Delhi|Asia/Kolkata",
+      "value": "FR|France||Europe/Paris",
       "domain": "miro.com",
       "path": "/api/ff",
       "expires": -1,
@@ -17,10 +18,10 @@
     },
     {
       "name": "ajs_anonymous_id",
-      "value": "%221c073b99-5bb8-4925-9155-6d776ce01110%22",
+      "value": "%22b92c8286-3381-4ec3-9217-2edef855b022%22",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1822126057.961789,
+      "expires": 1822127286.812606,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -30,14 +31,14 @@
       "value": "off",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790590177.962849,
+      "expires": 1790591406.813559,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "geo_data",
-      "value": "IN|India|Delhi|Asia/Kolkata",
+      "value": "FR|France||Europe/Paris",
       "domain": "miro.com",
       "path": "/",
       "expires": -1,
@@ -47,10 +48,10 @@
     },
     {
       "name": "__ff",
-      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"holdout\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
+      "value": "{\"WEBSITE-2116-holdout-website-2026-first\":\"experimental\",\"WEBSITE-1294-cookie-banner-cta-color\":\"off\",\"WEBSITE-2157-exp-35-hompepage-hero-visual-layout-1\":\"v2\",\"WEBSITE-2119-contact-sales-vs-book-a-demo-32\":\"off\",\"WEBSITE-2000-exp-29-google-one-tap-home-page-2\":\"off\"}",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1790590179.397409,
+      "expires": 1790591412.042931,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -66,31 +67,11 @@
       "sameSite": "Lax"
     },
     {
-      "name": "fbp_tracked",
-      "value": "undefined",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1793182060,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "rdt_uuid_tracked",
-      "value": "undefined",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1793182060,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "OptanonAlertBoxClosed",
-      "value": "2026-09-28T10:07:46.158Z",
+      "value": "2026-09-28T10:28:19.201Z",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1822126066,
+      "expires": 1822127299,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -100,14 +81,14 @@
       "value": "1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1793182066,
+      "expires": 1793183299,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "sessionTimer",
-      "value": "1790590066198",
+      "value": "1790591299230",
       "domain": "miro.com",
       "path": "/",
       "expires": -1,
@@ -117,511 +98,95 @@
     },
     {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A37%3A46+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=c860d92a-75e3-4fb8-b2b4-0c32860af3e0&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1",
+      "value": "isGpcEnabled=0&datestamp=Mon+Sep+28+2026+15%3A58%3A19+GMT%2B0530+(India+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=a8f35098-3dd8-4367-85a2-c9f82745adf6&interactionCount=1&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A1%2CC0003%3A1%2CC0004%3A1&intType=1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1822126066,
+      "expires": 1822127299,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "__cf_bm",
-      "value": "OPdGQGbREqcBBqn3iDrIiUXd8wGnVr5LWoA2BrXI7vU-1790590068.0238867-1.0.1.1-7VGSbZJjiOvQUlqeYIdbAfumkMshQBytIn_n2AUChYQRRXlLRLMMOWBGUCTyZSl9iNhlu2cRHEcY1bq2zlLSAref8BkYDI2T0ln_uirF7nQ3em4rDFhmxScdUFT.4KA5",
-      "domain": ".g2crowd.com",
-      "path": "/",
-      "expires": 1790591866.342792,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__pdst",
-      "value": "cd9be6cc6bb2411bbc6f42db5b968ddc",
-      "domain": "miro.com",
-      "path": "/",
-      "expires": 1822126066,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "_rdt_uuid",
-      "value": "1790590066441.3710ac54-b395-40b9-90ef-ca3d50b2902a",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798366066,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "a5EDIs4z4UAbMdt7rbibpw3oCGBkZngaKRzNddmcyNU-1790590068.1838815-1.0.1.1-m10WJNL6VkLnO5G2NGXe60Y4FbF4gedKS6v791kFw.Di3N9_3XT59eSPj8iULXg5Ad.02C1we.bX3fdfQqIIpNlQYL.aWfV9C1NOURONciB2vWWLRl.HJ2Si6D.AlQ0O",
-      "domain": ".bzrcdn.openai.com",
-      "path": "/",
-      "expires": 1790591866.505579,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_cfuvid",
-      "value": "wMRIR3aKGBm51QCHBLTrBHS0Keswi5fYaH0dPI0fdGk-1790590068.1838815-1.0.1.1-A0n3xzKRUePAZcamy_Wxqg9NmxTNPSujM0HxIO66oHQ",
-      "domain": ".bzrcdn.openai.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "CLID",
-      "value": "126ae26dc57d4d31868bd8b128c12171.20260928.20270928",
-      "domain": "www.clarity.ms",
-      "path": "/",
-      "expires": 1822126066.557234,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "_ga_FK1CGSZNDB",
-      "value": "GS2.1.s1790590066$o1$g0$t1790590066$j60$l0$h0",
+      "value": "GS2.1.s1790591300$o1$g0$t1790591300$j60$l0$h0",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1825150066.811926,
+      "expires": 1825151300.583055,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.1641432232.1790590067",
+      "value": "GA1.1.1866265657.1790591301",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1825150066.812841,
+      "expires": 1825151300.583458,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__cf_bm",
-      "value": "fVBFSieHHe3uM58A7M2FyJw3tAK8EdG37mD8scH2Ai4-1790590068.289716-1.0.1.1-5zRzg6O2i8oJyn3kmXFwmwS9ll3n9Yey63H_NlbYNLo9A5682qnk0tVTh2WtI1MCLWR391tPBH5CC3mNzdpv7jAXHUlZZpo4X8OUbHEV.BYmGPplMCmepseaXrn6c._R",
-      "domain": ".g2.com",
+      "value": "kHFSeUNIT2uh41ebtqrt3EFVr5AObrkUjjiCXpBldkw-1790591302.3037405-1.0.1.1-wdIGOvS._czoWWrqnVhoTAPmZSw1a5Yeol82z8oEqrCpUhT3mnYtgXXIr8YVfstUvcmGRoBWFwvZRUm39KQnbKvqT17DCC8HV61v5tcMzX_OQqGVSWw_FOjTUYMEkLvu",
+      "domain": ".g2crowd.com",
       "path": "/",
-      "expires": 1790591866.850811,
+      "expires": 1790593100.69484,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "_mkto_trk",
-      "value": "id:228-GPV-835&token:_mch-miro.com-811b4cc2a1502e6fe5910367af4e752e",
+      "name": "_rdt_uuid",
+      "value": "1790591300765.75e61700-2340-44e3-be41-8fe7809619d1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1825150066.86091,
+      "expires": 1798367300,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "__pdst",
+      "value": "e1c8a502c3284660ae7bf50d156aab71",
+      "domain": "miro.com",
+      "path": "/",
+      "expires": 1822127301,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__obref",
-      "value": "61f7ce8f-2cce-49cf-8bfb-5b798252532a",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1822126066.876516,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "signals-sdk-user-id",
-      "value": "16d6e038-06e4-4d6a-96ee-5da6fa79deff",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1822126066,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "signals-sdk-session-id",
-      "value": "67278f5d-37a6-4176-a8ff-5e2850a17c5c",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790591866,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_gcl_au",
-      "value": "1.1.308491346.1790590067",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798366067,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "li_sugr",
-      "value": "d4a2ef42-00fa-4383-bf4d-9e5ece16e72b",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1798366068.254869,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "lidc",
-      "value": "\"b=VGST05:s=V:r=V:a=V:p=V:g=3682:u=1:x=1:i=1790590068:t=1790676468:v=2:sig=AQEOLfaMGTWlFWDoQW9V76UL-a9kjvt-\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1790676467.264634,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": ".xuv5DKrcgMefdVoyPjlg1ie6kh84rUUoRQadLTCp0g-1790590068.6441972-1.0.1.1-CQr.QF9_HoMM5PkuXS.PDxRFSFBB4a9M67dbx02mx4yyoyG29uG2zt0CoqpJtqh5hVSmGui5R0uUNHOo_7Bl3R_3b6C_wKwASsWlKX.JDnsU6_F44WaX6Jv9wxYSv8fg",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1790591867.264676,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_TS",
-      "value": "1790590068927",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1795774067.455145,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_DID",
-      "value": "0c11eeca-3992-4bb0-84c8-0f115e7dd5ac",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1795774067.455191,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "TapAd_3WAY_SYNCS",
-      "value": "",
-      "domain": ".tapad.com",
-      "path": "/",
-      "expires": 1795774067.455225,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
+      "sameSite": "Strict"
     },
     {
       "name": "AWSALBCORS",
-      "value": "0IT3XAlrZ7KIILntHwZ4gYV7Hde2dAldUwlrkck5yRrjc0Rmklaec9dFwcNnzKs7013HzegU8INDRB1RSkTxZeaE3cbg9VHy5SW7JXFzSUGgucoggiZ1gr4Y9Wt2",
+      "value": "KGd3poqYJuXl1yZtyau0PRIYy4DcNhNOsvVgPaPpjFY50fjZiVqVkCmFNQzTntOAPti8GfrZyJ28e5srMdE9E2GA01148/0WDn5Y2TGnE7k3X/6BwUen6P4K9GKS",
       "domain": "nld1rtp1-cdn.marketo.com",
       "path": "/",
-      "expires": 1791194867.526669,
+      "expires": 1791196101.52148,
       "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bcookie",
-      "value": "\"v=2&303b2f60-28b9-437b-826c-9c5ec4966d1f\"",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1822126068.254985,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "UserMatchHistory",
-      "value": "AQKAU2E8eiF-UAAAAaDnfCmMa4CS8DxWyNK2QIodCSqUz_79knMq7m1gDay7ppEghvZMoJYMSZVBtw",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1793182067.546682,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AnalyticsSyncHistory",
-      "value": "AQIr7hQqKn-JvwAAAaDnfCmMUtz5_9vuiQSLhco-ZkkagBkWoe66qObOY-RJh8U-nkLnKn5yP4W08siktpQw-g",
-      "domain": ".linkedin.com",
-      "path": "/",
-      "expires": 1793182067.546742,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_uetsid",
-      "value": "74a67c40bb2411f1ac9489d310847ef1",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790676467,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_uetvid",
-      "value": "74a6b010bb2411f188fe11d055e621ed",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1824286067,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_clck",
-      "value": "15q7n3p%5E2%5Eg9u%5E0%5E2462",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1822126067,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_fbp",
-      "value": "fb.1.1790590067725.172066692665817099",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1798366067,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".bat.bing.com",
-      "path": "/",
-      "expires": 1791194867.85695,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "IDE",
-      "value": "AHWqTUm0F-b7feCM8lyfXcj5bWn5BloKqRJP8PTNSEvVUSQZvKVf_1adTsFUaPMwRKc",
-      "domain": ".doubleclick.net",
-      "path": "/",
-      "expires": 1825150067.810073,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1791194867.855322,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "SRM_B",
-      "value": "30B11F0CD5E765163C4F08EED44F64E6",
-      "domain": ".c.bing.com",
-      "path": "/",
-      "expires": 1824286067.855361,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MUID",
-      "value": "0E414AF233BF671506315D1032176601",
-      "domain": ".bing.com",
-      "path": "/",
-      "expires": 1824286067.856847,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bscookie",
-      "value": "\"v=1&202609281007492d738ea8-32f6-4f6f-83ee-0e817a203fd3AQGYqMUnh_O1QgnWjac1xxqFlhQ2l60e\"",
-      "domain": ".www.linkedin.com",
-      "path": "/",
-      "expires": 1822126067.903473,
-      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "trwv.uid",
-      "value": "realtimeboard-1790590067983-e90a94d8%3A1",
+      "value": "realtimeboard-1790591301739-d48f86b3%3A1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1825150067.98482,
+      "expires": 1825151301.740887,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "trwsa.sid",
-      "value": "realtimeboard-1790590067985-1809f50e%3A1",
+      "value": "realtimeboard-1790591301741-71f3692d%3A1",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1790591867,
+      "expires": 1790593101,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "SM",
-      "value": "C",
-      "domain": ".c.clarity.ms",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MUID",
-      "value": "30B11F0CD5E765163C4F08EED44F64E6",
-      "domain": ".clarity.ms",
-      "path": "/",
-      "expires": 1824286068.058079,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "MR",
-      "value": "0",
-      "domain": ".c.clarity.ms",
-      "path": "/",
-      "expires": 1791194868.058159,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "ANONCHK",
-      "value": "0",
-      "domain": ".c.clarity.ms",
-      "path": "/",
-      "expires": 1790590668.058212,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "AWSALBCORS",
-      "value": "UYt8Fs6wTqyU9I4MqEv5Ju1Z3/j7mACtO8FwMYT0+5BGjD4pjHHWoE1Egb3H/N0DM6p9zK+w4EDHYRsJajTj1kFfWI/uIVEHIdOD2UNgK5KeAeUDu6tZCAW14oK1",
-      "domain": "nld1rtp1.marketo.com",
-      "path": "/",
-      "expires": 1791194868.493697,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_clsk",
-      "value": "23iddl%5E1790590068573%5E1%5E1%5Ea.clarity.ms%2Fcollect",
-      "domain": ".miro.com",
-      "path": "/",
-      "expires": 1790676468,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "2dYhZTkHL5TVA.Wy8iVwArVkOLFFHf7UKMflCMGqXNE-1790590070.2844768-1.0.1.1-lcs.ww4h9whnIOMds1x5OyKGC5PNo7KDUbVgI2Ce318OuZeN4oZ6q_j_PDbjc344doVxMH9i2FfLY2oh5BsKHQpBmqWYvxOz9cRJulSHLAUHXow88ftwsh5IEaM7oeJp",
-      "domain": ".bzr.openai.com",
-      "path": "/",
-      "expires": 1790591868.895206,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_cfuvid",
-      "value": "K.ZUJMqsikrlOKZDDBiOeki0VWZroSoFcKnGqnGCzjg-1790590070.2844768-1.0.1.1-mVCWwdGX.0J0E9s0a_r8RrAAT7wsfR81OLlkq_oreUQ",
-      "domain": ".bzr.openai.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__Secure-YNID",
-      "value": "22.YT=L_m2gneuYOJ1Nrmkl_a8OOGzVmwJwhfCoGrHkmE7-Eqmk6-gW04aFd-RukHcY31vEPcWQqPp0x4cWvvV0Du7C9y7d419FVvaNSP0dGLo9Pp_1YbFerk7xD-yWZ0IZZ5A6-QshV9HKAkKE_SFSko471goGJdysg_rgjkSc5AA0A5qogX_XM4GlR3gcCbNltuxYu37CbqHkKzktTxsjFPaYPyFJnPlx1CpFA0qHulvQqCLdovrBB24adZ2NWWUKh8koLDxO4aG9wbc6JxQtmUTQR8v-sEMoO3A9w-gwegi371mbXj8wNxHAhbrnUoozfbBgH8v4Zn4LeBp5D-ifpsXpQ",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806142069.067889,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None",
-      "partitionKey": "https://miro.com",
-      "_crHasCrossSiteAncestor": true
-    },
-    {
-      "name": "YSC",
-      "value": "GZ9R0vgoueg",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "VISITOR_INFO1_LIVE",
-      "value": "hdFBDIorFpw",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806142069.068494,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "VISITOR_PRIVACY_METADATA",
-      "value": "CgJJThIEGgAgag%3D%3D",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806142069.068522,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__Secure-ROLLOUT_TOKEN",
-      "value": "COaa6s3c-bjvjgEQ67rn6IORlwMY67rn6IORlwM%3D",
-      "domain": ".youtube.com",
-      "path": "/",
-      "expires": 1806142069.06855,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None",
-      "partitionKey": "https://miro.com",
-      "_crHasCrossSiteAncestor": true
     }
   ],
-  "post_action_responses": 121,
-  "post_action_set_cookie": 0,
-  "capture_id": "MIRO-EU-001-ACCEPT-POST-FRESH",
-  "artifact_status": "FRESH_CAPTURE"
+  "post_action_responses": 20,
+  "post_action_set_cookie": 0
 }
